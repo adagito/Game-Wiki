@@ -1,0 +1,262 @@
+{
+  "levelBrackets": [
+    {
+      "id": "lv_1_15",
+      "label": "Lv. 1–15 (Early Story / Ch. 1–3)",
+      "minLevel": 1,
+      "maxLevel": 15,
+      "benchmarks": {
+        "hp": "1,200 – 3,500",
+        "vit": "15 – 40",
+        "spr": "15 – 40",
+        "gear": "Bronze/Iron Bangle, Barrier, Cura, Assault Twister"
+      },
+      "priorityMissions": [
+        "M1-1-1",
+        "M1-2-1",
+        "M1-2-3",
+        "M3-1-1",
+        "M4-1-1",
+        "M6-1-1",
+        "M8-1-1"
+      ],
+      "expRoute": "Clear M1-1-x and M3-1-x branches naturally; avoid multi-star spikes until Barrier is equipped.",
+      "spGilRoute": "Sell duplicate early bangles; open chests in M6-1-x for early Phoenix Downs and Hi-Potions.",
+      "fusionFocus": "Collect Potions & early Stat Mako Stones. Wait for Chapter 4 Item Fusion Tome (M7-2-1) before burning items."
+    },
+    {
+      "id": "lv_15_25",
+      "label": "Lv. 15–25 (Ch. 4–5 Midgame Pivot)",
+      "minLevel": 15,
+      "maxLevel": 25,
+      "benchmarks": {
+        "hp": "4,000 – 9,999",
+        "vit": "45 – 85",
+        "spr": "45 – 85",
+        "gear": "4 Accessory Slots (M7-2-2 & M7-2-5), Item Fusion Tome (M7-2-1), Mog's Amulet (M4-4-3 Shop)"
+      },
+      "priorityMissions": [
+        "M4-4-3",
+        "M7-2-1",
+        "M7-2-2",
+        "M7-2-5",
+        "M6-2-3",
+        "M8-2-1"
+      ],
+      "expRoute": "M3-2-x and M5-1-x encounters while pushing M7-2-x for Keychain & Backpack.",
+      "spGilRoute": "Buy Mog's Amulet from Sector 7 Shop (unlocked via M4-4-3) so drops/steals guarantee rare rolls.",
+      "fusionFocus": "Unlock Item Fusion Tome (M7-2-1) and stack +HP% on an HP Up or Libra using cheap Shinra Shop Potions (50 Gil each)."
+    },
+    {
+      "id": "lv_25_40",
+      "label": "Lv. 25–40 (Ch. 6–7 Break Limit Era)",
+      "minLevel": 25,
+      "maxLevel": 40,
+      "benchmarks": {
+        "hp": "15,000 – 35,000",
+        "vit": "90 – 150",
+        "spr": "90 – 150",
+        "gear": "Adaman Bangle (M7-3-6), Brutal (M7-4-6), Status Ward + Hell-aga Materia"
+      },
+      "priorityMissions": [
+        "M7-3-6",
+        "M7-4-6",
+        "M7-5-3",
+        "M8-4-4",
+        "M6-6-3"
+      ],
+      "expRoute": "M6-5-x and M7-4-x encounters with Darkness or Hell Blizzaga + Status Ward.",
+      "spGilRoute": "M7-5-3 unlocks Bone Village Commerce; farm M6-6-3 Lesser Worms for Dark Matter & Gil.",
+      "fusionFocus": "Use M8-4-4 Moogle Power + M1-1-1 AFK leveling, then fuse Hell Blizzaga/Firaga + Status Ward to wipe 7–8★ mobs."
+    },
+    {
+      "id": "lv_40_60",
+      "label": "Lv. 40–60 (Late Cavern / Stat Maxing)",
+      "minLevel": 40,
+      "maxLevel": 60,
+      "benchmarks": {
+        "hp": "40,000 – 75,000",
+        "vit": "160 – 220",
+        "spr": "160 – 220",
+        "gear": "Costly Punch, Aerial Drain, Wall, Jeweled Ring + Mog's Amulet"
+      },
+      "priorityMissions": [
+        "M6-6-3",
+        "M8-6-4",
+        "M9-1-1",
+        "M9-5-3",
+        "M9-5-4"
+      ],
+      "expRoute": "M8-6-4 (Scissor Chitins) gives fast EXP + high Gil drops.",
+      "spGilRoute": "M9-5-3 (Three Stars) gives massive SP + Gil; M6-6-3 Lesser Worms drop/steal Dark Matter.",
+      "fusionFocus": "Build 98/980% Libra transfer Materia with Dark Matter (M6-6-3), Adamantite, Mythril, and Fat Chocobo Feathers."
+    },
+    {
+      "id": "lv_60_99",
+      "label": "Lv. 60–99 (Minerva & 10★ Endgame)",
+      "minLevel": 60,
+      "maxLevel": 99,
+      "benchmarks": {
+        "hp": "99,999",
+        "vit": "255",
+        "spr": "255",
+        "gear": "Genji Helm, Genji Armor, Genji Shield, Genji Glove, Ziedrich / Divine Slayer"
+      },
+      "priorityMissions": [
+        "M9-5-3",
+        "M9-5-4",
+        "M9-6-4",
+        "M7-6-6",
+        "M9-6-6"
+      ],
+      "expRoute": "M8-6-4 / M9-6-x encounters for rapid Lv 99.",
+      "spGilRoute": "M9-5-3 Three Stars (SP/Gil) + Mog's Amulet + Steal/Mug Minerva for 99 Phoenix Downs (sell extra if needed).",
+      "fusionFocus": "Finalize 4 endgame Materia with +100 VIT, +100 SPR, +999% HP (Costly Punch, Aerial Drain, Curaga, Wall/Mug)."
+    }
+  ],
+  "sections": [
+    {
+      "id": "guide_materia_leveling",
+      "title": "Materia Leveling & DMW Mechanics",
+      "badge": "DMW Loop",
+      "summary": "Exact hidden EXP counter mechanics, slot 1–6 reels, Moogle Power, and the M1-1-1 AFK mastering setup.",
+      "refs": {
+        "missions": [
+          "M1-1-1",
+          "M8-4-4"
+        ],
+        "items": [
+          "item_moogle_power",
+          "item_safety_bit",
+          "item_ribbon"
+        ]
+      },
+      "blocks": [
+        {
+          "heading": "How Materia Leveling Actually Works",
+          "body": "Each equipped Materia (slots 1–6) has a hidden EXP counter. Whenever the DMW reels spin and land on two matching numbers in slots 1–6 (e.g., 2-2-x or x-5-5), the Materia in that numbered slot gains level-ups (or +2/+3 levels on triple matches!)."
+        },
+        {
+          "heading": "Moogle Power & M1-1-1 AFK Mastering Loop",
+          "body": "Unlock Moogle Power in M8-4-4. Equip 1–2 mastered Moogle Power Materia (to boost Cait Sith/Moogle DMW limit breaks that level all equipped Materia simultaneously) alongside the Materia you want to master, plus auto-regen/status immunity. Enter M1-1-1 (Shinra's Basic Training), leave Zack guarding or idling while weak troopers chip minimal damage, and let the DMW passively master your entire loadout."
+        }
+      ]
+    },
+    {
+      "id": "guide_fusion_pipelines",
+      "title": "Materia Fusion & Stat-Farming Pipelines",
+      "badge": "98 / 980% Trick",
+      "summary": "Chapter 4 Item Fusion Tome (M7-2-1), Potion HP% stacking, Mako/Stat Stones, Dark Matter (M6-6-3), and Libra conversion loops.",
+      "refs": {
+        "missions": [
+          "M7-2-1",
+          "M6-6-3",
+          "M10-4-3"
+        ],
+        "items": [
+          "item_potion",
+          "item_dark_matter",
+          "item_adamantite",
+          "item_mythril",
+          "item_fat_chocobo_feather",
+          "item_libra"
+        ]
+      },
+      "blocks": [
+        {
+          "heading": "Step 1: Item Fusion Tome & Potion HP% Rule",
+          "body": "Clear M7-2-1 in Chapter 4 to unlock Item Fusion. CRITICAL RULE: Consumables like Potions, Hi-Potions, Ethers, and Elixirs ONLY amplify an EXISTING matching stat bonus on one of the two Materia! Fusing two +0% Materia with 99 Potions produces +0%. Start with an HP Up (+10% HP) or any Materia that already carries HP%, then fuse cheap Shinra Shop Potions (20 Potions = +10% HP) to scale up to +999% HP."
+        },
+        {
+          "heading": "Step 2: Mako Stones, Stat Stones & Max-Tier Catalysts",
+          "body": "Mako Stones require 5 per step (max +40 / +400%); Stat Stones require 3 per step (max +66 / +660%). Max-tier items grant +1 per item up to +100 (or +10% up to +999%): Hero Drink (ATK), Adamantite (VIT), Dark Matter (MAG), Mythril (SPR), Gysahl Greens (LCK), Fat Chocobo Feather (HP%), Lunar Harp (MP%), Zeio Nut (AP%)."
+        },
+        {
+          "heading": "Step 3: The Libra 98 / 980% Conversion Loop",
+          "body": "Do NOT push an intermediate stat-stick Materia to +99 or +999%—once maxed, some recipes lock out item upgrades. Stop your cheap Libra transfer Materia at +98 (or +980% HP), then fuse it with your target skill (e.g., Costly Punch or Curaga) plus 1–2 final catalyst items (e.g., Dark Matter or Mythril) to transfer the full +100 / +999% bonus cleanly."
+        }
+      ]
+    },
+    {
+      "id": "guide_exp_sp_gil",
+      "title": "EXP / SP / Gil Routes by Level",
+      "badge": "Endgame Farms",
+      "summary": "Targeted mission loops including M6-6-3 (Dark Matter), M8-6-4 (Scissor Chitins), and M9-5-3 (Three Stars).",
+      "refs": {
+        "missions": [
+          "M6-6-3",
+          "M8-6-4",
+          "M9-5-3"
+        ],
+        "items": [
+          "item_dark_matter",
+          "item_mogs_amulet",
+          "item_jeweled_ring"
+        ]
+      },
+      "blocks": [
+        {
+          "heading": "M6-6-3: Dark Matter & Early Endgame Gil",
+          "body": "Equip Mog's Amulet (rare drops guaranteed) and Jeweled Ring (doubles drops). Run M6-6-3 and farm Lesser Worms for Dark Matter drops/steals—convert unneeded Dark Matter into MAG +100 Libra bases or sell excess."
+        },
+        {
+          "heading": "M8-6-4: Scissor Chitins (EXP & Gil)",
+          "body": "One of the fastest late-game EXP and Gil loops. Clear the mission or chain random encounters with Costly Punch / Hell Blizzaga + Status Ward."
+        },
+        {
+          "heading": "M9-5-3: Three Stars (Endgame SP & Gil)",
+          "body": "The premier SP & Gil farming mission in Reunion. Combine Mog's Amulet + Costly Punch + Mug/Steal to fund 1,000,000+ SP Materia fusions and Net Shop Shade purchases (Genji Helm)."
+        }
+      ]
+    },
+    {
+      "id": "guide_combat_meta",
+      "title": "Hard Mode Combat Meta & Break Limit Gear",
+      "badge": "Minerva Ready",
+      "summary": "Essential Hard Mode defensive layers, Status Ward + Hell-aga crowd control, Costly Punch, Aerial Drain, and Genji equipment.",
+      "refs": {
+        "missions": [
+          "M4-4-3",
+          "M7-3-6",
+          "M7-4-6",
+          "M7-6-6",
+          "M9-5-4",
+          "M9-6-4",
+          "M9-6-6"
+        ],
+        "items": [
+          "item_costly_punch",
+          "item_aerial_drain",
+          "item_status_ward",
+          "item_hell_blizzaga",
+          "item_mogs_amulet",
+          "item_adaman_bangle",
+          "item_brutal",
+          "item_genji_helm",
+          "item_genji_armor",
+          "item_genji_shield",
+          "item_genji_glove",
+          "item_divine_slayer"
+        ]
+      },
+      "blocks": [
+        {
+          "heading": "Defense First: Barrier, MBarrier, Wall & 255 VIT/SPR",
+          "body": "On Hard Mode, enemy ATK/MAG scaling punishes glass cannons. Maintain Wall (or Barrier + MBarrier) constantly, push VIT and SPR toward 255 for 10★ missions, and equip Adaman Bangle (M7-3-6) early for Break HP Limit until you obtain Genji Armor."
+        },
+        {
+          "heading": "Offense: Costly Punch & Aerial Drain",
+          "body": "Equip Brutal (M7-4-6) or Genji Glove (M9-6-4) for Break Damage Limit (99,999). Costly Punch ignores enemy DEF/VIT and scales off Zack's HP—pairing it with 99,999 HP deals capped 99,999 damage per swing. Aerial Drain gives invulnerability frames + full HP recovery."
+        },
+        {
+          "heading": "Mob Clearing: Status Ward + Hell-aga",
+          "body": "Link Status Ward with Hell Firaga / Hell Blizzaga / Hell Thundaga to grant Zack immunity to Poison, Silence, Stun, Stop, and Death simultaneously while casting AoE Death/status nukes."
+        },
+        {
+          "heading": "Genji Checklist",
+          "body": "Genji Helm: Buy from Net Shop Shade (unlocked in M9-5-4) for 1,000,000 Gil. Genji Armor: Achieve 100% DMW progress. Genji Shield: Magic Pot encounter in M7-6-6 (use Gil Toss, Costly Punch, 99,999 dmg, Octaslash). Genji Glove: Chest in M9-6-4."
+        }
+      ]
+    }
+  ]
+}

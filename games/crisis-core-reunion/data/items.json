@@ -1,0 +1,7226 @@
+[
+  {
+    "id": "item_4x_kaiser_knuckles",
+    "name": "4x Kaiser Knuckles",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (4x Kaiser Knuckles).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-4-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_adaman_bangle",
+    "name": "Adaman Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP limit becomes 99,999",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-3-6"
+    ],
+    "treasureMissions": [
+      "M9-2-4",
+      "M9-5-4"
+    ]
+  },
+  {
+    "id": "item_adamantite_adaman_bangle",
+    "name": "Adamantite Adaman Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Adamantite Adaman Bangle).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_aegis_armlet",
+    "name": "Aegis Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT & SPR +20, prevents Silence and Stun",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-1-1"
+    ],
+    "treasureMissions": [
+      "M3-3-4",
+      "M9-3-1",
+      "M9-5-2"
+    ]
+  },
+  {
+    "id": "item_amulet",
+    "name": "Amulet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "SPR +30",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 10,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "10× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-1-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_ap_mako_stone_bronze_armlet",
+    "name": "Ap Mako Stone Bronze Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Ap Mako Stone Bronze Armlet).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_assault_targe",
+    "name": "Assault Targe",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK, VIT +50, MAG, SPR -80",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_atk_mako_stone_black_belt",
+    "name": "Atk Mako Stone Black Belt",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Atk Mako Stone Black Belt).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_black_belt",
+    "name": "Black Belt",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & VIT +20, prevents Poison and Curse",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → ATK +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-1-4"
+    ],
+    "treasureMissions": [
+      "M2-5-3",
+      "M9-2-1"
+    ]
+  },
+  {
+    "id": "item_black_cowl",
+    "name": "Black Cowl",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP limit becomes 9,999",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-3-1"
+    ],
+    "treasureMissions": [
+      "M2-5-5",
+      "M9-3-3"
+    ]
+  },
+  {
+    "id": "item_blaze_armlet",
+    "name": "Blaze Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Absorbs fire; MP +30%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Online Shop Duo",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-2-3",
+      "M7-4-5"
+    ],
+    "treasureMissions": [
+      "M4-5-1",
+      "M6-5-3",
+      "M8-6-4"
+    ]
+  },
+  {
+    "id": "item_bolt_armlet",
+    "name": "Bolt Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Absorbs lightning; MP +30%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Online Shop Duo",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-4-3",
+      "M6-4-6",
+      "M7-6-1",
+      "M8-5-4"
+    ]
+  },
+  {
+    "id": "item_brigands_gloves",
+    "name": "Brigand's Gloves",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Guaranteed successful steal from an enemy",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-4-2"
+    ],
+    "treasureMissions": [
+      "M9-3-5"
+    ]
+  },
+  {
+    "id": "item_bronze_armlet",
+    "name": "Bronze Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +20%",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "10× → MP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 500,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-2-4",
+      "M6-1-5",
+      "M6-3-2",
+      "M9-1-1"
+    ]
+  },
+  {
+    "id": "item_bronze_armlet_silver_armlet",
+    "name": "Bronze Armlet Silver Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Bronze Armlet Silver Armlet).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bronze_bangle",
+    "name": "Bronze Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +10%",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "10× → HP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 500,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-1-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_brutal",
+    "name": "Brutal",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Damage limit becomes 99,999",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-4-6",
+      "M9-5-1"
+    ],
+    "treasureMissions": [
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_bulletproof_vest",
+    "name": "Bulletproof Vest",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT +30",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 10,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "10× → VIT +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-1-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_carbon_bangle",
+    "name": "Carbon Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +40%",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "3× → HP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-5-1",
+      "M8-5-6"
+    ]
+  },
+  {
+    "id": "item_champion_belt",
+    "name": "Champion Belt",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & VIT +10, prevents Poison",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → ATK +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M10-1-2"
+    ],
+    "treasureMissions": [
+      "M4-3-1",
+      "M7-2-6",
+      "M7-3-2",
+      "M7-3-4",
+      "M7-3-6",
+      "M7-5-3"
+    ]
+  },
+  {
+    "id": "item_chocobo_armlet",
+    "name": "Chocobo Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP +20%",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "10× → AP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 500,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M6-1-2"
+    ],
+    "treasureMissions": [
+      "M2-1-3"
+    ]
+  },
+  {
+    "id": "item_circlet",
+    "name": "Circlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG +10",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → MAG +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-2"
+    ]
+  },
+  {
+    "id": "item_crystal_bracelet",
+    "name": "Crystal Bracelet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG & SPR +20, prevents Poison and Curse",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-3-6"
+    ],
+    "treasureMissions": [
+      "M9-1-4",
+      "M9-2-4"
+    ]
+  },
+  {
+    "id": "item_crystal_gloves",
+    "name": "Crystal Gloves",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & MAG +20, prevents Poison and Silence",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → MAG +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-5-4",
+      "M3-2-6"
+    ],
+    "treasureMissions": [
+      "M1-4-5",
+      "M6-3-4",
+      "M9-4-2"
+    ]
+  },
+  {
+    "id": "item_crystal_orb",
+    "name": "Crystal Orb",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "SPR +80",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-3-5"
+    ],
+    "treasureMissions": [
+      "M2-4-5",
+      "M6-5-2",
+      "M6-6-3",
+      "M9-3-2",
+      "M9-3-3",
+      "M9-3-4"
+    ]
+  },
+  {
+    "id": "item_cursed_ring",
+    "name": "Cursed Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Inflicts Curse; HP, MP, AP +10%; ATK, VIT, MAG, SPR, LCK +10",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-4-4",
+      "M10-1-2"
+    ]
+  },
+  {
+    "id": "item_dark_agent",
+    "name": "Dark Agent",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Zero AP cost; HP +50%, AP +50%, ATK +100, VIT +100, MP -50%, MAG -100, SPR -100",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-4-4"
+    ]
+  },
+  {
+    "id": "item_diamond_bracelet",
+    "name": "Diamond Bracelet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG & SPR +10, prevents Poison",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-3-4"
+    ],
+    "treasureMissions": [
+      "M3-3-6",
+      "M4-4-5",
+      "M7-5-1",
+      "M8-4-6",
+      "M8-5-3",
+      "M8-6-6"
+    ]
+  },
+  {
+    "id": "item_diamond_gloves",
+    "name": "Diamond Gloves",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & MAG +10, prevents Silence",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-1-3"
+    ],
+    "treasureMissions": [
+      "M4-5-3",
+      "M8-3-2",
+      "M8-3-4",
+      "M9-1-2",
+      "M9-2-6"
+    ]
+  },
+  {
+    "id": "item_divine_slayer",
+    "name": "Divine Slayer",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Breaks max damage, HP, MP and AP limits, Adds Libra effect., ATK, VIT, MAG, SPR, LCK +50, HP, MP, AP +100%",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-6-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_docs_code",
+    "name": "Doc's Code",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Automatically uses Potion when HP falls below 25% of max",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-2-5"
+    ],
+    "treasureMissions": [
+      "M9-5-2"
+    ]
+  },
+  {
+    "id": "item_dragon_armlet",
+    "name": "Dragon Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Halves fire, ice and lightning damages; MP +40%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 20000,
+        "unlockHint": ""
+      },
+      {
+        "shopName": "Online Shop Duo",
+        "price": 20000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-2-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_earring",
+    "name": "Earring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Earring).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_earrings",
+    "name": "Earrings",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG +5",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 10,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "10× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_element_blade",
+    "name": "Element Blade",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds fire, ice, and lightning elements to attacks; MP +50%, ATK, MAG +5",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-4-1",
+      "M9-2-3"
+    ],
+    "treasureMissions": [
+      "M2-5-1",
+      "M6-6-1"
+    ]
+  },
+  {
+    "id": "item_energy_suit",
+    "name": "Energy Suit",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +100%, MAG, SPR +100, HP, AP -50%, ATK, VIT -50",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-5-5",
+      "M7-6-6"
+    ],
+    "treasureMissions": [
+      "M9-6-5"
+    ]
+  },
+  {
+    "id": "item_escort_guard",
+    "name": "Escort Guard",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Nullifies fire, ice and lightning damages; MP +50%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Online Shop Duo",
+        "price": 40000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-3-5"
+    ],
+    "treasureMissions": [
+      "M9-5-3"
+    ]
+  },
+  {
+    "id": "item_faerie_ring",
+    "name": "Faerie Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds persistent Regen; SPR +20",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Mythril Mine Trading",
+        "price": 20000,
+        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-5-5",
+      "M7-6-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_feather_cap",
+    "name": "Feather Cap",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Allows HP, MP, AP to break up to 3x of max",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-3-2"
+    ]
+  },
+  {
+    "id": "item_fire_armlet",
+    "name": "Fire Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Halves fire damage; MP +10%, VIT +5, SPR +5",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-1-2"
+    ],
+    "treasureMissions": [
+      "M8-1-6"
+    ]
+  },
+  {
+    "id": "item_fire_ring",
+    "name": "Fire Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds fire element to attacks; MP +10%, ATK, MAG +5",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → ATK +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-1-4"
+    ],
+    "treasureMissions": [
+      "M9-1-1"
+    ]
+  },
+  {
+    "id": "item_flame_armlet",
+    "name": "Flame Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Nullifies fire damage; MP +20%",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-4-4",
+      "M6-3-5",
+      "M8-6-3"
+    ]
+  },
+  {
+    "id": "item_force_bracelet",
+    "name": "Force Bracelet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG & SPR +5",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-2-4"
+    ],
+    "treasureMissions": [
+      "M7-3-1",
+      "M8-5-5"
+    ]
+  },
+  {
+    "id": "item_force_of_nature",
+    "name": "Force of Nature",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Inflicts and absorbs fire, ice, and lightning elements; MP +100%, ATK, MAG, VIT, SPR +10",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_four_slots",
+    "name": "Four Slots",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT & SPR +5",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → VIT +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-2-3"
+    ],
+    "treasureMissions": [
+      "M2-1-6",
+      "M3-3-1",
+      "M7-2-3"
+    ]
+  },
+  {
+    "id": "item_frost_armlet",
+    "name": "Frost Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Nullifies ice damage; MP +20%",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-1-5"
+    ],
+    "treasureMissions": [
+      "M1-4-1",
+      "M9-1-5"
+    ]
+  },
+  {
+    "id": "item_fury_ring",
+    "name": "Fury Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Enables counterattacks",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_genji_armor",
+    "name": "Genji Armor",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP limit becomes 99,999, Keeps Endure and Regen effects active",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_genji_glove",
+    "name": "Genji Glove",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Damage limit becomes 99,999, Keeps Critical status active",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_genji_helm",
+    "name": "Genji Helm",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Zero MP and AP costs, Adds Libra effect",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Net Shop Shade|Online Shop Shade",
+        "price": 1000000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_genji_shield",
+    "name": "Genji Shield",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Keeps Barrier and MBarrier effects active, Absorbs all elemental attacks, Prevents all status effects",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_gold_armlet",
+    "name": "Gold Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +60%, prevents Silence",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "3× → MP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-2-2",
+      "M7-5-2"
+    ],
+    "treasureMissions": [
+      "M2-5-2",
+      "M6-3-5",
+      "M6-5-2",
+      "M8-5-3"
+    ]
+  },
+  {
+    "id": "item_gold_hairpin",
+    "name": "Gold Hairpin",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP limit becomes 9,999",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-5-6",
+      "M7-3-4"
+    ],
+    "treasureMissions": [
+      "M9-2-5",
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_good_luck_charm",
+    "name": "Good-Luck Charm",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "LCK +100",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-6-1"
+    ],
+    "treasureMissions": [
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_gris_gris_bag",
+    "name": "Gris-Gris Bag",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Curse; SPR +20",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-2-5"
+    ],
+    "treasureMissions": [
+      "M7-2-2",
+      "M7-4-2"
+    ]
+  },
+  {
+    "id": "item_headband",
+    "name": "Headband",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Stun; SPR +20",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 3000,
+        "unlockHint": ""
+      },
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-1-1",
+      "M7-4-3"
+    ],
+    "treasureMissions": [
+      "M7-5-4",
+      "M9-4-2"
+    ]
+  },
+  {
+    "id": "item_heike_soul",
+    "name": "Heike Soul",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Breaks HP, MP, AP, and damage limits, Adds Instant Death, Poison, Silence, Stop, and Stun to attacks, Absorbs all elements, 100% enemy item drop rate, 100% steal rate, Stolen and dropped items are always rare, Doubles gil and drops from enemies, Adds Auto-Potion effect, Adds Libra effect, Adds Dualcast effect, Adds Smart Consumer effect (Level 1), Adds SP Master effect (Level 1), Puts Zack in Curse status",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hyper_wrist",
+    "name": "Hyper Wrist",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK +20",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → ATK +1"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-4-1",
+      "M3-4-2",
+      "M6-5-6",
+      "M8-5-1",
+      "M8-6-3"
+    ]
+  },
+  {
+    "id": "item_hypno_crown",
+    "name": "Hypno Crown",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG +20",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-3-6",
+      "M7-3-5",
+      "M9-1-1",
+      "M9-2-2"
+    ]
+  },
+  {
+    "id": "item_ice_armlet",
+    "name": "Ice Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Halves ice damage; MP +10%, VIT +5, SPR +5",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-2-5"
+    ],
+    "treasureMissions": [
+      "M7-1-4",
+      "M8-5-1"
+    ]
+  },
+  {
+    "id": "item_ice_ring",
+    "name": "Ice Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds ice element to attacks; MP +10%, ATK, MAG +5",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → ATK +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-1-6"
+    ],
+    "treasureMissions": [
+      "M7-2-6"
+    ]
+  },
+  {
+    "id": "item_impervious",
+    "name": "Impervious",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP, MP, AP +10%, MAG, SPR +120, STR, VIT -50",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_iron_bangle",
+    "name": "Iron Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +20%",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 8,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "8× → HP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-1-2"
+    ],
+    "treasureMissions": [
+      "M2-2-5",
+      "M7-3-3",
+      "M8-3-5"
+    ]
+  },
+  {
+    "id": "item_jeweled_ring",
+    "name": "Jeweled Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Doubles the number of items or Materia dropped from enemies; LCK +20",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Net Shop Shade|Online Shop Shade",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-5-4"
+    ]
+  },
+  {
+    "id": "item_kaiser_knuckles",
+    "name": "Kaiser Knuckles",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK +30",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → ATK +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-6"
+    ],
+    "treasureMissions": [
+      "M3-5-1",
+      "M9-4-3",
+      "M9-4-4",
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_laurel_crown",
+    "name": "Laurel Crown",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "No AP Cost",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-5-4"
+    ],
+    "treasureMissions": [
+      "M9-6-2"
+    ]
+  },
+  {
+    "id": "item_lightning_armlet",
+    "name": "Lightning Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Halves lightning damage; MP +10%, VIT +5, SPR +5",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-2-1",
+      "M4-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lightning_ring",
+    "name": "Lightning Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds lightning element to attacks; MP +10%, ATK, MAG +5",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → ATK +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-1-3"
+    ],
+    "treasureMissions": [
+      "M9-1-3"
+    ]
+  },
+  {
+    "id": "item_mag_mako_stone_mythril_gloves",
+    "name": "Mag Mako Stone Mythril Gloves",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Mag Mako Stone Mythril Gloves).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_magic_master",
+    "name": "Magic Master",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Zero MP cost; MP +50%, MAG +100, SPR +100, HP -50%, AP -50%, ATK -100, VIT -100",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-4-5"
+    ]
+  },
+  {
+    "id": "item_mogs_amulet",
+    "name": "Mog's Amulet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Items dropped by or stolen from enemies are always rare; LCK +5",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-6-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_moon_bracer",
+    "name": "Moon Bracer",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds persistent Barrier; SPR +10",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Mythril Mine Trading",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-4-6"
+    ],
+    "treasureMissions": [
+      "M1-5-4",
+      "M7-6-3",
+      "M9-4-3"
+    ]
+  },
+  {
+    "id": "item_mortal_shock",
+    "name": "Mortal Shock",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds Death effect to attacks; ATK +5, MAG +10",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-2-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mountain_chocobo_armlet",
+    "name": "Mountain Chocobo Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP +40%, prevents Stun",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "5× → AP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-2",
+      "M4-3-6"
+    ],
+    "treasureMissions": [
+      "M1-3-5",
+      "M6-5-4",
+      "M8-4-5",
+      "M8-6-5",
+      "M9-1-3",
+      "M9-5-1"
+    ]
+  },
+  {
+    "id": "item_muscle_belt",
+    "name": "Muscle Belt",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & VIT +5",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → ATK +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-1-4",
+      "M10-1-1"
+    ],
+    "treasureMissions": [
+      "M4-2-1",
+      "M4-2-4"
+    ]
+  },
+  {
+    "id": "item_mute_shock",
+    "name": "Mute Shock",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds Silence effect to attacks; ATK +3, MAG +8",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-1-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mystile",
+    "name": "Mystile",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT & SPR +10, prevents Silence",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → VIT +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-1-6"
+    ],
+    "treasureMissions": [
+      "M2-1-5",
+      "M7-1-6",
+      "M7-4-1",
+      "M10-2-3"
+    ]
+  },
+  {
+    "id": "item_mythril_armlet",
+    "name": "Mythril Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +100%, prevents Silence",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-4-4"
+    ],
+    "treasureMissions": [
+      "M2-5-6",
+      "M6-4-6",
+      "M7-6-4",
+      "M7-6-5",
+      "M9-4-2",
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_mythril_gloves",
+    "name": "Mythril Gloves",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK & MAG +5",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → MAG +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-1-5"
+    ],
+    "treasureMissions": [
+      "M2-3-3",
+      "M7-1-5",
+      "M7-2-2",
+      "M7-2-5"
+    ]
+  },
+  {
+    "id": "item_mythril_gloves_atk_up",
+    "name": "Mythril Gloves Atk Up",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Gloves Atk Up).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_none_iron_bangle",
+    "name": "None Iron Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (None Iron Bangle).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_paralyzing_shock",
+    "name": "Paralyzing Shock",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds Stun effect to attacks; ATK +5, MAG +10",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_pearl_necklace",
+    "name": "Pearl Necklace",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Poison and Silence; SPR +20",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 8000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-1-4"
+    ],
+    "treasureMissions": [
+      "M3-2-2"
+    ]
+  },
+  {
+    "id": "item_platinum_bangle",
+    "name": "Platinum Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +50%",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 2,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "2× → HP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-5",
+      "M4-5-2",
+      "M5-3-4"
+    ],
+    "treasureMissions": [
+      "M3-5-2",
+      "M9-4-1",
+      "M9-5-4",
+      "M9-6-5"
+    ]
+  },
+  {
+    "id": "item_potion_coffin_keys_during_nibelheim_incident",
+    "name": "Potion Coffin Keys During Nibelheim Incident",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Coffin Keys During Nibelheim Incident).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_power_suit",
+    "name": "Power Suit",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +100%, ATK, VIT +100, MP, AP -50%, MAG, SPR -50",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-5-4"
+    ],
+    "treasureMissions": [
+      "M6-6-6",
+      "M7-6-3"
+    ]
+  },
+  {
+    "id": "item_power_wrist",
+    "name": "Power Wrist",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK +10",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → ATK +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-3-3"
+    ],
+    "treasureMissions": [
+      "M6-2-6",
+      "M7-1-3"
+    ]
+  },
+  {
+    "id": "item_precious_watch",
+    "name": "Precious Watch",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Doubles the amount of gil looted from enemies; LCK +10",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Net Shop Shade|Online Shop Shade",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-4-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_protect_ring",
+    "name": "Protect Ring",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds persistent Barrier and MBarrier; SPR +20",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Mythril Mine Trading",
+        "price": 30000,
+        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-6-3",
+      "M9-3-2",
+      "M9-5-3"
+    ],
+    "treasureMissions": [
+      "M7-5-2"
+    ]
+  },
+  {
+    "id": "item_ribbon",
+    "name": "Ribbon",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents all status effects except Instant Death",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-4-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_river_chocobo_armlet",
+    "name": "River Chocobo Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP +60%, prevents Stun",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "3× → AP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-3-4"
+    ],
+    "treasureMissions": [
+      "M2-3-4",
+      "M2-4-6",
+      "M4-4-1",
+      "M8-5-4",
+      "M9-1-5",
+      "M9-2-2",
+      "M9-2-3"
+    ]
+  },
+  {
+    "id": "item_royal_crown",
+    "name": "Royal Crown",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MAG +30",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → MAG +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-5-5"
+    ],
+    "treasureMissions": [
+      "M2-4-2",
+      "M6-5-3",
+      "M6-5-4",
+      "M9-4-4",
+      "M9-5-4"
+    ]
+  },
+  {
+    "id": "item_rune_armlet",
+    "name": "Rune Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +80%, prevents Silence",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 2,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "2× → MP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-1-3"
+    ],
+    "treasureMissions": [
+      "M9-3-6",
+      "M9-4-2",
+      "M9-5-3",
+      "M9-6-5"
+    ]
+  },
+  {
+    "id": "item_rune_bangle",
+    "name": "Rune Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Rune Bangle).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-4-2"
+    ]
+  },
+  {
+    "id": "item_safety_bit",
+    "name": "Safety Bit",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Instant Death; SPR +30",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 5000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M10-1-3"
+    ]
+  },
+  {
+    "id": "item_sea_chocobo_armlet",
+    "name": "Sea Chocobo Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP +80%, prevents Stun",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 2,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "2× → AP +10%"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-3-3"
+    ],
+    "treasureMissions": [
+      "M3-4-6",
+      "M7-4-4",
+      "M8-6-2",
+      "M9-4-3"
+    ]
+  },
+  {
+    "id": "item_shining_bracer",
+    "name": "Shining Bracer",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds persistent MBarrier; SPR +10",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Mythril Mine Trading",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M6-4-5"
+    ],
+    "treasureMissions": [
+      "M7-5-6",
+      "M7-6-5",
+      "M9-3-5",
+      "M9-4-6"
+    ]
+  },
+  {
+    "id": "item_shinra_alpha",
+    "name": "Shinra Alpha",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT +40",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → VIT +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_shinra_beta",
+    "name": "Shinra Beta",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT +60",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → VIT +1"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-5-5"
+    ],
+    "treasureMissions": [
+      "M1-5-2",
+      "M2-3-6",
+      "M3-5-3",
+      "M7-3-5",
+      "M7-6-5",
+      "M8-3-4",
+      "M9-1-4"
+    ]
+  },
+  {
+    "id": "item_silver_armlet",
+    "name": "Silver Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "MP +40%, prevents Silence",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "5× → MP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-3-1",
+      "M10-2-1"
+    ],
+    "treasureMissions": [
+      "M3-3-3",
+      "M6-1-4",
+      "M6-2-4",
+      "M6-4-4",
+      "M6-5-2",
+      "M8-4-5",
+      "M8-5-6",
+      "M9-3-6",
+      "M9-5-2",
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_sky_chocobo_armlet",
+    "name": "Sky Chocobo Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "AP +100%, prevents Stun",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-5-1",
+      "M7-5-3"
+    ],
+    "treasureMissions": [
+      "M6-6-3",
+      "M7-6-2",
+      "M8-6-4",
+      "M9-4-2",
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_sniper_eye",
+    "name": "Sniper Eye",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "All attacks are critical",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Online Shop Duo",
+        "price": 50000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-4-6"
+    ],
+    "treasureMissions": [
+      "M2-5-6"
+    ]
+  },
+  {
+    "id": "item_snow_armlet",
+    "name": "Snow Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Absorbs ice; MP +30%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Online Shop Duo",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-3-2",
+      "M7-3-5"
+    ],
+    "treasureMissions": [
+      "M9-2-3",
+      "M9-2-5"
+    ]
+  },
+  {
+    "id": "item_soul_of_thamasa",
+    "name": "Soul of Thamasa",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "No MP Cost",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-4-4",
+      "M9-6-5"
+    ]
+  },
+  {
+    "id": "item_sprint_shoes",
+    "name": "Sprint Shoes",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Stop; SPR +20",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-2-5",
+      "M7-1-6"
+    ],
+    "treasureMissions": [
+      "M6-4-1",
+      "M7-1-3",
+      "M7-5-1"
+    ]
+  },
+  {
+    "id": "item_star_pendant",
+    "name": "Star Pendant",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Poison; SPR +30",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 3000,
+        "unlockHint": ""
+      },
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-1-2"
+    ],
+    "treasureMissions": [
+      "M2-2-1"
+    ]
+  },
+  {
+    "id": "item_super_ribbon",
+    "name": "Super Ribbon",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents all status effects",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-6-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_system_shock",
+    "name": "System Shock",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds Stop effect to attacks; ATK +5, MAG +10",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-3-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_talisman",
+    "name": "Talisman",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "SPR +40",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "5× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_tarot_cards",
+    "name": "Tarot Cards",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "SPR +60",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 8000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-3-1",
+      "M7-3-5",
+      "M8-6-4",
+      "M9-4-1"
+    ]
+  },
+  {
+    "id": "item_thunder_armlet",
+    "name": "Thunder Armlet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Nullifies lightning damage; MP +20%",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-2-3"
+    ],
+    "treasureMissions": [
+      "M7-4-4"
+    ]
+  },
+  {
+    "id": "item_titanium_bangle",
+    "name": "Titanium Bangle",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "HP +30%",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "5× → HP +10%"
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-3-1",
+      "M4-2-1",
+      "M6-2-6"
+    ]
+  },
+  {
+    "id": "item_twisted_headband",
+    "name": "Twisted Headband",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds persistent Endure; HP +10%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Mythril Mine Trading",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M7-4-1",
+      "M7-6-5"
+    ],
+    "treasureMissions": [
+      "M8-3-4"
+    ]
+  },
+  {
+    "id": "item_venom_shock",
+    "name": "Venom Shock",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Adds Poison effect to attacks; ATK +3, MAG +8",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → MAG +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-2-2",
+      "M5-1-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_white_cape",
+    "name": "White Cape",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Prevents Silence; SPR +20",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "3× → SPR +1"
+    },
+    "shops": [
+      {
+        "shopName": "Nibel Accessories",
+        "price": 3000,
+        "unlockHint": ""
+      },
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-2-1",
+      "M10-1-3"
+    ]
+  },
+  {
+    "id": "item_wizard_bracelet",
+    "name": "Wizard Bracelet",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Absorbs fire, ice and lightning; MP +60%",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 80000,
+        "unlockHint": ""
+      },
+      {
+        "shopName": "Online Shop Duo",
+        "price": 80000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-5-3",
+      "M7-5-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_wrist_band",
+    "name": "Wrist Band",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "ATK +5",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 10,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "10× → ATK +1"
+    },
+    "shops": [
+      {
+        "shopName": "Sec.6 Accessory Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-1-3"
+    ]
+  },
+  {
+    "id": "item_ziedrich",
+    "name": "Ziedrich",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "Halves all elemental attacks received, ATK, VIT, MAG, SPR +100",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_ether",
+    "name": "Ether",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Restores some MP.",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Only amplifies an EXISTING MP% stat."
+    },
+    "shops": [
+      {
+        "shopName": "Shinra Shop",
+        "price": 200,
+        "unlockHint": "unlocked immediately"
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-1-5",
+      "M4-1-3",
+      "M4-3-3",
+      "M6-2-1",
+      "M7-1-1",
+      "M8-1-3",
+      "M8-2-4",
+      "M8-4-3"
+    ]
+  },
+  {
+    "id": "item_exa_flare",
+    "name": "Exa Flare",
+    "category": "consumables",
+    "subCategory": "",
+    "description": "",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hi_potion",
+    "name": "Hi-Potion",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Restores a moderate amount of HP.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Only amplifies an EXISTING HP% stat."
+    },
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 500,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-2-3",
+      "M1-2-4",
+      "M1-2-5",
+      "M1-3-5",
+      "M2-2-4",
+      "M3-1-4",
+      "M3-2-2",
+      "M3-3-4",
+      "M4-1-6",
+      "M4-2-4",
+      "M4-3-5",
+      "M4-5-5",
+      "M6-1-1",
+      "M6-1-3",
+      "M6-2-1",
+      "M6-3-2",
+      "M7-1-2",
+      "M7-1-6",
+      "M7-2-1",
+      "M7-2-2",
+      "M7-2-3",
+      "M7-4-2",
+      "M7-4-5",
+      "M7-5-3",
+      "M8-1-2",
+      "M8-1-6",
+      "M8-2-3",
+      "M8-2-4",
+      "M8-3-2",
+      "M8-4-1",
+      "M8-5-1",
+      "M8-5-2",
+      "M8-6-6"
+    ]
+  },
+  {
+    "id": "item_magic_barrier",
+    "name": "Magic Barrier",
+    "category": "consumables",
+    "subCategory": "",
+    "description": "",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 4000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mega_flare",
+    "name": "Mega Flare",
+    "category": "consumables",
+    "subCategory": "",
+    "description": "",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mogs_armlet",
+    "name": "Mog's Armlet",
+    "category": "consumables",
+    "subCategory": "",
+    "description": "",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion",
+    "name": "Potion",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Restores a small amount of HP.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 20,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Only amplifies an EXISTING HP% stat on one of the two Materia."
+    },
+    "shops": [
+      {
+        "shopName": "Shinra Shop",
+        "price": 50,
+        "unlockHint": "unlocked immediately"
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-2-5",
+      "M2-1-2",
+      "M3-1-1",
+      "M4-1-3",
+      "M4-1-5",
+      "M4-1-6",
+      "M8-2-1",
+      "M8-2-2",
+      "M8-4-1",
+      "M10-1-1"
+    ]
+  },
+  {
+    "id": "item_remedy",
+    "name": "Remedy",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Heals all status ailments.",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "10 per AP+10%"
+    },
+    "shops": [
+      {
+        "shopName": "Shinra Shop",
+        "price": 200,
+        "unlockHint": "unlocked immediately"
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-2-1",
+      "M1-2-5",
+      "M2-1-1",
+      "M3-1-2",
+      "M3-1-6",
+      "M4-3-2",
+      "M7-2-1",
+      "M10-1-2"
+    ]
+  },
+  {
+    "id": "item_soma",
+    "name": "Soma",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Restores some AP.",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 10,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Only amplifies an EXISTING AP% stat."
+    },
+    "shops": [
+      {
+        "shopName": "Shinra Shop",
+        "price": 200,
+        "unlockHint": "unlocked immediately"
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-2-4",
+      "M1-2-6",
+      "M1-3-4",
+      "M2-1-2",
+      "M2-1-3",
+      "M3-1-6",
+      "M3-2-1",
+      "M6-2-4",
+      "M7-1-2",
+      "M7-2-1",
+      "M8-2-2",
+      "M8-4-1"
+    ]
+  },
+  {
+    "id": "item_x_potion",
+    "name": "X-Potion",
+    "category": "consumables",
+    "subCategory": "consumables",
+    "description": "Restores a large amount of HP.,",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Only amplifies an EXISTING HP% stat."
+    },
+    "shops": [
+      {
+        "shopName": "Sec.7 Shop",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-2-1",
+      "M1-2-2",
+      "M1-3-2",
+      "M1-4-4",
+      "M1-5-1",
+      "M2-3-5",
+      "M2-4-1",
+      "M3-1-1",
+      "M3-1-4",
+      "M3-2-3",
+      "M3-3-1",
+      "M3-4-4",
+      "M3-5-1",
+      "M4-1-1",
+      "M4-1-2",
+      "M4-1-3",
+      "M4-2-2",
+      "M4-3-1",
+      "M4-3-5",
+      "M4-3-6",
+      "M4-4-5",
+      "M4-5-3",
+      "M6-2-2",
+      "M6-5-6",
+      "M7-1-1",
+      "M7-1-4",
+      "M7-1-5",
+      "M7-1-6",
+      "M7-2-2",
+      "M7-3-1",
+      "M7-3-2",
+      "M7-3-3",
+      "M7-4-6",
+      "M7-5-1",
+      "M7-5-2",
+      "M7-6-1",
+      "M7-6-2",
+      "M8-2-4",
+      "M8-2-5",
+      "M8-3-3",
+      "M8-3-5",
+      "M8-4-6",
+      "M8-5-4",
+      "M8-5-5",
+      "M8-6-3",
+      "M8-6-6",
+      "M9-2-2",
+      "M9-2-3",
+      "M9-2-4",
+      "M9-2-5",
+      "M9-3-1",
+      "M9-3-5",
+      "M10-1-3",
+      "M10-2-2",
+      "M10-2-3"
+    ]
+  },
+  {
+    "id": "item_1",
+    "name": "1",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (1).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_10000_gil",
+    "name": "10000 Gil",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (10000 Gil).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-5-2"
+    ]
+  },
+  {
+    "id": "item_100000_gil",
+    "name": "100000 Gil",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (100000 Gil).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-2-5"
+    ]
+  },
+  {
+    "id": "item_2",
+    "name": "2",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (2).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_200000_gil",
+    "name": "200000 Gil",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (200000 Gil).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-5-6"
+    ]
+  },
+  {
+    "id": "item_5000_gil",
+    "name": "5000 Gil",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (5000 Gil).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-2-6"
+    ]
+  },
+  {
+    "id": "item_8",
+    "name": "8",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (8).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_adamantite_adamantite",
+    "name": "Adamantite Adamantite",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Adamantite Adamantite).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_backpack",
+    "name": "Backpack",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds one additional slot for accessory equipment.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-2-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bahamut_fury_materia",
+    "name": "Bahamut Fury Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Exaflare to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-5-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bahamut_materia",
+    "name": "Bahamut Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Megaflare to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-1-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_being_materia",
+    "name": "Being Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_boiler_handle",
+    "name": "Boiler Handle",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Handle to open a the boiler valve.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bone_village_commerce",
+    "name": "Bone Village Commerce",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Bone Village Commerce.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bone_village_commerce_item",
+    "name": "Bone Village Commerce item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Bone Village Commerce item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-5-3"
+    ]
+  },
+  {
+    "id": "item_cactus_thorn",
+    "name": "Cactus Thorn",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds 1000 Needles to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_cactus_thorn_item",
+    "name": "Cactus Thorn item",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Cactus Thorn item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M10-1-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_cait_siths_megaphone",
+    "name": "Cait Sith's Megaphone",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Courage Boost! to DMW, grants recovery and status defense.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-3"
+    ]
+  },
+  {
+    "id": "item_chocobo_feather",
+    "name": "Chocobo Feather",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Chocobo Stomp to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-1"
+    ]
+  },
+  {
+    "id": "item_coffin_keys",
+    "name": "Coffin Keys",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Keys to open a coffin. Awarded in a battle in Shinra Mansion's cavern. Only awarded when the player has less than four of them. Added ATK +1 in Materia fusion.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_craftsman_monthly",
+    "name": "Craftsman Monthly",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Includes a craftman's instruction for building a hand cart.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_diamond_bracelet_crystal_bracelet",
+    "name": "Diamond Bracelet Crystal Bracelet",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Diamond Bracelet Crystal Bracelet).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dresser_key",
+    "name": "Dresser Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Keys to the dresser.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_fat_chocobo_feather_x_2_rare",
+    "name": "Fat Chocobo Feather X 2 Rare",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather X 2 Rare).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_fat_chocobo_feather_x2_sector_8_materia_shop_item",
+    "name": "Fat Chocobo Feather x2, Sector 8 - Materia Shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather x2, Sector 8 - Materia Shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_fat_chocobo_feather_x3_rare",
+    "name": "Fat Chocobo Feather X3 Rare",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather X3 Rare).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_base_key",
+    "name": "Goddess Base Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_crown_key",
+    "name": "Goddess Crown Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_heart_key",
+    "name": "Goddess Heart Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_key",
+    "name": "Goddess Key",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Goddess Key).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_sacral_key",
+    "name": "Goddess Sacral Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_solar_key",
+    "name": "Goddess Solar Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_third_eye_key",
+    "name": "Goddess Third Eye Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_throat_key",
+    "name": "Goddess Throat Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the keys needed to open the Goddess Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_goddess_wing_key",
+    "name": "Goddess Wing Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Key to open the Wing Gate.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_gold_rolling_pin",
+    "name": "Gold Rolling Pin",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Convert to money and see...",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-6-4"
+    ],
+    "treasureMissions": [
+      "M4-4-1",
+      "M4-4-3",
+      "M4-4-6",
+      "M4-5-6",
+      "M8-6-1"
+    ]
+  },
+  {
+    "id": "item_gold_shard",
+    "name": "Gold Shard",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "A shining shard of gold dropped by a bomb.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_gongaga_trading",
+    "name": "Gongaga Trading",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Gongaga Trading.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_gongaga_trading_shop",
+    "name": "Gongaga Trading (Shop)",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Gongaga Trading (Shop)).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_ground_materia",
+    "name": "Ground Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_heaven_materia",
+    "name": "Heaven Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hi_potion_drop_rate_8",
+    "name": "Hi Potion Drop Rate 8",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Hi Potion Drop Rate 8).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hi_potion_phoenix_down_if_the_player_has_none_in_the_inventory",
+    "name": "Hi Potion Phoenix Down If The Player Has None In The Inventory",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Hi Potion Phoenix Down If The Player Has None In The Inventory).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_how_to_build_a_wagon",
+    "name": "How to Build a Wagon",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Do-it-yourself instructions for the beginner with easy-to-follow steps.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hp_mako_stone_atk_mako_stone",
+    "name": "Hp Mako Stone Atk Mako Stone",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Hp Mako Stone Atk Mako Stone).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hp_mako_stone_receive_silence_blade",
+    "name": "HP Mako Stone receive Silence Blade",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (HP Mako Stone receive Silence Blade).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hypno_crown_royal_crown",
+    "name": "Hypno Crown Royal Crown",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Hypno Crown Royal Crown).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_ifrit_materia",
+    "name": "Ifrit Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Hellfire to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-1-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_iron_bars_key",
+    "name": "Iron Bars Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Keys to the iron bar.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_item_fusion_tome",
+    "name": "Item Fusion Tome",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Enables item in Materia Fusion.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_jail_cell_key",
+    "name": "Jail Cell Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Keys to open the jail cell.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_junon_souvenirs",
+    "name": "Junon Souvenirs",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Junon Souvenirs.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_junon_souvenirs_shop",
+    "name": "Junon Souvenirs (Shop)",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Junon Souvenirs (Shop)).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-4-1"
+    ]
+  },
+  {
+    "id": "item_keychain",
+    "name": "Keychain",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds one additional slot for accessory equipment.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M7-2-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_laboratory_key",
+    "name": "Laboratory Key",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Keys to the laboratory.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lck_mako_stone_receive_regen",
+    "name": "LCK Mako Stone receive Regen",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (LCK Mako Stone receive Regen).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_life_materia",
+    "name": "Life Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_light_materia",
+    "name": "Light Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lunar_harp_x_2_sector_6_accessory_shop_item",
+    "name": "Lunar Harp x 2, Sector 6 - Accessory Shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Lunar Harp x 2, Sector 6 - Accessory Shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lunar_harp_x2_sector_5_materia_shop_item",
+    "name": "Lunar Harp x2, Sector 5 - Materia Shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Lunar Harp x2, Sector 5 - Materia Shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-2-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mag_mako_stone_fire",
+    "name": "Mag Mako Stone Fire",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Mag Mako Stone Fire).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_magic_pot_tricks",
+    "name": "Magic Pot Tricks",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Magic Pot Tricks to DMW, supports item procurement.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_magic_up",
+    "name": "Magic Up++",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Magic Up++).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-4-3",
+      "M8-3-4"
+    ],
+    "treasureMissions": [
+      "M9-2-1"
+    ]
+  },
+  {
+    "id": "item_moogles_amulet",
+    "name": "Moogle's Amulet",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Moogle Power to DMW, grants Materia level up.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-4"
+    ]
+  },
+  {
+    "id": "item_mythril_mine_traders",
+    "name": "Mythril Mine Traders",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Mythril Mine Traders.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mythril_mine_traders_shop",
+    "name": "Mythril Mine Traders (Shop)",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Mine Traders (Shop)).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-4-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mythril_mythril",
+    "name": "Mythril Mythril",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Mythril).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mythril_tools",
+    "name": "Mythril Tools",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Light, tough tools made of mythril, suitable even for detailed handiwork.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_net_shop_shade",
+    "name": "Net Shop Shade",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Net Shop Shade).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-5-4"
+    ]
+  },
+  {
+    "id": "item_network_shop_duo",
+    "name": "Network Shop Duo",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Network Shop Duo.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_network_shop_duo_item",
+    "name": "Network Shop Duo item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Network Shop Duo item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-3-3"
+    ]
+  },
+  {
+    "id": "item_network_shop_shade",
+    "name": "Network Shop Shade",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Network Shop Shade.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_nibel_accessories",
+    "name": "Nibel Accessories",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Nibel Accessories.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_nibel_accessories_item",
+    "name": "Nibel Accessories item",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Nibel Accessories item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-4-4"
+    ]
+  },
+  {
+    "id": "item_none_hi_potion",
+    "name": "None Hi Potion",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (None Hi Potion).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_none_hyper_wrist",
+    "name": "None Hyper Wrist",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (None Hyper Wrist).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_odin_materia",
+    "name": "Odin Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Zantetsuken to DMW, Instant Death to all enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-1-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_old_lumber",
+    "name": "Old Lumber",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "An old piece of wood that nevertheless has a charm all its own.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_phoenix_materia",
+    "name": "Phoenix Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Rebirth Flame to DMW, grants Raise status.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_poison_fire",
+    "name": "Poison Fire",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Poison Fire).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion_fire",
+    "name": "Potion Fire",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Fire).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion_force_bracelet",
+    "name": "Potion Force Bracelet",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Force Bracelet).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion_soma",
+    "name": "Potion Soma",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Soma).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_power_stone_dualcast",
+    "name": "Power Stone Dualcast",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Power Stone Dualcast).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_power_stone_magic_stone",
+    "name": "Power Stone Magic Stone",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Power Stone Magic Stone).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_premium_tires",
+    "name": "Premium Tires",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "A durable tire built for speed.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_research_dept_qmc",
+    "name": "Research Dept. QMC",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Investigative Support Room.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sabbath_materia",
+    "name": "Sabbath Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sector_5_materia_shop",
+    "name": "Sector 5 - Materia Shop",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Sector 5 materia shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sector_6_accessory_shop",
+    "name": "Sector 6 - Accessory Shop",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Sector 6 accessory shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sector_7_shop",
+    "name": "Sector 7 - Shop",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Sector 7 shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sector_7_shop_item",
+    "name": "Sector 7 - Shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 7 - Shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-4-3"
+    ]
+  },
+  {
+    "id": "item_sector_8_materia_shop",
+    "name": "Sector 8 - Materia Shop",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Sector 8 materia shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_shinra_ceramics",
+    "name": "Shinra Ceramics",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Ceramic used in most Shinra machines.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_shinra_lunch_cart_specs",
+    "name": "Shinra Lunch Cart Specs",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Design specification for the lunch cart used inside Shinra Building.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_shinra_solder",
+    "name": "Shinra Solder",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "High-grade solder that is easy to use for solid connections.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_shinra_treads",
+    "name": "Shinra Treads",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Treads used on Shinra's Gun Bull Head.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_soldier_outfit",
+    "name": "SOLDIER Outfit",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "SOLDIER 1st Class outfit found in Shinra Manor.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_star_materia",
+    "name": "Star Materia",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "One of the Goddess Materia.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_stop_sword",
+    "name": "Stop Sword",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Stop Sword).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-6-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_the_happy_turtle",
+    "name": "The Happy Turtle",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Happy Turtle's main shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_the_happy_turtle_shop_item",
+    "name": "The Happy Turtle shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (The Happy Turtle shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-3-6"
+    ]
+  },
+  {
+    "id": "item_tissue",
+    "name": "Tissue",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "A pack of low quality tissue.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_tonberrys_knife",
+    "name": "Tonberry's Knife",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Murderous Thrust to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_tonberrys_knife_item",
+    "name": "Tonberry's Knife item",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Tonberry's Knife item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M10-2-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_used_tools",
+    "name": "Used Tools",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Rusty second-hand tools that are nevertheless sufficient.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_various",
+    "name": "Various",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Various).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_walnut_wood",
+    "name": "Walnut Wood",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Resilient yet workable lumber of beautiful color and grain.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_worn_tire",
+    "name": "Worn Tire",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "A worn-out tire that still has some life in it.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_wutai_secret_shop",
+    "name": "Wutai Secret Shop",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Wutai Secret Shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_wutai_secret_shop_item",
+    "name": "Wutai Secret Shop item",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Wutai Secret Shop item).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_ap_mako_stone",
+    "name": "AP Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for AP +10%, up to a maximum of 400%.",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 400,
+      "requiresExistingStat": false,
+      "notes": "5 stones = AP +10% (caps at +400%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_atk_mako_stone",
+    "name": "ATK Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for ATK +1, up to a maximum of +40.",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 40,
+      "requiresExistingStat": false,
+      "notes": "5 stones = ATK +1 (caps at +40)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hp_mako_stone",
+    "name": "HP Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for HP +10%, up to a maximum of 400%.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 400,
+      "requiresExistingStat": false,
+      "notes": "5 stones = HP +10% (caps at +400%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lck_mako_stone",
+    "name": "LCK Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for LCK +1, up to a maximum of +40.",
+    "fusion": {
+      "stat": "LCK",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 40,
+      "requiresExistingStat": false,
+      "notes": "5 stones = LCK +1 (caps at +40)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mag_mako_stone",
+    "name": "MAG Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for MAG +1, up to a maximum of +40.",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 40,
+      "requiresExistingStat": false,
+      "notes": "5 stones = MAG +1 (caps at +40)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mp_mako_stone",
+    "name": "MP Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for MP +10%, up to a maximum of 400%.",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 5,
+      "maxBonus": 400,
+      "requiresExistingStat": false,
+      "notes": "5 stones = MP +10% (caps at +400%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_spr_mako_stone",
+    "name": "SPR Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for SPR +1, up to a maximum of +40.",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 40,
+      "requiresExistingStat": false,
+      "notes": "5 stones = SPR +1 (caps at +40)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_vit_mako_stone",
+    "name": "VIT Mako Stone",
+    "category": "mako-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use five in Materia Fusion for VIT +1, up to a maximum of +40.",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 5,
+      "maxBonus": 40,
+      "requiresExistingStat": false,
+      "notes": "5 stones = VIT +1 (caps at +40)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_1000_needles",
+    "name": "1000 Needles",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Cactuar appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-4-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_aerial_drain",
+    "name": "Aerial Drain",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump attack that absorbs HP from enemy; cannot be attacked while in air.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 18000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_air_strike",
+    "name": "Air Strike",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Tseng appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_ap_up",
+    "name": "AP Up",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases AP by 10% per level up to +50%.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.8 Materia Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-2-3",
+      "M3-1-3",
+      "M4-2-4"
+    ],
+    "treasureMissions": [
+      "M4-2-2",
+      "M4-5-2",
+      "M8-3-5",
+      "M10-1-2"
+    ]
+  },
+  {
+    "id": "item_apocalypse",
+    "name": "Apocalypse",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Genesis appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Net Shop Shade|Online Shop Shade",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_assault_twister",
+    "name": "Assault Twister",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Spin attack that hits nearby enemies twice.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-3-1",
+      "M2-2-1",
+      "M2-5-1",
+      "M3-3-5",
+      "M8-5-1"
+    ],
+    "treasureMissions": [
+      "M3-2-2",
+      "M7-6-6",
+      "M9-1-3",
+      "M9-4-1",
+      "M9-4-3"
+    ]
+  },
+  {
+    "id": "item_atk_mako_stone_receive_gravity",
+    "name": "ATK Mako Stone receive Gravity",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (ATK Mako Stone receive Gravity).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_atk_up",
+    "name": "ATK UP",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases attack by approximately one or two points per level up to +9.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-2-3",
+      "M3-3-1",
+      "M6-1-3",
+      "M8-5-5"
+    ]
+  },
+  {
+    "id": "item_barrier",
+    "name": "Barrier",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Lowers physical damage. (Bestows Barrier status)",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 4000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-4-2"
+    ],
+    "treasureMissions": [
+      "M4-1-5",
+      "M9-1-3",
+      "M9-1-5"
+    ]
+  },
+  {
+    "id": "item_blast_wave",
+    "name": "Blast Wave",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that can eject enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-3-6"
+    ],
+    "treasureMissions": [
+      "M7-5-5",
+      "M7-6-4"
+    ]
+  },
+  {
+    "id": "item_blizzaga",
+    "name": "Blizzaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a large block of ice on enemy; may inflict Stun.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-3-3",
+      "M8-5-2"
+    ]
+  },
+  {
+    "id": "item_blizzaga_blade",
+    "name": "Blizzaga Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Ice-elemental sword attack.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-5-6",
+      "M4-4-2",
+      "M6-3-4"
+    ]
+  },
+  {
+    "id": "item_blizzara",
+    "name": "Blizzara",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a medium block of ice on an enemy; may inflict Stun.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-1-5",
+      "M7-1-6",
+      "M9-3-4"
+    ]
+  },
+  {
+    "id": "item_blizzara_blade",
+    "name": "Blizzara Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Ice-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_blizzard",
+    "name": "Blizzard",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drop a small block of ice on enemy; may inflict Stun.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 1000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-1",
+      "M10-2-1"
+    ]
+  },
+  {
+    "id": "item_blizzard_blade",
+    "name": "Blizzard Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Ice-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_chocobo_stomp",
+    "name": "Chocobo Stomp",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Chocobo appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_costly_punch",
+    "name": "Costly Punch",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Consume 1.5625% of Zack's HP to inflict non-physical, non-magical damage to enemy, ignoring defense. Does 0 damage if HP is higher than 1.11x normal amount.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-5-4"
+    ]
+  },
+  {
+    "id": "item_courage_boost",
+    "name": "Courage Boost!",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Cait Sith appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_cura",
+    "name": "Cura",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Restores medium amount of HP.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-3-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_curaga",
+    "name": "Curaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Restores large amount of HP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-2-1"
+    ],
+    "treasureMissions": [
+      "M1-3-6",
+      "M6-6-5",
+      "M8-5-1",
+      "M9-4-5",
+      "M9-5-6",
+      "M9-6-1"
+    ]
+  },
+  {
+    "id": "item_cure",
+    "name": "Cure",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Restores small amount of HP.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 1000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_blizzaga",
+    "name": "Dark Blizzaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a large block of ice on an enemy that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_blizzara",
+    "name": "Dark Blizzara",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a medium block of ice on an enemy that inflicts Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_blizzard",
+    "name": "Dark Blizzard",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a small block of ice on an enemy that inflicts Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_fira",
+    "name": "Dark Fira",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots two fireballs at enemies that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_firaga",
+    "name": "Dark Firaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots three fireballs at enemies that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_fire",
+    "name": "Dark Fire",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots a fireball at an enemy that inflicts Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_thundaga",
+    "name": "Dark Thundaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_thundara",
+    "name": "Dark Thundara",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dark_thunder",
+    "name": "Dark Thunder",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoot bolts of lightning at enemies that inflict Poison and Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_darkness",
+    "name": "Darkness",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Consumes 12.5% of Zack's HP to attack all nearby enemies, ignoring defense.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-4-2",
+      "M8-4-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dash",
+    "name": "Dash",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Hold to run twice as fast instead of block. Consumes 0.3 AP per second.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 5000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-1-3",
+      "M8-3-5",
+      "M8-6-2"
+    ]
+  },
+  {
+    "id": "item_death",
+    "name": "Death",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Inflicts Death on an enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-3-5"
+    ],
+    "treasureMissions": [
+      "M7-4-1"
+    ]
+  },
+  {
+    "id": "item_death_blade",
+    "name": "Death Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that inflicts Death on enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-4-5",
+      "M8-5-2"
+    ]
+  },
+  {
+    "id": "item_death_jump",
+    "name": "Death Jump",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump attack that inflicts Death.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-4-2",
+      "M8-6-2"
+    ],
+    "treasureMissions": [
+      "M9-2-5"
+    ]
+  },
+  {
+    "id": "item_death_twister",
+    "name": "Death Twister",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Spin attack that hits nearby enemies twice and inflicts Death.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-3-2"
+    ],
+    "treasureMissions": [
+      "M7-6-1",
+      "M9-2-5"
+    ]
+  },
+  {
+    "id": "item_dispel",
+    "name": "Dispel",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Removes beneficial effects from enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 5000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-3-1"
+    ]
+  },
+  {
+    "id": "item_dispel_blade",
+    "name": "Dispel Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that inflicts Dispel on enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-5-3"
+    ],
+    "treasureMissions": [
+      "M6-5-4",
+      "M8-6-6"
+    ]
+  },
+  {
+    "id": "item_drain",
+    "name": "Drain",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Absorbs HP from enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.8 Materia Shop",
+        "price": 5000,
+        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-1-4"
+    ],
+    "treasureMissions": [
+      "M2-1-6"
+    ]
+  },
+  {
+    "id": "item_drain_blade",
+    "name": "Drain Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that absorbs enemy HP.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-3-4"
+    ],
+    "treasureMissions": [
+      "M4-2-6"
+    ]
+  },
+  {
+    "id": "item_drainga",
+    "name": "Drainga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Absorbs even more HP from enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Gongaga Trading",
+        "price": 18000,
+        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-4-2",
+      "M6-5-5"
+    ],
+    "treasureMissions": [
+      "M2-3-1",
+      "M2-3-4",
+      "M8-5-3",
+      "M9-1-3",
+      "M9-1-5",
+      "M9-4-6"
+    ]
+  },
+  {
+    "id": "item_drainra",
+    "name": "Drainra",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Absorbs more HP from enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-1-6"
+    ],
+    "treasureMissions": [
+      "M8-4-4"
+    ]
+  },
+  {
+    "id": "item_drainra_drainga",
+    "name": "Drainra Drainga",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Drainra Drainga).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_dualcast",
+    "name": "Dualcast",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Uses Magic Materia twice in succession. Not compatible with Flare or Ultima.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Net Shop Shade|Online Shop Shade",
+        "price": 30000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-4-1"
+    ]
+  },
+  {
+    "id": "item_electrocute",
+    "name": "Electrocute",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Summon several bolts of lightning to strike down around Zack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-4-1",
+      "M8-6-3"
+    ],
+    "treasureMissions": [
+      "M2-3-6",
+      "M4-5-5",
+      "M6-6-5",
+      "M7-6-3",
+      "M9-4-6",
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_elemental_strike",
+    "name": "Elemental Strike",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Imbues physical attacks with elemental attributes of other equipped Materia.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 40000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-3-3"
+    ],
+    "treasureMissions": [
+      "M3-4-3",
+      "M9-5-3"
+    ]
+  },
+  {
+    "id": "item_elemental_ward",
+    "name": "Elemental Ward",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Defends against elemental attributes of other equipped Materia based on level: Level 1 - 25% resistance, Level 2 - 50% resistance, Level 3 - 100% resistance, Level 4 - 50% absorption, Level 5 - 100% absorption.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 40000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-2-4"
+    ],
+    "treasureMissions": [
+      "M9-5-2"
+    ]
+  },
+  {
+    "id": "item_energy",
+    "name": "Energy",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots a ball of light that can hit the same enemy multiple times.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-5-3",
+      "M2-4-4",
+      "M2-4-6",
+      "M9-2-4"
+    ],
+    "treasureMissions": [
+      "M6-5-1",
+      "M7-6-2",
+      "M9-3-3",
+      "M9-6-2",
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_esuna",
+    "name": "Esuna",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Removes negative status effects.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-1-6",
+      "M8-2-6"
+    ]
+  },
+  {
+    "id": "item_exaflare",
+    "name": "Exaflare",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Bahamut Fury appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-6-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_exploder_blade",
+    "name": "Exploder Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that creates a shockwave on impact.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-4",
+      "M8-5-4"
+    ],
+    "treasureMissions": [
+      "M2-4-3",
+      "M3-5-4"
+    ]
+  },
+  {
+    "id": "item_fira",
+    "name": "Fira",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoot two fireballs at enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-1-5",
+      "M6-2-4",
+      "M8-2-6"
+    ]
+  },
+  {
+    "id": "item_fira_blade",
+    "name": "Fira Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Fire-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_firaga",
+    "name": "Firaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots three fireballs at enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-2-2"
+    ],
+    "treasureMissions": [
+      "M8-4-5"
+    ]
+  },
+  {
+    "id": "item_firaga_blade",
+    "name": "Firaga Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Fire-elemental sword attack.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-3-2"
+    ],
+    "treasureMissions": [
+      "M6-6-5",
+      "M8-5-6"
+    ]
+  },
+  {
+    "id": "item_fire",
+    "name": "Fire",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots a fireball at an enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 1000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M5-1-1"
+    ],
+    "treasureMissions": [
+      "M9-3-4"
+    ]
+  },
+  {
+    "id": "item_fire_blade",
+    "name": "Fire Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Fire-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-2-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_flare",
+    "name": "Flare",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Create a flash of light to damage all enemies. Cannot be Dualcast.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-4-4",
+      "M5-4-3",
+      "M8-6-4",
+      "M9-3-6"
+    ],
+    "treasureMissions": [
+      "M2-4-2",
+      "M3-5-3",
+      "M9-4-4",
+      "M9-4-5",
+      "M9-4-6",
+      "M9-5-1",
+      "M9-5-2",
+      "M9-6-1",
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_full_cure",
+    "name": "Full Cure",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Fully restores HP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_gil_toss",
+    "name": "Gil Toss",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Throws money to damage enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-4-4"
+    ],
+    "treasureMissions": [
+      "M7-4-6",
+      "M8-6-3",
+      "M9-5-3"
+    ]
+  },
+  {
+    "id": "item_goblin_punch",
+    "name": "Goblin Punch",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Inflicts non-physical, non-magical damage to enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-5-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_graviga",
+    "name": "Graviga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Create a large orb of darkness that descends to the ground, lowering the HP of nearby enemies by 50%.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 15000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-3-5"
+    ],
+    "treasureMissions": [
+      "M6-6-2",
+      "M7-3-6",
+      "M7-6-6",
+      "M8-5-6",
+      "M9-1-1",
+      "M9-2-1"
+    ]
+  },
+  {
+    "id": "item_gravity",
+    "name": "Gravity",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Create an orb of darkness that descends to the ground, lowering the HP of nearby enemies by 25%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-3-3"
+    ],
+    "treasureMissions": [
+      "M4-2-5",
+      "M8-3-2",
+      "M8-3-4",
+      "M9-4-2"
+    ]
+  },
+  {
+    "id": "item_hammer_punch",
+    "name": "Hammer Punch",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Inflicts physical damage to enemy, ignoring defense. Deals higher damage the closer Zack is to max AP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-3-1"
+    ],
+    "treasureMissions": [
+      "M3-5-1"
+    ]
+  },
+  {
+    "id": "item_healing_wave",
+    "name": "Healing Wave",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Aerith appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_hell_blizzaga",
+    "name": "Hell Blizzaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Drops a large block of ice on an enemy that inflicts Poison, Silence, Stop, Stun, and Death.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 15000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-3-1",
+      "M4-4-2",
+      "M6-4-2"
+    ]
+  },
+  {
+    "id": "item_hell_firaga",
+    "name": "Hell Firaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots three fireballs at enemies that inflict Poison, Silence, Stop, and Death.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 15000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-5-5"
+    ],
+    "treasureMissions": [
+      "M8-5-6",
+      "M9-2-1"
+    ]
+  },
+  {
+    "id": "item_hell_thundaga",
+    "name": "Hell Thundaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies that inflict Poison, Silence, Stop, and Death.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 15000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-5-2",
+      "M8-3-6"
+    ],
+    "treasureMissions": [
+      "M3-3-6",
+      "M7-4-4"
+    ]
+  },
+  {
+    "id": "item_hellfire",
+    "name": "Hellfire",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Ifrit appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-5-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_high_jump",
+    "name": "High Jump",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump into air, becoming invincible, and slam down to attack nearby enemies. Effective to groups and airborne enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-4-4",
+      "M6-5-6",
+      "M9-1-4"
+    ],
+    "treasureMissions": [
+      "M2-5-5",
+      "M6-6-5",
+      "M9-4-1"
+    ]
+  },
+  {
+    "id": "item_hp_up",
+    "name": "HP Up",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases HP by 10% per level up to +50%.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.8 Materia Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-1-5",
+      "M8-1-3",
+      "M8-4-3"
+    ],
+    "treasureMissions": [
+      "M2-3-2",
+      "M6-2-3",
+      "M8-4-2"
+    ]
+  },
+  {
+    "id": "item_iron_fist",
+    "name": "Iron Fist",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Inflicts physical damage to enemy, ignoring defense.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-3-3",
+      "M9-2-5"
+    ],
+    "treasureMissions": [
+      "M7-5-1"
+    ]
+  },
+  {
+    "id": "item_iron_punch",
+    "name": "Iron Punch",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Iron Punch).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-5-2"
+    ]
+  },
+  {
+    "id": "item_item_mugger",
+    "name": "Item Mugger",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Magic Pot appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_jump",
+    "name": "Jump",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump into air, becoming invincible, and slam down to attack nearby enemies. Effective to groups and airborne enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M6-1-3"
+    ],
+    "treasureMissions": [
+      "M3-2-2",
+      "M8-4-2"
+    ]
+  },
+  {
+    "id": "item_libra",
+    "name": "Libra",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Shows the selected enemy's HP, MP and status.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 1000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M4-1-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_lucky_stars",
+    "name": "Lucky Stars",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Cissnei appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mag_mako_stone_receive_silence_materia",
+    "name": "MAG Mako Stone receive Silence Materia",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (MAG Mako Stone receive Silence Materia).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mag_up",
+    "name": "MAG UP",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases defense by approximately one or two points per level up to +9.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-4-5"
+    ],
+    "treasureMissions": [
+      "M2-2-4",
+      "M6-3-2",
+      "M7-2-2",
+      "M8-2-4"
+    ]
+  },
+  {
+    "id": "item_magical_punch",
+    "name": "Magical Punch",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Inflicts physical damage to enemy, ignoring defense. Deals higher damage the closer Zack is to max MP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-5-6",
+      "M5-4-2",
+      "M9-3-4"
+    ],
+    "treasureMissions": [
+      "M1-5-4",
+      "M6-5-5",
+      "M7-5-5"
+    ]
+  },
+  {
+    "id": "item_mbarrier",
+    "name": "MBarrier",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Lowers magic damage taken. (Bestows MBarrier status)",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-4-1"
+    ],
+    "treasureMissions": [
+      "M3-3-3",
+      "M9-1-2",
+      "M9-1-5"
+    ]
+  },
+  {
+    "id": "item_megaflare",
+    "name": "Megaflare",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Bahamut appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-5-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_meteor_shots",
+    "name": "Meteor Shots",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Cloud appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_moogle_power",
+    "name": "Moogle Power",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Moogle appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mp_up",
+    "name": "MP Up",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases MP by 10% per level up to +50%.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.8 Materia Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M3-2-2"
+    ],
+    "treasureMissions": [
+      "M1-4-3",
+      "M6-2-6",
+      "M7-4-2"
+    ]
+  },
+  {
+    "id": "item_mug",
+    "name": "Mug",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Steals an item from an enemy and inflicts damage.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-1-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_murderous_thrust",
+    "name": "Murderous Thrust",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Tonberry appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Junon Souvenirs",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-4-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_octaslash",
+    "name": "Octaslash",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Sephiroth appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_osmoga",
+    "name": "Osmoga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Absorbs more MP from enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-3-3"
+    ],
+    "treasureMissions": [
+      "M9-1-5",
+      "M9-5-4",
+      "M9-6-1"
+    ]
+  },
+  {
+    "id": "item_osmose",
+    "name": "Osmose",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Absorbs MP from enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.8 Materia Shop",
+        "price": 4000,
+        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-3"
+    ]
+  },
+  {
+    "id": "item_osmose_blade",
+    "name": "Osmose Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that absorbs enemy MP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_poison",
+    "name": "Poison",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Inflicts Poison status on an enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-3: Mako Excavation Site\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-1-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_poison_aerial",
+    "name": "Poison Aerial",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump attack that inflicts Poison.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-3-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_poison_blade",
+    "name": "Poison Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that inflicts Poison.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-1-6"
+    ],
+    "treasureMissions": [
+      "M7-4-5",
+      "M8-6-6",
+      "M9-3-2"
+    ]
+  },
+  {
+    "id": "item_poison_twister",
+    "name": "Poison Twister",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Spin attack that hits nearby enemies twice and inflicts Poison.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-3-1",
+      "M9-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion_blizzaga_blade",
+    "name": "Potion Blizzaga Blade",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Blizzaga Blade).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_potion_thunder_blade",
+    "name": "Potion Thunder Blade",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Thunder Blade).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_power_attack",
+    "name": "Power Attack",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that inflicts Stun.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-4-3",
+      "M8-6-1"
+    ]
+  },
+  {
+    "id": "item_power_drain",
+    "name": "Power Drain",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that absorbs enemy HP.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 14000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_power_osmose",
+    "name": "Power Osmose",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that absorbs enemy MP.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_quake",
+    "name": "Quake",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Creates earthquake around Zack to damage all enemies, does not affect aerial enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 18000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M2-2-6",
+      "M5-4-5"
+    ],
+    "treasureMissions": [
+      "M8-6-4",
+      "M9-1-5"
+    ]
+  },
+  {
+    "id": "item_rebirth_flame",
+    "name": "Rebirth Flame",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Phoenix appear on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-6-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_regen",
+    "name": "Regen",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Restores small amounts of HP over time. (Bestows Regen status.)",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 5000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-1-5"
+    ],
+    "treasureMissions": [
+      "M4-5-2"
+    ]
+  },
+  {
+    "id": "item_royal_crown_darkness",
+    "name": "Royal Crown Darkness",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Royal Crown Darkness).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_rush_assault",
+    "name": "Rush Assault",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Angeal appearing on DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_silence",
+    "name": "Silence",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Inflicts Silence status on an enemy.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Sec.5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "unlocked by completing \"M6-2-3: Mako Excavation Site\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-2-2"
+    ],
+    "treasureMissions": [
+      "M6-2-2"
+    ]
+  },
+  {
+    "id": "item_silence_aerial",
+    "name": "Silence Aerial",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Jump attack that inflicts Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-3-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_silence_blade",
+    "name": "Silence Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that inflicts Silence.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-5-2",
+      "M8-6-2"
+    ]
+  },
+  {
+    "id": "item_smart_consumer",
+    "name": "Smart Consumer",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases effectiveness of recovery items. Begins at 2x and increases by .5x each level up to 4.5x.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-6-5"
+    ],
+    "treasureMissions": [
+      "M6-5-2"
+    ]
+  },
+  {
+    "id": "item_sp_barrier",
+    "name": "SP Barrier",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Expends SP to decrease damage done by enemy attacks, damage decreases 20% per Materia level, effects stack with other equipped materia of same type.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-5-2"
+    ],
+    "treasureMissions": [
+      "M9-4-3"
+    ]
+  },
+  {
+    "id": "item_sp_master",
+    "name": "SP Master",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Expends SP to increase power of Zack's attacks and decrease damage done by enemy attacks, damage increase/decreases 20% per Materia level, effects stack with other equipped materia of same type.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-6-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sp_turbo",
+    "name": "SP Turbo",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Expends SP to increase power of attacks, damage raises 20% per Materia level, effects stack with other equipped Materia of same type.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M9-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_sp_turbo_attack",
+    "name": "SP Turbo Attack",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Expends SP to increase power of physical attacks, damage raises 20% per Materia level, effects stack with other equipped Materia of same type.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-5-4",
+      "M3-5-6"
+    ],
+    "treasureMissions": [
+      "M9-4-5"
+    ]
+  },
+  {
+    "id": "item_sp_turbo_magic",
+    "name": "SP Turbo Magic",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Expends SP to increase power of magic attacks, damage raises 20% per Materia level, effects stack with other equipped Materia of same type.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-4-6"
+    ],
+    "treasureMissions": [
+      "M6-5-6"
+    ]
+  },
+  {
+    "id": "item_spr_mako_stone_give_to_researcher_and_receive_esuna_materia",
+    "name": "SPR Mako Stone give to researcher and receive Esuna Materia",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (SPR Mako Stone give to researcher and receive Esuna Materia).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_spr_up",
+    "name": "SPR UP",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases spirit by approximately one or two points per level up to +9.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-1-5",
+      "M2-2-5",
+      "M8-5-3"
+    ],
+    "treasureMissions": [
+      "M1-4-3",
+      "M2-3-4",
+      "M4-2-4",
+      "M4-4-6"
+    ]
+  },
+  {
+    "id": "item_status_strike",
+    "name": "Status Strike",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Imbues physical attacks with status effects of other equipped Materia.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 40000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-3-5"
+    ],
+    "treasureMissions": [
+      "M8-6-1",
+      "M9-6-1"
+    ]
+  },
+  {
+    "id": "item_status_ward",
+    "name": "Status Ward",
+    "category": "materia",
+    "subCategory": "Support",
+    "description": "Defends against status effects of other equipped Materia.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 40000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-3-2"
+    ],
+    "treasureMissions": [
+      "M6-6-2",
+      "M9-3-5"
+    ]
+  },
+  {
+    "id": "item_steal",
+    "name": "Steal",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Steals an item from an enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-4-1",
+      "M8-3-6"
+    ]
+  },
+  {
+    "id": "item_stop",
+    "name": "Stop",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Inflicts Stop status on an enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-2-6",
+      "M8-4-3"
+    ]
+  },
+  {
+    "id": "item_stop_blade",
+    "name": "Stop Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Physical attack that inflicts Stop on enemy.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-3-1"
+    ],
+    "treasureMissions": [
+      "M4-4-3",
+      "M9-1-6"
+    ]
+  },
+  {
+    "id": "item_stop_twister",
+    "name": "Stop Twister",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Spin attack that hits nearby enemies twice and inflicts Stop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-4-5"
+    ],
+    "treasureMissions": [
+      "M4-5-4",
+      "M4-5-6"
+    ]
+  },
+  {
+    "id": "item_thundaga",
+    "name": "Thundaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC+",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M1-3-3"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_thundaga_blade",
+    "name": "Thundaga Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Lightning-elemental sword attack.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Wutai Secret Shop",
+        "price": 10000,
+        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-1-2"
+    ],
+    "treasureMissions": [
+      "M2-3-3",
+      "M2-5-5"
+    ]
+  },
+  {
+    "id": "item_thundara",
+    "name": "Thundara",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 3000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-2-3",
+      "M7-2-3"
+    ]
+  },
+  {
+    "id": "item_thundara_blade",
+    "name": "Thundara Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Lightning-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-2-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_thunder",
+    "name": "Thunder",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning at enemies.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Research Dept. QMC",
+        "price": 1000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M8-1-2"
+    ],
+    "treasureMissions": [
+      "M3-1-6",
+      "M4-1-4",
+      "M4-3-3"
+    ]
+  },
+  {
+    "id": "item_thunder_blade",
+    "name": "Thunder Blade",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Lightning-elemental sword attack.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_tri_fire",
+    "name": "Tri-Fire",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots three fireballs at enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-6-1"
+    ],
+    "treasureMissions": [
+      "M3-4-3",
+      "M6-4-3",
+      "M7-4-6",
+      "M9-5-5"
+    ]
+  },
+  {
+    "id": "item_tri_thundaga",
+    "name": "Tri-Thundaga",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Shoots bolts of lightning outward in three arcs.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-5-1"
+    ],
+    "treasureMissions": [
+      "M2-3-6",
+      "M4-4-4",
+      "M9-5-3"
+    ]
+  },
+  {
+    "id": "item_ultima",
+    "name": "Ultima",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Create a flash of light to damage all enemies. Has a long casting time. Cannot be Dualcast.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-5-4"
+    ],
+    "treasureMissions": [
+      "M2-5-2",
+      "M6-6-3",
+      "M6-6-5",
+      "M9-6-2",
+      "M9-6-5"
+    ]
+  },
+  {
+    "id": "item_vit_mako_stone_give_to_researcher_and_receive_poison_materia",
+    "name": "VIT Mako Stone give to researcher and receive Poison Materia",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (VIT Mako Stone give to researcher and receive Poison Materia).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-2"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_vit_up",
+    "name": "VIT UP",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases defense by approximately one or two points per level up to +9.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-1-4",
+      "M8-5-2"
+    ],
+    "treasureMissions": [
+      "M1-4-1",
+      "M8-3-6",
+      "M8-4-6"
+    ]
+  },
+  {
+    "id": "item_vital_slash",
+    "name": "Vital Slash",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Strong physical attack that does critical damage.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-4-4"
+    ],
+    "treasureMissions": [
+      "M3-4-4",
+      "M6-6-1",
+      "M7-4-5"
+    ]
+  },
+  {
+    "id": "item_wall",
+    "name": "Wall",
+    "category": "materia",
+    "subCategory": "Magic",
+    "description": "Lowers physical and magic damage. (Bestows Barrier & MBarrier)",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-5-3",
+      "M5-2-4",
+      "M9-1-5"
+    ],
+    "treasureMissions": [
+      "M1-4-5",
+      "M1-4-6",
+      "M4-5-1",
+      "M8-6-3",
+      "M9-4-2",
+      "M9-4-4",
+      "M9-5-1",
+      "M9-6-1"
+    ]
+  },
+  {
+    "id": "item_zantetsuken",
+    "name": "Zantetsuken",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases chance of Odin appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
+    "fusion": null,
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": ""
+      }
+    ],
+    "clearRewardMissions": [
+      "M9-6-1"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_adamantite",
+    "name": "Adamantite",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for VIT +1, up to a maximum of +100.",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "1 Adamantite = VIT +1 (caps at +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-5-6",
+      "M3-4-5",
+      "M4-4-3",
+      "M6-3-2",
+      "M6-6-3",
+      "M10-4-3"
+    ],
+    "treasureMissions": [
+      "M3-3-5",
+      "M4-5-3",
+      "M5-1-6",
+      "M6-2-2",
+      "M6-3-5",
+      "M6-4-6",
+      "M6-5-4",
+      "M6-6-5",
+      "M6-6-6",
+      "M7-6-1",
+      "M9-1-4",
+      "M9-3-1",
+      "M9-3-3",
+      "M9-4-5",
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_dark_matter",
+    "name": "Dark Matter",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for MAG +1, up to a maximum of +100.",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "1 Dark Matter = MAG +1 (caps at +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M5-3-6",
+      "M6-1-4",
+      "M6-3-3",
+      "M6-6-5",
+      "M10-3-1"
+    ],
+    "treasureMissions": [
+      "M2-5-6",
+      "M3-4-2",
+      "M3-4-5",
+      "M3-5-4",
+      "M3-5-6",
+      "M4-4-3",
+      "M6-1-6",
+      "M6-4-6",
+      "M6-6-1",
+      "M6-6-3",
+      "M8-3-6",
+      "M9-1-6",
+      "M9-4-2",
+      "M9-5-3",
+      "M9-5-4",
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_elixir",
+    "name": "Elixir",
+    "category": "max-tier-fusion",
+    "subCategory": "consumables",
+    "description": "Fully restores HP, MP, and AP, and heals all status ailments.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 1,
+      "maxBonus": 999,
+      "requiresExistingStat": true,
+      "notes": "Amplifies existing HP% (+10% per Elixir)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-1-1",
+      "M4-1-1",
+      "M6-2-4",
+      "M9-1-6"
+    ],
+    "treasureMissions": [
+      "M1-2-3",
+      "M1-2-6",
+      "M1-3-2",
+      "M1-5-1",
+      "M2-3-2",
+      "M2-4-2",
+      "M2-4-4",
+      "M2-4-6",
+      "M3-2-3",
+      "M3-2-6",
+      "M3-3-2",
+      "M3-4-1",
+      "M3-4-6",
+      "M3-5-4",
+      "M4-1-5",
+      "M4-2-5",
+      "M4-3-3",
+      "M4-3-6",
+      "M4-4-4",
+      "M4-5-4",
+      "M5-1-6",
+      "M6-1-2",
+      "M6-2-3",
+      "M6-2-6",
+      "M7-1-2",
+      "M7-1-5",
+      "M7-2-2",
+      "M7-2-3",
+      "M7-2-6",
+      "M7-3-2",
+      "M7-5-5",
+      "M7-5-6",
+      "M7-6-1",
+      "M7-6-2",
+      "M7-6-4",
+      "M7-6-5",
+      "M8-3-3",
+      "M8-4-4",
+      "M8-4-5",
+      "M8-5-5",
+      "M8-6-1",
+      "M8-6-5",
+      "M9-2-2",
+      "M9-3-2",
+      "M9-3-6",
+      "M9-5-5",
+      "M9-6-1",
+      "M9-6-2",
+      "M9-6-3",
+      "M10-1-1"
+    ]
+  },
+  {
+    "id": "item_fat_chocobo_feather",
+    "name": "Fat Chocobo Feather",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for HP +10%, up to a maximum of 999%.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 1,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "1 Feather = HP +10% (caps at +999%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-2-6",
+      "M1-4-1",
+      "M1-4-6",
+      "M2-4-2",
+      "M3-5-5",
+      "M5-2-5",
+      "M5-4-4",
+      "M6-3-1",
+      "M6-3-4",
+      "M6-4-3",
+      "M6-4-6",
+      "M6-5-2",
+      "M6-6-1",
+      "M9-4-2"
+    ],
+    "treasureMissions": [
+      "M2-4-4",
+      "M2-4-5",
+      "M2-5-1",
+      "M2-5-6",
+      "M6-3-5",
+      "M6-5-2",
+      "M6-5-5",
+      "M6-6-3",
+      "M7-6-1",
+      "M7-6-2",
+      "M7-6-3",
+      "M7-6-4",
+      "M7-6-6",
+      "M8-6-3",
+      "M9-1-2",
+      "M9-2-3",
+      "M9-2-6",
+      "M9-3-2",
+      "M9-3-3",
+      "M9-3-4",
+      "M9-3-5",
+      "M9-4-5",
+      "M9-5-1",
+      "M9-5-5",
+      "M9-6-2",
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_gysahl_greens",
+    "name": "Gysahl Greens",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for LCK +1, up to a maximum of +100.",
+    "fusion": {
+      "stat": "LCK",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "1 Gysahl Greens = LCK +1 (caps at +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-4-1",
+      "M10-2-2",
+      "M10-3-2"
+    ],
+    "treasureMissions": [
+      "M2-5-5",
+      "M2-5-6",
+      "M3-3-4",
+      "M6-5-2",
+      "M6-5-5",
+      "M6-5-6",
+      "M6-6-6",
+      "M9-1-2",
+      "M9-2-1",
+      "M9-2-4",
+      "M9-2-6",
+      "M9-3-4",
+      "M9-4-1",
+      "M9-5-1",
+      "M9-6-3",
+      "M9-6-4"
+    ]
+  },
+  {
+    "id": "item_hero_drink",
+    "name": "Hero Drink",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for ATK +1, up to a maximum of +100.",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "1 Hero Drink = ATK +1 (caps at +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-1-2",
+      "M1-1-3",
+      "M1-5-2",
+      "M3-5-1",
+      "M3-5-2",
+      "M4-4-1",
+      "M4-4-5",
+      "M6-1-6",
+      "M6-2-2",
+      "M6-3-5",
+      "M6-5-1",
+      "M6-6-6",
+      "M9-2-2",
+      "M10-3-3"
+    ],
+    "treasureMissions": [
+      "M6-3-6",
+      "M6-4-1",
+      "M6-4-3",
+      "M6-5-1",
+      "M7-5-4",
+      "M8-6-5",
+      "M9-2-6",
+      "M9-4-1",
+      "M9-4-6",
+      "M9-5-2",
+      "M9-5-5",
+      "M9-6-1",
+      "M9-6-3"
+    ]
+  },
+  {
+    "id": "item_lunar_harp",
+    "name": "Lunar Harp",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for MP +10%, up to a maximum of 999%.",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 1,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "1 Harp = MP +10% (caps at +999%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-5-1",
+      "M6-1-5",
+      "M6-4-2"
+    ],
+    "treasureMissions": [
+      "M3-4-6",
+      "M6-5-6",
+      "M9-1-6",
+      "M9-2-4",
+      "M9-3-1",
+      "M9-3-6"
+    ]
+  },
+  {
+    "id": "item_mythril",
+    "name": "Mythril",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for SPR +1, up to a maximum of +100.",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "1 Mythril = SPR +1 (caps at +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M3-4-3",
+      "M6-3-6",
+      "M6-4-1",
+      "M6-4-4",
+      "M6-5-3",
+      "M6-5-4",
+      "M6-6-2",
+      "M10-4-2"
+    ],
+    "treasureMissions": [
+      "M1-5-5",
+      "M2-5-5",
+      "M3-4-5",
+      "M3-5-4",
+      "M6-1-6",
+      "M6-3-4",
+      "M6-3-5",
+      "M6-5-2",
+      "M6-5-6",
+      "M6-6-6",
+      "M7-3-4",
+      "M7-6-2",
+      "M7-6-4",
+      "M7-6-5",
+      "M9-1-4",
+      "M9-3-1",
+      "M9-3-4",
+      "M9-3-5",
+      "M9-3-6",
+      "M9-5-2",
+      "M9-6-1"
+    ]
+  },
+  {
+    "id": "item_phoenix_down",
+    "name": "Phoenix Down",
+    "category": "max-tier-fusion",
+    "subCategory": "consumables",
+    "description": "Fully restores HP when user is incapacitated.",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 1,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "Adds SPR +1 per Phoenix Down (max +100)."
+    },
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-1-3",
+      "M2-4-3",
+      "M6-1-1",
+      "M10-4-1"
+    ],
+    "treasureMissions": [
+      "M2-5-4",
+      "M3-2-5",
+      "M3-4-6",
+      "M3-5-5",
+      "M3-5-6",
+      "M4-3-5",
+      "M8-2-5",
+      "M9-1-4",
+      "M9-2-2",
+      "M9-2-3",
+      "M9-3-2",
+      "M9-3-5",
+      "M9-4-1",
+      "M9-5-1",
+      "M9-5-4",
+      "M9-6-2",
+      "M9-6-3",
+      "M9-6-5",
+      "M10-2-3"
+    ]
+  },
+  {
+    "id": "item_zeio_nut",
+    "name": "Zeio Nut",
+    "category": "max-tier-fusion",
+    "subCategory": "max-tier-fusion",
+    "description": "Use in Materia Fusion for AP +10%, up to a maximum of 999%.",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 1,
+      "maxBonus": 999,
+      "requiresExistingStat": false,
+      "notes": "1 Nut = AP +10% (caps at +999%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-2-2",
+      "M3-4-6",
+      "M9-2-6",
+      "M9-5-6"
+    ]
+  },
+  {
+    "id": "item_ap_stone",
+    "name": "AP Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use Three in Materia Fusion for AP +10%, up to a maximum of 660%.",
+    "fusion": {
+      "stat": "AP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 660,
+      "requiresExistingStat": false,
+      "notes": "3 stones = AP +10% (caps at +660%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-4"
+    ]
+  },
+  {
+    "id": "item_guard_stone",
+    "name": "Guard Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for VIT +1, up to a maximum of +66.",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 66,
+      "requiresExistingStat": false,
+      "notes": "3 stones = VIT +1 (caps at +66)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-2-3",
+      "M7-2-5"
+    ]
+  },
+  {
+    "id": "item_hp_stone",
+    "name": "HP Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for HP +10%, up to a maximum of 660%.",
+    "fusion": {
+      "stat": "HP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 660,
+      "requiresExistingStat": false,
+      "notes": "3 stones = HP +10% (caps at +660%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-5"
+    ]
+  },
+  {
+    "id": "item_luck_stone",
+    "name": "Luck Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for LCK +1, up to a maximum of +66.",
+    "fusion": {
+      "stat": "LCK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 66,
+      "requiresExistingStat": false,
+      "notes": "3 stones = LCK +1 (caps at +66)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-5"
+    ]
+  },
+  {
+    "id": "item_magic_stone",
+    "name": "Magic Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for MAG +1, up to a maximum of +66.",
+    "fusion": {
+      "stat": "MAG",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 66,
+      "requiresExistingStat": false,
+      "notes": "3 stones = MAG +1 (caps at +66)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-4"
+    ]
+  },
+  {
+    "id": "item_mind_stone",
+    "name": "Mind Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for SPR +1, up to a maximum of +66.",
+    "fusion": {
+      "stat": "SPR",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 66,
+      "requiresExistingStat": false,
+      "notes": "3 stones = SPR +1 (caps at +66)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M3-2-5",
+      "M4-2-3",
+      "M7-2-4"
+    ]
+  },
+  {
+    "id": "item_mp_stone",
+    "name": "MP Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for MP +10%, up to a maximum of 660%.",
+    "fusion": {
+      "stat": "MP%",
+      "perUnit": 10,
+      "unitsPerStep": 3,
+      "maxBonus": 660,
+      "requiresExistingStat": false,
+      "notes": "3 stones = MP +10% (caps at +660%)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M7-2-4"
+    ]
+  },
+  {
+    "id": "item_power_stone",
+    "name": "Power Stone",
+    "category": "stat-stones",
+    "subCategory": "max-tier-fusion",
+    "description": "Use three in Materia Fusion for ATK +1, up to a maximum of +66.",
+    "fusion": {
+      "stat": "ATK",
+      "perUnit": 1,
+      "unitsPerStep": 3,
+      "maxBonus": 66,
+      "requiresExistingStat": false,
+      "notes": "3 stones = ATK +1 (caps at +66)."
+    },
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-2-3"
+    ]
+  }
+]

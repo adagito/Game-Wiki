@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="16" fill="#070b10"/>
+  <circle cx="80" cy="72" r="46" fill="#c084fc" fill-opacity="0.13" stroke="#c084fc" stroke-width="2.5"/>
+  <polygon points="80,34 114,72 80,110 46,72" fill="none" stroke="#c084fc" stroke-width="2"/>
+  <circle cx="80" cy="72" r="10" fill="#c084fc"/>
+  <text x="80" y="142" text-anchor="middle" fill="#c084fc" font-family="Consolas, monospace" font-size="14" font-weight="700">FIEND</text>
+</svg>

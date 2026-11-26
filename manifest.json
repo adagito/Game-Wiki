@@ -1,0 +1,31 @@
+{
+  "name": "Personal Game Wiki Hub",
+  "short_name": "Game Wiki",
+  "description": "Modular offline-ready personal game wiki hub with interactive trackers and Hard Mode compendiums.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070b10",
+  "theme_color": "#00e5a3",
+  "icons": [
+    {
+      "src": "core/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "core/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "core/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

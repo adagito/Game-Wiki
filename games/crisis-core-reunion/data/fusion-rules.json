@@ -1,0 +1,84 @@
+{
+  "statCategories": [
+    "HP%",
+    "MP%",
+    "AP%",
+    "ATK",
+    "VIT",
+    "MAG",
+    "SPR",
+    "LCK"
+  ],
+  "rulesNotes": [
+    "Consumables (Potion, Hi-Potion, X-Potion, Ether, Soma, Elixir) ONLY amplify an existing matching stat bonus on one of the fused Materia. On two +0 Materia they add +0.",
+    "Mako Stones add +1 per 5 stones (max +40) or +10% per 5 stones (max +400%).",
+    "Stat Stones add +1 per 3 stones (max +66) or +10% per 3 stones (max +660%).",
+    "Max-tier fusion items (Hero Drink, Adamantite, Dark Matter, Mythril, Gysahl Greens, Fat Chocobo Feather, Lunar Harp, Zeio Nut) add +1 (max +100) or +10% (max +999%) per item.",
+    "When building a Libra transfer Materia, stop at +98 (or +980% HP) so it remains open to item conversion during final fusion."
+  ],
+  "keyRecipes": [
+    {
+      "result": "Costly Punch",
+      "resultId": "item_costly_punch",
+      "ingredientA": "Goblin Punch / Iron Fist / Magical Punch",
+      "ingredientB": "Any DMW Materia (or Libra w/ +980% HP)",
+      "note": "Hard Mode MVP: ignores defense, 99,999 damage at high HP."
+    },
+    {
+      "result": "Aerial Drain",
+      "resultId": "item_aerial_drain",
+      "ingredientA": "High Jump",
+      "ingredientB": "Drain / Osmose / Assault Twister",
+      "note": "Grants invincibility frames during jump and drains HP."
+    },
+    {
+      "result": "Curaga",
+      "resultId": "item_curaga",
+      "ingredientA": "Cura",
+      "ingredientB": "HP Up / Libra / Barrier",
+      "note": "Full-heal staple; fuse with Fat Chocobo Feathers or Potions for +999% HP."
+    },
+    {
+      "result": "Wall",
+      "resultId": "item_wall",
+      "ingredientA": "Barrier",
+      "ingredientB": "MBarrier",
+      "note": "Applies both Barrier and MBarrier in a single cast."
+    },
+    {
+      "result": "Hell Blizzaga",
+      "resultId": "item_hell_blizzaga",
+      "ingredientA": "Blizzaga",
+      "ingredientB": "Status Strike / Poison / Silence / Stop",
+      "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."
+    },
+    {
+      "result": "Hell Firaga",
+      "resultId": "item_hell_firaga",
+      "ingredientA": "Firaga",
+      "ingredientB": "Status Strike / Poison / Silence / Stop",
+      "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."
+    },
+    {
+      "result": "Darkness",
+      "resultId": "item_darkness",
+      "ingredientA": "Assault Twister / Jump",
+      "ingredientB": "Drain / Gravity / Dark Fire",
+      "note": "Fast midgame AoE HP-cost wave clear."
+    },
+    {
+      "result": "Dualcast",
+      "resultId": "item_dualcast",
+      "ingredientA": "Buy: Net Shop Shade (M9-5-4)",
+      "ingredientB": "Or fuse High-Rank Magic + Ultima/Energy",
+      "note": "Casts equipped Magic Materia twice per turn."
+    },
+    {
+      "result": "SP Master",
+      "resultId": "item_sp_master",
+      "ingredientA": "Reward: M9-5-4 / M9-6-5",
+      "ingredientB": "SP Turbo + SP Barrier",
+      "note": "Increases damage & defense while spending SP."
+    }
+  ]
+}

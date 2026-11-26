@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "hubTitle": "Personal Game Wiki Hub",
+  "hubSubtitle": "Modular Offline-Ready Tactical Compendiums",
+  "games": [
+    {
+      "id": "ccff7r",
+      "slug": "crisis-core-reunion",
+      "title": "Crisis Core: Final Fantasy VII Reunion",
+      "subtitle": "Hard Mode Tactical Compendium",
+      "edition": "Hard Mode",
+      "theme": {
+        "name": "Dark Shinra / Mako",
+        "accent": "#00e5a3",
+        "accentSecondary": "#38bdf8",
+        "bgPrimary": "#070b10",
+        "bgSurface": "#0f1722"
+      },
+      "coverArt": "games/crisis-core-reunion/assets/cover.svg",
+      "tags": ["Action RPG", "Hard Mode", "300 Missions", "Materia Fusion"],
+      "dataPath": "games/crisis-core-reunion/data",
+      "modulePath": "games/crisis-core-reunion/module.js",
+      "configPath": "games/crisis-core-reunion/config.json"
+    }
+  ]
+}
