@@ -70,17 +70,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_atk_mako_stone_black_belt",
-    "name": "Atk Mako Stone Black Belt",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Equipment accessory (Atk Mako Stone Black Belt).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_black_belt",
     "name": "Black Belt",
     "category": "accessories",
@@ -616,7 +605,18 @@
     "subCategory": "Accessory",
     "description": "Adds fire, ice, and lightning elements to attacks; MP +50%, ATK, MAG +5",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 7 Shop",
+        "price": 20000,
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
+      },
+      {
+        "shopName": "Online Shop Duo",
+        "price": 20000,
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
+      }
+    ],
     "clearRewardMissions": [
       "M5-4-1",
       "M9-2-3"
@@ -2739,17 +2739,6 @@
     ]
   },
   {
-    "id": "item_adamantite_adamantite",
-    "name": "Adamantite Adamantite",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Adamantite Adamantite).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_backpack",
     "name": "Backpack",
     "category": "key-items",
@@ -2763,21 +2752,8 @@
     "treasureMissions": []
   },
   {
-    "id": "item_bahamut_fury_materia",
-    "name": "Bahamut Fury Materia",
-    "category": "key-items",
-    "subCategory": "key-items",
-    "description": "Adds Exaflare to DMW, damages enemies.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-5-6"
-    ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_bahamut_materia",
-    "name": "Bahamut Materia",
+    "id": "item_bahamut",
+    "name": "Bahamut",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds Megaflare to DMW, damages enemies.",
@@ -2785,6 +2761,19 @@
     "shops": [],
     "clearRewardMissions": [
       "M8-1-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_bahamut_fury",
+    "name": "Bahamut Fury",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Adds Exaflare to DMW, damages enemies.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-5-6"
     ],
     "treasureMissions": []
   },
@@ -2829,17 +2818,6 @@
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds 1000 Needles to DMW, damages enemies.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_cactus_thorn_item",
-    "name": "Cactus Thorn item",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Cactus Thorn item).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
@@ -2890,17 +2868,6 @@
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Includes a craftman's instruction for building a hand cart.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_crisis_core_final_fantasy_vii_items_potion",
-    "name": "Crisis Core Final Fantasy Vii Items Potion",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Crisis Core Final Fantasy Vii Items Potion).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3093,8 +3060,8 @@
     "treasureMissions": []
   },
   {
-    "id": "item_ifrit_materia",
-    "name": "Ifrit Materia",
+    "id": "item_ifrit",
+    "name": "Ifrit",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds Hellfire to DMW, damages enemies.",
@@ -3200,30 +3167,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_silence_materia",
-    "name": "MAG Mako Stone",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (MAG Mako Stone).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-3"
-    ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mag_mako_stone_fire",
-    "name": "Mag Mako Stone Fire",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Mag Mako Stone Fire).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_magic_pot_tricks",
     "name": "Magic Pot Tricks",
     "category": "key-items",
@@ -3285,8 +3228,8 @@
     ]
   },
   {
-    "id": "item_odin_materia",
-    "name": "Odin Materia",
+    "id": "item_odin",
+    "name": "Odin",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds Zantetsuken to DMW, Instant Death to all enemies.",
@@ -3335,8 +3278,8 @@
     ]
   },
   {
-    "id": "item_phoenix_materia",
-    "name": "Phoenix Materia",
+    "id": "item_phoenix",
+    "name": "Phoenix",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds Rebirth Flame to DMW, grants Raise status.",
@@ -3398,19 +3341,8 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_sector_6_accessory",
-    "name": "Sector 6 - Accessory",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 6 - Accessory).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": [
-      "M6-2-6"
+      "M6-2-3"
     ]
   },
   {
@@ -3422,19 +3354,8 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_sector_7",
-    "name": "Sector 7",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 7).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": [
-      "M4-4-3"
+      "M6-2-6"
     ]
   },
   {
@@ -3446,7 +3367,9 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [
+      "M4-4-3"
+    ]
   },
   {
     "id": "item_sector_8_materia_shop",
@@ -3457,7 +3380,9 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [
+      "M6-2-1"
+    ]
   },
   {
     "id": "item_shinra_ceramics",
@@ -3515,19 +3440,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_esuna_materia",
-    "name": "SPR Mako Stone",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (SPR Mako Stone).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-1"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_star_materia",
     "name": "Star Materia",
     "category": "key-items",
@@ -3544,6 +3456,17 @@
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Happy Turtle's main shop.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_the_happy_turtle_shop",
+    "name": "The Happy Turtle shop",
+    "category": "key-items",
+    "subCategory": "Shop Unlock",
+    "description": "Network shop unlock item: adds The Happy Turtle shop to the Worldwide Network shop menu.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3570,17 +3493,6 @@
     "description": "Adds Murderous Thrust to DMW, damages enemies.",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_tonberrys_knife_item",
-    "name": "Tonberry's Knife item",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Tonberry's Knife item).",
-    "fusion": null,
-    "shops": [],
     "clearRewardMissions": [
       "M10-2-3"
     ],
@@ -3595,19 +3507,6 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_poison_materia",
-    "name": "VIT Mako Stone",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (VIT Mako Stone).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-2"
-    ],
     "treasureMissions": []
   },
   {
@@ -3633,19 +3532,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_wutai_secret",
-    "name": "Wutai Secret",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Wutai Secret).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M4-2-6"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_wutai_secret_shop",
     "name": "Wutai Secret Shop",
     "category": "key-items",
@@ -3653,7 +3539,9 @@
     "description": "Online shopping address for Wutai Secret Shop.",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
+    "clearRewardMissions": [
+      "M4-2-6"
+    ],
     "treasureMissions": []
   },
   {
@@ -3965,7 +3853,13 @@
     "subCategory": "Independent",
     "description": "Increases attack by approximately one or two points per level up to +9.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
+      }
+    ],
     "clearRewardMissions": [],
     "treasureMissions": [
       "M6-1-3"
@@ -4677,7 +4571,9 @@
         "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
-    "clearRewardMissions": [],
+    "clearRewardMissions": [
+      "M8-2-1"
+    ],
     "treasureMissions": [
       "M3-1-6",
       "M8-2-6"
@@ -5220,7 +5116,13 @@
     "subCategory": "Independent",
     "description": "Increases defense by approximately one or two points per level up to +9.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
+      }
+    ],
     "clearRewardMissions": [],
     "treasureMissions": [
       "M2-2-4",
@@ -5513,7 +5415,8 @@
       }
     ],
     "clearRewardMissions": [
-      "M2-1-1"
+      "M2-1-1",
+      "M8-2-2"
     ],
     "treasureMissions": []
   },
@@ -5685,32 +5588,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_sector_5_materia",
-    "name": "Sector 5 - Materia",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Equipable Materia (Sector 5 - Materia).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M6-2-3"
-    ]
-  },
-  {
-    "id": "item_sector_8_materia",
-    "name": "Sector 8 - Materia",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Equipable Materia (Sector 8 - Materia).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M6-2-1"
-    ]
-  },
-  {
     "id": "item_silence",
     "name": "Silence",
     "category": "materia",
@@ -5725,7 +5602,8 @@
       }
     ],
     "clearRewardMissions": [
-      "M1-2-2"
+      "M1-2-2",
+      "M8-2-3"
     ],
     "treasureMissions": [
       "M6-2-2"
@@ -5854,7 +5732,13 @@
     "subCategory": "Independent",
     "description": "Increases spirit by approximately one or two points per level up to +9.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
+      }
+    ],
     "clearRewardMissions": [
       "M2-1-5"
     ],
@@ -6166,7 +6050,13 @@
     "subCategory": "Independent",
     "description": "Increases defense by approximately one or two points per level up to +9.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 5 Materia Shop",
+        "price": 1000,
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
+      }
+    ],
     "clearRewardMissions": [
       "M3-1-4"
     ],

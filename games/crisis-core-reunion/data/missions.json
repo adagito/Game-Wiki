@@ -686,15 +686,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Cyber-Sabotage",
     "description": "One of Genesis' secret agents has introduced a virus to a fleet of our prototype weapons. The weapons are now out of control and attacking our own people., Track down the large four weapons and destroy them!",
-    "stars": 5,
+    "stars": 6,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 30,
-      "hp": 8500,
-      "vit": 85,
-      "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_drainga",
@@ -714,15 +714,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Stolen Shinra Weapons",
     "description": "While Shinra troops were gearing up for battle with Genesis,, AVALANCHE, the anti-Shinra group caught them off guard and stole their weapons for use in their own offensive., Go to AVALANCHE's base to fight them and reclaim our weapons.",
-    "stars": 5,
+    "stars": 6,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 30,
-      "hp": 8500,
-      "vit": 85,
-      "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_mag_up_plus_plus",
@@ -1490,15 +1490,15 @@
     "subGroup": "M2-2: Monster Reports",
     "title": "World of Monsters",
     "description": "These battles will be against monsters that have been cataloged by Shinra Company., You may not have encountered some of them before., Use caution when fighting them.",
-    "stars": 10,
+    "stars": 7,
     "chapterAvailable": 5,
     "unlockCondition": "After successful 2-2-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
+      "recommendedLevel": 46,
+      "hp": 20000,
+      "vit": 145,
+      "spr": 145,
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_quake",
@@ -4076,7 +4076,7 @@
       "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
-      "itemId": "item_wutai_secret",
+      "itemId": "item_wutai_secret_shop",
       "quantity": 1,
       "rawLabel": "Wutai Secret Shop item"
     },
@@ -4341,7 +4341,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_the_happy_turtle",
+        "itemId": "item_the_happy_turtle_shop",
         "quantity": 1,
         "rawLabel": "The Happy Turtle shop item"
       }
@@ -4448,15 +4448,15 @@
     "subGroup": "M4-4: The Remnants Strike Again",
     "title": "Infiltration",
     "description": "A Crescent Unit detachment has snuck into Midgar, reaching the upper layers., But this has actually worked in our favor; their positioning has them trapped., Head to their location and annihilate them now!",
-    "stars": 9,
+    "stars": 6,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 4-4-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 68,
-      "hp": 60000,
-      "vit": 225,
-      "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -4475,7 +4475,7 @@
         "rawLabel": "Gold Rolling Pin"
       },
       {
-        "itemId": "item_sector_7",
+        "itemId": "item_sector_7_shop",
         "quantity": 1,
         "rawLabel": "Sector 7 - Shop item"
       },
@@ -5855,7 +5855,7 @@
         "rawLabel": "Ether"
       },
       {
-        "itemId": "item_sector_8_materia",
+        "itemId": "item_sector_8_materia_shop",
         "quantity": 1,
         "rawLabel": "Sector 8 - Materia Shop item"
       }
@@ -5946,7 +5946,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_sector_5_materia",
+        "itemId": "item_sector_5_materia_shop",
         "quantity": 1,
         "rawLabel": "Sector 5 - Materia Shop item"
       }
@@ -6077,7 +6077,7 @@
         "rawLabel": "MP Up+ (Materia)"
       },
       {
-        "itemId": "item_sector_6_accessory",
+        "itemId": "item_sector_6_accessory_shop",
         "quantity": 1,
         "rawLabel": "Sector 6 - Accessory Shop item"
       }
@@ -7002,15 +7002,15 @@
     "subGroup": "M6-6: Counter-Mafia Project",
     "title": "Secret in the Caverns",
     "description": "This just in: Don Corneo has hidden additional items in the caves., The purpose of the mission is to bring Corneo's excessive forces under control., You are allowed to keep all items you obtain during the mission.",
-    "stars": 10,
+    "stars": 8,
     "chapterAvailable": 9,
     "unlockCondition": "Completion of Mission 6-6-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
+      "recommendedLevel": 56,
+      "hp": 35000,
+      "vit": 185,
+      "spr": 185,
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -8007,15 +8007,15 @@
     "subGroup": "M7-3: ESP Development Project",
     "title": "P's Precognition Lv. 6",
     "description": "Test Subject P's skills have reached a new level. He will be moving on to making more important predictions., But in his last session, he has sensed an accessory component in the slums., Go to the slums and verify his extra-sensory vision.",
-    "stars": 9,
+    "stars": 6,
     "chapterAvailable": 6,
     "unlockCondition": "Completion of Mission 7-3-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 68,
-      "hp": 60000,
-      "vit": 225,
-      "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_adaman_bangle",
@@ -8268,15 +8268,15 @@
     "subGroup": "M7-4: Contacts from P",
     "title": "Breakthrough",
     "description": "It's me again., I think I have new powers, and it's all thanks to you., I want you to have something. Go to the plains, and it's yours.",
-    "stars": 8,
+    "stars": 7,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 7-4-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 56,
-      "hp": 35000,
-      "vit": 185,
-      "spr": 185,
-      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
+      "recommendedLevel": 46,
+      "hp": 20000,
+      "vit": 145,
+      "spr": 145,
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_brutal",
@@ -8932,7 +8932,7 @@
       "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
-      "itemId": "item_ifrit_materia",
+      "itemId": "item_ifrit",
       "quantity": 1,
       "rawLabel": "Ifrit Materia (DMW)"
     },
@@ -9033,7 +9033,7 @@
       "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_bahamut_materia",
+      "itemId": "item_bahamut",
       "quantity": 1,
       "rawLabel": "Bahamut Materia (DMW)"
     },
@@ -9091,7 +9091,7 @@
       "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
-      "itemId": "item_odin_materia",
+      "itemId": "item_odin",
       "quantity": 1,
       "rawLabel": "Odin Materia (DMW)"
     },
@@ -9133,7 +9133,7 @@
       "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
-      "itemId": "item_esuna_materia",
+      "itemId": "item_esuna",
       "quantity": 1,
       "rawLabel": "SPR Mako Stone give to researcher and receive Esuna Materia"
     },
@@ -9168,7 +9168,7 @@
       "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
-      "itemId": "item_poison_materia",
+      "itemId": "item_poison",
       "quantity": 1,
       "rawLabel": "VIT Mako Stone give to researcher and receive Poison Materia"
     },
@@ -9209,7 +9209,7 @@
       "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_silence_materia",
+      "itemId": "item_silence",
       "quantity": 1,
       "rawLabel": "MAG Mako Stone receive Silence Materia"
     },
@@ -9786,15 +9786,15 @@
     "subGroup": "M8-4: From a Hot Treasure Hunter",
     "title": "Suspicious Mail 4",
     "description": "Our \"Treasure princess\" seems quite upset, though it's obviously not her place to get mad; she's the one providing faulty information., But if you can act the grown-up and not get cross with her, you can head for the marine caves.",
-    "stars": 3,
+    "stars": 6,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 8-4-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 15,
-      "hp": 3600,
-      "vit": 40,
-      "spr": 40,
-      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_vital_slash",
@@ -10182,7 +10182,7 @@
       "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
-      "itemId": "item_bahamut_fury_materia",
+      "itemId": "item_bahamut_fury",
       "quantity": 1,
       "rawLabel": "Bahamut Fury Materia (DMW)"
     },
@@ -10385,15 +10385,15 @@
     "subGroup": "M8-6: Yuffie's Notices",
     "title": "S.O.S.?",
     "description": "Another notice from Yuffie laying claim to some treasure., She talks tough as usual, bit she might be lost in the wasteland., We're a little worried bout her. Please go there for our sake.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 9,
     "unlockCondition": "Completion of Mission 8-6-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_flare",
@@ -12085,15 +12085,15 @@
     "subGroup": "M9-5: Unknown Energy",
     "title": "Unusually Strong Monsters",
     "description": "If our data is correct, these monsters are unusually strong; the caves must be the cause., We are analyzing the monster data from the areas we have already covered, but it's not enough., Please go deeper and collect more data for us.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 9,
     "unlockCondition": "Completion of Mission 9-5-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_protect_ring",
@@ -12812,7 +12812,7 @@
       "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
-      "itemId": "item_cactus_thorn_item",
+      "itemId": "item_cactus_thorn",
       "quantity": 1,
       "rawLabel": "Cactus Thorn item (DMW)"
     },
@@ -12917,18 +12917,18 @@
     "subGroup": "M10-2: Tonberry Quests",
     "title": "Master Tonberry",
     "description": "Despite the number of Tonberries in the last mission, not one held the chef's legendary knife., But the latest news is the most reliable yet., The Master Tonberry in the caves is in possession of it! Go slay the Master Tonberry!",
-    "stars": 10,
+    "stars": 3,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 10-2-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
+      "recommendedLevel": 15,
+      "hp": 3600,
+      "vit": 40,
+      "spr": 40,
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_tonberrys_knife_item",
+      "itemId": "item_tonberrys_knife",
       "quantity": 1,
       "rawLabel": "Tonberry's Knife item (DMW)"
     },

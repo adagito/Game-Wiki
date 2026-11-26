@@ -6748,7 +6748,7 @@
     "loot": {
       "commonDrop": "item_river_chocobo_armlet",
       "rareDrop": null,
-      "commonSteal": "item_adamantite_adamantite",
+      "commonSteal": "item_adamantite",
       "rareSteal": null,
       "dropRate": "36"
     },
@@ -10584,8 +10584,8 @@
       "Self-Destruct"
     ],
     "loot": {
-      "commonDrop": "item_mag_mako_stone_fire",
-      "rareDrop": null,
+      "commonDrop": "item_mag_mako_stone",
+      "rareDrop": "item_fire",
       "commonSteal": "item_spr_mako_stone",
       "rareSteal": null,
       "dropRate": "16"
@@ -17340,7 +17340,7 @@
       "Squirt Gun"
     ],
     "loot": {
-      "commonDrop": "item_crisis_core_final_fantasy_vii_items_potion",
+      "commonDrop": "item_potion",
       "rareDrop": null,
       "commonSteal": "item_blizzard",
       "rareSteal": null,
@@ -20666,8 +20666,8 @@
       "Mace Smash"
     ],
     "loot": {
-      "commonDrop": "item_atk_mako_stone_black_belt",
-      "rareDrop": null,
+      "commonDrop": "item_atk_mako_stone",
+      "rareDrop": "item_black_belt",
       "commonSteal": "item_hammer_punch",
       "rareSteal": null,
       "dropRate": "16"

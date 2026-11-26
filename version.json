@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
-  "buildDate": "2026-11-26T18:15:00-05:00",
-  "notes": "Crisis Core Reunion Full Encyclopedia: 16 Shops, 18 DMW tracker, Chapter Missables, Buster Sword Proficiency, Magic Pot & Minerva guides, cleaned loot/reward links"
+  "version": "2.0.1",
+  "buildDate": "2026-11-26T18:36:00-05:00",
+  "notes": "Data accuracy audit fixes: restored plain shop stock rows (ATK/VIT/MAG/SPR Up, Element Blade), corrected Hero Drink/Adamantite/Mythril/Status Ward farming & recipe links, fixed M10-2-3 & key mission star ratings, eliminated 11 remaining dirty item IDs."
 }

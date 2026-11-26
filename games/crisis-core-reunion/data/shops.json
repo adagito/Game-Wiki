@@ -36,6 +36,22 @@
     "missable": false,
     "stock": [
       {
+        "itemId": "item_atk_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_vit_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_mag_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_spr_up",
+        "price": 1000
+      },
+      {
         "itemId": "item_poison",
         "price": 1000
       },
@@ -85,6 +101,10 @@
       {
         "itemId": "item_wizard_bracelet",
         "price": 80000
+      },
+      {
+        "itemId": "item_element_blade",
+        "price": 20000
       },
       {
         "itemId": "item_brigands_gloves",
@@ -652,6 +672,10 @@
       {
         "itemId": "item_wizard_bracelet",
         "price": 80000
+      },
+      {
+        "itemId": "item_element_blade",
+        "price": 20000
       }
     ]
   }

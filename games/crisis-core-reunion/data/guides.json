@@ -127,7 +127,7 @@
       "itemId": "item_costly_punch",
       "setup": "Costly Punch + Brutal/Genji Glove + Barrier",
       "method": "Clear Scissor Chitins in M8-6-4; fast spawn loop and solid Gil.",
-      "yield": "~2,000+ EXP / encounter"
+      "yield": "~5,460 EXP / Chitin"
     },
     {
       "category": "EXP",
@@ -145,9 +145,9 @@
       "bestMissionId": "M9-5-3",
       "enemyId": "enemy_three_stars",
       "itemId": "item_mogs_amulet",
-      "setup": "Mog's Amulet + Jeweled Ring + Mug + Costly Punch",
-      "method": "Farm Three Stars & Tycoon in M9-5-3; steal/drop Mythril Armlets & Tri-Thundaga to sell.",
-      "yield": "Massive SP + 50k+ Gil/min"
+      "setup": "Mog's Amulet + Jeweled Ring + Precious Watch + Mug",
+      "method": "Farm Three Stars (20,000 SP) & Tycoon in M9-5-3; Precious Watch doubles Gil, Jeweled Ring doubles item drops.",
+      "yield": "20,000+ SP + 50k+ Gil/min"
     },
     {
       "category": "SP & Gil",
@@ -165,7 +165,7 @@
       "bestMissionId": "M9-6-6",
       "enemyId": "enemy_minerva",
       "itemId": "item_phoenix_down",
-      "setup": "Mug / Brigand's Gloves + Wall + 99,999 HP",
+      "setup": "Mug + Brigand's Gloves + Wall + 99,999 HP",
       "method": "Mug Minerva once per attempt to steal 99x Phoenix Downs (keep or sell for 495k Gil).",
       "yield": "99 Phoenix Downs / run"
     },
@@ -175,8 +175,8 @@
       "bestMissionId": "M6-6-3",
       "enemyId": "enemy_lesser_worm",
       "itemId": "item_dark_matter",
-      "setup": "Mog's Amulet (Sector 7 Shop M4-4-3)",
-      "method": "Guaranteed common drop from Lesser Worms; fastest base for 98/980% Libra conversion.",
+      "setup": "Mog's Amulet (Sector 7 Shop M4-4-3) + Jeweled Ring",
+      "method": "Common drop from Lesser Worms; fastest base for 98/980% Libra conversion.",
       "yield": "1–2 Dark Matter / fight"
     },
     {
@@ -186,38 +186,38 @@
       "enemyId": "enemy_jabberwock",
       "itemId": "item_fat_chocobo_feather",
       "setup": "Mog's Amulet + Brigand's Gloves + Mug",
-      "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba; or convert 980% Libra via Potions.",
+      "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba (M6-6-6); or stack HP% with Shinra Shop Potions.",
       "yield": "1–3 Feathers / fight"
     },
     {
       "category": "Fusion Stats",
       "resource": "Adamantite (VIT +1)",
-      "bestMissionId": "M9-4-4",
-      "enemyId": "enemy_grandpanzer",
+      "bestMissionId": "M9-6-5",
+      "enemyId": "enemy_goliath",
       "itemId": "item_adamantite",
       "setup": "Mug + Brigand's Gloves + Mog's Amulet",
-      "method": "Steal from Grandpanzer / G Antenora or farm M10-4-3 clear/drops; easiest via Dark Matter 98 conversion.",
-      "yield": "1+ Adamantite / steal"
+      "method": "Drop & Common Steal from Goliath in M9-6-5 (also Crazy Sword in M7-6-4/M9-4-1 & Grandpanzer in M9-3-3).",
+      "yield": "1+ Adamantite / fight"
     },
     {
       "category": "Fusion Stats",
       "resource": "Mythril (SPR +1)",
-      "bestMissionId": "M9-4-1",
+      "bestMissionId": "M3-4-6",
       "enemyId": "enemy_g_purgatorio",
       "itemId": "item_mythril",
-      "setup": "Mug + Brigand's Gloves",
-      "method": "Steal from G Purgatorio in M9-4-x, or convert +98 Libra with a single Mythril from M10-4-2.",
-      "yield": "1+ Mythril / steal"
+      "setup": "Mug + Brigand's Gloves + Mog's Amulet",
+      "method": "Rare Drop & Common Steal from G Purgatorio in M3-4-6 (also M3-5-1–M3-5-3, M8-6-6), or convert +98 Libra.",
+      "yield": "1+ Mythril / fight"
     },
     {
       "category": "Fusion Stats",
       "resource": "Hero Drink (ATK +1)",
-      "bestMissionId": "M9-3-4",
-      "enemyId": null,
+      "bestMissionId": "M9-6-3",
+      "enemyId": "enemy_master_blade",
       "itemId": "item_hero_drink",
-      "setup": "Research Dept. QMC (10,000 Gil) or M1-1-2/M10-3-3",
-      "method": "Buy directly from Research Dept. QMC for 10,000 Gil once Gil farming is online.",
-      "yield": "Unlimited via Gil"
+      "setup": "Mog's Amulet + Brigand's Gloves + Mug",
+      "method": "Rare Drop & Steal from Master Blade (M9-6-3) or Rare Steal from Iron Claw (M6-5-6 / M9-3-6).",
+      "yield": "1+ Hero Drink / fight"
     },
     {
       "category": "Fusion Stats",
@@ -576,7 +576,7 @@
       "blocks": [
         {
           "heading": "Mandatory Farming Gear",
-          "body": "Buy Mog's Amulet (10,000 Gil, Sector 7 Shop via M4-4-3) so every enemy drops its Rare Drop, and Brigand's Gloves (10,000 Gil) for 100% Steal/Mug success. Later buy Jeweled Ring (Online Shop Shade M9-5-4) for 2x Gil & drops."
+          "body": "Buy Mog's Amulet (10,000 Gil, Sector 7 Shop via M4-4-3) so enemies always drop Rare Drops, and Brigand's Gloves (10,000 Gil) for 100% Steal/Mug success. In Online Shop Shade (M9-5-4), buy Jeweled Ring (10,000 Gil) to double item/Materia drop quantity and Precious Watch (10,000 Gil) to double Gil earned from battles."
         },
         {
           "heading": "M9-5-3 (Three Stars) & Minerva",
@@ -594,8 +594,9 @@
           "M7-2-1",
           "M6-6-3",
           "M9-2-6",
-          "M9-4-1",
-          "M9-4-4"
+          "M3-4-6",
+          "M9-6-5",
+          "M9-6-3"
         ],
         "items": [
           "item_potion",

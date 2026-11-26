@@ -312,13 +312,16 @@ def canonical_item_name(raw_name: str) -> str:
     name = clean_wiki_text(raw_name)
     # Strip trailing/embedded annotations
     name = re.split(r"\s*\|\s*", name)[0]
+    if "#" in name:
+        name = name.split("#")[-1]
     name = re.sub(r"\([^)]*(?:Crisis Core|item|Materia|M|C|S|I|DMW|Accessory|Shop|rare|inventory|Nibelheim)[^)]*\)", "", name, flags=re.I)
     name = re.sub(r"\b(?:give to researcher and receive|receive)\b.*$", "", name, flags=re.I)
-    # Handle "Fat Chocobo Feather x2, Sector 8 - Materia Shop item" -> keep primary or handle separately
     name = re.sub(r"\s*w/\s*.*$", "", name, flags=re.I)
     name = re.sub(r"^\s*\d+\s*[x×]\s*", "", name, flags=re.I)
     name = re.sub(r"\s*[x×]\s*\d+\s*(?:\([^)]*\))?$", "", name, flags=re.I)
-    name = re.sub(r"\s+\b(?:shop item|item)\b$", "", name, flags=re.I)
+    name = re.sub(r"\s+\bitem\b$", "", name.strip(), flags=re.I)
+    if not any(g in name.lower() for g in ("light ", "heaven ", "ground ", "star ", "life ", "being ", "sabbath ", "goddess")):
+        name = re.sub(r"\s+\bmateria\b$", "", name.strip(), flags=re.I)
     name = name.strip(" .,:;-")
     low = name.lower()
     if low in ITEM_ALIAS_MAP:
@@ -366,31 +369,38 @@ def parse_loot_field(raw: str) -> list[str]:
     """Parses an enemy steal/drop infobox value cleanly into 0..2 canonical item names."""
     if not raw:
         return []
-    # Truncate if an un-newlined wiki param leaked into the value
+    raw = re.sub(r"<!--.*?-->", "", raw, flags=re.S)
     raw = raw.split("|")[0]
-    parts = re.split(r"<br\s*/?>|\n|;|/", raw, flags=re.I)
+    parts = re.split(r"<br\s*/?>|\n|;|/|,\s+", raw, flags=re.I)
     names: list[str] = []
     for part in parts:
-        # Also catch two adjacent [[Link1]] [[Link2]] with only space between
         sub_links = re.findall(r"\[\[[^\]]+\]\]", part)
         candidates = sub_links if len(sub_links) >= 2 else [part]
         for cand in candidates:
             cleaned = clean_wiki_text(cand).strip()
             if not cleaned:
                 continue
-            # Remove phrases like "drop rate = 8" or "if the player has none..."
+            cleaned = re.sub(r"\([^)]*\)", "", cleaned).strip()
             cleaned = re.sub(r"\bdrop rate\b.*$", "", cleaned, flags=re.I).strip()
             cleaned = re.sub(r"\bif the player\b.*$", "", cleaned, flags=re.I).strip()
             cleaned = re.sub(r"\bduring\b.*$", "", cleaned, flags=re.I).strip()
+            cleaned = re.sub(r"\s+\bneed\b.*$", "", cleaned, flags=re.I).strip()
             cname = canonical_item_name(cleaned)
             if not cname:
                 continue
             low = cname.lower()
-            if low in ("none", "various", "n/a", "-", "—") or re.fullmatch(r"\d+", low):
+            if low in ("none", "various", "n/a", "-", "—", "the faq had none", "faq had none", "unknown", "tbd") or re.fullmatch(r"\d+", low):
                 continue
             if cname not in names:
                 names.append(cname)
     return names[:2]
+
+
+HEADER_CELL_NAMES = {
+    "name", "cost", "mission", "description", "unlock", "rank", "treasures",
+    "finish reward", "main effects", "fusion effects", "type", "effect",
+    "acquire", "mp cost",
+}
 
 
 def parse_wikitable_rows(wikitext: str) -> list[list[str]]:
@@ -416,10 +426,15 @@ def parse_wikitable_rows(wikitext: str) -> list[list[str]]:
                 rows.append(cur_row)
             cur_row = []
             continue
-        if st.startswith("|+") or st.startswith("!"):
-            if st.startswith("!{{") or st.startswith("![["):
-                cell = st.lstrip("!").strip()
-                cur_row.append(cell)
+        if st.startswith("|+"):
+            continue
+        if st.startswith("!"):
+            cell = st.lstrip("!").strip()
+            if not cell or cell.lower().startswith(("style=", "class=", "scope=")):
+                continue
+            if clean_wiki_text(cell).lower() in HEADER_CELL_NAMES:
+                continue
+            cur_row.append(cell)
             continue
         if st.startswith("|"):
             body = st[1:]
@@ -1208,10 +1223,31 @@ def reconcile_relations(
                 if en["id"] not in m["randomEnemyIds"] and en["id"] not in m["bossEnemyIds"]:
                     m["randomEnemyIds"].append(en["id"])
 
+    mission_star_overrides = {
+        "M1-4-2": 6,
+        "M1-4-3": 6,
+        "M4-4-3": 6,
+        "M6-6-3": 8,
+        "M7-3-6": 6,
+        "M7-4-6": 7,
+        "M7-6-6": 10,
+        "M8-4-4": 6,
+        "M8-6-4": 9,
+        "M9-5-3": 9,
+        "M9-5-4": 10,
+        "M9-6-4": 10,
+        "M9-6-6": 10,
+        "M10-2-3": 3,
+    }
+
     for m in missions:
-        linked_eids = m["bossEnemyIds"] + m["randomEnemyIds"]
+        linked_eids = [eid for eid in (m["bossEnemyIds"] + m["randomEnemyIds"]) if eid != "enemy_magic_pot"]
         levels = [enemy_by_id[eid]["stats"]["level"] for eid in linked_eids if eid in enemy_by_id and enemy_by_id[eid]["stats"]["level"]]
-        if levels and m["branch"] != "M1":
+        if m["id"] in mission_star_overrides:
+            stars = mission_star_overrides[m["id"]]
+            m["stars"] = stars
+            m["hardModeBenchmarks"] = compute_hard_benchmarks(stars, m["id"])
+        elif levels and m["branch"] != "M1":
             max_lv = max(levels)
             if max_lv <= 8:
                 stars = 1
@@ -1232,8 +1268,6 @@ def reconcile_relations(
             elif max_lv <= 76:
                 stars = 9
             else:
-                stars = 10
-            if m["id"] == "M9-6-6":
                 stars = 10
             m["stars"] = stars
             m["hardModeBenchmarks"] = compute_hard_benchmarks(stars, m["id"])
@@ -1374,16 +1408,16 @@ def build_guides_json() -> dict[str, Any]:
             },
         ],
         "farmingMatrix": [
-            {"category": "EXP", "resource": "Fast EXP (Endgame)", "bestMissionId": "M8-6-4", "enemyId": "enemy_scissor_chitin", "itemId": "item_costly_punch", "setup": "Costly Punch + Brutal/Genji Glove + Barrier", "method": "Clear Scissor Chitins in M8-6-4; fast spawn loop and solid Gil.", "yield": "~2,000+ EXP / encounter"},
+            {"category": "EXP", "resource": "Fast EXP (Endgame)", "bestMissionId": "M8-6-4", "enemyId": "enemy_scissor_chitin", "itemId": "item_costly_punch", "setup": "Costly Punch + Brutal/Genji Glove + Barrier", "method": "Clear Scissor Chitins in M8-6-4; fast spawn loop and solid Gil.", "yield": "~5,460 EXP / Chitin"},
             {"category": "EXP", "resource": "Early/Mid EXP & Mob Wipe", "bestMissionId": "M6-5-3", "enemyId": None, "itemId": "item_hell_blizzaga", "setup": "Status Ward + Hell Blizzaga + Mog's Amulet", "method": "Status Ward grants immunity while Hell Blizzaga instant-deaths non-boss mobs.", "yield": "Fast 6–7★ EXP & Stone drops"},
-            {"category": "SP & Gil", "resource": "Best SP & Gil Farm", "bestMissionId": "M9-5-3", "enemyId": "enemy_three_stars", "itemId": "item_mogs_amulet", "setup": "Mog's Amulet + Jeweled Ring + Mug + Costly Punch", "method": "Farm Three Stars & Tycoon in M9-5-3; steal/drop Mythril Armlets & Tri-Thundaga to sell.", "yield": "Massive SP + 50k+ Gil/min"},
+            {"category": "SP & Gil", "resource": "Best SP & Gil Farm", "bestMissionId": "M9-5-3", "enemyId": "enemy_three_stars", "itemId": "item_mogs_amulet", "setup": "Mog's Amulet + Jeweled Ring + Precious Watch + Mug", "method": "Farm Three Stars (20,000 SP) & Tycoon in M9-5-3; Precious Watch doubles Gil, Jeweled Ring doubles item drops.", "yield": "20,000+ SP + 50k+ Gil/min"},
             {"category": "SP & Gil", "resource": "Midgame SP + Dark Matter", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet + Costly Punch / Darkness", "method": "Run intersections in M6-6-3 for Lesser Worms & Mover EX.", "yield": "Dark Matter + high SP"},
-            {"category": "SP & Gil", "resource": "99x Phoenix Down / Gil", "bestMissionId": "M9-6-6", "enemyId": "enemy_minerva", "itemId": "item_phoenix_down", "setup": "Mug / Brigand's Gloves + Wall + 99,999 HP", "method": "Mug Minerva once per attempt to steal 99x Phoenix Downs (keep or sell for 495k Gil).", "yield": "99 Phoenix Downs / run"},
-            {"category": "Fusion Stats", "resource": "Dark Matter (MAG +1)", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet (Sector 7 Shop M4-4-3)", "method": "Guaranteed common drop from Lesser Worms; fastest base for 98/980% Libra conversion.", "yield": "1–2 Dark Matter / fight"},
-            {"category": "Fusion Stats", "resource": "Fat Chocobo Feather (HP +10%)", "bestMissionId": "M9-2-6", "enemyId": "enemy_jabberwock", "itemId": "item_fat_chocobo_feather", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba; or convert 980% Libra via Potions.", "yield": "1–3 Feathers / fight"},
-            {"category": "Fusion Stats", "resource": "Adamantite (VIT +1)", "bestMissionId": "M9-4-4", "enemyId": "enemy_grandpanzer", "itemId": "item_adamantite", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Steal from Grandpanzer / G Antenora or farm M10-4-3 clear/drops; easiest via Dark Matter 98 conversion.", "yield": "1+ Adamantite / steal"},
-            {"category": "Fusion Stats", "resource": "Mythril (SPR +1)", "bestMissionId": "M9-4-1", "enemyId": "enemy_g_purgatorio", "itemId": "item_mythril", "setup": "Mug + Brigand's Gloves", "method": "Steal from G Purgatorio in M9-4-x, or convert +98 Libra with a single Mythril from M10-4-2.", "yield": "1+ Mythril / steal"},
-            {"category": "Fusion Stats", "resource": "Hero Drink (ATK +1)", "bestMissionId": "M9-3-4", "enemyId": None, "itemId": "item_hero_drink", "setup": "Research Dept. QMC (10,000 Gil) or M1-1-2/M10-3-3", "method": "Buy directly from Research Dept. QMC for 10,000 Gil once Gil farming is online.", "yield": "Unlimited via Gil"},
+            {"category": "SP & Gil", "resource": "99x Phoenix Down / Gil", "bestMissionId": "M9-6-6", "enemyId": "enemy_minerva", "itemId": "item_phoenix_down", "setup": "Mug + Brigand's Gloves + Wall + 99,999 HP", "method": "Mug Minerva once per attempt to steal 99x Phoenix Downs (keep or sell for 495k Gil).", "yield": "99 Phoenix Downs / run"},
+            {"category": "Fusion Stats", "resource": "Dark Matter (MAG +1)", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet (Sector 7 Shop M4-4-3) + Jeweled Ring", "method": "Common drop from Lesser Worms; fastest base for 98/980% Libra conversion.", "yield": "1–2 Dark Matter / fight"},
+            {"category": "Fusion Stats", "resource": "Fat Chocobo Feather (HP +10%)", "bestMissionId": "M9-2-6", "enemyId": "enemy_jabberwock", "itemId": "item_fat_chocobo_feather", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba (M6-6-6); or stack HP% with Shinra Shop Potions.", "yield": "1–3 Feathers / fight"},
+            {"category": "Fusion Stats", "resource": "Adamantite (VIT +1)", "bestMissionId": "M9-6-5", "enemyId": "enemy_goliath", "itemId": "item_adamantite", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Drop & Common Steal from Goliath in M9-6-5 (also Crazy Sword in M7-6-4/M9-4-1 & Grandpanzer in M9-3-3).", "yield": "1+ Adamantite / fight"},
+            {"category": "Fusion Stats", "resource": "Mythril (SPR +1)", "bestMissionId": "M3-4-6", "enemyId": "enemy_g_purgatorio", "itemId": "item_mythril", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Rare Drop & Common Steal from G Purgatorio in M3-4-6 (also M3-5-1–M3-5-3, M8-6-6), or convert +98 Libra.", "yield": "1+ Mythril / fight"},
+            {"category": "Fusion Stats", "resource": "Hero Drink (ATK +1)", "bestMissionId": "M9-6-3", "enemyId": "enemy_master_blade", "itemId": "item_hero_drink", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Rare Drop & Steal from Master Blade (M9-6-3) or Rare Steal from Iron Claw (M6-5-6 / M9-3-6).", "yield": "1+ Hero Drink / fight"},
             {"category": "Fusion Stats", "resource": "Gysahl Greens (LCK +1) / Zeio Nut / Lunar Harp", "bestMissionId": "M9-5-5", "enemyId": None, "itemId": "item_gysahl_greens", "setup": "M9-6-x chests + Dark Matter 98 conversion", "method": "Convert a +98 Dark Matter Libra with 1x Gysahl Greens, Zeio Nut, or Lunar Harp instead of farming 99x.", "yield": "1 catalyst converts +98!"},
             {"category": "Reunion Systems", "resource": "Materia Mastering (AFK Loop)", "bestMissionId": "M1-1-1", "enemyId": "enemy_sentry", "itemId": "item_moogle_power", "setup": "1–2 Mastered Moogle Power + Faerie Ring / Regen", "method": "Sit in M1-1-1 with weak troopers; DMW reels spin nonstop and Moogle Power levels all 6 slots.", "yield": "Masters all 6 slots AFK"},
             {"category": "Reunion Systems", "resource": "Buster Sword Proficiency 100%", "bestMissionId": "M1-2-1", "enemyId": None, "itemId": None, "setup": "Battle Stance + M1-2-1 (Guards) + M1-1-3 (Kills)", "method": "M1-2-1 gunfire for Perfect Guard (31.66%), M1-1-3 for Strong Attack & Command Kills (63.3%), M9-6-5 for Barrier Pierce (5%).", "yield": "Damage Break @ 23% / Barrier Pierce @ 47%"},
@@ -1440,7 +1474,7 @@ def build_guides_json() -> dict[str, Any]:
                 "summary": "Mog's Amulet + Jeweled Ring economy break, M9-5-3 Three Stars, M6-6-3 Lesser Worms, and Minerva's 99x Phoenix Downs.",
                 "refs": {"missions": ["M4-4-3", "M6-6-3", "M9-5-3", "M9-6-6"], "items": ["item_mogs_amulet", "item_jeweled_ring", "item_phoenix_down", "item_genji_helm"]},
                 "blocks": [
-                    {"heading": "Mandatory Farming Gear", "body": "Buy Mog's Amulet (10,000 Gil, Sector 7 Shop via M4-4-3) so every enemy drops its Rare Drop, and Brigand's Gloves (10,000 Gil) for 100% Steal/Mug success. Later buy Jeweled Ring (Online Shop Shade M9-5-4) for 2x Gil & drops."},
+                    {"heading": "Mandatory Farming Gear", "body": "Buy Mog's Amulet (10,000 Gil, Sector 7 Shop via M4-4-3) so enemies always drop Rare Drops, and Brigand's Gloves (10,000 Gil) for 100% Steal/Mug success. In Online Shop Shade (M9-5-4), buy Jeweled Ring (10,000 Gil) to double item/Materia drop quantity and Precious Watch (10,000 Gil) to double Gil earned from battles."},
                     {"heading": "M9-5-3 (Three Stars) & Minerva", "body": "M9-5-3 is the #1 SP and Gil farm in Reunion—Three Stars and Tycoon yield massive SP plus sellable Mythril Armlets and Tri-Thundaga. If you already unlocked M9-6-6, Mug Minerva for 99x Phoenix Downs (495,000 Gil per run) and flee or die to repeat."},
                 ],
             },
@@ -1449,7 +1483,7 @@ def build_guides_json() -> dict[str, Any]:
                 "title": "3. Stat Fusion Material Farming & 98/980% Pipeline",
                 "badge": "Stat Maxing",
                 "summary": "Reunion changes (no repeat clear rewards), M7-2-1 Item Fusion Tome, Potion HP% rule, M6-6-3 Dark Matter, and 98/980% Libra conversion.",
-                "refs": {"missions": ["M7-2-1", "M6-6-3", "M9-2-6", "M9-4-1", "M9-4-4"], "items": ["item_potion", "item_dark_matter", "item_adamantite", "item_mythril", "item_fat_chocobo_feather", "item_hero_drink", "item_gysahl_greens", "item_libra"]},
+                "refs": {"missions": ["M7-2-1", "M6-6-3", "M9-2-6", "M3-4-6", "M9-6-5", "M9-6-3"], "items": ["item_potion", "item_dark_matter", "item_adamantite", "item_mythril", "item_fat_chocobo_feather", "item_hero_drink", "item_gysahl_greens", "item_libra"]},
                 "blocks": [
                     {"heading": "Reunion Difference: No Repeatable Clear Rewards", "body": "Unlike PSP, Crisis Core Reunion only awards Mission Clear Rewards once. Instead of re-clearing missions for 99 items, farm Dark Matter from Lesser Worms in M6-6-3 (with Mog's Amulet) and convert +98 MAG Libra Materia into any stat!"},
                     {"heading": "Consumable Potion HP% Rule", "body": "Clear M7-2-1 in Chapter 4 for the Item Fusion Tome. Consumables (Potion, Hi-Potion, Ether, Elixir) ONLY amplify an EXISTING matching stat bonus on one of the two Materia! Two +0 Materia + 99 Potions = +0%. Fuse an HP Up (+10% HP) with cheap 50 Gil Potions (20 = +10% HP) first."},
@@ -1559,7 +1593,7 @@ def build_fusion_rules_json() -> dict[str, Any]:
             {"result": "Hell Blizzaga", "resultId": "item_hell_blizzaga", "ingredientA": "Blizzaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
             {"result": "Hell Firaga", "resultId": "item_hell_firaga", "ingredientA": "Firaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
             {"result": "Hell Thundaga", "resultId": "item_hell_thundaga", "ingredientA": "Thundaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
-            {"result": "Status Ward", "resultId": "item_status_ward", "ingredientA": "Buy: Happy Turtle (M4-3-6)", "ingredientB": "Or Esuna + Libra / Dispel", "note": "Protects against all statuses listed on paired Hell-aga Materia."},
+            {"result": "Status Ward", "resultId": "item_status_ward", "ingredientA": "Buy: Wutai Secret Shop (M4-2-6, 40k Gil)", "ingredientB": "Or Esuna + Libra / Dispel", "note": "Protects against all statuses listed on paired Hell-aga Materia."},
             {"result": "Dualcast", "resultId": "item_dualcast", "ingredientA": "Buy: Online Shop Shade (M9-5-4)", "ingredientB": "Or High-Rank Magic + Ultima/Energy", "note": "Casts equipped Magic Materia twice per turn."},
             {"result": "Electrocute", "resultId": "item_electrocute", "ingredientA": "Thundaga (M)", "ingredientB": "Graviga / Flare / Energy", "note": "Massive multi-hit lightning magic burst."},
             {"result": "Energy", "resultId": "item_energy", "ingredientA": "Graviga / Flare", "ingredientB": "Status Ward / Dualcast / Libra", "note": "Non-elemental piercing magic; strong with Dualcast."},
@@ -1693,10 +1727,18 @@ def validate_dataset(data_dir: Path) -> None:
     enemy_ids = {e["id"] for e in enemies}
     item_ids = {it["id"] for it in items}
 
-    # Verify zero dirty placeholder item IDs
+    # Verify zero dirty placeholder item IDs or generic placeholder descriptions
     for iid in item_ids:
-        if re.fullmatch(r"item_\d+", iid) or "drop_rate" in iid or iid.startswith("item_none_") or iid == "item_various":
+        if (
+            re.fullmatch(r"item_\d+", iid)
+            or "drop_rate" in iid
+            or iid.startswith("item_none_")
+            or iid in ("item_various", "item_adamantite_adamantite", "item_mag_mako_stone_fire", "item_esuna_materia", "item_poison_materia", "item_silence_materia")
+        ):
             errors.append(f"Dirty item ID detected: {iid}")
+    for it in items:
+        if "Obtained from Crisis Core missions" in (it.get("description") or ""):
+            errors.append(f"Generic placeholder description remained on {it['id']}")
 
     # Strict Relational Rule: no enemy drop/steal lists inside items.json
     for it in items:
@@ -1730,6 +1772,14 @@ def validate_dataset(data_dir: Path) -> None:
     if no_enemy_missions:
         errors.append(f"{len(no_enemy_missions)} mission(s) have 0 enemies: {no_enemy_missions[:10]}")
 
+    shop_by_id = {s["id"]: s for s in shops}
+    sec5 = shop_by_id.get("shop_sector_5_materia_shop")
+    sec7 = shop_by_id.get("shop_sector_7_shop")
+    if not sec5 or len(sec5.get("stock", [])) != 6:
+        errors.append(f"Sector 5 Materia Shop expected 6 items, found {len(sec5.get('stock', [])) if sec5 else 0}")
+    if not sec7 or len(sec7.get("stock", [])) != 12:
+        errors.append(f"Sector 7 Shop expected 12 items, found {len(sec7.get('stock', [])) if sec7 else 0}")
+
     for sh in shops:
         if sh.get("unlockMissionId") and sh["unlockMissionId"] not in mission_ids:
             errors.append(f"Broken shop unlockMissionId {sh['unlockMissionId']} in {sh['id']}")
@@ -1737,17 +1787,31 @@ def validate_dataset(data_dir: Path) -> None:
             if st["itemId"] not in item_ids:
                 errors.append(f"Broken shop stock itemId {st['itemId']} in {sh['id']}")
 
+    mission_by_id = {m["id"]: m for m in missions}
+    enemy_by_id = {e["id"]: e for e in enemies}
+
     for b in guides.get("levelBrackets", []):
         for mid in b.get("priorityMissions", []):
             if mid not in mission_ids:
                 errors.append(f"Broken guide bracket mission ref {mid}")
     for fm in guides.get("farmingMatrix", []):
-        if fm.get("bestMissionId") and fm["bestMissionId"] not in mission_ids:
-            errors.append(f"Broken farmingMatrix mission ref {fm['bestMissionId']}")
-        if fm.get("enemyId") and fm["enemyId"] not in enemy_ids:
-            errors.append(f"Broken farmingMatrix enemy ref {fm['enemyId']}")
-        if fm.get("itemId") and fm["itemId"] not in item_ids:
-            errors.append(f"Broken farmingMatrix item ref {fm['itemId']}")
+        mid = fm.get("bestMissionId")
+        eid = fm.get("enemyId")
+        iid = fm.get("itemId")
+        if mid and mid not in mission_ids:
+            errors.append(f"Broken farmingMatrix mission ref {mid}")
+        if eid and eid not in enemy_ids:
+            errors.append(f"Broken farmingMatrix enemy ref {eid}")
+        if iid and iid not in item_ids:
+            errors.append(f"Broken farmingMatrix item ref {iid}")
+        if mid and eid:
+            m_obj = mission_by_id[mid]
+            if eid not in (m_obj.get("bossEnemyIds", []) + m_obj.get("randomEnemyIds", [])):
+                errors.append(f"FarmingMatrix mismatch: {eid} does not spawn in {mid}")
+        if fm.get("category") == "Fusion Stats" and eid and iid:
+            en_obj = enemy_by_id[eid]
+            if iid not in en_obj["loot"].values():
+                errors.append(f"FarmingMatrix mismatch: {iid} is not in {eid} loot")
     for d in guides.get("dmwImages", []):
         if d.get("missionId") and d["missionId"] not in mission_ids:
             errors.append(f"Broken dmw mission ref {d['missionId']}")
