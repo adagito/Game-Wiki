@@ -14,7 +14,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_elixir",
@@ -42,7 +42,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -73,7 +73,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -102,7 +102,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_black_belt",
@@ -131,10 +131,10 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_hp_up",
+      "itemId": "item_hp_up_plus_plus",
       "quantity": 1,
       "rawLabel": "HP Up++"
     },
@@ -160,7 +160,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_mug",
@@ -181,15 +181,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Challenge from Security",
     "description": "Members of the Security Department have requested a joint training session with SOLDIER., Some of them seem to regard SOLDIER with a passionate sense of rivalry., It's only a training session, but don't take it lightly.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Speak with Shinra Captain on Loveless Street in Sector 8.",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_shinra_alpha",
@@ -221,15 +221,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Second Challenge",
     "description": "Members of the Security Department have requested another joint training session with SOLDIER., They have robots to support them this time., Proceed with caution.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Complete M1-2-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_silence",
@@ -257,15 +257,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Third Challenge",
     "description": "Members of the Security Department have requested yet another joint training session with SOLDIER., A statement from them reads: \"We were holding back in the previous sessions.\", They are desperate and may do anything to save face. Be careful.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Complete M1-2-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_four_slots",
@@ -297,15 +297,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Getting Serious",
     "description": "The persistent members of the Security Department have sent SOLDIER another challenge to a joint training session., Making excuses, they claim the difference in budget between the departments to be the reasons for their losses., Go show them exactly why we are combat experts.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Complete M1-2-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_force_bracelet",
@@ -336,15 +336,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Armed Challenge",
     "description": "Members of the Security Department have sent SOLDIER yet another challenge to a joint training session., It seems they have succeeded in securing funds and have new weapons at their disposal., We in SOLDIER never blame a loss on the budget., Win the session and teach them the meaning of dignity.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Complete M1-2-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_ice_armlet",
@@ -371,7 +371,7 @@
     "bossEnemyIds": [],
     "randomEnemyIds": [
       "enemy_corporal",
-      "enemy_sweeper"
+      "enemy_sweeper_plus"
     ]
   },
   {
@@ -381,15 +381,15 @@
     "subGroup": "M1-2: Peacekeeping Troops",
     "title": "Last Challenge",
     "description": "Members of the Security Departments, on a losing streak, have yet again challenged SOLDIER to a joint training session., They have used up their entire budget on this one., We know we've had too many of these, but this on is sure to be the last., Savor it for what it is.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 4,
     "unlockCondition": "Complete M1-2-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -413,7 +413,7 @@
       "enemy_arachno",
       "enemy_corporal",
       "enemy_flying_machine",
-      "enemy_sweeper"
+      "enemy_sweeper_plus"
     ]
   },
   {
@@ -423,15 +423,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "Next-Generation Weapons",
     "description": "After vanishing from Wutai, Genesis has formed his own army and commenced an attack on Shinra troops., Shinra is developing new weapons to counter the emerging threat., We want you to participate in testing these weapons.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Beginning of Chapter 6",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_assault_twister",
@@ -442,7 +442,7 @@
     "bossEnemyIds": [],
     "randomEnemyIds": [
       "enemy_guard_fang",
-      "enemy_sweeper"
+      "enemy_sweeper_plus"
     ]
   },
   {
@@ -452,15 +452,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "New Mechanical Weapons",
     "description": "The Shinra weapons that vanished with Genesis reappeared in his forces' hands., To counter them, we have started developing new and improved weapons., We ask for your support in testing this enhanced gear.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 5,
     "unlockCondition": "Complete M1-3-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_cura",
@@ -492,15 +492,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "To Quash Genesis's Forces",
     "description": "The New Weapons Group, dedicating to developing more powerful weapons, has obtained extensive operation data on the weapons used by Genesis' forces., They have succeeded in developing new weapons that should overcome their current arsenal., We want you to participate in testing these weapons.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 5,
     "unlockCondition": "Complete M1-3-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_thundaga",
@@ -529,15 +529,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "Experiments Gone Wrong",
     "description": "Hastily developed weapons designed to fight Genesis have gone berserk., The testing site is closed off, so there is no concern of damage spreading outside, but we must bring the situation under control., Destroy all machines inside the testing area.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 5,
     "unlockCondition": "Complete M1-3-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_river_chocobo_armlet",
@@ -564,15 +564,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "Robots in the City",
     "description": "New weapons have been developed to counter the elusive Genesis copies in the city., Your cooperation is needed in the testing area for us to obtain combat data for defending Midgar.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 5,
     "unlockCondition": "Complete M1-3-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_graviga",
@@ -605,15 +605,15 @@
     "subGroup": "M1-3: Weapons Development",
     "title": "A Director's Request",
     "description": "We have been asked by Director Scarlet at the Arms Development Department to test new weapons., This is a very new version of an unmanned weapon currently in use, and we must collect as much combat data as much as possible., Destroy all machines within the battle area.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 5,
     "unlockCondition": "Complete M1-3-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_crystal_bracelet",
@@ -640,15 +640,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Urban Combat Operations",
     "description": "We have newly formed urban combat force., Final adjustments must be made based on combat testing before they are sent out on real missions., We ask for your participation in the city-themed training event.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-3-6",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -657,7 +657,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_vit_up",
+        "itemId": "item_vit_up_plus_plus",
         "quantity": 1,
         "rawLabel": "VIT Up++"
       },
@@ -686,15 +686,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Cyber-Sabotage",
     "description": "One of Genesis' secret agents has introduced a virus to a fleet of our prototype weapons. The weapons are now out of control and attacking our own people., Track down the large four weapons and destroy them!",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_drainga",
@@ -702,7 +702,9 @@
       "rawLabel": "Drainga"
     },
     "treasures": [],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_red_scorpion"
+    ],
     "randomEnemyIds": []
   },
   {
@@ -712,29 +714,29 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Stolen Shinra Weapons",
     "description": "While Shinra troops were gearing up for battle with Genesis,, AVALANCHE, the anti-Shinra group caught them off guard and stole their weapons for use in their own offensive., Go to AVALANCHE's base to fight them and reclaim our weapons.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_magic_up",
+      "itemId": "item_mag_up_plus_plus",
       "quantity": 1,
       "rawLabel": "Magic Up++"
     },
     "treasures": [
       {
-        "itemId": "item_spr_up",
+        "itemId": "item_spr_up_plus_plus",
         "quantity": 1,
         "rawLabel": "SPR Up++"
       },
       {
-        "itemId": "item_mp_up",
+        "itemId": "item_mp_up_plus_plus",
         "quantity": 1,
         "rawLabel": "MP Up++"
       }
@@ -752,15 +754,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Destroy the Mobile Artillery",
     "description": "Mobile artillery produced to counter Genesis' weapons has gone berserk due to careless QA testing., They have broken through the factory walls and are now heading toward the residential district., Destroy them before they reach the citizenry.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_high_jump",
@@ -778,8 +780,8 @@
     "randomEnemyIds": [
       "enemy_martial_tank",
       "enemy_sky_armor",
-      "enemy_support_machine",
-      "enemy_sweeper"
+      "enemy_support_machine_plus",
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -789,15 +791,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Testing New Weapons",
     "description": "We're going to conduct a test on new weapons designed to combat Genesis troops and Wutai remnants hiding in the caves., Enter the test dungeon and fight against every weapon you encounter.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_stop_twister",
@@ -828,15 +830,15 @@
     "subGroup": "M1-4: Plan for New Equipment",
     "title": "Weapons Comparison Test",
     "description": "We want you to participate in an evaluation of next-generation Sweeper models., Four new Sweepers have been placed in the testing area; fight them one at a time., The test is over when you have destroyed all four.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 6,
     "unlockCondition": "Complete M1-4-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -865,15 +867,15 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Special Ops Weapons",
     "description": "The Special Operation Weapons Group uses Shinra's most cutting-edge technologies to create the best possible machine without concern for mass production., We would like for you to help us test these machines.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-4-6",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_lunar_harp",
@@ -911,15 +913,15 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Special Ops Weapons Return",
     "description": "They may look the same on the outside, but their internals have been extensively reworked., The subjects are already in the testing area, so if you would kindly participate in our evaluation...",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-5-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -951,15 +953,15 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Tarantula Test",
     "description": "We have completed work on Tarantula, the latest machine designed to support us in our plight against Genesis copies., It's time to test its performance by pitting it against you., Please head over to the testing area.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-5-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_energy",
@@ -969,7 +971,7 @@
     "treasures": [],
     "bossEnemyIds": [],
     "randomEnemyIds": [
-      "enemy_gun_bull_head",
+      "enemy_gun_bull_head_plus",
       "enemy_tarantula"
     ]
   },
@@ -980,15 +982,15 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Shinra Machines Unit",
     "description": "A new combat team has been formed, capable of fighting more efficiently., We want to test their abilities against SOLDIER before we send them off to real combat., Gear up for a fight in the test arena.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-5-3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_crystal_gloves",
@@ -1010,7 +1012,7 @@
     "bossEnemyIds": [],
     "randomEnemyIds": [
       "enemy_break_machine",
-      "enemy_gun_bull_head",
+      "enemy_gun_bull_head_plus",
       "enemy_hellhound"
     ]
   },
@@ -1021,18 +1023,18 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Better Death Machines",
     "description": "Plans to create powered-up Death Machines are underway., As an intermediary step, we have released a new model... but its true worth is unknown until its testing phase, so we ask you to participate., Please enter the testing arena.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-5-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_shinra_beta",
+      "itemId": "item_shinra_beta_plus",
       "quantity": 1,
       "rawLabel": "Shinra Beta+"
     },
@@ -1046,7 +1048,7 @@
     "bossEnemyIds": [],
     "randomEnemyIds": [
       "enemy_spike_machine",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus_plus"
     ]
   },
   {
@@ -1056,15 +1058,15 @@
     "subGroup": "M1-5: Special Operations Arms Laboratory",
     "title": "Final Versions of the Spider",
     "description": "The Spider robots have been overhauled and redesigned to be rolled out as the Guardian Eyes., There are presently four of them in the testing arena., Please enter and fight them whenever you are ready.",
-    "stars": 1,
+    "stars": 5,
     "chapterAvailable": 7,
     "unlockCondition": "Complete M1-5-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 5,
-      "hp": 1200,
-      "vit": 15,
-      "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "recommendedLevel": 30,
+      "hp": 8500,
+      "vit": 85,
+      "spr": 85,
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -1076,7 +1078,7 @@
     "randomEnemyIds": [
       "enemy_guardian_eyes",
       "enemy_spike_machine",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus_plus"
     ]
   },
   {
@@ -1094,7 +1096,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_poison",
@@ -1129,7 +1131,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_fire_armlet",
@@ -1169,7 +1171,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_phoenix_down",
@@ -1210,7 +1212,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_fire_ring",
@@ -1240,7 +1242,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_spr_up",
@@ -1275,7 +1277,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_ice_ring",
@@ -1316,7 +1318,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_assault_twister",
@@ -1351,7 +1353,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_venom_shock",
@@ -1380,16 +1382,16 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
-      "itemId": "item_ap_up",
+      "itemId": "item_ap_up_plus",
       "quantity": 1,
       "rawLabel": "AP Up+"
     },
     "treasures": [
       {
-        "itemId": "item_atk_up",
+        "itemId": "item_atk_up_plus",
         "quantity": 1,
         "rawLabel": "ATK Up+"
       }
@@ -1419,7 +1421,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_elemental_ward",
@@ -1460,10 +1462,10 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_spr_up",
+      "itemId": "item_spr_up_plus",
       "quantity": 1,
       "rawLabel": "SPR Up+"
     },
@@ -1496,7 +1498,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_quake",
@@ -1528,10 +1530,10 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
-      "itemId": "item_gongaga_trading_shop",
+      "itemId": "item_gongaga_trading",
       "quantity": 1,
       "rawLabel": "Gongaga Trading (Shop)"
     },
@@ -1575,7 +1577,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_mountain_chocobo_armlet",
@@ -1589,7 +1591,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_hp_up",
+        "itemId": "item_hp_up_plus_plus",
         "quantity": 1,
         "rawLabel": "HP Up++ (M)"
       }
@@ -1616,7 +1618,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_silence_aerial",
@@ -1657,7 +1659,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_exploder_blade",
@@ -1676,7 +1678,7 @@
         "rawLabel": "Drainga (M)"
       },
       {
-        "itemId": "item_spr_up",
+        "itemId": "item_spr_up_plus_plus",
         "quantity": 1,
         "rawLabel": "SPR Up++ (M)"
       }
@@ -1704,7 +1706,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_platinum_bangle",
@@ -1740,7 +1742,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_kaiser_knuckles",
@@ -1754,7 +1756,7 @@
         "rawLabel": "Tri-Thundaga (M)"
       },
       {
-        "itemId": "item_shinra_beta",
+        "itemId": "item_shinra_beta_plus",
         "quantity": 1,
         "rawLabel": "Shinra Beta+"
       },
@@ -1787,7 +1789,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_gysahl_greens",
@@ -1801,7 +1803,7 @@
         "rawLabel": "X-Potion"
       },
       {
-        "itemId": "item_junon_souvenirs_shop",
+        "itemId": "item_junon_souvenirs",
         "quantity": 1,
         "rawLabel": "Junon Souvenirs (Shop)"
       }
@@ -1829,7 +1831,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -1875,7 +1877,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_phoenix_down",
@@ -1913,7 +1915,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_energy",
@@ -1960,10 +1962,10 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
-      "itemId": "item_mythril_mine_traders_shop",
+      "itemId": "item_mythril_mine_trading",
       "quantity": 1,
       "rawLabel": "Mythril Mine Traders (Shop)"
     },
@@ -2002,7 +2004,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_energy",
@@ -2044,7 +2046,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_assault_twister",
@@ -2085,7 +2087,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hell_thundaga",
@@ -2126,7 +2128,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_wizard_bracelet",
@@ -2162,7 +2164,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sp_turbo_attack",
@@ -2199,7 +2201,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_faerie_ring",
@@ -2256,7 +2258,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_gold_hairpin",
@@ -2319,7 +2321,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_bronze_bangle",
@@ -2360,7 +2362,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_iron_bangle",
@@ -2388,15 +2390,15 @@
     "subGroup": "M3-1: Genesis's Forces on the March",
     "title": "Eliminate the Copies",
     "description": "Genesis troops have been ID'd by scouts on their way to wasteland., Vanquish this core group and stop the enemy from moving in!",
-    "stars": 10,
+    "stars": 3,
     "chapterAvailable": 5,
     "unlockCondition": "Progress to Chapter 5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 15,
+      "hp": 3600,
+      "vit": 40,
+      "spr": 40,
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_ap_up",
@@ -2435,7 +2437,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_vit_up",
@@ -2470,15 +2472,15 @@
     "subGroup": "M3-1: Genesis's Forces on the March",
     "title": "Eliminate the Death Machines",
     "description": "Genesis' forces are reorganizing., There seems to be no change in their weaponry, but the troops organized around the Death Machines are not to be trifled with., Attack them before they start mobilizing!",
-    "stars": 10,
+    "stars": 3,
     "chapterAvailable": 4,
     "unlockCondition": "Completion of Mission 3-1-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 15,
+      "hp": 3600,
+      "vit": 40,
+      "spr": 40,
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_mythril_gloves",
@@ -2516,7 +2518,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_mystile",
@@ -2568,7 +2570,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_lightning_armlet",
@@ -2604,10 +2606,10 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_mp_up",
+      "itemId": "item_mp_up_plus_plus",
       "quantity": 1,
       "rawLabel": "MP Up++ (Materia)"
     },
@@ -2652,15 +2654,15 @@
     "subGroup": "M3-2: Major Offensives",
     "title": "Raid the Enemy's Stronghold",
     "description": "We have uncovered the location to which Genesis copies were escaping via cargo ship., There is no doubt that they have a stronghold there., Deploy immediately and attack the base!",
-    "stars": 9,
+    "stars": 4,
     "chapterAvailable": 5,
     "unlockCondition": "Completion of Mission 3-2-2",
     "hardModeBenchmarks": {
-      "recommendedLevel": 68,
-      "hp": 60000,
-      "vit": 225,
-      "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "recommendedLevel": 22,
+      "hp": 5500,
+      "vit": 60,
+      "spr": 60,
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_fire_blade",
@@ -2685,12 +2687,12 @@
       }
     ],
     "bossEnemyIds": [
-      "enemy_generals_tank"
+      "enemy_generals_tank",
+      "enemy_support_machine"
     ],
     "randomEnemyIds": [
       "enemy_g_blader",
-      "enemy_g_trooper",
-      "enemy_support_machine"
+      "enemy_g_trooper"
     ]
   },
   {
@@ -2708,7 +2710,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_thundara_blade",
@@ -2745,7 +2747,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_gris_gris_bag",
@@ -2785,7 +2787,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_crystal_gloves",
@@ -2828,7 +2830,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_silver_armlet",
@@ -2852,7 +2854,7 @@
         "rawLabel": "Four Slots"
       },
       {
-        "itemId": "item_atk_up",
+        "itemId": "item_atk_up_plus_plus",
         "quantity": 1,
         "rawLabel": "ATK UP++ (Materia)"
       }
@@ -2880,7 +2882,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_firaga_blade",
@@ -2917,7 +2919,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_osmoga",
@@ -2958,7 +2960,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_drain_blade",
@@ -2997,18 +2999,18 @@
     "subGroup": "M3-3: Clash with Genesis's Forces",
     "title": "Rumble in Midgar",
     "description": "The supposed plans by Genesis's main forces to attack Midgar were merely a diversion., A special operation unit has already infiltrated Midgar., Eliminate the enemy on sight.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 6,
     "unlockCondition": "Completion of Mission 3-3-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
-      "itemId": "item_assault_twister",
+      "itemId": "item_assault_twister_plus",
       "quantity": 1,
       "rawLabel": "Assault Twister+ (Materia)"
     },
@@ -3023,7 +3025,7 @@
     "randomEnemyIds": [
       "enemy_g_devastator",
       "enemy_g_spartan",
-      "enemy_sweeper",
+      "enemy_sweeper_plus_plus",
       "enemy_g_baldor"
     ]
   },
@@ -3034,15 +3036,15 @@
     "subGroup": "M3-3: Clash with Genesis's Forces",
     "title": "Regain the Mako Facility",
     "description": "A mako excavation facility has been taken over by Genesis troops., If they were to obtain mako energy, it would greatly boost their capabilities., The facility must be taken back at all cost. Eliminate the enemy in the facility.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 6,
     "unlockCondition": "Completion of Mission 3-3-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_blast_wave",
@@ -3067,7 +3069,7 @@
       "enemy_g_baldor",
       "enemy_g_dominator",
       "enemy_g_spartan",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -3085,7 +3087,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_electrocute",
@@ -3121,7 +3123,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_death_jump",
@@ -3162,7 +3164,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -3204,7 +3206,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_flare",
@@ -3247,7 +3249,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -3289,7 +3291,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_sp_turbo_magic",
@@ -3346,7 +3348,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -3392,7 +3394,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -3401,7 +3403,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_iron_punch",
+        "itemId": "item_iron_fist",
         "quantity": 1,
         "rawLabel": "Iron Punch (Materia)"
       },
@@ -3433,7 +3435,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_wall",
@@ -3442,7 +3444,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_shinra_beta",
+        "itemId": "item_shinra_beta_plus",
         "quantity": 1,
         "rawLabel": "Shinra Beta+"
       },
@@ -3475,7 +3477,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_ultima",
@@ -3527,7 +3529,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -3564,7 +3566,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sp_turbo_attack",
@@ -3611,7 +3613,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_elixir",
@@ -3647,7 +3649,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_bulletproof_vest",
@@ -3685,7 +3687,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_libra",
@@ -3731,7 +3733,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_muscle_belt",
@@ -3767,7 +3769,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_mute_shock",
@@ -3812,7 +3814,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_poison_blade",
@@ -3853,7 +3855,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_lightning_armlet",
@@ -3894,7 +3896,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_gold_armlet",
@@ -3903,7 +3905,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_ap_up",
+        "itemId": "item_ap_up_plus",
         "quantity": 1,
         "rawLabel": "AP UP+ (M)"
       },
@@ -3935,7 +3937,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_blaze_armlet",
@@ -3982,10 +3984,10 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
-      "itemId": "item_ap_up",
+      "itemId": "item_ap_up_plus_plus",
       "quantity": 1,
       "rawLabel": "AP Up++ (M)"
     },
@@ -4001,7 +4003,7 @@
         "rawLabel": "Hi-Potion"
       },
       {
-        "itemId": "item_spr_up",
+        "itemId": "item_spr_up_plus",
         "quantity": 1,
         "rawLabel": "SPR Up+ (M)"
       }
@@ -4029,7 +4031,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_sprint_shoes",
@@ -4071,10 +4073,10 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
-      "itemId": "item_wutai_secret_shop_item",
+      "itemId": "item_wutai_secret",
       "quantity": 1,
       "rawLabel": "Wutai Secret Shop item"
     },
@@ -4117,7 +4119,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_poison_twister",
@@ -4158,7 +4160,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_system_shock",
@@ -4199,7 +4201,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_power_wrist",
@@ -4244,7 +4246,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_diamond_bracelet",
@@ -4274,7 +4276,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_death",
@@ -4320,7 +4322,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_mountain_chocobo_armlet",
@@ -4339,7 +4341,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_the_happy_turtle_shop_item",
+        "itemId": "item_the_happy_turtle",
         "quantity": 1,
         "rawLabel": "The Happy Turtle shop item"
       }
@@ -4367,7 +4369,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -4413,7 +4415,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_darkness",
@@ -4454,7 +4456,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -4473,7 +4475,7 @@
         "rawLabel": "Gold Rolling Pin"
       },
       {
-        "itemId": "item_sector_7_shop_item",
+        "itemId": "item_sector_7",
         "quantity": 1,
         "rawLabel": "Sector 7 - Shop item"
       },
@@ -4511,7 +4513,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_gil_toss",
@@ -4558,7 +4560,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -4604,7 +4606,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_moon_bracer",
@@ -4618,7 +4620,7 @@
         "rawLabel": "Gold Rolling Pin"
       },
       {
-        "itemId": "item_spr_up",
+        "itemId": "item_spr_up_plus_plus",
         "quantity": 1,
         "rawLabel": "SPR Up++ (M)"
       }
@@ -4646,7 +4648,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_tri_thundaga",
@@ -4686,7 +4688,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_platinum_bangle",
@@ -4695,7 +4697,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_ap_up",
+        "itemId": "item_ap_up_plus_plus",
         "quantity": 1,
         "rawLabel": "AP Up++ (M)"
       },
@@ -4727,7 +4729,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_dispel_blade",
@@ -4774,7 +4776,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_goblin_punch",
@@ -4817,7 +4819,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_royal_crown",
@@ -4860,7 +4862,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_magical_punch",
@@ -4902,7 +4904,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_fire",
@@ -4922,15 +4924,15 @@
     "subGroup": "M5-1: Sample Monsters Lv. 1",
     "title": "Experiment No. 102",
     "description": "Bahamut! A rare find indeed..., I thank you for such an invaluable sample., I have created another battle simulation based on this data, so have at it once you're ready.",
-    "stars": 2,
+    "stars": 3,
     "chapterAvailable": 3,
     "unlockCondition": "Progress to Chapter 3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 10,
-      "hp": 2200,
-      "vit": 25,
-      "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "recommendedLevel": 15,
+      "hp": 3600,
+      "vit": 40,
+      "spr": 40,
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_amulet",
@@ -4938,7 +4940,9 @@
       "rawLabel": "Amulet"
     },
     "treasures": [],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_bahamut"
+    ],
     "randomEnemyIds": []
   },
   {
@@ -4956,7 +4960,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_lightning_ring",
@@ -4977,15 +4981,15 @@
     "subGroup": "M5-1: Sample Monsters Lv. 1",
     "title": "Experiment No. 104",
     "description": "A very intriguing sample. A Bahamut strain!, Genesis has more than a few tricks up his sleeve. So, this is a simulated battle; with special thanks to Genesis., Allow me to collect more combat data while you dish out the hurt.",
-    "stars": 2,
+    "stars": 9,
     "chapterAvailable": 6,
     "unlockCondition": "Progress to Chapter 6",
     "hardModeBenchmarks": {
-      "recommendedLevel": 10,
-      "hp": 2200,
-      "vit": 25,
-      "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_drain",
@@ -4993,7 +4997,9 @@
       "rawLabel": "Drain (M)"
     },
     "treasures": [],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_bahamut_fury"
+    ],
     "randomEnemyIds": []
   },
   {
@@ -5011,7 +5017,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_venom_shock",
@@ -5032,15 +5038,15 @@
     "subGroup": "M5-1: Sample Monsters Lv. 1",
     "title": "Experiment No. 106",
     "description": "Too bad about Angeal. He could have lived longer had he only returned to Shinra., I would have preferred to get his body back to my lab... but at the very least, I retrieved some data from which I created a simulation of his final state., Perhaps you might be able to tell just how faithful a reproduction it is...",
-    "stars": 3,
+    "stars": 4,
     "chapterAvailable": 7,
     "unlockCondition": "Progress to Chapter 7",
     "hardModeBenchmarks": {
-      "recommendedLevel": 15,
-      "hp": 3600,
-      "vit": 40,
-      "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "recommendedLevel": 22,
+      "hp": 5500,
+      "vit": 60,
+      "spr": 60,
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_drainra",
@@ -5059,7 +5065,9 @@
         "rawLabel": "Elixir"
       }
     ],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_angeal_penance"
+    ],
     "randomEnemyIds": [
       "enemy_a_griffon",
       "enemy_a_hound"
@@ -5072,15 +5080,15 @@
     "subGroup": "M5-2: Sample Monsters Lv. 2",
     "title": "Experiment No. 107",
     "description": "Is the hero really dead?, Things would have been more interesting if only I had arrived at Nibelheim a bit sooner..., We'll have to settle a simulation based on the data left in the monitoring system at the mako reactor.",
-    "stars": 2,
+    "stars": 6,
     "chapterAvailable": 9,
     "unlockCondition": "Progress to Chapter 9",
     "hardModeBenchmarks": {
-      "recommendedLevel": 10,
-      "hp": 2200,
-      "vit": 25,
-      "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_curaga",
@@ -5100,15 +5108,15 @@
     "subGroup": "M5-2: Sample Monsters Lv. 2",
     "title": "Experiment No. 108",
     "description": "I wonder if Sephiroth gave his all fighting you?, It's too bad the monitoring system cannot record the subject's mind as well. Still, the data shows significant strength., Could he have accepted you as a SOLDIER member? An interesting state he was in...",
-    "stars": 5,
+    "stars": 6,
     "chapterAvailable": 9,
     "unlockCondition": "Progress to Chapter 9",
     "hardModeBenchmarks": {
-      "recommendedLevel": 30,
-      "hp": 8500,
-      "vit": 85,
-      "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "recommendedLevel": 38,
+      "hp": 13000,
+      "vit": 110,
+      "spr": 110,
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_firaga",
@@ -5140,7 +5148,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_mortal_shock",
@@ -5170,7 +5178,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_wall",
@@ -5198,7 +5206,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -5226,7 +5234,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_osmose_blade",
@@ -5254,7 +5262,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_poison_aerial",
@@ -5282,7 +5290,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_death_twister",
@@ -5310,7 +5318,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_iron_fist",
@@ -5338,7 +5346,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_platinum_bangle",
@@ -5366,7 +5374,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_crystal_orb",
@@ -5394,7 +5402,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_dark_matter",
@@ -5422,7 +5430,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_element_blade",
@@ -5450,7 +5458,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_magical_punch",
@@ -5478,7 +5486,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_flare",
@@ -5506,7 +5514,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -5534,7 +5542,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_quake",
@@ -5562,7 +5570,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_ribbon",
@@ -5590,7 +5598,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_phoenix_down",
@@ -5625,7 +5633,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_chocobo_armlet",
@@ -5660,7 +5668,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_jump",
@@ -5706,7 +5714,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_dark_matter",
@@ -5741,7 +5749,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_lunar_harp",
@@ -5783,7 +5791,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -5823,12 +5831,12 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_fat_chocobo_feather_x2_sector_8_materia_shop_item",
+      "itemId": "item_fat_chocobo_feather",
       "quantity": 2,
-      "rawLabel": "Fat Chocobo Feather x2, Sector 8 - Materia Shop item"
+      "rawLabel": "Fat Chocobo Feather x2"
     },
     "treasures": [
       {
@@ -5845,6 +5853,11 @@
         "itemId": "item_ether",
         "quantity": 1,
         "rawLabel": "Ether"
+      },
+      {
+        "itemId": "item_sector_8_materia",
+        "quantity": 1,
+        "rawLabel": "Sector 8 - Materia Shop item"
       }
     ],
     "bossEnemyIds": [],
@@ -5868,7 +5881,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -5914,16 +5927,16 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
-      "itemId": "item_lunar_harp_x2_sector_5_materia_shop_item",
+      "itemId": "item_lunar_harp",
       "quantity": 2,
-      "rawLabel": "Lunar Harp x2, Sector 5 - Materia Shop item"
+      "rawLabel": "Lunar Harp x2"
     },
     "treasures": [
       {
-        "itemId": "item_hp_up",
+        "itemId": "item_hp_up_plus",
         "quantity": 1,
         "rawLabel": "HP Up+ (Materia)"
       },
@@ -5931,6 +5944,11 @@
         "itemId": "item_elixir",
         "quantity": 1,
         "rawLabel": "Elixir"
+      },
+      {
+        "itemId": "item_sector_5_materia",
+        "quantity": 1,
+        "rawLabel": "Sector 5 - Materia Shop item"
       }
     ],
     "bossEnemyIds": [],
@@ -5954,7 +5972,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_elixir",
@@ -6000,7 +6018,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_docs_code",
@@ -6030,12 +6048,12 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_lunar_harp_x_2_sector_6_accessory_shop_item",
+      "itemId": "item_lunar_harp",
       "quantity": 2,
-      "rawLabel": "Lunar Harp x 2, Sector 6 - Accessory Shop item"
+      "rawLabel": "Lunar Harp x 2"
     },
     "treasures": [
       {
@@ -6054,9 +6072,14 @@
         "rawLabel": "Titanium Bangle"
       },
       {
-        "itemId": "item_mp_up",
+        "itemId": "item_mp_up_plus",
         "quantity": 1,
         "rawLabel": "MP Up+ (Materia)"
+      },
+      {
+        "itemId": "item_sector_6_accessory",
+        "quantity": 1,
+        "rawLabel": "Sector 6 - Accessory Shop item"
       }
     ],
     "bossEnemyIds": [],
@@ -6081,7 +6104,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6112,7 +6135,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -6131,7 +6154,7 @@
         "rawLabel": "Hi-Potion"
       },
       {
-        "itemId": "item_mag_up",
+        "itemId": "item_mag_up_plus",
         "quantity": 1,
         "rawLabel": "MAG Up+ (Materia)"
       }
@@ -6158,7 +6181,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_dark_matter",
@@ -6189,7 +6212,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6235,7 +6258,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -6291,7 +6314,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6332,7 +6355,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6374,7 +6397,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_lunar_harp",
@@ -6388,7 +6411,7 @@
         "rawLabel": "Hell Blizzaga (Materia)"
       },
       {
-        "itemId": "item_rune_bangle",
+        "itemId": "item_rune_armlet",
         "quantity": 1,
         "rawLabel": "Rune Bangle"
       }
@@ -6416,7 +6439,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6463,7 +6486,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6472,7 +6495,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_nibel_accessories_item",
+        "itemId": "item_nibel_accessories",
         "quantity": 1,
         "rawLabel": "Nibel Accessories item"
       },
@@ -6505,7 +6528,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_shining_bracer",
@@ -6535,7 +6558,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6586,7 +6609,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -6628,7 +6651,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6696,7 +6719,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6739,7 +6762,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6791,7 +6814,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_drainga",
@@ -6838,7 +6861,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_high_jump",
@@ -6899,7 +6922,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -6945,7 +6968,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -6987,7 +7010,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_adamantite",
@@ -7043,7 +7066,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_gold_rolling_pin",
@@ -7073,7 +7096,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_dark_matter",
@@ -7135,7 +7158,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -7186,7 +7209,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_headband",
@@ -7219,15 +7242,15 @@
     "subGroup": "M7-1: Recall Missions",
     "title": "Black Market Recall",
     "description": "Certain Shinra-brand accessories were being traded illegally in the slum marketplace., The employee responsible has already been arrested, but some of the accessories are still hidden in the slums., Go there and recover all of the accessories.",
-    "stars": 10,
+    "stars": 2,
     "chapterAvailable": 4,
     "unlockCondition": "Completion of Mission 7-1-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 10,
+      "hp": 2200,
+      "vit": 25,
+      "spr": 25,
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_star_pendant",
@@ -7273,7 +7296,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_diamond_gloves",
@@ -7314,7 +7337,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_pearl_necklace",
@@ -7354,7 +7377,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_frost_armlet",
@@ -7405,7 +7428,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_sprint_shoes",
@@ -7449,15 +7472,15 @@
     "subGroup": "M7-2: Precious Things",
     "title": "Search and Destroy",
     "description": "We have located one of Genesis' underground equipment bunkers., Destroying this facility would put heavy dent into their reinforcements., Go there immediately, infiltrate the site, crush the enemy, and collect their equipment.",
-    "stars": 10,
+    "stars": 3,
     "chapterAvailable": 5,
     "unlockCondition": "Progress to Chapter 5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 15,
+      "hp": 3600,
+      "vit": 40,
+      "spr": 40,
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_item_fusion_tome",
@@ -7506,15 +7529,15 @@
     "subGroup": "M7-2: Precious Things",
     "title": "Search and Destroy II",
     "description": "We have destroyed their factory, but Genesis troops have built yet another in a new location., You must raid the site and crush the enemy., However, they have learned from the last attack and have boosted their defenses. Proceed with caution.",
-    "stars": 10,
+    "stars": 4,
     "chapterAvailable": 5,
     "unlockCondition": "Completion of Mission 7-2-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 22,
+      "hp": 5500,
+      "vit": 60,
+      "spr": 60,
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_keychain",
@@ -7578,7 +7601,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_thunder_armlet",
@@ -7629,7 +7652,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_dragon_armlet",
@@ -7680,7 +7703,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_backpack",
@@ -7731,7 +7754,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_paralyzing_shock",
@@ -7777,7 +7800,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_black_cowl",
@@ -7818,7 +7841,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_snow_armlet",
@@ -7864,7 +7887,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_sea_chocobo_armlet",
@@ -7905,7 +7928,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_gold_hairpin",
@@ -7946,7 +7969,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_snow_armlet",
@@ -7992,7 +8015,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_adaman_bangle",
@@ -8033,7 +8056,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_twisted_headband",
@@ -8074,15 +8097,15 @@
     "subGroup": "M7-4: Contacts from P",
     "title": "Second Contact",
     "description": "Hi, it's me again., \"P\" is my name. Predictions are my game., I sense another accessory component waiting to be claimed by you., If you trust me, go to the wasteland.",
-    "stars": 10,
+    "stars": 8,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 7-4-1",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 56,
+      "hp": 35000,
+      "vit": 185,
+      "spr": 185,
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_brigands_gloves",
@@ -8101,7 +8124,7 @@
         "rawLabel": "Hi-Potion"
       },
       {
-        "itemId": "item_mp_up",
+        "itemId": "item_mp_up_plus_plus",
         "quantity": 1,
         "rawLabel": "MP Up++ (M)"
       }
@@ -8112,7 +8135,7 @@
       "enemy_crazy_dagger",
       "enemy_dark_nation",
       "enemy_g_devastator",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -8130,7 +8153,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_headband",
@@ -8160,7 +8183,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_mythril_armlet",
@@ -8188,8 +8211,8 @@
     "randomEnemyIds": [
       "enemy_g_spartan",
       "enemy_martial_tank",
-      "enemy_support_machine",
-      "enemy_sweeper"
+      "enemy_support_machine_plus",
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -8199,15 +8222,15 @@
     "subGroup": "M7-4: Contacts from P",
     "title": "Signs of Growth",
     "description": "Yes, it's me again., My senses are about to reach new heights., Would you like to witness this for yourself? Go to the coal mines to see what I mean.",
-    "stars": 10,
+    "stars": 8,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 7-4-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 56,
+      "hp": 35000,
+      "vit": 185,
+      "spr": 185,
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_blaze_armlet",
@@ -8235,7 +8258,7 @@
     "randomEnemyIds": [
       "enemy_belzecue",
       "enemy_g_dominator",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -8253,7 +8276,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_brutal",
@@ -8299,7 +8322,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_sky_chocobo_armlet",
@@ -8350,7 +8373,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_gold_armlet",
@@ -8397,7 +8420,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sky_chocobo_armlet",
@@ -8416,7 +8439,7 @@
         "rawLabel": "Hi-Potion"
       },
       {
-        "itemId": "item_bone_village_commerce_item",
+        "itemId": "item_bone_village_outlet",
         "quantity": 1,
         "rawLabel": "Bone Village Commerce item"
       }
@@ -8443,7 +8466,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_power_suit",
@@ -8466,7 +8489,7 @@
     "randomEnemyIds": [
       "enemy_g_guardian",
       "enemy_g_scutatus",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus_plus"
     ]
   },
   {
@@ -8484,7 +8507,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_energy_suit",
@@ -8532,7 +8555,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_wizard_bracelet",
@@ -8573,7 +8596,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_good_luck_charm",
@@ -8634,7 +8657,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_faerie_ring",
@@ -8695,7 +8718,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_protect_ring",
@@ -8746,7 +8769,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_mogs_amulet",
@@ -8802,7 +8825,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_twisted_headband",
@@ -8826,7 +8849,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_shinra_beta",
+        "itemId": "item_shinra_beta_plus",
         "quantity": 1,
         "rawLabel": "Shinra Beta+"
       },
@@ -8859,7 +8882,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_energy_suit",
@@ -8878,7 +8901,7 @@
         "rawLabel": "Fat Chocobo Feather x3"
       },
       {
-        "itemId": "item_assault_twister",
+        "itemId": "item_assault_twister_plus",
         "quantity": 1,
         "rawLabel": "Assault Twister+ (M)"
       }
@@ -8898,15 +8921,15 @@
     "subGroup": "M8-1: Starting Out",
     "title": "Rematch with Ifrit",
     "description": "As a result of analyzing the materia you obtained in your fight with Ifrit, we have succeeded in trapping the creature—and chances are good that you can get your hands on rare materia., Hurry to the site.",
-    "stars": 3,
+    "stars": 2,
     "chapterAvailable": 3,
     "unlockCondition": "Progress to Chapter 3",
     "hardModeBenchmarks": {
-      "recommendedLevel": 15,
-      "hp": 3600,
-      "vit": 40,
-      "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "recommendedLevel": 10,
+      "hp": 2200,
+      "vit": 25,
+      "spr": 25,
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_ifrit_materia",
@@ -8934,7 +8957,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_thunder",
@@ -8970,7 +8993,7 @@
       "hp": 1200,
       "vit": 15,
       "spr": 15,
-      "notes": "Basic warm-up; Barrier helps against groups."
+      "notes": "Basic warm-up; Barrier + Battle Stance easily handles groups."
     },
     "clearReward": {
       "itemId": "item_hp_up",
@@ -9007,7 +9030,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_bahamut_materia",
@@ -9015,7 +9038,9 @@
       "rawLabel": "Bahamut Materia (DMW)"
     },
     "treasures": [],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_bahamut"
+    ],
     "randomEnemyIds": []
   },
   {
@@ -9033,7 +9058,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_regen",
@@ -9063,7 +9088,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_odin_materia",
@@ -9105,10 +9130,10 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
-      "itemId": "item_spr_mako_stone_give_to_researcher_and_receive_esuna_materia",
+      "itemId": "item_esuna_materia",
       "quantity": 1,
       "rawLabel": "SPR Mako Stone give to researcher and receive Esuna Materia"
     },
@@ -9140,10 +9165,10 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
-      "itemId": "item_vit_mako_stone_give_to_researcher_and_receive_poison_materia",
+      "itemId": "item_poison_materia",
       "quantity": 1,
       "rawLabel": "VIT Mako Stone give to researcher and receive Poison Materia"
     },
@@ -9181,10 +9206,10 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_mag_mako_stone_receive_silence_materia",
+      "itemId": "item_silence_materia",
       "quantity": 1,
       "rawLabel": "MAG Mako Stone receive Silence Materia"
     },
@@ -9217,10 +9242,10 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_hp_mako_stone_receive_silence_blade",
+      "itemId": "item_silence_blade",
       "quantity": 1,
       "rawLabel": "HP Mako Stone receive Silence Blade"
     },
@@ -9268,10 +9293,10 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_atk_mako_stone_receive_gravity",
+      "itemId": "item_gravity",
       "quantity": 1,
       "rawLabel": "ATK Mako Stone receive Gravity"
     },
@@ -9309,10 +9334,10 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
-      "itemId": "item_lck_mako_stone_receive_regen",
+      "itemId": "item_regen",
       "quantity": 1,
       "rawLabel": "LCK Mako Stone receive Regen"
     },
@@ -9350,7 +9375,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_stop_blade",
@@ -9386,7 +9411,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_status_ward",
@@ -9432,7 +9457,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_elemental_strike",
@@ -9473,10 +9498,10 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
-      "itemId": "item_magic_up",
+      "itemId": "item_mag_up_plus_plus",
       "quantity": 1,
       "rawLabel": "Magic Up++ (Materia)"
     },
@@ -9525,7 +9550,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_status_strike",
@@ -9544,7 +9569,7 @@
         "rawLabel": "Dash (Materia)"
       },
       {
-        "itemId": "item_ap_up",
+        "itemId": "item_ap_up_plus_plus",
         "quantity": 1,
         "rawLabel": "AP Up++ (Materia)"
       },
@@ -9577,7 +9602,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hell_thundaga",
@@ -9596,7 +9621,7 @@
         "rawLabel": "Dark Matter"
       },
       {
-        "itemId": "item_vit_up",
+        "itemId": "item_vit_up_plus_plus",
         "quantity": 1,
         "rawLabel": "VIT Up++ (Materia)"
       }
@@ -9623,7 +9648,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_mbarrier",
@@ -9673,7 +9698,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_barrier",
@@ -9718,10 +9743,10 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
-      "itemId": "item_hp_up",
+      "itemId": "item_hp_up_plus",
       "quantity": 1,
       "rawLabel": "HP Up+ (Materia)"
     },
@@ -9769,7 +9794,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_vital_slash",
@@ -9815,10 +9840,10 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
-      "itemId": "item_mag_up",
+      "itemId": "item_mag_up_plus",
       "quantity": 1,
       "rawLabel": "MAG Up+ (Materia)"
     },
@@ -9867,7 +9892,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_darkness",
@@ -9876,7 +9901,7 @@
     },
     "treasures": [
       {
-        "itemId": "item_vit_up",
+        "itemId": "item_vit_up_plus",
         "quantity": 1,
         "rawLabel": "VIT Up+ (Materia)"
       },
@@ -9913,10 +9938,10 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
-      "itemId": "item_assault_twister",
+      "itemId": "item_assault_twister_plus",
       "quantity": 1,
       "rawLabel": "Assault Twister+ (Materia)"
     },
@@ -9964,10 +9989,10 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
-      "itemId": "item_vit_up",
+      "itemId": "item_vit_up_plus_plus",
       "quantity": 1,
       "rawLabel": "VIT Up++ (Materia)"
     },
@@ -10010,10 +10035,10 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
-      "itemId": "item_spr_up",
+      "itemId": "item_spr_up_plus_plus",
       "quantity": 1,
       "rawLabel": "SPR Up++ (Materia)"
     },
@@ -10057,7 +10082,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_exploder_blade",
@@ -10103,7 +10128,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hell_firaga",
@@ -10122,7 +10147,7 @@
         "rawLabel": "Elixir"
       },
       {
-        "itemId": "item_atk_up",
+        "itemId": "item_atk_up_plus_plus",
         "quantity": 1,
         "rawLabel": "ATK Up++ (Materia)"
       },
@@ -10146,15 +10171,15 @@
     "subGroup": "M8-5: Anonymous Hints",
     "title": "Treasure Info 6",
     "description": "\"Anonymous\" seems to have barely escaped an unannounced summon appearance., She now tells us about a secret treasure in the cave., It may be dangerous, but we still need to determine the security breach through her.",
-    "stars": 8,
+    "stars": 9,
     "chapterAvailable": 8,
     "unlockCondition": "Completion of Mission 8-5-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 56,
-      "hp": 35000,
-      "vit": 185,
-      "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_bahamut_fury_materia",
@@ -10188,7 +10213,9 @@
         "rawLabel": "Firaga Blade (Materia)"
       }
     ],
-    "bossEnemyIds": [],
+    "bossEnemyIds": [
+      "enemy_bahamut_fury"
+    ],
     "randomEnemyIds": [
       "enemy_mover_re",
       "enemy_thunderbird"
@@ -10209,7 +10236,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_tri_fire",
@@ -10259,7 +10286,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_death_jump",
@@ -10306,7 +10333,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_electrocute",
@@ -10366,7 +10393,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_flare",
@@ -10418,7 +10445,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_smart_consumer",
@@ -10464,10 +10491,10 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
-      "itemId": "item_stop_sword",
+      "itemId": "item_stop_blade",
       "quantity": 1,
       "rawLabel": "Stop Sword w/ATK +60 (Materia)"
     },
@@ -10521,7 +10548,7 @@
       "hp": 20000,
       "vit": 145,
       "spr": 145,
-      "notes": "Aim for Costly Punch + Brutal (M7-4-6) ASAP."
+      "notes": "Unlock Costly Punch + Brutal (M7-4-6) and deplete boss Skill Power gauges."
     },
     "clearReward": {
       "itemId": "item_aegis_armlet",
@@ -10573,7 +10600,7 @@
       "hp": 35000,
       "vit": 185,
       "spr": 185,
-      "notes": "Use Status Ward + Hell-aga to neutralize mobs."
+      "notes": "Pair Status Ward + Hell Blizzaga/Firaga to neutralize instant-death mobs."
     },
     "clearReward": {
       "itemId": "item_thundaga_blade",
@@ -10624,7 +10651,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_rune_armlet",
@@ -10681,7 +10708,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_high_jump",
@@ -10729,15 +10756,15 @@
     "subGroup": "M9-1: Invitation to the Underground",
     "title": "Behind the Scenes",
     "description": "A SOLDIER operative in our investigative unit has been taken out by Genesis troops., Hurry to where the SOLDIER operative was deployed, and eliminate the enemy.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 9-1-4",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_wall",
@@ -10790,7 +10817,7 @@
     "randomEnemyIds": [
       "enemy_g_paladin",
       "enemy_g_spartan",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -10800,15 +10827,15 @@
     "subGroup": "M9-1: Invitation to the Underground",
     "title": "Genesis's Threat",
     "description": "Genesis troops have proven to be stronger than initially imagined., They must be neutralized for our investigation to move forward., Eradicate the enemy in the surrounding area.",
-    "stars": 10,
+    "stars": 9,
     "chapterAvailable": 7,
     "unlockCondition": "Completion of Mission 9-1-5",
     "hardModeBenchmarks": {
-      "recommendedLevel": 80,
-      "hp": 95000,
-      "vit": 255,
-      "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "recommendedLevel": 68,
+      "hp": 60000,
+      "vit": 225,
+      "spr": 225,
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_elixir",
@@ -10838,7 +10865,7 @@
       "enemy_crit_machine",
       "enemy_g_spartan",
       "enemy_mbarrier_machine",
-      "enemy_sweeper"
+      "enemy_sweeper_plus_plus"
     ]
   },
   {
@@ -10856,7 +10883,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_poison_twister",
@@ -10880,7 +10907,7 @@
         "rawLabel": "Graviga (Materia)"
       },
       {
-        "itemId": "item_magic_up",
+        "itemId": "item_mag_up_plus_plus",
         "quantity": 1,
         "rawLabel": "Magic Up++ (Materia)"
       },
@@ -10913,7 +10940,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -10949,7 +10976,7 @@
     ],
     "bossEnemyIds": [],
     "randomEnemyIds": [
-      "enemy_gun_bull_head",
+      "enemy_gun_bull_head_plus",
       "enemy_power_head"
     ]
   },
@@ -10968,7 +10995,7 @@
       "hp": 60000,
       "vit": 225,
       "spr": 225,
-      "notes": "Push VIT/SPR to 220+ and HP 50k+."
+      "notes": "Push VIT/SPR to 220+ and HP 50k+ using 98/980% Libra conversion."
     },
     "clearReward": {
       "itemId": "item_element_blade",
@@ -11025,7 +11052,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_energy",
@@ -11081,7 +11108,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_iron_fist",
@@ -11143,7 +11170,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sp_turbo",
@@ -11200,7 +11227,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_hammer_punch",
@@ -11256,7 +11283,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_protect_ring",
@@ -11313,7 +11340,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_gravity",
@@ -11342,7 +11369,7 @@
         "rawLabel": "Fat Chocobo Feather"
       },
       {
-        "itemId": "item_network_shop_duo_item",
+        "itemId": "item_online_shop_duo",
         "quantity": 1,
         "rawLabel": "Network Shop Duo item"
       },
@@ -11356,7 +11383,7 @@
     "randomEnemyIds": [
       "enemy_advanced_head",
       "enemy_grandpanzer",
-      "enemy_panzer_jr"
+      "enemy_panzer_jr_plus"
     ]
   },
   {
@@ -11374,7 +11401,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_magical_punch",
@@ -11436,7 +11463,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_escort_guard",
@@ -11502,7 +11529,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_flare",
@@ -11559,11 +11586,11 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
-      "itemId": "item_4x_kaiser_knuckles",
-      "quantity": 1,
+      "itemId": "item_kaiser_knuckles",
+      "quantity": 4,
       "rawLabel": "4x Kaiser Knuckles"
     },
     "treasures": [
@@ -11598,7 +11625,7 @@
         "rawLabel": "Dualcast (Materia)"
       },
       {
-        "itemId": "item_assault_twister",
+        "itemId": "item_assault_twister_plus",
         "quantity": 1,
         "rawLabel": "Assault Twister+ (Materia)"
       },
@@ -11631,7 +11658,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_fat_chocobo_feather",
@@ -11701,7 +11728,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_1000_needles",
@@ -11725,7 +11752,7 @@
         "rawLabel": "Moon Bracer"
       },
       {
-        "itemId": "item_assault_twister",
+        "itemId": "item_assault_twister_plus",
         "quantity": 1,
         "rawLabel": "Assault Twister+(Materia)"
       },
@@ -11759,7 +11786,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_precious_watch",
@@ -11820,7 +11847,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_murderous_thrust",
@@ -11880,7 +11907,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sniper_eye",
@@ -11938,7 +11965,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_brutal",
@@ -12000,7 +12027,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sp_barrier",
@@ -12066,7 +12093,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_protect_ring",
@@ -12128,7 +12155,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_laurel_crown",
@@ -12172,7 +12199,7 @@
         "rawLabel": "Osmoga (Materia)"
       },
       {
-        "itemId": "item_net_shop_shade",
+        "itemId": "item_online_shop_shade",
         "quantity": 1,
         "rawLabel": "Net Shop Shade"
       },
@@ -12204,7 +12231,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_hellfire",
@@ -12255,7 +12282,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_megaflare",
@@ -12322,7 +12349,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_zantetsuken",
@@ -12399,7 +12426,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_super_ribbon",
@@ -12466,7 +12493,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_rebirth_flame",
@@ -12543,7 +12570,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_exaflare",
@@ -12605,7 +12632,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_sp_master",
@@ -12667,7 +12694,7 @@
       "hp": 99999,
       "vit": 255,
       "spr": 255,
-      "notes": "Superboss Minerva (20M HP on Hard Mode): 255 VIT/SPR, 99,999 HP, Wall, Costly Punch, Mug (steal 99 Phoenix Downs), Genji set."
+      "notes": "Superboss Minerva (20,000,000 HP on Hard Mode): 255 VIT/SPR, 99,999 HP, Wall, Costly Punch, Aerial Drain, Mug (steal 99 Phoenix Downs), Genji set."
     },
     "clearReward": {
       "itemId": "item_divine_slayer",
@@ -12695,7 +12722,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_muscle_belt",
@@ -12736,7 +12763,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_champion_belt",
@@ -12782,7 +12809,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_cactus_thorn_item",
@@ -12829,7 +12856,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_silver_armlet",
@@ -12864,7 +12891,7 @@
       "hp": 3600,
       "vit": 40,
       "spr": 40,
-      "notes": "Stack HP% via Potions after Chapter 4."
+      "notes": "Stack HP% via Potions after unlocking Item Fusion in Ch. 4 (M7-2-1)."
     },
     "clearReward": {
       "itemId": "item_gysahl_greens",
@@ -12898,7 +12925,7 @@
       "hp": 95000,
       "vit": 255,
       "spr": 255,
-      "notes": "Endgame Hard Mode: max VIT/SPR 255 & Genji gear."
+      "notes": "Endgame Hard Mode: max VIT/SPR 255, 99,999 HP & Genji equipment."
     },
     "clearReward": {
       "itemId": "item_tonberrys_knife_item",
@@ -12949,7 +12976,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_dark_matter",
@@ -12979,7 +13006,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_gysahl_greens",
@@ -13007,7 +13034,7 @@
       "hp": 8500,
       "vit": 85,
       "spr": 85,
-      "notes": "Use Wall/Barrier and Darkness or Jump skills."
+      "notes": "Use Wall/Barrier and Darkness or High Jump; raise Buster Sword to 23%+."
     },
     "clearReward": {
       "itemId": "item_hero_drink",
@@ -13035,7 +13062,7 @@
       "hp": 5500,
       "vit": 60,
       "spr": 60,
-      "notes": "Start pairing Element/Status Ward for safety."
+      "notes": "Equip 4 Accessory slots (M7-2-2 & M7-2-5) and Element/Status Ward."
     },
     "clearReward": {
       "itemId": "item_phoenix_down",
@@ -13063,7 +13090,7 @@
       "hp": 2200,
       "vit": 25,
       "spr": 25,
-      "notes": "Keep Barrier up and dodge heavy windups."
+      "notes": "Keep Barrier up and practice Perfect Guards in Battle Stance."
     },
     "clearReward": {
       "itemId": "item_mythril",
@@ -13093,7 +13120,7 @@
       "hp": 13000,
       "vit": 110,
       "spr": 110,
-      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit."
+      "notes": "Equip Adaman Bangle (M7-3-6) for Break HP Limit and Mog's Amulet for rare drops."
     },
     "clearReward": {
       "itemId": "item_adamantite",

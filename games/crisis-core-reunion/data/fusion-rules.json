@@ -25,25 +25,53 @@
       "note": "Hard Mode MVP: ignores defense, 99,999 damage at high HP."
     },
     {
+      "result": "Magical Punch",
+      "resultId": "item_magical_punch",
+      "ingredientA": "Goblin Punch",
+      "ingredientB": "Firaga / Blizzaga / Thundaga",
+      "note": "Strong midgame bridge into Costly Punch."
+    },
+    {
       "result": "Aerial Drain",
       "resultId": "item_aerial_drain",
       "ingredientA": "High Jump",
       "ingredientB": "Drain / Osmose / Assault Twister",
-      "note": "Grants invincibility frames during jump and drains HP."
+      "note": "Grants invincibility frames during jump and heals to full HP."
+    },
+    {
+      "result": "High Jump",
+      "resultId": "item_high_jump",
+      "ingredientA": "Jump",
+      "ingredientB": "Darkness / Assault Twister",
+      "note": "Upgraded jump; prerequisite for Aerial Drain."
+    },
+    {
+      "result": "Darkness",
+      "resultId": "item_darkness",
+      "ingredientA": "Assault Twister / Jump",
+      "ingredientB": "Drain / Gravity / Dark Fire",
+      "note": "Fast midgame AoE HP-cost wave clear."
+    },
+    {
+      "result": "Assault Twister+",
+      "resultId": "item_assault_twister_plus",
+      "ingredientA": "Assault Twister (M)",
+      "ingredientB": "Vitality Up / Status Strike",
+      "note": "Multi-hit spin attack; strong early Command Materia."
     },
     {
       "result": "Curaga",
       "resultId": "item_curaga",
       "ingredientA": "Cura",
       "ingredientB": "HP Up / Libra / Barrier",
-      "note": "Full-heal staple; fuse with Fat Chocobo Feathers or Potions for +999% HP."
+      "note": "Full-heal staple; fuse with Potions/Feathers for +999% HP."
     },
     {
       "result": "Wall",
       "resultId": "item_wall",
       "ingredientA": "Barrier",
       "ingredientB": "MBarrier",
-      "note": "Applies both Barrier and MBarrier in a single cast."
+      "note": "Applies both Barrier and MBarrier in one cast."
     },
     {
       "result": "Hell Blizzaga",
@@ -60,25 +88,81 @@
       "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."
     },
     {
-      "result": "Darkness",
-      "resultId": "item_darkness",
-      "ingredientA": "Assault Twister / Jump",
-      "ingredientB": "Drain / Gravity / Dark Fire",
-      "note": "Fast midgame AoE HP-cost wave clear."
+      "result": "Hell Thundaga",
+      "resultId": "item_hell_thundaga",
+      "ingredientA": "Thundaga",
+      "ingredientB": "Status Strike / Poison / Silence / Stop",
+      "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."
+    },
+    {
+      "result": "Status Ward",
+      "resultId": "item_status_ward",
+      "ingredientA": "Buy: Happy Turtle (M4-3-6)",
+      "ingredientB": "Or Esuna + Libra / Dispel",
+      "note": "Protects against all statuses listed on paired Hell-aga Materia."
     },
     {
       "result": "Dualcast",
       "resultId": "item_dualcast",
-      "ingredientA": "Buy: Net Shop Shade (M9-5-4)",
-      "ingredientB": "Or fuse High-Rank Magic + Ultima/Energy",
+      "ingredientA": "Buy: Online Shop Shade (M9-5-4)",
+      "ingredientB": "Or High-Rank Magic + Ultima/Energy",
       "note": "Casts equipped Magic Materia twice per turn."
+    },
+    {
+      "result": "Electrocute",
+      "resultId": "item_electrocute",
+      "ingredientA": "Thundaga (M)",
+      "ingredientB": "Graviga / Flare / Energy",
+      "note": "Massive multi-hit lightning magic burst."
+    },
+    {
+      "result": "Energy",
+      "resultId": "item_energy",
+      "ingredientA": "Graviga / Flare",
+      "ingredientB": "Status Ward / Dualcast / Libra",
+      "note": "Non-elemental piercing magic; strong with Dualcast."
+    },
+    {
+      "result": "Quake",
+      "resultId": "item_quake",
+      "ingredientA": "Graviga",
+      "ingredientB": "Assault Twister+ / Darkness",
+      "note": "Fast screen-wide AoE magic for farming."
+    },
+    {
+      "result": "Ultima",
+      "resultId": "item_ultima",
+      "ingredientA": "Flare / Energy / Tri-Thundaga",
+      "ingredientB": "DMW Materia / Libra",
+      "note": "Highest single-cast AoE magic burst."
+    },
+    {
+      "result": "Tri-Thundaga",
+      "resultId": "item_tri_thundaga",
+      "ingredientA": "Thundaga (M)",
+      "ingredientB": "Steal: Three Stars (M9-5-3)",
+      "note": "Triple lightning orbs; great for fusion rank ups."
+    },
+    {
+      "result": "Mug",
+      "resultId": "item_mug",
+      "ingredientA": "Steal",
+      "ingredientB": "Assault Twister / Vital Slash",
+      "note": "Deals damage while stealing; essential for Minerva 99x Phoenix Downs."
+    },
+    {
+      "result": "Gil Toss",
+      "resultId": "item_gil_toss",
+      "ingredientA": "Reward: M7-4-2 / M4-5-2",
+      "ingredientB": "Command + Libra",
+      "note": "Required for M7-6-6 Magic Pot (Genji Shield)."
     },
     {
       "result": "SP Master",
       "resultId": "item_sp_master",
-      "ingredientA": "Reward: M9-5-4 / M9-6-5",
+      "ingredientA": "Reward: M9-6-5",
       "ingredientB": "SP Turbo + SP Barrier",
-      "note": "Increases damage & defense while spending SP."
+      "note": "Boosts damage & defense at SP cost; ideal with M9-5-3 SP farm."
     }
   ]
 }

@@ -83,6 +83,8 @@ export function renderFusionTrackerView(container, ctx) {
     const slug = ctx.meta.slug;
     const doneChecks = checklistItems.filter((c) => zack.checklist[c.id]).length;
     const doneMissions = Object.values(zack.completedMissions).filter(Boolean).length;
+    const bs = ctx.storage.get('busterProficiency', { guard: 0, strong: 0, command: 0, barrier: 0 });
+    const bsTotal = Math.min(100, (Number(bs.guard) || 0) + (Number(bs.strong) || 0) + (Number(bs.command) || 0) + (Number(bs.barrier) || 0));
 
     container.innerHTML = `
       <div class="section-header">
@@ -151,8 +153,8 @@ export function renderFusionTrackerView(container, ctx) {
 
         ${sim.warnings.map((w) => `<div class="alert alert-warn" style="margin-top:8px;">⚠️ ${escapeHtml(w)}</div>`).join('')}
 
-        <details style="margin-top:12px;">
-          <summary class="small" style="cursor:pointer;color:var(--accent-secondary);font-weight:600;">View Iconic Hard Mode Fusion Recipes</summary>
+        <details open style="margin-top:14px;">
+          <summary class="small" style="cursor:pointer;color:var(--accent-secondary);font-weight:600;">Essential Hard Mode Fusion Recipes (${(ctx.data.fusionRules?.keyRecipes || []).length})</summary>
           <div class="grid-3" style="margin-top:10px;">
             ${(ctx.data.fusionRules?.keyRecipes || [])
               .map(
@@ -167,6 +169,39 @@ export function renderFusionTrackerView(container, ctx) {
               .join('')}
           </div>
         </details>
+      </section>
+
+      <section class="card" style="margin-bottom:18px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+          <h3 style="margin:0;">⚔️ Buster Sword Proficiency Tracker (Reunion Exclusive)</h3>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span class="pill ${bsTotal >= 23 ? 'pill-mako' : 'pill-warn'}">23%: Damage Limit Break ${bsTotal >= 23 ? '✓' : ''}</span>
+            <span class="pill ${bsTotal >= 47 ? 'pill-mako' : 'pill-warn'}">47%: Barrier Piercing ${bsTotal >= 47 ? '✓' : ''}</span>
+            <span class="pill pill-cyan mono">${bsTotal.toFixed(1)}% / 100%</span>
+          </div>
+        </div>
+        <div class="grid-4">
+          <div class="card" style="background:var(--bg-secondary);padding:10px;">
+            <div class="small muted">Perfect Guard (max 31.66%)</div>
+            <input type="number" step="0.5" min="0" max="31.66" class="input mono" data-bs="guard" value="${bs.guard}" style="width:100%;margin-top:6px;" />
+            <div class="small muted" style="margin-top:4px;">Farm: <a href="#/game/${escapeHtml(slug)}/missions/M1-2-1">M1-2-1</a></div>
+          </div>
+          <div class="card" style="background:var(--bg-secondary);padding:10px;">
+            <div class="small muted">Strong Attack (max 31.66%)</div>
+            <input type="number" step="0.5" min="0" max="31.66" class="input mono" data-bs="strong" value="${bs.strong}" style="width:100%;margin-top:6px;" />
+            <div class="small muted" style="margin-top:4px;">Farm: <a href="#/game/${escapeHtml(slug)}/missions/M1-1-3">M1-1-3</a></div>
+          </div>
+          <div class="card" style="background:var(--bg-secondary);padding:10px;">
+            <div class="small muted">Command Kills (max 31.66%)</div>
+            <input type="number" step="0.5" min="0" max="31.66" class="input mono" data-bs="command" value="${bs.command}" style="width:100%;margin-top:6px;" />
+            <div class="small muted" style="margin-top:4px;">Farm: <a href="#/game/${escapeHtml(slug)}/missions/M1-1-3">M1-1-3</a></div>
+          </div>
+          <div class="card" style="background:var(--bg-secondary);padding:10px;">
+            <div class="small muted">Barrier Pierce (max 5%)</div>
+            <input type="number" step="0.5" min="0" max="5" class="input mono" data-bs="barrier" value="${bs.barrier}" style="width:100%;margin-top:6px;" />
+            <div class="small muted" style="margin-top:4px;">Farm: <a href="#/game/${escapeHtml(slug)}/missions/M9-6-5">M9-6-5</a></div>
+          </div>
+        </div>
       </section>
 
       <div class="grid-2">
@@ -240,6 +275,16 @@ export function renderFusionTrackerView(container, ctx) {
     container.querySelector('#sim-cat').addEventListener('change', (e) => { state.catId = e.target.value; render(); });
     container.querySelector('#sim-qty').addEventListener('change', (e) => { state.catQty = Math.max(1, Math.min(99, Number(e.target.value) || 1)); render(); });
 
+    container.querySelectorAll('[data-bs]').forEach((el) => {
+      el.addEventListener('change', () => {
+        const cur = ctx.storage.get('busterProficiency', { guard: 0, strong: 0, command: 0, barrier: 0 });
+        cur[el.dataset.bs] = Math.max(0, Number(el.value) || 0);
+        ctx.storage.set('busterProficiency', cur);
+        showToast('Buster Sword Proficiency updated');
+        render();
+      });
+    });
+
     container.querySelectorAll('[data-chk-id]').forEach((el) => {
       el.addEventListener('change', () => {
         const cur = ctx.storage.get('checklist', {});
@@ -253,20 +298,16 @@ export function renderFusionTrackerView(container, ctx) {
     const saveBuild = () => {
       const b = ctx.getZackState().build;
       container.querySelectorAll('[data-bmat]').forEach((el) => {
-        const i = Number(el.dataset.bmat);
-        b.materia[i].name = el.value;
+        b.materia[Number(el.dataset.bmat)].name = el.value;
       });
       container.querySelectorAll('[data-bstat]').forEach((el) => {
-        const i = Number(el.dataset.bstat);
-        b.materia[i].stat = el.value;
+        b.materia[Number(el.dataset.bstat)].stat = el.value;
       });
       container.querySelectorAll('[data-bval]').forEach((el) => {
-        const i = Number(el.dataset.bval);
-        b.materia[i].bonus = Number(el.value) || 0;
+        b.materia[Number(el.dataset.bval)].bonus = Number(el.value) || 0;
       });
       container.querySelectorAll('[data-bacc]').forEach((el) => {
-        const i = Number(el.dataset.bacc);
-        b.accessories[i] = el.value;
+        b.accessories[Number(el.dataset.bacc)] = el.value;
       });
       ctx.storage.set('build', b);
     };

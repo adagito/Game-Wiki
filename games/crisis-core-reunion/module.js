@@ -1,6 +1,7 @@
 import { renderItemsView } from './views/items.js';
 import { renderEnemiesView } from './views/enemies.js';
 import { renderMissionsView } from './views/missions.js';
+import { renderCompendiumView } from './views/compendium.js';
 import { renderSuggesterView } from './views/suggester.js';
 import { renderGuidesView } from './views/guides.js';
 import { renderFusionTrackerView } from './views/fusion-tracker.js';
@@ -13,10 +14,11 @@ import { renderFusionTrackerView } from './views/fusion-tracker.js';
  */
 export async function createGameModule({ meta, config, storage, router }) {
   const base = `./${meta.dataPath}`;
-  const [missions, enemies, items, guides, fusionRules] = await Promise.all([
+  const [missions, enemies, items, shops, guides, fusionRules] = await Promise.all([
     fetch(`${base}/missions.json`).then((r) => r.json()),
     fetch(`${base}/enemies.json`).then((r) => r.json()),
     fetch(`${base}/items.json`).then((r) => r.json()),
+    fetch(`${base}/shops.json`).then((r) => r.json()),
     fetch(`${base}/guides.json`).then((r) => r.json()),
     fetch(`${base}/fusion-rules.json`).then((r) => r.json())
   ]);
@@ -25,7 +27,6 @@ export async function createGameModule({ meta, config, storage, router }) {
   const enemyById = new Map(enemies.map((en) => [en.id, en]));
   const missionById = new Map(missions.map((m) => [m.id, m]));
 
-  // Runtime 4-Quadrant Loot Matrix computed strictly from enemies.json
   const itemLootMatrix = new Map();
   for (const it of items) {
     itemLootMatrix.set(it.id, {
@@ -89,7 +90,7 @@ export async function createGameModule({ meta, config, storage, router }) {
     config,
     storage,
     router,
-    data: { missions, enemies, items, guides, fusionRules },
+    data: { missions, enemies, items, shops, guides, fusionRules },
     indexes: { itemById, enemyById, missionById },
     getItemLootSources,
     getZackState,
@@ -132,6 +133,28 @@ export async function createGameModule({ meta, config, storage, router }) {
         route: `#/game/${meta.slug}/enemies/${encodeURIComponent(en.id)}`
       });
     }
+    for (const sh of shops) {
+      out.push({
+        id: sh.id,
+        type: 'shop',
+        typeLabel: sh.missable ? 'Missable Shop' : 'Shop',
+        title: sh.name,
+        subtitle: sh.unlockCondition,
+        keywords: (sh.stock || []).map((st) => itemById.get(st.itemId)?.name || '').join(' '),
+        route: `#/game/${meta.slug}/compendium/shops`
+      });
+    }
+    for (const d of guides.dmwImages || []) {
+      out.push({
+        id: d.id,
+        type: 'dmw',
+        typeLabel: `DMW ${d.group}`,
+        title: `${d.name} (${d.limitBreak})`,
+        subtitle: d.unlockCondition,
+        keywords: d.missable ? 'missable dmw genji armor' : 'dmw',
+        route: `#/game/${meta.slug}/compendium/dmw`
+      });
+    }
     for (const sec of guides.sections || []) {
       out.push({
         id: sec.id,
@@ -156,6 +179,9 @@ export async function createGameModule({ meta, config, storage, router }) {
         break;
       case 'missions':
         renderMissionsView(container, ctx, entityId);
+        break;
+      case 'compendium':
+        renderCompendiumView(container, ctx, entityId);
         break;
       case 'suggester':
         renderSuggesterView(container, ctx);

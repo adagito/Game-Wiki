@@ -1,0 +1,658 @@
+[
+  {
+    "id": "shop_shinra_shop",
+    "name": "Shinra Shop",
+    "quote": "Open to all Shinra Employees.",
+    "unlockCondition": "Unlocked automatically at the start of Chapter 1.",
+    "unlockMissionId": null,
+    "chapterAvailable": 1,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_potion",
+        "price": 50
+      },
+      {
+        "itemId": "item_ether",
+        "price": 200
+      },
+      {
+        "itemId": "item_soma",
+        "price": 200
+      },
+      {
+        "itemId": "item_remedy",
+        "price": 200
+      }
+    ]
+  },
+  {
+    "id": "shop_sector_5_materia_shop",
+    "name": "Sector 5 Materia Shop",
+    "quote": "A well established shop; traditional selections in stock.",
+    "unlockCondition": "Complete Mission M6-2-3 (Mako Excavation Site).",
+    "unlockMissionId": "M6-2-3",
+    "chapterAvailable": 4,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_poison",
+        "price": 1000
+      },
+      {
+        "itemId": "item_silence",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "id": "shop_sector_7_shop",
+    "name": "Sector 7 Shop",
+    "quote": "An underground outlet favored by many anti-Shinra groups.",
+    "unlockCondition": "Found in a treasure chest during Mission M4-4-3 (Infiltration).",
+    "unlockMissionId": "M4-4-3",
+    "chapterAvailable": 6,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_fire_ring",
+        "price": 3000
+      },
+      {
+        "itemId": "item_fire_armlet",
+        "price": 3000
+      },
+      {
+        "itemId": "item_ice_ring",
+        "price": 3000
+      },
+      {
+        "itemId": "item_ice_armlet",
+        "price": 3000
+      },
+      {
+        "itemId": "item_lightning_ring",
+        "price": 3000
+      },
+      {
+        "itemId": "item_lightning_armlet",
+        "price": 3000
+      },
+      {
+        "itemId": "item_dragon_armlet",
+        "price": 20000
+      },
+      {
+        "itemId": "item_wizard_bracelet",
+        "price": 80000
+      },
+      {
+        "itemId": "item_brigands_gloves",
+        "price": 10000
+      },
+      {
+        "itemId": "item_mogs_amulet",
+        "price": 10000
+      },
+      {
+        "itemId": "item_x_potion",
+        "price": 3000
+      }
+    ]
+  },
+  {
+    "id": "shop_research_dept_qmc_plus",
+    "name": "Research Dept. QMC+",
+    "quote": "Only for selected members of the Turks.",
+    "unlockCondition": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!",
+    "unlockMissionId": null,
+    "chapterAvailable": 9,
+    "missable": true,
+    "stock": [
+      {
+        "itemId": "item_firaga",
+        "price": 10000
+      },
+      {
+        "itemId": "item_blizzaga",
+        "price": 10000
+      },
+      {
+        "itemId": "item_thundaga",
+        "price": 10000
+      },
+      {
+        "itemId": "item_octaslash",
+        "price": 10000
+      },
+      {
+        "itemId": "item_rush_assault",
+        "price": 10000
+      },
+      {
+        "itemId": "item_air_strike",
+        "price": 10000
+      },
+      {
+        "itemId": "item_meteor_shots",
+        "price": 10000
+      },
+      {
+        "itemId": "item_healing_wave",
+        "price": 10000
+      },
+      {
+        "itemId": "item_lucky_stars",
+        "price": 10000
+      },
+      {
+        "itemId": "item_hi_potion",
+        "price": 500
+      }
+    ]
+  },
+  {
+    "id": "shop_gongaga_trading",
+    "name": "Gongaga Trading",
+    "quote": "Pioneered online shopping to compensate for its rural location.",
+    "unlockCondition": "Complete Mission M2-3-1 (Unidentified Monsters).",
+    "unlockMissionId": "M2-3-1",
+    "chapterAvailable": 5,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_carbon_bangle",
+        "price": 8000
+      },
+      {
+        "itemId": "item_rune_armlet",
+        "price": 8000
+      },
+      {
+        "itemId": "item_sea_chocobo_armlet",
+        "price": 8000
+      },
+      {
+        "itemId": "item_hyper_wrist",
+        "price": 8000
+      },
+      {
+        "itemId": "item_shinra_beta",
+        "price": 8000
+      },
+      {
+        "itemId": "item_hypno_crown",
+        "price": 8000
+      },
+      {
+        "itemId": "item_tarot_cards",
+        "price": 8000
+      },
+      {
+        "itemId": "item_drainga",
+        "price": 18000
+      }
+    ]
+  },
+  {
+    "id": "shop_nibel_accessories",
+    "name": "Nibel Accessories",
+    "quote": "Made possible by the abundance of mako.",
+    "unlockCondition": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?).",
+    "unlockMissionId": "M6-4-4",
+    "chapterAvailable": 6,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_mortal_shock",
+        "price": 15000
+      },
+      {
+        "itemId": "item_venom_shock",
+        "price": 15000
+      },
+      {
+        "itemId": "item_mute_shock",
+        "price": 15000
+      },
+      {
+        "itemId": "item_system_shock",
+        "price": 15000
+      },
+      {
+        "itemId": "item_paralyzing_shock",
+        "price": 15000
+      },
+      {
+        "itemId": "item_safety_bit",
+        "price": 5000
+      },
+      {
+        "itemId": "item_star_pendant",
+        "price": 3000
+      },
+      {
+        "itemId": "item_white_cape",
+        "price": 3000
+      },
+      {
+        "itemId": "item_gris_gris_bag",
+        "price": 3000
+      },
+      {
+        "itemId": "item_headband",
+        "price": 3000
+      },
+      {
+        "itemId": "item_sprint_shoes",
+        "price": 3000
+      },
+      {
+        "itemId": "item_pearl_necklace",
+        "price": 8000
+      }
+    ]
+  },
+  {
+    "id": "shop_mythril_mine_trading",
+    "name": "Mythril Mine Trading",
+    "quote": "A shop in the famous Mythril Mines.",
+    "unlockCondition": "Complete Mission M2-4-5 (Cave-In Investigation).",
+    "unlockMissionId": "M2-4-5",
+    "chapterAvailable": 6,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_moon_bracer",
+        "price": 10000
+      },
+      {
+        "itemId": "item_shining_bracer",
+        "price": 10000
+      },
+      {
+        "itemId": "item_protect_ring",
+        "price": 30000
+      },
+      {
+        "itemId": "item_faerie_ring",
+        "price": 20000
+      },
+      {
+        "itemId": "item_twisted_headband",
+        "price": 10000
+      }
+    ]
+  },
+  {
+    "id": "shop_online_shop_shade",
+    "name": "Online Shop Shade",
+    "quote": "An online shop in an unknown location.",
+    "unlockCondition": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil.",
+    "unlockMissionId": "M9-5-4",
+    "chapterAvailable": 8,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_precious_watch",
+        "price": 10000
+      },
+      {
+        "itemId": "item_jeweled_ring",
+        "price": 10000
+      },
+      {
+        "itemId": "item_apocalypse",
+        "price": 10000
+      },
+      {
+        "itemId": "item_dualcast",
+        "price": 30000
+      },
+      {
+        "itemId": "item_genji_helm",
+        "price": 1000000
+      }
+    ]
+  },
+  {
+    "id": "shop_sector_8_materia_shop",
+    "name": "Sector 8 Materia Shop",
+    "quote": "Top sales in the world; plenty of useful selections.",
+    "unlockCondition": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance).",
+    "unlockMissionId": "M6-2-1",
+    "chapterAvailable": 4,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_hp_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_mp_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_ap_up",
+        "price": 1000
+      },
+      {
+        "itemId": "item_drain",
+        "price": 5000
+      },
+      {
+        "itemId": "item_osmose",
+        "price": 4000
+      }
+    ]
+  },
+  {
+    "id": "shop_sector_6_accessory_shop",
+    "name": "Sector 6 Accessory Shop",
+    "quote": "Wildly popular with all generations of shoppers.",
+    "unlockCondition": "Complete Mission M6-2-6 (Underground City).",
+    "unlockMissionId": "M6-2-6",
+    "chapterAvailable": 5,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_bronze_bangle",
+        "price": 500
+      },
+      {
+        "itemId": "item_bronze_armlet",
+        "price": 500
+      },
+      {
+        "itemId": "item_chocobo_armlet",
+        "price": 500
+      },
+      {
+        "itemId": "item_wrist_band",
+        "price": 1000
+      },
+      {
+        "itemId": "item_bulletproof_vest",
+        "price": 1000
+      },
+      {
+        "itemId": "item_earrings",
+        "price": 1000
+      },
+      {
+        "itemId": "item_amulet",
+        "price": 1000
+      }
+    ]
+  },
+  {
+    "id": "shop_research_dept_qmc",
+    "name": "Research Dept. QMC",
+    "quote": "For all members of the Turks to procure their equipment.",
+    "unlockCondition": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4.",
+    "unlockMissionId": null,
+    "chapterAvailable": 4,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_fire",
+        "price": 1000
+      },
+      {
+        "itemId": "item_blizzard",
+        "price": 1000
+      },
+      {
+        "itemId": "item_thunder",
+        "price": 1000
+      },
+      {
+        "itemId": "item_cure",
+        "price": 1000
+      },
+      {
+        "itemId": "item_esuna",
+        "price": 3000
+      },
+      {
+        "itemId": "item_libra",
+        "price": 1000
+      },
+      {
+        "itemId": "item_star_pendant",
+        "price": 3000
+      },
+      {
+        "itemId": "item_white_cape",
+        "price": 3000
+      },
+      {
+        "itemId": "item_headband",
+        "price": 3000
+      }
+    ]
+  },
+  {
+    "id": "shop_the_happy_turtle",
+    "name": "The Happy Turtle",
+    "quote": "A countrywide chain with its head office in Wutai.",
+    "unlockCondition": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants).",
+    "unlockMissionId": "M4-3-6",
+    "chapterAvailable": 5,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_fira",
+        "price": 3000
+      },
+      {
+        "itemId": "item_blizzara",
+        "price": 3000
+      },
+      {
+        "itemId": "item_thundara",
+        "price": 3000
+      },
+      {
+        "itemId": "item_cura",
+        "price": 3000
+      },
+      {
+        "itemId": "item_regen",
+        "price": 5000
+      },
+      {
+        "itemId": "item_barrier",
+        "price": 4000
+      },
+      {
+        "itemId": "item_mbarrier",
+        "price": 4000
+      },
+      {
+        "itemId": "item_dispel",
+        "price": 5000
+      },
+      {
+        "itemId": "item_dash",
+        "price": 5000
+      }
+    ]
+  },
+  {
+    "id": "shop_wutai_secret_shop",
+    "name": "Wutai Secret Shop",
+    "quote": "An illegal operation favored by Wutai remnants.",
+    "unlockCondition": "Complete Mission M4-2-6 (The Five Saints of Wutai).",
+    "unlockMissionId": "M4-2-6",
+    "chapterAvailable": 5,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_quake",
+        "price": 18000
+      },
+      {
+        "itemId": "item_hell_firaga",
+        "price": 15000
+      },
+      {
+        "itemId": "item_hell_blizzaga",
+        "price": 15000
+      },
+      {
+        "itemId": "item_hell_thundaga",
+        "price": 15000
+      },
+      {
+        "itemId": "item_drain_blade",
+        "price": 10000
+      },
+      {
+        "itemId": "item_power_drain",
+        "price": 14000
+      },
+      {
+        "itemId": "item_aerial_drain",
+        "price": 18000
+      },
+      {
+        "itemId": "item_status_strike",
+        "price": 40000
+      },
+      {
+        "itemId": "item_status_ward",
+        "price": 40000
+      },
+      {
+        "itemId": "item_elemental_strike",
+        "price": 40000
+      },
+      {
+        "itemId": "item_elemental_ward",
+        "price": 40000
+      },
+      {
+        "itemId": "item_firaga_blade",
+        "price": 10000
+      },
+      {
+        "itemId": "item_blizzaga_blade",
+        "price": 10000
+      },
+      {
+        "itemId": "item_thundaga_blade",
+        "price": 10000
+      }
+    ]
+  },
+  {
+    "id": "shop_junon_souvenirs",
+    "name": "Junon Souvenirs",
+    "quote": "A shop by the sea, popular with tourists.",
+    "unlockCondition": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island).",
+    "unlockMissionId": "M2-4-1",
+    "chapterAvailable": 6,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_chocobo_stomp",
+        "price": 10000
+      },
+      {
+        "itemId": "item_1000_needles",
+        "price": 10000
+      },
+      {
+        "itemId": "item_murderous_thrust",
+        "price": 10000
+      },
+      {
+        "itemId": "item_courage_boost",
+        "price": 10000
+      },
+      {
+        "itemId": "item_moogle_power",
+        "price": 10000
+      },
+      {
+        "itemId": "item_item_mugger",
+        "price": 10000
+      }
+    ]
+  },
+  {
+    "id": "shop_bone_village_outlet",
+    "name": "Bone Village Outlet",
+    "quote": "A shop in Bone Village where many rarities are dug up.",
+    "unlockCondition": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff).",
+    "unlockMissionId": "M7-5-3",
+    "chapterAvailable": 7,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_hellfire",
+        "price": 10000
+      },
+      {
+        "itemId": "item_megaflare",
+        "price": 10000
+      },
+      {
+        "itemId": "item_zantetsuken",
+        "price": 10000
+      },
+      {
+        "itemId": "item_rebirth_flame",
+        "price": 10000
+      },
+      {
+        "itemId": "item_exaflare",
+        "price": 10000
+      },
+      {
+        "itemId": "item_graviga",
+        "price": 15000
+      }
+    ]
+  },
+  {
+    "id": "shop_online_shop_duo",
+    "name": "Online Shop Duo",
+    "quote": "Lord Duo's online shop based in Gold Saucer.",
+    "unlockCondition": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition).",
+    "unlockMissionId": "M9-3-3",
+    "chapterAvailable": 7,
+    "missable": false,
+    "stock": [
+      {
+        "itemId": "item_blaze_armlet",
+        "price": 10000
+      },
+      {
+        "itemId": "item_snow_armlet",
+        "price": 10000
+      },
+      {
+        "itemId": "item_bolt_armlet",
+        "price": 10000
+      },
+      {
+        "itemId": "item_escort_guard",
+        "price": 40000
+      },
+      {
+        "itemId": "item_sniper_eye",
+        "price": 50000
+      },
+      {
+        "itemId": "item_dragon_armlet",
+        "price": 20000
+      },
+      {
+        "itemId": "item_wizard_bracelet",
+        "price": 80000
+      }
+    ]
+  }
+]

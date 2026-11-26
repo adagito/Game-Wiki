@@ -509,6 +509,68 @@
     ]
   },
   {
+    "id": "enemy_angeal_penance",
+    "name": "Angeal Penance",
+    "family": "Boss",
+    "isBoss": true,
+    "portrait": {
+      "imageFile": "CC7AngealP.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/3/3b/CC7AngealP.png/revision/latest?cb=20081211043633",
+      "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
+    },
+    "stats": {
+      "level": 25,
+      "hpNormal": 27800,
+      "hpHard": 79890,
+      "mp": 544,
+      "atk": 37,
+      "vit": 107,
+      "mag": 44,
+      "spr": 163,
+      "lck": 24,
+      "exp": 4711,
+      "sp": 3000,
+      "gil": 4000
+    },
+    "affinities": {
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "absorb": [],
+      "immune": [
+        "Gravity",
+        "Poison",
+        "Silence",
+        "Stop",
+        "Death",
+        "Blow Away"
+      ]
+    },
+    "abilities": [
+      "Double Trident Slash",
+      "Thunder of Envy",
+      "Rage of Sloth",
+      "Wings of Pride",
+      "Charge of Greed",
+      "Defense of Lust",
+      "End of Gluttony",
+      "Unleashed Wrath"
+    ],
+    "loot": {
+      "commonDrop": "item_lightning_armlet",
+      "rareDrop": null,
+      "commonSteal": "item_bronze_armlet",
+      "rareSteal": null,
+      "dropRate": "36"
+    },
+    "spawns": [
+      {
+        "missionId": "M5-1-6",
+        "role": "boss"
+      }
+    ]
+  },
+  {
     "id": "enemy_angra_mainyu",
     "name": "Angra Mainyu",
     "family": "Fiend",
@@ -668,6 +730,141 @@
       "dropRate": "—"
     },
     "spawns": []
+  },
+  {
+    "id": "enemy_bahamut",
+    "name": "Bahamut",
+    "family": "Boss",
+    "isBoss": true,
+    "portrait": {
+      "imageFile": "Bahamut-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/0/0d/Bahamut-ccvii.png/revision/latest?cb=20130305205105",
+      "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
+    },
+    "stats": {
+      "level": 17,
+      "hpNormal": 10320,
+      "hpHard": 39120,
+      "mp": 820,
+      "atk": 20,
+      "vit": 99,
+      "mag": 27,
+      "spr": 102,
+      "lck": 22,
+      "exp": 654,
+      "sp": 408,
+      "gil": 380
+    },
+    "affinities": {
+      "weak": [],
+      "resist": [
+        "Fire",
+        "Ice",
+        "Lightning"
+      ],
+      "null": [],
+      "absorb": [],
+      "immune": [
+        "Gravity",
+        "Poison",
+        "Silence",
+        "Stun",
+        "Stop",
+        "Death",
+        "Blow Away"
+      ]
+    },
+    "abilities": [
+      "Megaflare",
+      "Laser Orbs",
+      "Lightning Bolt",
+      "Flare",
+      "Graviga"
+    ],
+    "loot": {
+      "commonDrop": "item_wrist_band",
+      "rareDrop": "item_power_wrist",
+      "commonSteal": "item_bulletproof_vest",
+      "rareSteal": "item_power_wrist",
+      "dropRate": "32"
+    },
+    "spawns": [
+      {
+        "missionId": "M8-1-4",
+        "role": "boss"
+      },
+      {
+        "missionId": "M5-1-2",
+        "role": "boss"
+      }
+    ]
+  },
+  {
+    "id": "enemy_bahamut_fury",
+    "name": "Bahamut Fury",
+    "family": "Boss",
+    "isBoss": true,
+    "portrait": {
+      "imageFile": "CC7BahamutFuryBoss.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/8/89/CC7BahamutFuryBoss.png/revision/latest?cb=20101123003524",
+      "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
+    },
+    "stats": {
+      "level": 72,
+      "hpNormal": 99999,
+      "hpHard": 353970,
+      "mp": 1380,
+      "atk": 79,
+      "vit": 117,
+      "mag": 38,
+      "spr": 104,
+      "lck": 64,
+      "exp": 1411,
+      "sp": 1184,
+      "gil": 560
+    },
+    "affinities": {
+      "weak": [],
+      "resist": [],
+      "null": [],
+      "absorb": [],
+      "immune": [
+        "Fire",
+        "Ice",
+        "Lightning",
+        "Gravity",
+        "Poison",
+        "Silence",
+        "Stun",
+        "Stop",
+        "Death",
+        "Blow Away"
+      ]
+    },
+    "abilities": [
+      "Hexafang",
+      "Exaflare",
+      "Cluster Sphere",
+      "Flare",
+      "Judgement of Light"
+    ],
+    "loot": {
+      "commonDrop": "item_thundaga",
+      "rareDrop": "item_thundaga",
+      "commonSteal": "item_hi_potion",
+      "rareSteal": "item_x_potion",
+      "dropRate": "32"
+    },
+    "spawns": [
+      {
+        "missionId": "M8-5-6",
+        "role": "boss"
+      },
+      {
+        "missionId": "M5-1-4",
+        "role": "boss"
+      }
+    ]
   },
   {
     "id": "enemy_bajang",
@@ -1518,7 +1715,7 @@
     ],
     "loot": {
       "commonDrop": "item_potion",
-      "rareDrop": "item_ap_up",
+      "rareDrop": "item_ap_up_plus_plus",
       "commonSteal": "item_ap_mako_stone",
       "rareSteal": "item_hp_mako_stone",
       "dropRate": "4"
@@ -1680,9 +1877,9 @@
       "Super EM Field"
     ],
     "loot": {
-      "commonDrop": "item_shinra_beta",
+      "commonDrop": "item_shinra_beta_plus",
       "rareDrop": "item_shinra_beta",
-      "commonSteal": "item_shinra_beta",
+      "commonSteal": "item_shinra_beta_plus",
       "rareSteal": "item_sp_barrier",
       "dropRate": "32"
     },
@@ -1967,7 +2164,7 @@
     "loot": {
       "commonDrop": "item_ap_mako_stone",
       "rareDrop": "item_spr_mako_stone",
-      "commonSteal": "item_diamond_bracelet_crystal_bracelet",
+      "commonSteal": "item_diamond_bracelet",
       "rareSteal": null,
       "dropRate": "2"
     },
@@ -2195,25 +2392,33 @@
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-shinra.svg"
     },
     "stats": {
-      "level": null,
-      "hpNormal": null,
-      "hpHard": null,
-      "mp": null,
-      "atk": null,
-      "vit": null,
-      "mag": null,
-      "spr": null,
-      "lck": null,
-      "exp": null,
-      "sp": null,
-      "gil": null
+      "level": 25,
+      "hpNormal": 4980,
+      "hpHard": 48170,
+      "mp": 16,
+      "atk": 23,
+      "vit": 13,
+      "mag": 4,
+      "spr": 10,
+      "lck": 11,
+      "exp": 202,
+      "sp": 12,
+      "gil": 80
     },
     "affinities": {
       "weak": [],
       "resist": [],
       "null": [],
       "absorb": [],
-      "immune": []
+      "immune": [
+        "Gravity",
+        "Poison",
+        "Silence",
+        "Stun",
+        "Stop",
+        "Death",
+        "Blow Away"
+      ]
     },
     "abilities": [
       "Tonfa",
@@ -2222,11 +2427,11 @@
       "Hand Grenade"
     ],
     "loot": {
-      "commonDrop": null,
-      "rareDrop": null,
-      "commonSteal": null,
-      "rareSteal": null,
-      "dropRate": "—"
+      "commonDrop": "item_potion",
+      "rareDrop": "item_hi_potion",
+      "commonSteal": "item_potion",
+      "rareSteal": "item_hi_potion",
+      "dropRate": "8"
     },
     "spawns": [
       {
@@ -2886,7 +3091,7 @@
     "loot": {
       "commonDrop": "item_potion",
       "rareDrop": "item_soma",
-      "commonSteal": "item_potion_thunder_blade",
+      "commonSteal": "item_potion",
       "rareSteal": null,
       "dropRate": "4"
     },
@@ -3245,9 +3450,9 @@
       "Energy"
     ],
     "loot": {
-      "commonDrop": "item_potion_soma",
+      "commonDrop": "item_potion",
       "rareDrop": null,
-      "commonSteal": "item_potion_blizzaga_blade",
+      "commonSteal": "item_potion",
       "rareSteal": null,
       "dropRate": "—"
     },
@@ -3980,7 +4185,7 @@
     ],
     "loot": {
       "commonDrop": "item_potion",
-      "rareDrop": "item_ap_up",
+      "rareDrop": "item_ap_up_plus_plus",
       "commonSteal": "item_atk_mako_stone",
       "rareSteal": "item_ap_mako_stone",
       "dropRate": "4"
@@ -4044,9 +4249,9 @@
       "Twin Claws"
     ],
     "loot": {
-      "commonDrop": "item_mag_mako_stone_mythril_gloves",
+      "commonDrop": "item_mag_mako_stone",
       "rareDrop": null,
-      "commonSteal": "item_mythril_gloves_atk_up",
+      "commonSteal": "item_mythril_gloves",
       "rareSteal": null,
       "dropRate": "8"
     },
@@ -4290,10 +4495,10 @@
       "MBarrier"
     ],
     "loot": {
-      "commonDrop": "item_mag_up",
+      "commonDrop": "item_mag_up_plus",
       "rareDrop": "item_darkness",
       "commonSteal": "item_hypno_crown",
-      "rareSteal": "item_mag_up",
+      "rareSteal": "item_mag_up_plus_plus",
       "dropRate": "8"
     },
     "spawns": [
@@ -4574,7 +4779,7 @@
       "Tremor"
     ],
     "loot": {
-      "commonDrop": "item_mag_up",
+      "commonDrop": "item_mag_up_plus_plus",
       "rareDrop": "item_aegis_armlet",
       "commonSteal": "item_atk_mako_stone",
       "rareSteal": "item_pearl_necklace",
@@ -5406,8 +5611,8 @@
     "loot": {
       "commonDrop": "item_mag_mako_stone",
       "rareDrop": "item_hyper_wrist",
-      "commonSteal": "item_atk_up",
-      "rareSteal": "item_atk_up",
+      "commonSteal": "item_atk_up_plus",
+      "rareSteal": "item_atk_up_plus_plus",
       "dropRate": "4"
     },
     "spawns": [
@@ -5570,7 +5775,7 @@
       "commonDrop": "item_atk_mako_stone",
       "rareDrop": "item_diamond_gloves",
       "commonSteal": "item_diamond_gloves",
-      "rareSteal": "item_atk_up",
+      "rareSteal": "item_atk_up_plus",
       "dropRate": "8"
     },
     "spawns": [
@@ -5731,9 +5936,9 @@
       "Tri-Fire"
     ],
     "loot": {
-      "commonDrop": "item_drainra_drainga",
+      "commonDrop": "item_drainra",
       "rareDrop": null,
-      "commonSteal": "item_drainra_drainga",
+      "commonSteal": "item_drainra",
       "rareSteal": null,
       "dropRate": "8"
     },
@@ -7363,7 +7568,7 @@
     ],
     "loot": {
       "commonDrop": "item_mag_mako_stone",
-      "rareDrop": "item_assault_twister",
+      "rareDrop": "item_assault_twister_plus",
       "commonSteal": "item_sea_chocobo_armlet",
       "rareSteal": "item_carbon_bangle",
       "dropRate": "32"
@@ -7825,7 +8030,7 @@
     "isBoss": true,
     "portrait": {
       "imageFile": "CC7GRegicide.png",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/0/0a/CC7GRegicide.png/revision/latest?cb=20101227030747",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
@@ -8104,7 +8309,7 @@
     "loot": {
       "commonDrop": "item_potion",
       "rareDrop": "item_force_bracelet",
-      "commonSteal": "item_mag_up",
+      "commonSteal": "item_mag_up_plus_plus",
       "rareSteal": "item_talisman",
       "dropRate": "4"
     },
@@ -8570,7 +8775,7 @@
     "loot": {
       "commonDrop": "item_power_stone",
       "rareDrop": "item_mythril",
-      "commonSteal": "item_mythril_mythril",
+      "commonSteal": "item_mythril",
       "rareSteal": null,
       "dropRate": "36"
     },
@@ -8604,7 +8809,7 @@
     "isBoss": true,
     "portrait": {
       "imageFile": "CC7GRegicide.png",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/0/0a/CC7GRegicide.png/revision/latest?cb=20101227030747",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
@@ -8784,7 +8989,7 @@
     "isBoss": true,
     "portrait": {
       "imageFile": "CC7GShdwKnght.png",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/e/e1/CC7GShdwKnght.png/revision/latest?cb=20081214012703",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
@@ -9157,7 +9362,7 @@
     "loot": {
       "commonDrop": "item_potion",
       "rareDrop": "item_mythril_gloves",
-      "commonSteal": "item_spr_up",
+      "commonSteal": "item_spr_up_plus",
       "rareSteal": "item_mythril_gloves",
       "dropRate": "4"
     },
@@ -9443,7 +9648,7 @@
       "Thundaga"
     ],
     "loot": {
-      "commonDrop": "item_earring",
+      "commonDrop": "item_earrings",
       "rareDrop": "item_circlet",
       "commonSteal": "item_mag_mako_stone",
       "rareSteal": "item_sprint_shoes",
@@ -9690,9 +9895,9 @@
       "mag": 38,
       "spr": 88,
       "lck": 32,
-      "exp": null,
-      "sp": null,
-      "gil": null
+      "exp": 785,
+      "sp": 420,
+      "gil": 0
     },
     "affinities": {
       "weak": [],
@@ -9716,9 +9921,9 @@
       "Regen"
     ],
     "loot": {
-      "commonDrop": null,
+      "commonDrop": "item_atk_mako_stone",
       "rareDrop": null,
-      "commonSteal": null,
+      "commonSteal": "item_mag_mako_stone",
       "rareSteal": null,
       "dropRate": "32"
     },
@@ -9797,7 +10002,7 @@
     "isBoss": true,
     "portrait": {
       "imageFile": "CC7GenAvatar.png",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/c/c9/CC7GenAvatar.png/revision/latest?cb=20081211043633",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
@@ -10092,7 +10297,7 @@
     "loot": {
       "commonDrop": "item_hp_stone",
       "rareDrop": null,
-      "commonSteal": "item_adamantite_adaman_bangle",
+      "commonSteal": "item_adamantite",
       "rareSteal": null,
       "dropRate": "—"
     },
@@ -10573,7 +10778,7 @@
       "Wall"
     ],
     "loot": {
-      "commonDrop": "item_hi_potion_phoenix_down_if_the_player_has_none_in_the_inventory",
+      "commonDrop": "item_hi_potion",
       "rareDrop": "item_x_potion",
       "commonSteal": null,
       "rareSteal": null,
@@ -11223,8 +11428,8 @@
     ],
     "loot": {
       "commonDrop": "item_shinra_beta",
-      "rareDrop": "item_shinra_beta",
-      "commonSteal": "item_shinra_beta",
+      "rareDrop": "item_shinra_beta_plus",
+      "commonSteal": "item_shinra_beta_plus",
       "rareSteal": "item_sp_turbo_attack",
       "dropRate": "32"
     },
@@ -11297,7 +11502,7 @@
     ]
   },
   {
-    "id": "enemy_gun_bull_head",
+    "id": "enemy_gun_bull_head_plus",
     "name": "Gun Bull Head+",
     "family": "Shinra",
     "isBoss": false,
@@ -11522,9 +11727,9 @@
       "Fire"
     ],
     "loot": {
-      "commonDrop": "item_potion_fire",
+      "commonDrop": "item_potion",
       "rareDrop": null,
-      "commonSteal": "item_potion_force_bracelet",
+      "commonSteal": "item_potion",
       "rareSteal": null,
       "dropRate": "1/21"
     },
@@ -11722,7 +11927,7 @@
     "loot": {
       "commonDrop": "item_potion",
       "rareDrop": "item_vit_mako_stone",
-      "commonSteal": "item_hp_mako_stone_atk_mako_stone",
+      "commonSteal": "item_hp_mako_stone",
       "rareSteal": null,
       "dropRate": "4"
     },
@@ -11903,9 +12108,9 @@
       "mag": 42,
       "spr": 82,
       "lck": 37,
-      "exp": null,
-      "sp": null,
-      "gil": null
+      "exp": 9977,
+      "sp": 1780,
+      "gil": 3000
     },
     "affinities": {
       "weak": [],
@@ -11934,10 +12139,10 @@
       "This should fix me up!"
     ],
     "loot": {
-      "commonDrop": null,
-      "rareDrop": null,
-      "commonSteal": null,
-      "rareSteal": null,
+      "commonDrop": "item_mag_mako_stone",
+      "rareDrop": "item_magic_stone",
+      "commonSteal": "item_dark_matter",
+      "rareSteal": "item_dark_matter",
       "dropRate": "36"
     },
     "spawns": [
@@ -12050,9 +12255,9 @@
       "Ultima"
     ],
     "loot": {
-      "commonDrop": "item_royal_crown_darkness",
+      "commonDrop": "item_royal_crown",
       "rareDrop": null,
-      "commonSteal": "item_hypno_crown_royal_crown",
+      "commonSteal": "item_hypno_crown",
       "rareSteal": null,
       "dropRate": "8"
     },
@@ -12120,7 +12325,7 @@
     ],
     "loot": {
       "commonDrop": "item_star_pendant",
-      "rareDrop": "item_hi_potion_drop_rate_8",
+      "rareDrop": "item_hi_potion",
       "commonSteal": "item_white_cape",
       "rareSteal": "item_hi_potion",
       "dropRate": "—"
@@ -12208,9 +12413,9 @@
     ],
     "loot": {
       "commonDrop": "item_fat_chocobo_feather",
-      "rareDrop": "item_fat_chocobo_feather_x_2_rare",
+      "rareDrop": "item_fat_chocobo_feather",
       "commonSteal": "item_fat_chocobo_feather",
-      "rareSteal": "item_fat_chocobo_feather_x3_rare",
+      "rareSteal": "item_fat_chocobo_feather",
       "dropRate": "32"
     },
     "spawns": [
@@ -12314,7 +12519,7 @@
     ],
     "loot": {
       "commonDrop": "item_potion",
-      "rareDrop": "item_ap_up",
+      "rareDrop": "item_ap_up_plus_plus",
       "commonSteal": "item_atk_mako_stone",
       "rareSteal": "item_ap_mako_stone",
       "dropRate": "4"
@@ -12349,41 +12554,51 @@
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
-      "level": null,
-      "hpNormal": null,
-      "hpHard": null,
-      "mp": null,
-      "atk": null,
-      "vit": null,
-      "mag": null,
-      "spr": null,
-      "lck": null,
-      "exp": null,
-      "sp": null,
-      "gil": null
+      "level": 9,
+      "hpNormal": 7820,
+      "hpHard": 25478,
+      "mp": 403,
+      "atk": 18,
+      "vit": 20,
+      "mag": 15,
+      "spr": 30,
+      "lck": 12,
+      "exp": 162,
+      "sp": 162,
+      "gil": 180
     },
     "affinities": {
-      "weak": [],
+      "weak": [
+        "Ice"
+      ],
       "resist": [],
       "null": [],
-      "absorb": [],
-      "immune": []
+      "absorb": [
+        "Fire"
+      ],
+      "immune": [
+        "Stun",
+        "Blow Away"
+      ]
     },
-    "abilities": [],
+    "abilities": [
+      "Hellfire",
+      "Flame Shot"
+    ],
     "loot": {
-      "commonDrop": null,
-      "rareDrop": null,
-      "commonSteal": null,
-      "rareSteal": null,
-      "dropRate": "—"
+      "commonDrop": "item_hi_potion",
+      "rareDrop": "item_atk_up",
+      "commonSteal": "item_potion",
+      "rareSteal": "item_wrist_band",
+      "dropRate": "4"
     },
     "spawns": [
       {
-        "missionId": "M5-1-1",
+        "missionId": "M8-1-1",
         "role": "boss"
       },
       {
-        "missionId": "M8-1-1",
+        "missionId": "M5-1-1",
         "role": "boss"
       }
     ]
@@ -12823,9 +13038,9 @@
       "Flee"
     ],
     "loot": {
-      "commonDrop": "item_ap_mako_stone_bronze_armlet",
-      "rareDrop": null,
-      "commonSteal": "item_bronze_armlet_silver_armlet",
+      "commonDrop": "item_ap_mako_stone",
+      "rareDrop": "item_bronze_armlet",
+      "commonSteal": "item_bronze_armlet",
       "rareSteal": null,
       "dropRate": "8"
     },
@@ -12901,7 +13116,7 @@
       "commonDrop": "item_luck_stone",
       "rareDrop": "item_gysahl_greens",
       "commonSteal": "item_docs_code",
-      "rareSteal": "item_1",
+      "rareSteal": null,
       "dropRate": "8"
     },
     "spawns": [
@@ -13138,7 +13353,7 @@
     ],
     "loot": {
       "commonDrop": "item_blizzaga",
-      "rareDrop": "item_8",
+      "rareDrop": null,
       "commonSteal": "item_frost_armlet",
       "rareSteal": "item_snow_armlet",
       "dropRate": "—"
@@ -13731,7 +13946,7 @@
     },
     "abilities": [],
     "loot": {
-      "commonDrop": "item_various",
+      "commonDrop": null,
       "rareDrop": null,
       "commonSteal": null,
       "rareSteal": null,
@@ -13866,9 +14081,9 @@
       "Tracking Missile"
     ],
     "loot": {
-      "commonDrop": "item_power_stone_magic_stone",
+      "commonDrop": "item_power_stone",
       "rareDrop": null,
-      "commonSteal": "item_power_stone_dualcast",
+      "commonSteal": "item_power_stone",
       "rareSteal": null,
       "dropRate": "—"
     },
@@ -13926,8 +14141,8 @@
     "loot": {
       "commonDrop": "item_talisman",
       "rareDrop": "item_tarot_cards",
-      "commonSteal": "item_spr_up",
-      "rareSteal": "item_spr_up",
+      "commonSteal": "item_spr_up_plus",
+      "rareSteal": "item_spr_up_plus_plus",
       "dropRate": "32"
     },
     "spawns": [
@@ -15873,7 +16088,7 @@
     "spawns": []
   },
   {
-    "id": "enemy_panzer_jr",
+    "id": "enemy_panzer_jr_plus",
     "name": "Panzer Jr.+",
     "family": "Fiend",
     "isBoss": false,
@@ -16790,7 +17005,7 @@
       "commonDrop": "item_shinra_alpha",
       "rareDrop": "item_shinra_beta",
       "commonSteal": "item_shinra_beta",
-      "rareSteal": "item_shinra_beta",
+      "rareSteal": "item_shinra_beta_plus",
       "dropRate": "32"
     },
     "spawns": [
@@ -16801,6 +17016,10 @@
       {
         "missionId": "M3-3-2",
         "role": "random"
+      },
+      {
+        "missionId": "M1-4-2",
+        "role": "boss"
       }
     ]
   },
@@ -17121,7 +17340,7 @@
       "Squirt Gun"
     ],
     "loot": {
-      "commonDrop": "item_potion_coffin_keys_during_nibelheim_incident",
+      "commonDrop": "item_crisis_core_final_fantasy_vii_items_potion",
       "rareDrop": null,
       "commonSteal": "item_blizzard",
       "rareSteal": null,
@@ -17278,7 +17497,7 @@
       "commonDrop": "item_blizzaga",
       "rareDrop": "item_high_jump",
       "commonSteal": "item_frost_armlet",
-      "rareSteal": "item_2",
+      "rareSteal": null,
       "dropRate": "8"
     },
     "spawns": [
@@ -17436,7 +17655,7 @@
     "loot": {
       "commonDrop": "item_adamantite",
       "rareDrop": "item_adamantite",
-      "commonSteal": "item_shinra_beta",
+      "commonSteal": "item_shinra_beta_plus",
       "rareSteal": "item_sp_barrier",
       "dropRate": "32"
     },
@@ -17491,7 +17710,7 @@
       "commonDrop": "item_mag_mako_stone",
       "rareDrop": "item_crystal_gloves",
       "commonSteal": "item_crystal_gloves",
-      "rareSteal": "item_atk_up",
+      "rareSteal": "item_atk_up_plus_plus",
       "dropRate": "8"
     },
     "spawns": [
@@ -17819,17 +18038,17 @@
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
-      "level": 13,
-      "hpNormal": 52820,
-      "hpHard": 171840,
-      "mp": 424,
-      "atk": 40,
-      "vit": 120,
-      "mag": 38,
-      "spr": 128,
-      "lck": 62,
-      "exp": 6415,
-      "sp": null,
+      "level": 36,
+      "hpNormal": 31900,
+      "hpHard": 53000,
+      "mp": 9999,
+      "atk": 50,
+      "vit": 126,
+      "mag": 39,
+      "spr": 165,
+      "lck": 64,
+      "exp": 7358,
+      "sp": 1200,
       "gil": 0
     },
     "affinities": {
@@ -17848,26 +18067,26 @@
       ]
     },
     "abilities": [
-      "Draw Slash",
-      "Heartless Angel",
-      "Octaslash",
-      "Summon",
-      "Teleport"
+      "Megaflare",
+      "Laser Orbs",
+      "Lightning Bolt",
+      "Flare",
+      "Graviga"
     ],
     "loot": {
-      "commonDrop": "item_none_hyper_wrist",
-      "rareDrop": "item_none_iron_bangle",
-      "commonSteal": "item_none_hi_potion",
+      "commonDrop": null,
+      "rareDrop": null,
+      "commonSteal": null,
       "rareSteal": null,
       "dropRate": "8"
     },
     "spawns": [
       {
-        "missionId": "M5-2-2",
+        "missionId": "M5-2-1",
         "role": "boss"
       },
       {
-        "missionId": "M5-2-1",
+        "missionId": "M5-2-2",
         "role": "boss"
       }
     ]
@@ -18717,7 +18936,7 @@
       "Fire"
     ],
     "loot": {
-      "commonDrop": "item_poison_fire",
+      "commonDrop": "item_poison",
       "rareDrop": null,
       "commonSteal": "item_potion",
       "rareSteal": "item_soma",
@@ -19033,7 +19252,7 @@
     ]
   },
   {
-    "id": "enemy_support_machine",
+    "id": "enemy_support_machine_plus",
     "name": "Support Machine+",
     "family": "Shinra",
     "isBoss": false,
@@ -19089,10 +19308,6 @@
       },
       {
         "missionId": "M7-4-4",
-        "role": "random"
-      },
-      {
-        "missionId": "M3-2-3",
         "role": "random"
       }
     ]
@@ -19207,11 +19422,27 @@
       {
         "missionId": "M7-1-2",
         "role": "random"
+      },
+      {
+        "missionId": "M3-1-3",
+        "role": "random"
+      },
+      {
+        "missionId": "M3-1-5",
+        "role": "random"
+      },
+      {
+        "missionId": "M7-2-1",
+        "role": "random"
+      },
+      {
+        "missionId": "M7-2-2",
+        "role": "random"
       }
     ]
   },
   {
-    "id": "enemy_sweeper",
+    "id": "enemy_sweeper_plus",
     "name": "Sweeper+",
     "family": "Shinra",
     "isBoss": false,
@@ -19272,7 +19503,7 @@
     ]
   },
   {
-    "id": "enemy_sweeper",
+    "id": "enemy_sweeper_plus_plus",
     "name": "Sweeper++",
     "family": "Shinra",
     "isBoss": false,
@@ -19334,11 +19565,31 @@
       {
         "missionId": "M9-1-5",
         "role": "random"
+      },
+      {
+        "missionId": "M3-3-6",
+        "role": "random"
+      },
+      {
+        "missionId": "M7-4-2",
+        "role": "random"
+      },
+      {
+        "missionId": "M7-4-4",
+        "role": "random"
+      },
+      {
+        "missionId": "M7-4-5",
+        "role": "random"
+      },
+      {
+        "missionId": "M9-1-6",
+        "role": "random"
       }
     ]
   },
   {
-    "id": "enemy_sweeper",
+    "id": "enemy_sweeper_plus_plus_plus",
     "name": "Sweeper+++",
     "family": "Shinra",
     "isBoss": false,
@@ -19399,54 +19650,6 @@
       {
         "missionId": "M7-5-4",
         "role": "random"
-      },
-      {
-        "missionId": "M3-1-3",
-        "role": "random"
-      },
-      {
-        "missionId": "M3-1-5",
-        "role": "random"
-      },
-      {
-        "missionId": "M3-3-5",
-        "role": "random"
-      },
-      {
-        "missionId": "M3-3-6",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-1-2",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-2-1",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-2-2",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-4-2",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-4-4",
-        "role": "random"
-      },
-      {
-        "missionId": "M7-4-5",
-        "role": "random"
-      },
-      {
-        "missionId": "M9-1-5",
-        "role": "random"
-      },
-      {
-        "missionId": "M9-1-6",
-        "role": "random"
       }
     ]
   },
@@ -19497,8 +19700,8 @@
     ],
     "loot": {
       "commonDrop": "item_shinra_beta",
-      "rareDrop": "item_shinra_beta",
-      "commonSteal": "item_shinra_beta",
+      "rareDrop": "item_shinra_beta_plus",
+      "commonSteal": "item_shinra_beta_plus",
       "rareSteal": null,
       "dropRate": "32"
     },
@@ -20339,7 +20542,7 @@
     "loot": {
       "commonDrop": "item_vit_mako_stone",
       "rareDrop": "item_champion_belt",
-      "commonSteal": "item_hp_up",
+      "commonSteal": "item_hp_up_plus",
       "rareSteal": "item_power_attack",
       "dropRate": "16"
     },
@@ -20402,7 +20605,7 @@
     "loot": {
       "commonDrop": "item_vit_mako_stone",
       "rareDrop": "item_champion_belt",
-      "commonSteal": "item_hp_up",
+      "commonSteal": "item_hp_up_plus",
       "rareSteal": "item_vital_slash",
       "dropRate": "16"
     },

@@ -1,18 +1,5 @@
 [
   {
-    "id": "item_4x_kaiser_knuckles",
-    "name": "4x Kaiser Knuckles",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (4x Kaiser Knuckles).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M9-4-1"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_adaman_bangle",
     "name": "Adaman Bangle",
     "category": "accessories",
@@ -27,17 +14,6 @@
       "M9-2-4",
       "M9-5-4"
     ]
-  },
-  {
-    "id": "item_adamantite_adaman_bangle",
-    "name": "Adamantite Adaman Bangle",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Adamantite Adaman Bangle).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_aegis_armlet",
@@ -72,25 +48,14 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [
       "M5-1-2"
     ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_ap_mako_stone_bronze_armlet",
-    "name": "Ap Mako Stone Bronze Armlet",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Ap Mako Stone Bronze Armlet).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": []
   },
   {
@@ -109,7 +74,7 @@
     "name": "Atk Mako Stone Black Belt",
     "category": "accessories",
     "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Atk Mako Stone Black Belt).",
+    "description": "Equipment accessory (Atk Mako Stone Black Belt).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -165,7 +130,7 @@
       {
         "shopName": "Online Shop Duo",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
@@ -189,7 +154,7 @@
       {
         "shopName": "Online Shop Duo",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [],
@@ -209,9 +174,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -237,9 +202,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 500,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [],
@@ -249,17 +214,6 @@
       "M6-3-2",
       "M9-1-1"
     ]
-  },
-  {
-    "id": "item_bronze_armlet_silver_armlet",
-    "name": "Bronze Armlet Silver Armlet",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Bronze Armlet Silver Armlet).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_bronze_bangle",
@@ -277,9 +231,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 500,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [
@@ -319,9 +273,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [
@@ -347,7 +301,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [],
@@ -399,9 +353,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 500,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [
@@ -616,30 +570,19 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 20000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       },
       {
         "shopName": "Online Shop Duo",
         "price": 20000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
       "M7-2-4"
     ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_earring",
-    "name": "Earring",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Earring).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": []
   },
   {
@@ -658,9 +601,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [],
@@ -710,7 +653,7 @@
       {
         "shopName": "Online Shop Duo",
         "price": 40000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
@@ -731,7 +674,7 @@
       {
         "shopName": "Mythril Mine Trading",
         "price": 20000,
-        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+        "unlockHint": "Complete Mission M2-4-5 (Cave-In Investigation)."
       }
     ],
     "clearRewardMissions": [
@@ -769,9 +712,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -797,9 +740,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -956,9 +899,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Net Shop Shade|Online Shop Shade",
+        "shopName": "Online Shop Shade",
         "price": 1000000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil."
       }
     ],
     "clearRewardMissions": [],
@@ -1051,7 +994,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -1080,12 +1023,12 @@
       {
         "shopName": "Nibel Accessories",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       },
       {
         "shopName": "Research Dept. QMC",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [
@@ -1126,7 +1069,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [],
@@ -1156,7 +1099,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [],
@@ -1183,9 +1126,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -1212,9 +1155,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -1268,9 +1211,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Net Shop Shade|Online Shop Shade",
+        "shopName": "Online Shop Shade",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil."
       }
     ],
     "clearRewardMissions": [],
@@ -1294,7 +1237,8 @@
     },
     "shops": [],
     "clearRewardMissions": [
-      "M2-3-6"
+      "M2-3-6",
+      "M9-4-1"
     ],
     "treasureMissions": [
       "M3-5-1",
@@ -1334,9 +1278,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -1361,9 +1305,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [
@@ -1372,17 +1316,6 @@
     "treasureMissions": [
       "M9-1-3"
     ]
-  },
-  {
-    "id": "item_mag_mako_stone_mythril_gloves",
-    "name": "Mag Mako Stone Mythril Gloves",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Mag Mako Stone Mythril Gloves).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_magic_master",
@@ -1404,7 +1337,13 @@
     "subCategory": "Accessory",
     "description": "Items dropped by or stolen from enemies are always rare; LCK +5",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Sector 7 Shop",
+        "price": 10000,
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
+      }
+    ],
     "clearRewardMissions": [
       "M7-6-4"
     ],
@@ -1421,7 +1360,7 @@
       {
         "shopName": "Mythril Mine Trading",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+        "unlockHint": "Complete Mission M2-4-5 (Cave-In Investigation)."
       }
     ],
     "clearRewardMissions": [
@@ -1451,7 +1390,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -1529,7 +1468,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -1608,28 +1547,6 @@
     ]
   },
   {
-    "id": "item_mythril_gloves_atk_up",
-    "name": "Mythril Gloves Atk Up",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Gloves Atk Up).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_none_iron_bangle",
-    "name": "None Iron Bangle",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (None Iron Bangle).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_paralyzing_shock",
     "name": "Paralyzing Shock",
     "category": "accessories",
@@ -1647,7 +1564,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -1673,7 +1590,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 8000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -1709,17 +1626,6 @@
       "M9-5-4",
       "M9-6-5"
     ]
-  },
-  {
-    "id": "item_potion_coffin_keys_during_nibelheim_incident",
-    "name": "Potion Coffin Keys During Nibelheim Incident",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Coffin Keys During Nibelheim Incident).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_power_suit",
@@ -1769,9 +1675,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Net Shop Shade|Online Shop Shade",
+        "shopName": "Online Shop Shade",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil."
       }
     ],
     "clearRewardMissions": [
@@ -1790,7 +1696,7 @@
       {
         "shopName": "Mythril Mine Trading",
         "price": 30000,
-        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+        "unlockHint": "Complete Mission M2-4-5 (Cave-In Investigation)."
       }
     ],
     "clearRewardMissions": [
@@ -1887,30 +1793,18 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [
       "M9-1-3"
     ],
     "treasureMissions": [
+      "M6-4-2",
       "M9-3-6",
       "M9-4-2",
       "M9-5-3",
       "M9-6-5"
-    ]
-  },
-  {
-    "id": "item_rune_bangle",
-    "name": "Rune Bangle",
-    "category": "accessories",
-    "subCategory": "Accessory",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Rune Bangle).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M6-4-2"
     ]
   },
   {
@@ -1931,7 +1825,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 5000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [],
@@ -1957,7 +1851,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [
@@ -1981,7 +1875,7 @@
       {
         "shopName": "Mythril Mine Trading",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+        "unlockHint": "Complete Mission M2-4-5 (Cave-In Investigation)."
       }
     ],
     "clearRewardMissions": [
@@ -2032,20 +1926,39 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M1-5-2",
+      "M7-3-5",
+      "M8-3-4",
+      "M9-1-4"
+    ]
+  },
+  {
+    "id": "item_shinra_beta_plus",
+    "name": "Shinra Beta+",
+    "category": "accessories",
+    "subCategory": "Accessory",
+    "description": "VIT +80",
+    "fusion": {
+      "stat": "VIT",
+      "perUnit": 1,
+      "unitsPerStep": 2,
+      "maxBonus": 100,
+      "requiresExistingStat": false,
+      "notes": "2× → VIT +1"
+    },
+    "shops": [],
     "clearRewardMissions": [
       "M1-5-5"
     ],
     "treasureMissions": [
-      "M1-5-2",
       "M2-3-6",
       "M3-5-3",
-      "M7-3-5",
-      "M7-6-5",
-      "M8-3-4",
-      "M9-1-4"
+      "M7-6-5"
     ]
   },
   {
@@ -2111,7 +2024,7 @@
       {
         "shopName": "Online Shop Duo",
         "price": 50000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
@@ -2132,7 +2045,7 @@
       {
         "shopName": "Online Shop Duo",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
@@ -2176,7 +2089,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -2207,12 +2120,12 @@
       {
         "shopName": "Nibel Accessories",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       },
       {
         "shopName": "Research Dept. QMC",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [
@@ -2253,7 +2166,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -2297,7 +2210,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 8000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [],
@@ -2363,7 +2276,7 @@
       {
         "shopName": "Mythril Mine Trading",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M2-4-5: Cave-In Investigation\""
+        "unlockHint": "Complete Mission M2-4-5 (Cave-In Investigation)."
       }
     ],
     "clearRewardMissions": [
@@ -2392,7 +2305,7 @@
       {
         "shopName": "Nibel Accessories",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       }
     ],
     "clearRewardMissions": [
@@ -2419,12 +2332,12 @@
       {
         "shopName": "Nibel Accessories",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M6-4-4 (Mad Scientist?)."
       },
       {
         "shopName": "Research Dept. QMC",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [],
@@ -2442,14 +2355,14 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 80000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       },
       {
         "shopName": "Online Shop Duo",
         "price": 80000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-3-3 (Genesis's Ambition)."
       }
     ],
     "clearRewardMissions": [
@@ -2474,9 +2387,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.6 Accessory Shop",
+        "shopName": "Sector 6 Accessory Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-6: Underground City\""
+        "unlockHint": "Complete Mission M6-2-6 (Underground City)."
       }
     ],
     "clearRewardMissions": [],
@@ -2515,7 +2428,7 @@
       {
         "shopName": "Shinra Shop",
         "price": 200,
-        "unlockHint": "unlocked immediately"
+        "unlockHint": "Unlocked automatically at the start of Chapter 1."
       }
     ],
     "clearRewardMissions": [],
@@ -2529,23 +2442,6 @@
       "M8-2-4",
       "M8-4-3"
     ]
-  },
-  {
-    "id": "item_exa_flare",
-    "name": "Exa Flare",
-    "category": "consumables",
-    "subCategory": "",
-    "description": "",
-    "fusion": null,
-    "shops": [
-      {
-        "shopName": "Bone Village Outlet",
-        "price": 10000,
-        "unlockHint": ""
-      }
-    ],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_hi_potion",
@@ -2565,7 +2461,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 500,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -2606,57 +2502,6 @@
     ]
   },
   {
-    "id": "item_magic_barrier",
-    "name": "Magic Barrier",
-    "category": "consumables",
-    "subCategory": "",
-    "description": "",
-    "fusion": null,
-    "shops": [
-      {
-        "shopName": "The Happy Turtle",
-        "price": 4000,
-        "unlockHint": ""
-      }
-    ],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mega_flare",
-    "name": "Mega Flare",
-    "category": "consumables",
-    "subCategory": "",
-    "description": "",
-    "fusion": null,
-    "shops": [
-      {
-        "shopName": "Bone Village Outlet",
-        "price": 10000,
-        "unlockHint": ""
-      }
-    ],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mogs_armlet",
-    "name": "Mog's Armlet",
-    "category": "consumables",
-    "subCategory": "",
-    "description": "",
-    "fusion": null,
-    "shops": [
-      {
-        "shopName": "Sec.7 Shop",
-        "price": 10000,
-        "unlockHint": ""
-      }
-    ],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_potion",
     "name": "Potion",
     "category": "consumables",
@@ -2674,7 +2519,7 @@
       {
         "shopName": "Shinra Shop",
         "price": 50,
-        "unlockHint": "unlocked immediately"
+        "unlockHint": "Unlocked automatically at the start of Chapter 1."
       }
     ],
     "clearRewardMissions": [],
@@ -2709,7 +2554,7 @@
       {
         "shopName": "Shinra Shop",
         "price": 200,
-        "unlockHint": "unlocked immediately"
+        "unlockHint": "Unlocked automatically at the start of Chapter 1."
       }
     ],
     "clearRewardMissions": [],
@@ -2742,7 +2587,7 @@
       {
         "shopName": "Shinra Shop",
         "price": 200,
-        "unlockHint": "unlocked immediately"
+        "unlockHint": "Unlocked automatically at the start of Chapter 1."
       }
     ],
     "clearRewardMissions": [],
@@ -2777,9 +2622,9 @@
     },
     "shops": [
       {
-        "shopName": "Sec.7 Shop",
+        "shopName": "Sector 7 Shop",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-4-3 (Infiltration)."
       }
     ],
     "clearRewardMissions": [],
@@ -2842,22 +2687,11 @@
     ]
   },
   {
-    "id": "item_1",
-    "name": "1",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (1).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_10000_gil",
     "name": "10000 Gil",
     "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (10000 Gil).",
+    "subCategory": "Gil Chest",
+    "description": "Treasure chest containing 10000 Gil.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -2869,8 +2703,8 @@
     "id": "item_100000_gil",
     "name": "100000 Gil",
     "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (100000 Gil).",
+    "subCategory": "Gil Chest",
+    "description": "Treasure chest containing 100000 Gil.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -2879,22 +2713,11 @@
     ]
   },
   {
-    "id": "item_2",
-    "name": "2",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (2).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_200000_gil",
     "name": "200000 Gil",
     "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (200000 Gil).",
+    "subCategory": "Gil Chest",
+    "description": "Treasure chest containing 200000 Gil.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -2906,25 +2729,14 @@
     "id": "item_5000_gil",
     "name": "5000 Gil",
     "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (5000 Gil).",
+    "subCategory": "Gil Chest",
+    "description": "Treasure chest containing 5000 Gil.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
     "treasureMissions": [
       "M4-2-6"
     ]
-  },
-  {
-    "id": "item_8",
-    "name": "8",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (8).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_adamantite_adamantite",
@@ -2999,22 +2811,11 @@
     "treasureMissions": []
   },
   {
-    "id": "item_bone_village_commerce",
-    "name": "Bone Village Commerce",
+    "id": "item_bone_village_outlet",
+    "name": "Bone Village Outlet",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for Bone Village Commerce.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_bone_village_commerce_item",
-    "name": "Bone Village Commerce item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Bone Village Commerce item).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3095,11 +2896,11 @@
     "treasureMissions": []
   },
   {
-    "id": "item_diamond_bracelet_crystal_bracelet",
-    "name": "Diamond Bracelet Crystal Bracelet",
+    "id": "item_crisis_core_final_fantasy_vii_items_potion",
+    "name": "Crisis Core Final Fantasy Vii Items Potion",
     "category": "key-items",
     "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Diamond Bracelet Crystal Bracelet).",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Crisis Core Final Fantasy Vii Items Potion).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3111,41 +2912,6 @@
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Keys to the dresser.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_fat_chocobo_feather_x_2_rare",
-    "name": "Fat Chocobo Feather X 2 Rare",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather X 2 Rare).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_fat_chocobo_feather_x2_sector_8_materia_shop_item",
-    "name": "Fat Chocobo Feather x2, Sector 8 - Materia Shop item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather x2, Sector 8 - Materia Shop item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M6-2-1"
-    ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_fat_chocobo_feather_x3_rare",
-    "name": "Fat Chocobo Feather X3 Rare",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Fat Chocobo Feather X3 Rare).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3188,8 +2954,8 @@
     "id": "item_goddess_key",
     "name": "Goddess Key",
     "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Goddess Key).",
+    "subCategory": "Key Item",
+    "description": "Rare key item carried by Behemoth King in the Depths of Judgment.",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3288,17 +3054,6 @@
     "description": "Online shopping address for Gongaga Trading.",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_gongaga_trading_shop",
-    "name": "Gongaga Trading (Shop)",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Gongaga Trading (Shop)).",
-    "fusion": null,
-    "shops": [],
     "clearRewardMissions": [
       "M2-3-1"
     ],
@@ -3327,68 +3082,11 @@
     "treasureMissions": []
   },
   {
-    "id": "item_hi_potion_drop_rate_8",
-    "name": "Hi Potion Drop Rate 8",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Hi Potion Drop Rate 8).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_hi_potion_phoenix_down_if_the_player_has_none_in_the_inventory",
-    "name": "Hi Potion Phoenix Down If The Player Has None In The Inventory",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Hi Potion Phoenix Down If The Player Has None In The Inventory).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_how_to_build_a_wagon",
     "name": "How to Build a Wagon",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Do-it-yourself instructions for the beginner with easy-to-follow steps.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_hp_mako_stone_atk_mako_stone",
-    "name": "Hp Mako Stone Atk Mako Stone",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Hp Mako Stone Atk Mako Stone).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_hp_mako_stone_receive_silence_blade",
-    "name": "HP Mako Stone receive Silence Blade",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (HP Mako Stone receive Silence Blade).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-4"
-    ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_hypno_crown_royal_crown",
-    "name": "Hypno Crown Royal Crown",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Hypno Crown Royal Crown).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3451,17 +3149,6 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_junon_souvenirs_shop",
-    "name": "Junon Souvenirs (Shop)",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Junon Souvenirs (Shop)).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": [
       "M2-4-1"
     ]
@@ -3491,19 +3178,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_lck_mako_stone_receive_regen",
-    "name": "LCK Mako Stone receive Regen",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (LCK Mako Stone receive Regen).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-6"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_life_materia",
     "name": "Life Materia",
     "category": "key-items",
@@ -3526,28 +3200,15 @@
     "treasureMissions": []
   },
   {
-    "id": "item_lunar_harp_x_2_sector_6_accessory_shop_item",
-    "name": "Lunar Harp x 2, Sector 6 - Accessory Shop item",
+    "id": "item_silence_materia",
+    "name": "MAG Mako Stone",
     "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Lunar Harp x 2, Sector 6 - Accessory Shop item).",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (MAG Mako Stone).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
-      "M6-2-6"
-    ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_lunar_harp_x2_sector_5_materia_shop_item",
-    "name": "Lunar Harp x2, Sector 5 - Materia Shop item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Lunar Harp x2, Sector 5 - Materia Shop item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M6-2-3"
+      "M8-2-3"
     ],
     "treasureMissions": []
   },
@@ -3574,22 +3235,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_magic_up",
-    "name": "Magic Up++",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Magic Up++).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M1-4-3",
-      "M8-3-4"
-    ],
-    "treasureMissions": [
-      "M9-2-1"
-    ]
-  },
-  {
     "id": "item_moogles_amulet",
     "name": "Moogle's Amulet",
     "category": "key-items",
@@ -3603,38 +3248,16 @@
     ]
   },
   {
-    "id": "item_mythril_mine_traders",
-    "name": "Mythril Mine Traders",
+    "id": "item_mythril_mine_trading",
+    "name": "Mythril Mine Trading",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for Mythril Mine Traders.",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mythril_mine_traders_shop",
-    "name": "Mythril Mine Traders (Shop)",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Mine Traders (Shop)).",
-    "fusion": null,
-    "shops": [],
     "clearRewardMissions": [
       "M2-4-5"
     ],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mythril_mythril",
-    "name": "Mythril Mythril",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Mythril Mythril).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": []
   },
   {
@@ -3649,54 +3272,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_net_shop_shade",
-    "name": "Net Shop Shade",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Net Shop Shade).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M9-5-4"
-    ]
-  },
-  {
-    "id": "item_network_shop_duo",
-    "name": "Network Shop Duo",
-    "category": "key-items",
-    "subCategory": "key-items",
-    "description": "Online shopping address for Network Shop Duo.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_network_shop_duo_item",
-    "name": "Network Shop Duo item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Network Shop Duo item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M9-3-3"
-    ]
-  },
-  {
-    "id": "item_network_shop_shade",
-    "name": "Network Shop Shade",
-    "category": "key-items",
-    "subCategory": "key-items",
-    "description": "Online shopping address for Network Shop Shade.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_nibel_accessories",
     "name": "Nibel Accessories",
     "category": "key-items",
@@ -3705,42 +3280,9 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_nibel_accessories_item",
-    "name": "Nibel Accessories item",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Nibel Accessories item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
     "treasureMissions": [
       "M6-4-4"
     ]
-  },
-  {
-    "id": "item_none_hi_potion",
-    "name": "None Hi Potion",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (None Hi Potion).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_none_hyper_wrist",
-    "name": "None Hyper Wrist",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (None Hyper Wrist).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_odin_materia",
@@ -3767,77 +3309,37 @@
     "treasureMissions": []
   },
   {
+    "id": "item_online_shop_duo",
+    "name": "Online Shop Duo",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Network Shop Duo.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-3-3"
+    ]
+  },
+  {
+    "id": "item_online_shop_shade",
+    "name": "Online Shop Shade",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for Network Shop Shade.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M9-5-4"
+    ]
+  },
+  {
     "id": "item_phoenix_materia",
     "name": "Phoenix Materia",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Adds Rebirth Flame to DMW, grants Raise status.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_poison_fire",
-    "name": "Poison Fire",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Poison Fire).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_potion_fire",
-    "name": "Potion Fire",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Fire).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_potion_force_bracelet",
-    "name": "Potion Force Bracelet",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Force Bracelet).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_potion_soma",
-    "name": "Potion Soma",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Soma).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_power_stone_dualcast",
-    "name": "Power Stone Dualcast",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Power Stone Dualcast).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_power_stone_magic_stone",
-    "name": "Power Stone Magic Stone",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Power Stone Magic Stone).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -3866,6 +3368,17 @@
     "treasureMissions": []
   },
   {
+    "id": "item_research_dept_qmc_plus",
+    "name": "Research Dept. QMC+",
+    "category": "key-items",
+    "subCategory": "key-items",
+    "description": "Online shopping address for the Secret Investigative Support Room.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
     "id": "item_sabbath_materia",
     "name": "Sabbath Materia",
     "category": "key-items",
@@ -3878,7 +3391,7 @@
   },
   {
     "id": "item_sector_5_materia_shop",
-    "name": "Sector 5 - Materia Shop",
+    "name": "Sector 5 Materia Shop",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Sector 5 materia shop.",
@@ -3888,8 +3401,21 @@
     "treasureMissions": []
   },
   {
+    "id": "item_sector_6_accessory",
+    "name": "Sector 6 - Accessory",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 6 - Accessory).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-2-6"
+    ]
+  },
+  {
     "id": "item_sector_6_accessory_shop",
-    "name": "Sector 6 - Accessory Shop",
+    "name": "Sector 6 Accessory Shop",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Sector 6 accessory shop.",
@@ -3899,8 +3425,21 @@
     "treasureMissions": []
   },
   {
+    "id": "item_sector_7",
+    "name": "Sector 7",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 7).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M4-4-3"
+    ]
+  },
+  {
     "id": "item_sector_7_shop",
-    "name": "Sector 7 - Shop",
+    "name": "Sector 7 Shop",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Sector 7 shop.",
@@ -3910,21 +3449,8 @@
     "treasureMissions": []
   },
   {
-    "id": "item_sector_7_shop_item",
-    "name": "Sector 7 - Shop item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Sector 7 - Shop item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M4-4-3"
-    ]
-  },
-  {
     "id": "item_sector_8_materia_shop",
-    "name": "Sector 8 - Materia Shop",
+    "name": "Sector 8 Materia Shop",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Sector 8 materia shop.",
@@ -3989,6 +3515,19 @@
     "treasureMissions": []
   },
   {
+    "id": "item_esuna_materia",
+    "name": "SPR Mako Stone",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (SPR Mako Stone).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M8-2-1"
+    ],
+    "treasureMissions": []
+  },
+  {
     "id": "item_star_materia",
     "name": "Star Materia",
     "category": "key-items",
@@ -4000,35 +3539,11 @@
     "treasureMissions": []
   },
   {
-    "id": "item_stop_sword",
-    "name": "Stop Sword",
-    "category": "key-items",
-    "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Stop Sword).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-6-6"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_the_happy_turtle",
     "name": "The Happy Turtle",
     "category": "key-items",
     "subCategory": "key-items",
     "description": "Online shopping address for the Happy Turtle's main shop.",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_the_happy_turtle_shop_item",
-    "name": "The Happy Turtle shop item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (The Happy Turtle shop item).",
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
@@ -4083,14 +3598,16 @@
     "treasureMissions": []
   },
   {
-    "id": "item_various",
-    "name": "Various",
+    "id": "item_poison_materia",
+    "name": "VIT Mako Stone",
     "category": "key-items",
     "subCategory": "Key / Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Various).",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (VIT Mako Stone).",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
+    "clearRewardMissions": [
+      "M8-2-2"
+    ],
     "treasureMissions": []
   },
   {
@@ -4116,6 +3633,19 @@
     "treasureMissions": []
   },
   {
+    "id": "item_wutai_secret",
+    "name": "Wutai Secret",
+    "category": "key-items",
+    "subCategory": "Key / Unlock",
+    "description": "Obtained from Crisis Core missions, chests, or enemies (Wutai Secret).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M4-2-6"
+    ],
+    "treasureMissions": []
+  },
+  {
     "id": "item_wutai_secret_shop",
     "name": "Wutai Secret Shop",
     "category": "key-items",
@@ -4124,19 +3654,6 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_wutai_secret_shop_item",
-    "name": "Wutai Secret Shop item",
-    "category": "key-items",
-    "subCategory": "Shop Unlock",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Wutai Secret Shop item).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M4-2-6"
-    ],
     "treasureMissions": []
   },
   {
@@ -4294,7 +3811,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [
@@ -4313,7 +3830,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 18000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [],
@@ -4330,7 +3847,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -4345,21 +3862,47 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.8 Materia Shop",
+        "shopName": "Sector 8 Materia Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+        "unlockHint": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance)."
       }
     ],
     "clearRewardMissions": [
-      "M2-2-3",
-      "M3-1-3",
+      "M3-1-3"
+    ],
+    "treasureMissions": [
+      "M10-1-2"
+    ]
+  },
+  {
+    "id": "item_ap_up_plus",
+    "name": "AP Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases AP by 20% per level up to +100%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-2-3"
+    ],
+    "treasureMissions": [
+      "M4-2-2"
+    ]
+  },
+  {
+    "id": "item_ap_up_plus_plus",
+    "name": "AP Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases AP by 30% per level up to +150%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
       "M4-2-4"
     ],
     "treasureMissions": [
-      "M4-2-2",
       "M4-5-2",
-      "M8-3-5",
-      "M10-1-2"
+      "M8-3-5"
     ]
   },
   {
@@ -4371,9 +3914,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Net Shop Shade|Online Shop Shade",
+        "shopName": "Online Shop Shade",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil."
       }
     ],
     "clearRewardMissions": [],
@@ -4390,30 +3933,30 @@
     "clearRewardMissions": [
       "M1-3-1",
       "M2-2-1",
-      "M2-5-1",
+      "M2-5-1"
+    ],
+    "treasureMissions": [
+      "M3-2-2",
+      "M9-1-3"
+    ]
+  },
+  {
+    "id": "item_assault_twister_plus",
+    "name": "Assault Twister+",
+    "category": "materia",
+    "subCategory": "Command",
+    "description": "Stronger spin attack that hits nearby enemies twice.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
       "M3-3-5",
       "M8-5-1"
     ],
     "treasureMissions": [
-      "M3-2-2",
       "M7-6-6",
-      "M9-1-3",
       "M9-4-1",
       "M9-4-3"
     ]
-  },
-  {
-    "id": "item_atk_mako_stone_receive_gravity",
-    "name": "ATK Mako Stone receive Gravity",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (ATK Mako Stone receive Gravity).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-5"
-    ],
-    "treasureMissions": []
   },
   {
     "id": "item_atk_up",
@@ -4425,9 +3968,33 @@
     "shops": [],
     "clearRewardMissions": [],
     "treasureMissions": [
-      "M2-2-3",
+      "M6-1-3"
+    ]
+  },
+  {
+    "id": "item_atk_up_plus",
+    "name": "ATK Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases attack by approximately two or three points per level up to +12.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-2-3"
+    ]
+  },
+  {
+    "id": "item_atk_up_plus_plus",
+    "name": "ATK Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases attack by approximately three or four points per level up to +19.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
       "M3-3-1",
-      "M6-1-3",
       "M8-5-5"
     ]
   },
@@ -4442,7 +4009,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 4000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [
@@ -4481,7 +4048,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -4501,7 +4068,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [],
@@ -4522,7 +4089,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [],
@@ -4554,7 +4121,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 1000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [],
@@ -4585,7 +4152,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [],
@@ -4615,7 +4182,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [],
@@ -4632,7 +4199,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [
@@ -4671,7 +4238,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 1000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [],
@@ -4801,7 +4368,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 5000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [],
@@ -4883,7 +4450,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 5000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [],
@@ -4916,9 +4483,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.8 Materia Shop",
+        "shopName": "Sector 8 Materia Shop",
         "price": 5000,
-        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+        "unlockHint": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance)."
       }
     ],
     "clearRewardMissions": [
@@ -4939,7 +4506,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -4960,7 +4527,7 @@
       {
         "shopName": "Gongaga Trading",
         "price": 18000,
-        "unlockHint": "unlocked by completing M2-3-1: Unidentified Monsters\""
+        "unlockHint": "Complete Mission M2-3-1 (Unidentified Monsters)."
       }
     ],
     "clearRewardMissions": [
@@ -4992,17 +4559,6 @@
     ]
   },
   {
-    "id": "item_drainra_drainga",
-    "name": "Drainra Drainga",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Drainra Drainga).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_dualcast",
     "name": "Dualcast",
     "category": "materia",
@@ -5011,9 +4567,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Net Shop Shade|Online Shop Shade",
+        "shopName": "Online Shop Shade",
         "price": 30000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M9-5-4 (Abnormal Power) — sells Genji Helm for 1M Gil."
       }
     ],
     "clearRewardMissions": [],
@@ -5053,7 +4609,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 40000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -5075,7 +4631,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 40000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -5118,7 +4674,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [],
@@ -5134,7 +4690,13 @@
     "subCategory": "Independent",
     "description": "Increases chance of Bahamut Fury appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
+      }
+    ],
     "clearRewardMissions": [
       "M9-6-4"
     ],
@@ -5168,7 +4730,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [],
@@ -5200,7 +4762,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [
@@ -5221,7 +4783,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -5243,7 +4805,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 1000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [
@@ -5344,7 +4906,7 @@
       {
         "shopName": "Bone Village Outlet",
         "price": 15000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
       }
     ],
     "clearRewardMissions": [
@@ -5368,6 +4930,7 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
+      "M8-2-5",
       "M9-3-3"
     ],
     "treasureMissions": [
@@ -5403,7 +4966,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -5420,7 +4983,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 15000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [],
@@ -5441,7 +5004,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 15000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -5463,7 +5026,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 15000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -5486,7 +5049,7 @@
       {
         "shopName": "Bone Village Outlet",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
       }
     ],
     "clearRewardMissions": [
@@ -5522,20 +5085,46 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.8 Materia Shop",
+        "shopName": "Sector 8 Materia Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+        "unlockHint": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance)."
       }
     ],
     "clearRewardMissions": [
-      "M1-1-5",
-      "M8-1-3",
+      "M8-1-3"
+    ],
+    "treasureMissions": [
+      "M8-4-2"
+    ]
+  },
+  {
+    "id": "item_hp_up_plus",
+    "name": "HP Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases HP by 20% per level up to +100%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
       "M8-4-3"
     ],
     "treasureMissions": [
-      "M2-3-2",
-      "M6-2-3",
-      "M8-4-2"
+      "M6-2-3"
+    ]
+  },
+  {
+    "id": "item_hp_up_plus_plus",
+    "name": "HP Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases HP by 30% per level up to +150%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-1-5"
+    ],
+    "treasureMissions": [
+      "M2-3-2"
     ]
   },
   {
@@ -5551,20 +5140,8 @@
       "M9-2-5"
     ],
     "treasureMissions": [
+      "M3-5-2",
       "M7-5-1"
-    ]
-  },
-  {
-    "id": "item_iron_punch",
-    "name": "Iron Punch",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Iron Punch).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": [
-      "M3-5-2"
     ]
   },
   {
@@ -5578,7 +5155,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [],
@@ -5611,7 +5188,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 1000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [
@@ -5630,23 +5207,10 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_mag_mako_stone_receive_silence_materia",
-    "name": "MAG Mako Stone receive Silence Materia",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (MAG Mako Stone receive Silence Materia).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-3"
-    ],
     "treasureMissions": []
   },
   {
@@ -5657,14 +5221,42 @@
     "description": "Increases defense by approximately one or two points per level up to +9.",
     "fusion": null,
     "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M2-2-4",
+      "M7-2-2",
+      "M8-2-4"
+    ]
+  },
+  {
+    "id": "item_mag_up_plus",
+    "name": "MAG Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases magic by approximately two or three points per level up to +12.",
+    "fusion": null,
+    "shops": [],
     "clearRewardMissions": [
       "M8-4-5"
     ],
     "treasureMissions": [
-      "M2-2-4",
-      "M6-3-2",
-      "M7-2-2",
-      "M8-2-4"
+      "M6-3-2"
+    ]
+  },
+  {
+    "id": "item_mag_up_plus_plus",
+    "name": "MAG Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases defense by approximately three or four points per level up to +19.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M1-4-3",
+      "M8-3-4"
+    ],
+    "treasureMissions": [
+      "M9-2-1"
     ]
   },
   {
@@ -5693,7 +5285,13 @@
     "subCategory": "Magic",
     "description": "Lowers magic damage taken. (Bestows MBarrier status)",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "The Happy Turtle",
+        "price": 4000,
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
+      }
+    ],
     "clearRewardMissions": [
       "M8-4-1"
     ],
@@ -5710,7 +5308,13 @@
     "subCategory": "Independent",
     "description": "Increases chance of Bahamut appearing on the DMW. Begins at 5x, increases by 1x each level up to 9x.",
     "fusion": null,
-    "shops": [],
+    "shops": [
+      {
+        "shopName": "Bone Village Outlet",
+        "price": 10000,
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
+      }
+    ],
     "clearRewardMissions": [
       "M9-5-6"
     ],
@@ -5727,7 +5331,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -5744,7 +5348,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [],
@@ -5759,17 +5363,40 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.8 Materia Shop",
+        "shopName": "Sector 8 Materia Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+        "unlockHint": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance)."
       }
     ],
+    "clearRewardMissions": [],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_mp_up_plus",
+    "name": "MP Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases MP by 20% per level up to +100%.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-2-6"
+    ]
+  },
+  {
+    "id": "item_mp_up_plus_plus",
+    "name": "MP Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases MP by 30% per level up to +150%.",
+    "fusion": null,
+    "shops": [],
     "clearRewardMissions": [
       "M3-2-2"
     ],
     "treasureMissions": [
       "M1-4-3",
-      "M6-2-6",
       "M7-4-2"
     ]
   },
@@ -5797,7 +5424,7 @@
       {
         "shopName": "Junon Souvenirs",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M2-4-1 (A Solitary Island)."
       }
     ],
     "clearRewardMissions": [
@@ -5816,7 +5443,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
@@ -5848,9 +5475,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.8 Materia Shop",
+        "shopName": "Sector 8 Materia Shop",
         "price": 4000,
-        "unlockHint": "unlocked by completing \"M6-2-1: Slum Development Plan 1\""
+        "unlockHint": "Complete Mission M6-2-1 (talk to City Planning Director in Shinra Entrance)."
       }
     ],
     "clearRewardMissions": [],
@@ -5880,9 +5507,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.5 Materia Shop",
+        "shopName": "Sector 5 Materia Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-3: Mako Excavation Site\""
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
       }
     ],
     "clearRewardMissions": [
@@ -5935,28 +5562,6 @@
     "treasureMissions": []
   },
   {
-    "id": "item_potion_blizzaga_blade",
-    "name": "Potion Blizzaga Blade",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Blizzaga Blade).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
-    "id": "item_potion_thunder_blade",
-    "name": "Potion Thunder Blade",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Potion Thunder Blade).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
-  },
-  {
     "id": "item_power_attack",
     "name": "Power Attack",
     "category": "materia",
@@ -5981,7 +5586,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 14000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [],
@@ -6009,7 +5614,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 18000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -6032,7 +5637,7 @@
       {
         "shopName": "Bone Village Outlet",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
       }
     ],
     "clearRewardMissions": [
@@ -6051,26 +5656,16 @@
       {
         "shopName": "The Happy Turtle",
         "price": 5000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [
-      "M8-1-5"
+      "M8-1-5",
+      "M8-2-6"
     ],
     "treasureMissions": [
       "M4-5-2"
     ]
-  },
-  {
-    "id": "item_royal_crown_darkness",
-    "name": "Royal Crown Darkness",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (Royal Crown Darkness).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [],
-    "treasureMissions": []
   },
   {
     "id": "item_rush_assault",
@@ -6083,11 +5678,37 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [],
     "treasureMissions": []
+  },
+  {
+    "id": "item_sector_5_materia",
+    "name": "Sector 5 - Materia",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Equipable Materia (Sector 5 - Materia).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-2-3"
+    ]
+  },
+  {
+    "id": "item_sector_8_materia",
+    "name": "Sector 8 - Materia",
+    "category": "materia",
+    "subCategory": "Materia",
+    "description": "Equipable Materia (Sector 8 - Materia).",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M6-2-1"
+    ]
   },
   {
     "id": "item_silence",
@@ -6098,9 +5719,9 @@
     "fusion": null,
     "shops": [
       {
-        "shopName": "Sec.5 Materia Shop",
+        "shopName": "Sector 5 Materia Shop",
         "price": 1000,
-        "unlockHint": "unlocked by completing \"M6-2-3: Mako Excavation Site\""
+        "unlockHint": "Complete Mission M6-2-3 (Mako Excavation Site)."
       }
     ],
     "clearRewardMissions": [
@@ -6131,7 +5752,9 @@
     "description": "Physical attack that inflicts Silence.",
     "fusion": null,
     "shops": [],
-    "clearRewardMissions": [],
+    "clearRewardMissions": [
+      "M8-2-4"
+    ],
     "treasureMissions": [
       "M1-5-2",
       "M8-6-2"
@@ -6225,19 +5848,6 @@
     ]
   },
   {
-    "id": "item_spr_mako_stone_give_to_researcher_and_receive_esuna_materia",
-    "name": "SPR Mako Stone give to researcher and receive Esuna Materia",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (SPR Mako Stone give to researcher and receive Esuna Materia).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-1"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_spr_up",
     "name": "SPR UP",
     "category": "materia",
@@ -6246,14 +5856,39 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
-      "M2-1-5",
-      "M2-2-5",
+      "M2-1-5"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_spr_up_plus",
+    "name": "SPR Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases spirit by approximately two or three points per level up to +12.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
+      "M2-2-5"
+    ],
+    "treasureMissions": [
+      "M4-2-4"
+    ]
+  },
+  {
+    "id": "item_spr_up_plus_plus",
+    "name": "SPR Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases spirit by approximately three or four points per level up to +19.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
       "M8-5-3"
     ],
     "treasureMissions": [
       "M1-4-3",
       "M2-3-4",
-      "M4-2-4",
       "M4-4-6"
     ]
   },
@@ -6268,7 +5903,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 40000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -6290,7 +5925,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 40000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -6338,7 +5973,8 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
-      "M8-3-1"
+      "M8-3-1",
+      "M8-6-6"
     ],
     "treasureMissions": [
       "M4-4-3",
@@ -6372,7 +6008,7 @@
       {
         "shopName": "Research Dept. QMC+",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a hidden chest in Gongaga Outskirts in Chapter 9/10 — PERMANENTLY MISSABLE!"
       }
     ],
     "clearRewardMissions": [
@@ -6391,7 +6027,7 @@
       {
         "shopName": "Wutai Secret Shop",
         "price": 10000,
-        "unlockHint": "unlocked by completing \"M4-2-6: The Five Saints of Wutai\""
+        "unlockHint": "Complete Mission M4-2-6 (The Five Saints of Wutai)."
       }
     ],
     "clearRewardMissions": [
@@ -6413,7 +6049,7 @@
       {
         "shopName": "The Happy Turtle",
         "price": 3000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M4-3-6 (Stop the Assailants)."
       }
     ],
     "clearRewardMissions": [],
@@ -6446,7 +6082,7 @@
       {
         "shopName": "Research Dept. QMC",
         "price": 1000,
-        "unlockHint": ""
+        "unlockHint": "Story unlock: awarded automatically after defeating G Eraser in Chapter 3/4."
       }
     ],
     "clearRewardMissions": [
@@ -6524,19 +6160,6 @@
     ]
   },
   {
-    "id": "item_vit_mako_stone_give_to_researcher_and_receive_poison_materia",
-    "name": "VIT Mako Stone give to researcher and receive Poison Materia",
-    "category": "materia",
-    "subCategory": "Materia",
-    "description": "Obtained from Crisis Core missions, chests, or enemies (VIT Mako Stone give to researcher and receive Poison Materia).",
-    "fusion": null,
-    "shops": [],
-    "clearRewardMissions": [
-      "M8-2-2"
-    ],
-    "treasureMissions": []
-  },
-  {
     "id": "item_vit_up",
     "name": "VIT UP",
     "category": "materia",
@@ -6545,13 +6168,37 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [
-      "M3-1-4",
+      "M3-1-4"
+    ],
+    "treasureMissions": []
+  },
+  {
+    "id": "item_vit_up_plus",
+    "name": "VIT Up+",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases defense by approximately two or three points per level up to +12.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [],
+    "treasureMissions": [
+      "M8-4-6"
+    ]
+  },
+  {
+    "id": "item_vit_up_plus_plus",
+    "name": "VIT Up++",
+    "category": "materia",
+    "subCategory": "Independent",
+    "description": "Increases defense by approximately three or four points per level up to +19.",
+    "fusion": null,
+    "shops": [],
+    "clearRewardMissions": [
       "M8-5-2"
     ],
     "treasureMissions": [
       "M1-4-1",
-      "M8-3-6",
-      "M8-4-6"
+      "M8-3-6"
     ]
   },
   {
@@ -6606,7 +6253,7 @@
       {
         "shopName": "Bone Village Outlet",
         "price": 10000,
-        "unlockHint": ""
+        "unlockHint": "Found in a treasure chest during Mission M7-5-3 (Girl on the Cliff)."
       }
     ],
     "clearRewardMissions": [
@@ -6793,6 +6440,7 @@
       "M3-5-5",
       "M5-2-5",
       "M5-4-4",
+      "M6-2-1",
       "M6-3-1",
       "M6-3-4",
       "M6-4-3",
@@ -6934,6 +6582,8 @@
     "clearRewardMissions": [
       "M1-5-1",
       "M6-1-5",
+      "M6-2-3",
+      "M6-2-6",
       "M6-4-2"
     ],
     "treasureMissions": [

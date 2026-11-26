@@ -2,16 +2,58 @@ import { escapeHtml } from '../../../core/ui.js';
 
 export function renderGuidesView(container, ctx, selectedSectionId = null) {
   const sections = ctx.data.guides.sections || [];
+  const matrix = ctx.data.guides.farmingMatrix || [];
   const slug = ctx.meta.slug;
+  const categories = ['All', ...Array.from(new Set(matrix.map((r) => r.category)))];
+  let activeCat = 'All';
+
+  function renderMatrixCards() {
+    const host = container.querySelector('#farming-matrix-host');
+    if (!host) return;
+    const rows = matrix.filter((r) => activeCat === 'All' || r.category === activeCat);
+    host.innerHTML = rows
+      .map((r) => {
+        const m = r.bestMissionId ? ctx.indexes.missionById.get(r.bestMissionId) : null;
+        const en = r.enemyId ? ctx.indexes.enemyById.get(r.enemyId) : null;
+        const it = r.itemId ? ctx.indexes.itemById.get(r.itemId) : null;
+        return `
+          <article class="card" style="background:var(--bg-secondary);display:flex;flex-direction:column;gap:7px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
+              <strong style="color:var(--accent);">${escapeHtml(r.resource)}</strong>
+              <span class="pill pill-cyan">${escapeHtml(r.category)}</span>
+            </div>
+            <div class="small"><strong>Setup:</strong> ${escapeHtml(r.setup)}</div>
+            <div class="small muted">${escapeHtml(r.method)}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;">
+              ${m ? `<a class="pill pill-link pill-mako mono" href="#/game/${escapeHtml(slug)}/missions/${encodeURIComponent(m.id)}">${escapeHtml(m.id)} · ${escapeHtml(m.title)}</a>` : ''}
+              ${en ? `<a class="pill pill-link pill-danger" href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}">${escapeHtml(en.name)}</a>` : ''}
+              ${it ? `<a class="pill pill-link pill-warn" href="#/game/${escapeHtml(slug)}/items/${encodeURIComponent(it.id)}">${escapeHtml(it.name)}</a>` : ''}
+              <span class="pill mono">${escapeHtml(r.yield)}</span>
+            </div>
+          </article>
+        `;
+      })
+      .join('');
+  }
 
   container.innerHTML = `
     <div class="section-header">
       <div>
         <div class="brand-sub">Hard Mode Field Manual</div>
-        <h1>📘 Dedicated Hard Mode Farming & Meta Guides</h1>
-        <p class="muted small" style="margin:4px 0 0;">DMW mastering, Potion/Libra 98-980% fusion loops, EXP/SP/Gil missions, and Minerva survival meta.</p>
+        <h1>📘 Farming, Leveling & Reunion Meta Guides</h1>
+        <p class="muted small" style="margin:4px 0 0;">Complete Crisis Core Reunion routes: EXP/SP/Gil, all 8 fusion stats, 18-image DMW, Magic Pots, Buster Sword Proficiency, Missables, and Minerva.</p>
       </div>
     </div>
+
+    <section class="card card-glow" style="margin-bottom:18px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+        <h2 style="margin:0;font-size:1.15rem;">🌾 Quick Farming Matrix (All Resources)</h2>
+        <div class="chip-row" id="farm-cats" style="margin:0;">
+          ${categories.map((c) => `<button class="chip ${c === 'All' ? 'active' : ''}" data-fcat="${escapeHtml(c)}">${escapeHtml(c)}</button>`).join('')}
+        </div>
+      </div>
+      <div class="grid-2" id="farming-matrix-host"></div>
+    </section>
 
     <div class="chip-row">
       ${sections
@@ -66,6 +108,15 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
         .join('')}
     </div>
   `;
+
+  renderMatrixCards();
+  container.querySelectorAll('#farm-cats .chip').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      activeCat = btn.dataset.fcat;
+      container.querySelectorAll('#farm-cats .chip').forEach((b) => b.classList.toggle('active', b === btn));
+      renderMatrixCards();
+    });
+  });
 
   if (selectedSectionId) {
     document.getElementById(selectedSectionId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });

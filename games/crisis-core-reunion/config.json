@@ -24,25 +24,28 @@
     { "id": "missions", "label": "Missions (300)", "icon": "🎯", "badge": "300" },
     { "id": "items", "label": "Item Database", "icon": "🧪" },
     { "id": "enemies", "label": "Enemy Bestiary", "icon": "👾" },
+    { "id": "compendium", "label": "Shops, DMW & Missables", "icon": "🏪", "badge": "16" },
     { "id": "suggester", "label": "Hard Mode Suggester", "icon": "🧭" },
     { "id": "guides", "label": "Farming & Meta Guides", "icon": "📘" },
     { "id": "fusion-tracker", "label": "Fusion Calc & Tracker", "icon": "⚗️" }
   ],
   "checklistItems": [
     { "id": "chk_item_fusion_tome", "group": "Key Unlocks", "label": "Item Fusion Tome (M7-2-1 Clear Reward)", "missionId": "M7-2-1" },
-    { "id": "chk_accessory_4_slots", "group": "Key Unlocks", "label": "Keychain / 4 Accessory Slots (M7-2-2 & M7-2-5)", "missionId": "M7-2-5" },
-    { "id": "chk_sector7_shop", "group": "Key Shops", "label": "Sector 7 Shop — Mog's Amulet (M4-4-3)", "missionId": "M4-4-3" },
-    { "id": "chk_research_qmc", "group": "Key Shops", "label": "Research Dept. QMC+ (Ch. 7 Gongaga Chest)", "missionId": null },
-    { "id": "chk_bone_village", "group": "Key Shops", "label": "Bone Village Commerce (M7-5-3)", "missionId": "M7-5-3" },
-    { "id": "chk_net_shop_shade", "group": "Key Shops", "label": "Net Shop Shade — Dualcast / Hell-aga (M9-5-4)", "missionId": "M9-5-4" },
+    { "id": "chk_accessory_4_slots", "group": "Key Unlocks", "label": "Keychain & Backpack — 4 Accessory Slots (M7-2-2 & M7-2-5)", "missionId": "M7-2-5" },
+    { "id": "chk_sector7_shop", "group": "Key Shops", "label": "Sector 7 Shop — Mog's Amulet & Brigand's Gloves (M4-4-3)", "missionId": "M4-4-3" },
+    { "id": "chk_research_qmc", "group": "Key Shops", "label": "Research Dept. QMC+ (MISSABLE — Ch. 9 Gongaga Chest)", "missionId": null },
+    { "id": "chk_bone_village", "group": "Key Shops", "label": "Bone Village Outlet (M7-5-3)", "missionId": "M7-5-3" },
+    { "id": "chk_net_shop_shade", "group": "Key Shops", "label": "Online Shop Shade — Dualcast / Jeweled Ring / Genji Helm (M9-5-4)", "missionId": "M9-5-4" },
+    { "id": "chk_phoenix_dmw", "group": "DMW & Leveling", "label": "Phoenix DMW (MISSABLE — Ch. 8 Nibelheim Water Tower)", "missionId": null },
     { "id": "chk_moogle_power", "group": "DMW & Leveling", "label": "Moogle Power Materia (M8-4-4)", "missionId": "M8-4-4" },
+    { "id": "chk_buster_23", "group": "Reunion Systems", "label": "Buster Sword Proficiency 23%+ (Break Damage Limit) & 47%+ (Barrier Pierce)", "missionId": "M1-2-1" },
     { "id": "chk_adaman_bangle", "group": "Break Limit Gear", "label": "Adaman Bangle — Break HP Limit (M7-3-6)", "missionId": "M7-3-6" },
     { "id": "chk_brutal", "group": "Break Limit Gear", "label": "Brutal — Break Damage Limit (M7-4-6)", "missionId": "M7-4-6" },
-    { "id": "chk_costly_punch", "group": "Meta Materia", "label": "Costly Punch (Goblin Punch + DMW/Punch Fusion)", "missionId": "M9-5-4" },
-    { "id": "chk_genji_helm", "group": "Genji Set", "label": "Genji Helm (Net Shop Shade — 1,000,000 Gil)", "missionId": "M9-5-4" },
+    { "id": "chk_costly_punch", "group": "Meta Materia", "label": "Costly Punch (Goblin Punch + DMW/Libra Fusion)", "missionId": "M9-5-4" },
+    { "id": "chk_genji_helm", "group": "Genji Set", "label": "Genji Helm (Online Shop Shade — 1,000,000 Gil)", "missionId": "M9-5-4" },
     { "id": "chk_genji_armor", "group": "Genji Set", "label": "Genji Armor (100% DMW Completion)", "missionId": null },
     { "id": "chk_genji_shield", "group": "Genji Set", "label": "Genji Shield (Magic Pot in M7-6-6)", "missionId": "M7-6-6" },
     { "id": "chk_genji_glove", "group": "Genji Set", "label": "Genji Glove (M9-6-4 Chest)", "missionId": "M9-6-4" },
-    { "id": "chk_minerva", "group": "Endgame", "label": "Defeat Minerva on Hard Mode (M9-6-6)", "missionId": "M9-6-6" }
+    { "id": "chk_minerva", "group": "Endgame", "label": "Defeat Minerva on Hard Mode (M9-6-6 → Divine Slayer)", "missionId": "M9-6-6" }
   ]
 }
