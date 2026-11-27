@@ -1,4 +1,4 @@
-import { escapeHtml, openImageLightbox } from '../../../core/ui.js';
+import { escapeHtml, openLightbox } from '../../../core/ui.js';
 
 const STAGE_META = {
   early: { label: 'Early · 1–2★', icon: '🌱', cls: 'stage-early' },
@@ -310,7 +310,12 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
 
       body.querySelectorAll('.js-zoom-portrait').forEach((img) => {
         img.addEventListener('click', () => {
-          openImageLightbox(img.src, img.dataset.name || 'Enemy', img.dataset.sub || '', img.dataset.fallback || '');
+          openLightbox({
+            src: img.src,
+            fallbackSrc: img.dataset.fallback || '',
+            title: img.dataset.name || 'Enemy',
+            subtitle: img.dataset.sub || '',
+          });
         });
       });
     } else if (activeMode === 'stats') {

@@ -1,5 +1,5 @@
 {
-  "version": "3.2.0",
-  "buildDate": "2026-11-26T22:50:00-05:00",
-  "notes": "v3.2.0: All-stage farming playbooks (Early, Early-Mid, Mid-Late, Endgame) with interactive Stage Filter, Zack Match shortcut, and stage-appropriate gear & enemy portraits."
+  "version": "3.2.1",
+  "buildDate": "2026-11-26T23:08:30-05:00",
+  "notes": "v3.2.1: Fix openLightbox export import in guides view."
 }
