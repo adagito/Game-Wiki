@@ -1362,9 +1362,9 @@ def build_guides_json() -> dict[str, Any]:
                     "spr": "45 – 85",
                     "gear": "4 Accessory Slots (M7-2-2 & M7-2-5), Item Fusion Tome (M7-2-1), Mog's Amulet (M4-4-3)",
                 },
-                "priorityMissions": ["M4-4-3", "M7-2-1", "M7-2-2", "M7-2-5", "M6-2-1", "M6-2-3", "M8-2-1"],
-                "expRoute": "Push M3-2-x and M5-1-x; interrupt boss Skill Power gauges with Command Materia while in Battle Stance.",
-                "spGilRoute": "Grab Sector 7 Shop in M4-4-3 chest and buy Mog's Amulet (10,000 Gil) + Brigand's Gloves (10,000 Gil) immediately.",
+                "priorityMissions": ["M4-4-3", "M7-2-1", "M7-2-2", "M7-2-5", "M6-2-1", "M6-2-3", "M8-2-1", "M8-3-2"],
+                "expRoute": "Push M3-2-x (M3-2-2 G Bladers = 720 Gil & 665 EXP), M5-1-6 Angeal Penance (4,711 EXP / 3k SP / 4k Gil), and M8-3-2 for free Status Ward. Interrupt Skill Power gauges in Battle Stance.",
+                "spGilRoute": "Farm M3-2-2 G Bladers (720 Gil + Drainra/Osmose steals to SP-convert) and M5-1-6 Angeal Penance (4,000 Gil / 3,000 SP). Once ready for 6★ M4-4-3, grab Sector 7 Shop and buy Mog's Amulet + Brigand's Gloves (10,000 Gil each).",
                 "fusionFocus": "Unlock Item Fusion Tome (M7-2-1). Buy HP Up (Sec. 8 Shop M6-2-1) and stack HP% using cheap 50 Gil Shinra Shop Potions.",
             },
             {
@@ -1376,11 +1376,11 @@ def build_guides_json() -> dict[str, Any]:
                     "hp": "15,000 – 35,000",
                     "vit": "90 – 150",
                     "spr": "90 – 150",
-                    "gear": "Adaman Bangle (M7-3-6), Brutal (M7-4-6), Status Ward + Hell-aga, Buster Sword 23%+ (Damage Break)",
+                    "gear": "Adaman Bangle (M7-3-6), Brutal (M7-4-6), Status Ward (M8-3-2) + Darkness/Death, Buster Sword 23%+ (Damage Break)",
                 },
-                "priorityMissions": ["M7-3-6", "M7-4-6", "M7-5-3", "M8-4-4", "M6-6-3", "M10-2-3"],
-                "expRoute": "Farm M6-5-x and M7-4-x with Darkness or Hell Blizzaga + Status Ward; hit 23% Buster Sword Proficiency for free Break Damage Limit.",
-                "spGilRoute": "Unlock Bone Village Outlet in M7-5-3; start farming Lesser Worms in M6-6-3 for Dark Matter & Rune Armlet Gil.",
+                "priorityMissions": ["M1-5-6", "M5-2-3", "M7-3-6", "M7-4-6", "M7-5-3", "M8-4-4", "M8-5-2", "M10-2-3"],
+                "expRoute": "Farm M1-5-6 Guardian Eyes (8,083 EXP) or M5-2-3 Hollander (9,977 EXP); clear M7-4-6 for Brutal (Break Damage Limit) and hit 23% Buster Sword Proficiency.",
+                "spGilRoute": "Farm M8-5-2 Mover (2,000 SP + 2–3x no-damage kill chain!) and M5-2-3 Hollander (3,000 Gil + Dark Matter steals). Unlock Bone Village Outlet in M7-5-3.",
                 "fusionFocus": "Unlock Moogle Power (M8-4-4) and run M1-1-1 AFK mastering. Wrap up ALL Midgar missables before ending Chapter 7!",
             },
             {
@@ -1417,20 +1417,29 @@ def build_guides_json() -> dict[str, Any]:
             },
         ],
         "farmingMatrix": [
-            {"category": "EXP", "resource": "Fast EXP (Endgame)", "bestMissionId": "M8-6-4", "enemyId": "enemy_scissor_chitin", "itemId": "item_costly_punch", "setup": "Costly Punch + Brutal/Genji Glove + Barrier", "method": "Clear Scissor Chitins in M8-6-4; fast spawn loop and solid Gil.", "yield": "~5,460 EXP / Chitin"},
-            {"category": "EXP", "resource": "Early/Mid EXP & Mob Wipe", "bestMissionId": "M6-5-3", "enemyId": None, "itemId": "item_hell_blizzaga", "setup": "Status Ward + Hell Blizzaga + Mog's Amulet", "method": "Status Ward grants immunity while Hell Blizzaga instant-deaths non-boss mobs.", "yield": "Fast 6–7★ EXP & Stone drops"},
-            {"category": "SP & Gil", "resource": "Best SP & Gil Farm", "bestMissionId": "M9-5-3", "enemyId": "enemy_three_stars", "itemId": "item_mogs_amulet", "setup": "Mog's Amulet + Jeweled Ring + Precious Watch + Mug", "method": "Farm Three Stars (20,000 SP) & Tycoon in M9-5-3; Precious Watch doubles Gil, Jeweled Ring doubles item drops.", "yield": "20,000+ SP + 50k+ Gil/min"},
-            {"category": "SP & Gil", "resource": "Midgame SP + Dark Matter", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet + Costly Punch / Darkness", "method": "Run intersections in M6-6-3 for Lesser Worms & Mover EX.", "yield": "Dark Matter + high SP"},
-            {"category": "SP & Gil", "resource": "99x Phoenix Down / Gil", "bestMissionId": "M9-6-6", "enemyId": "enemy_minerva", "itemId": "item_phoenix_down", "setup": "Mug + Brigand's Gloves + Wall + 99,999 HP", "method": "Mug Minerva once per attempt to steal 99x Phoenix Downs (keep or sell for 495k Gil).", "yield": "99 Phoenix Downs / run"},
-            {"category": "Fusion Stats", "resource": "Dark Matter (MAG +1)", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet (Sector 7 Shop M4-4-3) + Jeweled Ring", "method": "Common drop from Lesser Worms; fastest base for 98/980% Libra conversion.", "yield": "1–2 Dark Matter / fight"},
-            {"category": "Fusion Stats", "resource": "Fat Chocobo Feather (HP +10%)", "bestMissionId": "M9-2-6", "enemyId": "enemy_jabberwock", "itemId": "item_fat_chocobo_feather", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba (M6-6-6); or stack HP% with Shinra Shop Potions.", "yield": "1–3 Feathers / fight"},
-            {"category": "Fusion Stats", "resource": "Adamantite (VIT +1)", "bestMissionId": "M9-6-5", "enemyId": "enemy_goliath", "itemId": "item_adamantite", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Drop & Common Steal from Goliath in M9-6-5 (also Crazy Sword in M7-6-4/M9-4-1 & Grandpanzer in M9-3-3).", "yield": "1+ Adamantite / fight"},
-            {"category": "Fusion Stats", "resource": "Mythril (SPR +1)", "bestMissionId": "M3-4-6", "enemyId": "enemy_g_purgatorio", "itemId": "item_mythril", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Rare Drop & Common Steal from G Purgatorio in M3-4-6 (also M3-5-1–M3-5-3, M8-6-6), or convert +98 Libra.", "yield": "1+ Mythril / fight"},
-            {"category": "Fusion Stats", "resource": "Hero Drink (ATK +1)", "bestMissionId": "M9-6-3", "enemyId": "enemy_master_blade", "itemId": "item_hero_drink", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Rare Drop & Steal from Master Blade (M9-6-3) or Rare Steal from Iron Claw (M6-5-6 / M9-3-6).", "yield": "1+ Hero Drink / fight"},
-            {"category": "Fusion Stats", "resource": "Gysahl Greens (LCK +1) / Zeio Nut / Lunar Harp", "bestMissionId": "M9-5-5", "enemyId": None, "itemId": "item_gysahl_greens", "setup": "M9-6-x chests + Dark Matter 98 conversion", "method": "Convert a +98 Dark Matter Libra with 1x Gysahl Greens, Zeio Nut, or Lunar Harp instead of farming 99x.", "yield": "1 catalyst converts +98!"},
-            {"category": "Reunion Systems", "resource": "Materia Mastering (AFK Loop)", "bestMissionId": "M1-1-1", "enemyId": "enemy_sentry", "itemId": "item_moogle_power", "setup": "1–2 Mastered Moogle Power + Faerie Ring / Regen", "method": "Sit in M1-1-1 with weak troopers; DMW reels spin nonstop and Moogle Power levels all 6 slots.", "yield": "Masters all 6 slots AFK"},
-            {"category": "Reunion Systems", "resource": "Buster Sword Proficiency 100%", "bestMissionId": "M1-2-1", "enemyId": None, "itemId": None, "setup": "Battle Stance + M1-2-1 (Guards) + M1-1-3 (Kills)", "method": "M1-2-1 gunfire for Perfect Guard (31.66%), M1-1-3 for Strong Attack & Command Kills (63.3%), M9-6-5 for Barrier Pierce (5%).", "yield": "Damage Break @ 23% / Barrier Pierce @ 47%"},
-            {"category": "Reunion Systems", "resource": "DMW 100% (Genji Armor)", "bestMissionId": "M1-1-1", "enemyId": None, "itemId": "item_genji_armor", "setup": "Equip QMC+/Shade DMW Materia + Faerie Ring", "method": "Equip character/summon boost Materia (Octaslash, Healing Wave, etc.) and AFK in M1-1-1 until 100%.", "yield": "Unlocks Genji Armor"},
+            {"stage": "early", "category": "EXP", "resource": "Early EXP & Mako Stones (1–2★)", "bestMissionId": "M10-4-2", "enemyId": "enemy_sea_worm", "itemId": "item_mag_mako_stone", "setup": "Bronze Bangle + Assault Twister + Cura", "method": "Sea Worm (M10-4-2, 177 EXP), Guard Spider (M3-1-2, 162 EXP), and Ifrit (M5-1-1, 162 EXP) feed fast early DMW levels.", "yield": "162–177 EXP / kill"},
+            {"stage": "early", "category": "SP & Gil", "resource": "Early Gil & Sellable Gear (1–2★)", "bestMissionId": "M5-1-1", "enemyId": "enemy_ifrit", "itemId": "item_wrist_band", "setup": "Bronze Bangle + Blizzard + Cura (zero farming gear)", "method": "Clear Ifrit (M5-1-1, 180 Gil) or Guard Spider (M3-1-2, 120 Gil); sell duplicate M6-1-x chest bangles/vests.", "yield": "120–180 Gil + Chests"},
+            {"stage": "early", "category": "SP & Gil", "resource": "Early SP & Materia Convert (1–2★)", "bestMissionId": "M5-1-1", "enemyId": "enemy_ifrit", "itemId": "item_atk_up", "setup": "Convert unwanted duplicate Materia into SP", "method": "Vajradhara Tai/Wu (M4-1-2, 80 SP), A-Ahriman (M5-1-3, 80 SP), Ifrit (M5-1-1, 162 SP), plus Materia-to-SP conversion.", "yield": "80–162 SP / kill"},
+            {"stage": "early-mid", "category": "SP & Gil", "resource": "Early-Mid Gil Farm (3–4★)", "bestMissionId": "M3-2-2", "enemyId": "enemy_g_blader", "itemId": "item_drainra", "setup": "Assault Twister + Barrier + Cura", "method": "G Blader (M3-2-2 / M3-2-3, 720 Gil + Drainra), G Smasher (M3-2-1, 640 Gil), Master Tonberry (M10-2-3, 1,000 Gil).", "yield": "640–1,000 Gil / kill"},
+            {"stage": "early-mid", "category": "EXP", "resource": "All-in-One 4★ Jackpot Boss", "bestMissionId": "M5-1-6", "enemyId": "enemy_angeal_penance", "itemId": "item_lightning_armlet", "setup": "Barrier + Cura + Assault Twister (Skill Power breaks)", "method": "Angeal Penance in M5-1-6 drops massive early-mid EXP, SP, and Gil simultaneously.", "yield": "4,711 EXP · 3k SP · 4k Gil"},
+            {"stage": "early-mid", "category": "SP & Gil", "resource": "Early-Mid SP Farm (4★)", "bestMissionId": "M10-1-3", "enemyId": "enemy_kactuer", "itemId": "item_gold_armlet", "setup": "Assault Twister + Safety Bit (in M10-1-3 chest)", "method": "Kactuer gives 800 SP + sellable Silver/Gold Armlets; Bahamut (M5-1-2) gives 408 SP.", "yield": "800–3,000 SP / kill"},
+            {"stage": "mid-late", "category": "EXP", "resource": "Mid-Late Fast EXP (5–7★)", "bestMissionId": "M1-5-6", "enemyId": "enemy_guardian_eyes", "itemId": "item_shinra_beta_plus", "setup": "Wall / Barrier + Curaga + Lightning/Gravity", "method": "Guardian Eyes (M1-5-6, 8,083 EXP) or Tarantula (M1-5-3, 6,380 EXP) level Zack smoothly past Lv. 40.", "yield": "6,380–8,083 EXP / kill"},
+            {"stage": "mid-late", "category": "SP & Gil", "resource": "Mid-Late Gil + Early Dark Matter (6★)", "bestMissionId": "M5-2-3", "enemyId": "enemy_hollander", "itemId": "item_dark_matter", "setup": "Mug (M1-1-6) + Brigand's Gloves + Mog's Amulet (M4-4-3)", "method": "Hollander in M5-2-3 yields 3,000 Gil, 1,780 SP, 9,977 EXP, AND Dark Matter steals before 8★!", "yield": "3,000 Gil + Dark Matter"},
+            {"stage": "mid-late", "category": "SP & Gil", "resource": "Mid-Late Mover SP Chain (6★)", "bestMissionId": "M8-5-2", "enemyId": "enemy_mover", "itemId": "item_hypno_crown", "setup": "Wall + Strong AoE (kill adds BEFORE Mover, no damage taken)", "method": "Mover gives 2,000 SP base; defeating adds first without taking damage multiplies SP 2x–3x!", "yield": "2,000–6,000 SP / fight"},
+            {"stage": "endgame", "category": "EXP", "resource": "Fast EXP (Endgame 9–10★)", "bestMissionId": "M8-6-4", "enemyId": "enemy_scissor_chitin", "itemId": "item_costly_punch", "setup": "Costly Punch + Brutal/Genji Glove + Wall", "method": "Clear Scissor Chitins in M8-6-4 (5,460 EXP) or Goliath in M9-6-5 (23,264 EXP) / Great Malboro in M9-6-4 (31,936 EXP).", "yield": "5,460–31,936 EXP / kill"},
+            {"stage": "endgame", "category": "SP & Gil", "resource": "Top Endgame Gil (Holy Tonberry)", "bestMissionId": "M9-6-2", "enemyId": "enemy_holy_tonberry", "itemId": "item_gold_rolling_pin", "setup": "Precious Watch + Brigand's Gloves + Jeweled Ring + Mug", "method": "Holy Tonberry gives 20,000 Gil (40k w/ Precious Watch) + Gold Rolling Pin rare steal (sells 50,000 Gil!).", "yield": "70,000–90,000 Gil / kill"},
+            {"stage": "endgame", "category": "SP & Gil", "resource": "Top Speed SP & Gil (Three Stars)", "bestMissionId": "M9-5-3", "enemyId": "enemy_three_stars", "itemId": "item_mogs_amulet", "setup": "Mog's Amulet + Jeweled Ring + Precious Watch + Mug", "method": "Farm Three Stars (20,000 SP) & Tycoon in M9-5-3; sell Mythril Armlets & SP-convert stolen Tri-Thundaga.", "yield": "20,000+ SP + 50k+ Gil/min"},
+            {"stage": "endgame", "category": "SP & Gil", "resource": "8★ SP + Dark Matter Combo", "bestMissionId": "M6-6-3", "enemyId": "enemy_mover_ex", "itemId": "item_flare", "setup": "Mog's Amulet + Brigand's Gloves + Mug + Costly Punch", "method": "Farm Mover EX (8,000 SP + Flare steal worth ~10.5k SP) & Lesser Worms (Dark Matter) in M6-6-3.", "yield": "8,000–24,000 SP + Dark Matter"},
+            {"stage": "endgame", "category": "SP & Gil", "resource": "99x Phoenix Down / Gil", "bestMissionId": "M9-6-6", "enemyId": "enemy_minerva", "itemId": "item_phoenix_down", "setup": "Mug + Brigand's Gloves + Wall + 99,999 HP", "method": "Mug Minerva once per attempt to steal 99x Phoenix Downs (keep or sell for 495k Gil).", "yield": "99 Phoenix Downs / run"},
+            {"stage": "endgame", "category": "Fusion Stats", "resource": "Dark Matter (MAG +1)", "bestMissionId": "M6-6-3", "enemyId": "enemy_lesser_worm", "itemId": "item_dark_matter", "setup": "Mog's Amulet (Sector 7 Shop M4-4-3) + Jeweled Ring", "method": "Common drop from Lesser Worms; fastest base for 98/980% Libra conversion.", "yield": "1–2 Dark Matter / fight"},
+            {"stage": "endgame", "category": "Fusion Stats", "resource": "Fat Chocobo Feather (HP +10%)", "bestMissionId": "M9-2-6", "enemyId": "enemy_jabberwock", "itemId": "item_fat_chocobo_feather", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Steal/Rare Drop from Jabberwock (M9-2-6) or Humbaba (M6-6-6); or stack HP% early with Shinra Potions.", "yield": "1–3 Feathers / fight"},
+            {"stage": "endgame", "category": "Fusion Stats", "resource": "Adamantite (VIT +1)", "bestMissionId": "M9-6-5", "enemyId": "enemy_goliath", "itemId": "item_adamantite", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Drop & Common Steal from Goliath in M9-6-5 (also Crazy Sword in M7-6-4/M9-4-1 & Grandpanzer in M9-3-3).", "yield": "1+ Adamantite / fight"},
+            {"stage": "mid-late", "category": "Fusion Stats", "resource": "Mythril (SPR +1)", "bestMissionId": "M7-3-5", "enemyId": "enemy_g_paladin", "itemId": "item_mythril", "setup": "Mug + Brigand's Gloves + Mog's Amulet", "method": "Rare Steal from G Paladin (M7-3-5, 7★), Common Steal from Mover EX (M6-6-3, 8★), or G Purgatorio (M3-4-6, 9★).", "yield": "1+ Mythril / fight"},
+            {"stage": "endgame", "category": "Fusion Stats", "resource": "Hero Drink (ATK +1)", "bestMissionId": "M9-6-3", "enemyId": "enemy_master_blade", "itemId": "item_hero_drink", "setup": "Mog's Amulet + Brigand's Gloves + Mug", "method": "Rare Drop & Steal from Master Blade (M9-6-3) or Rare Steal from Iron Claw (M6-5-6 / M9-3-6).", "yield": "1+ Hero Drink / fight"},
+            {"stage": "endgame", "category": "Fusion Stats", "resource": "Gysahl Greens (LCK +1) / Zeio Nut / Lunar Harp", "bestMissionId": "M9-5-5", "enemyId": None, "itemId": "item_gysahl_greens", "setup": "M9-6-x chests + Dark Matter 98 conversion", "method": "Convert a +98 Dark Matter Libra with 1x Gysahl Greens, Zeio Nut, or Lunar Harp instead of farming 99x.", "yield": "1 catalyst converts +98!"},
+            {"stage": "mid-late", "category": "Reunion Systems", "resource": "Materia Mastering (AFK Loop)", "bestMissionId": "M1-1-1", "enemyId": "enemy_sentry", "itemId": "item_moogle_power", "setup": "1–2 Mastered Moogle Power (M8-4-4) + Faerie Ring", "method": "Sit in M1-1-1 with weak troopers; DMW reels spin nonstop and Moogle Power levels all 6 slots.", "yield": "Masters all 6 slots AFK"},
+            {"stage": "early-mid", "category": "Reunion Systems", "resource": "Buster Sword Proficiency 100%", "bestMissionId": "M1-2-1", "enemyId": None, "itemId": None, "setup": "Battle Stance + M1-2-1 (Guards) + M1-1-3 (Kills)", "method": "M1-2-1 gunfire for Perfect Guard (31.66%), M1-1-3 for Strong Attack & Command Kills (63.3%), M9-6-5 for Barrier Pierce (5%).", "yield": "Damage Break @ 23% / Barrier Pierce @ 47%"},
+            {"stage": "endgame", "category": "Reunion Systems", "resource": "DMW 100% (Genji Armor)", "bestMissionId": "M1-1-1", "enemyId": None, "itemId": "item_genji_armor", "setup": "Equip QMC+/Shade DMW Materia + Faerie Ring", "method": "Equip character/summon boost Materia (Octaslash, Healing Wave, etc.) and AFK in M1-1-1 until 100%.", "yield": "Unlocks Genji Armor"},
         ],
         "dmwImages": [
             {"id": "dmw_zack", "name": "Zack", "group": "Character", "limitBreak": "Chain Slash", "unlockCondition": "Story (Default)", "missionId": None, "missable": False, "boostMateriaId": None},
@@ -1467,24 +1476,24 @@ def build_guides_json() -> dict[str, Any]:
         "sections": [
             {
                 "id": "guide_exp_leveling",
-                "title": "1. EXP & Leveling Guide (Lv. 1–99)",
+                "title": "1. EXP & Leveling Guide (All Stages: Lv. 1–99)",
                 "badge": "Leveling",
-                "summary": "Fastest EXP progression brackets, DMW EXP mechanics, and why M8-6-4 Scissor Chitins dominates endgame leveling.",
-                "refs": {"missions": ["M1-1-1", "M6-5-3", "M8-6-4", "M9-6-4"], "items": ["item_costly_punch", "item_hell_blizzaga", "item_status_ward"]},
+                "summary": "Early, Mid, and Endgame EXP routes (Sea Worm -> Angeal Penance -> Guardian Eyes -> Scissor Chitin/Goliath).",
+                "refs": {"missions": ["M10-4-2", "M5-1-6", "M1-5-6", "M8-6-4", "M9-6-4"], "items": ["item_assault_twister", "item_status_ward", "item_hell_blizzaga", "item_costly_punch"]},
                 "blocks": [
-                    {"heading": "Early to Midgame (Lv. 1–40)", "body": "Crisis Core ties level-ups to hidden EXP + DMW triple-number rolls (7-7-7). Progress M1, M3, M4, and M7 missions early; once you unlock Status Ward + Hell Blizzaga, wipe 6–7★ encounters in seconds."},
-                    {"heading": "Endgame EXP (M8-6-4 Scissor Chitins)", "body": "Equip Costly Punch + Brutal or Genji Glove (or Buster Sword at 23%+ proficiency) and loop M8-6-4 (Scissor Chitins) or M9-6-x encounters. High-level enemies feed huge hidden EXP so DMW 7-7-7 triggers frequently."},
+                    {"heading": "Early to Early-Mid (1–4★ · Lv. 1–28)", "body": "Crisis Core ties level-ups to hidden EXP + DMW 7-7-7 rolls. Early on, hunt Sea Worm (M10-4-2, 177 EXP), Guard Spider (M3-1-2, 162 EXP), and Ifrit (M5-1-1). By 3–4★, repeat Angeal Penance (M5-1-6, 4,711 EXP) or General's Tank (M3-2-3, 918 EXP), and clear M8-3-2 for free Status Ward. NEVER abandon a mission or earned EXP is lost!"},
+                    {"heading": "Mid-Late to Endgame (5–10★ · Lv. 28–99)", "body": "In 5–7★, farm Guardian Eyes (M1-5-6, 8,083 EXP) or Hollander (M5-2-3, 9,977 EXP) and clear M7-4-6 (Wyerd, 5,966 EXP) for Brutal. At 8–10★, farm G Dominator (M7-4-5, 7,770 EXP), Scissor Chitins (M8-6-4, 5,460 EXP fast loop), Goliath (M9-6-5, 23,264 EXP), and Great Malboro (M9-6-4, 31,936 EXP)."},
                 ],
             },
             {
                 "id": "guide_sp_gil",
-                "title": "2. SP & Gil Farming Master Guide",
+                "title": "2. All-Stage SP & Gil Farming Guide (Early → Endgame)",
                 "badge": "Economy",
-                "summary": "Mog's Amulet + Jeweled Ring economy break, M9-5-3 Three Stars, M6-6-3 Lesser Worms, and Minerva's 99x Phoenix Downs.",
-                "refs": {"missions": ["M4-4-3", "M6-6-3", "M9-5-3", "M9-6-6"], "items": ["item_mogs_amulet", "item_jeweled_ring", "item_phoenix_down", "item_genji_helm"]},
+                "summary": "How to earn Gil and SP BEFORE Sector 7/Online Shop Shade (M5-1-1, M3-2-2, M5-1-6, M10-1-3, M5-2-3, M8-5-2, M9-5-3, M9-6-2).",
+                "refs": {"missions": ["M5-1-1", "M3-2-2", "M5-1-6", "M10-1-3", "M4-4-3", "M5-2-3", "M8-5-2", "M9-5-3", "M9-6-2", "M9-6-6"], "items": ["item_mogs_amulet", "item_brigands_gloves", "item_precious_watch", "item_jeweled_ring", "item_gold_rolling_pin", "item_phoenix_down"]},
                 "blocks": [
-                    {"heading": "Mandatory Farming Gear", "body": "Buy Mog's Amulet (10,000 Gil, Sector 7 Shop via M4-4-3) so enemies always drop Rare Drops, and Brigand's Gloves (10,000 Gil) for 100% Steal/Mug success. In Online Shop Shade (M9-5-4), buy Jeweled Ring (10,000 Gil) to double item/Materia drop quantity and Precious Watch (10,000 Gil) to double Gil earned from battles."},
-                    {"heading": "M9-5-3 (Three Stars) & Minerva", "body": "M9-5-3 is the #1 SP and Gil farm in Reunion—Three Stars and Tycoon yield massive SP plus sellable Mythril Armlets and Tri-Thundaga. If you already unlocked M9-6-6, Mug Minerva for 99x Phoenix Downs (495,000 Gil per run) and flee or die to repeat."},
+                    {"heading": "Early & Early-Mid Economy (1–4★ · No Farming Accessories Yet)", "body": "Before unlocking Sector 7 Shop (M4-4-3, 6★), farm Ifrit (M5-1-1, 180 Gil / 162 SP), G Bladers in M3-2-2 (720 Gil + Drainra/Osmose steals you can SP-convert!), Kactuer in M10-1-3 (800 SP + Silver/Gold Armlets), and Angeal Penance in M5-1-6 (4,000 Gil & 3,000 SP per clear). Convert duplicate Materia for instant early SP!"},
+                    {"heading": "Mid-Late Mover Chains & Endgame Breaks (5–10★)", "body": "At 6★, grab Mog's Amulet & Brigand's Gloves (M4-4-3) + Mug (M1-1-6), farm Hollander (M5-2-3, 3k Gil + Dark Matter), and hunt Mover (M8-5-2, 2k SP) killing adds first without taking damage for Reunion's 2x–3x SP Chain multiplier. Endgame: Three Stars (M9-5-3, 20k SP), Holy Tonberry (M9-6-2, 20k Gil + 50k Gold Rolling Pin steal), and Minerva 99x Phoenix Downs (M9-6-6)."},
                 ],
             },
             {
@@ -1579,116 +1588,347 @@ def build_guides_json() -> dict[str, Any]:
         ],
         "farmingPlaybooks": [
             {
-                "id": "farm_exp",
-                "shortLabel": "EXP (Lv 1–99)",
-                "title": "EXP & Character Leveling Playbook",
-                "badge": "Lv 1 → 99",
-                "summary": "How hidden EXP + DMW 7-7-7 level-ups work, and the fastest EXP missions from Chapter 1 to Lv 99.",
-                "bestMissionId": "M8-6-4",
-                "enemyId": "enemy_scissor_chitin",
-                "recommendedGear": ["item_costly_punch", "item_brutal", "item_genji_glove", "item_status_ward", "item_hell_blizzaga"],
+                "id": "farm_gil",
+                "shortLabel": "Gil (All Stages)",
+                "title": "Gil & Loot Economy Playbook (Early → Endgame)",
+                "badge": "180 → 495k Gil",
+                "summary": "Concrete Gil & sellable-drop routes at every mission tier—starting with zero farming accessories in Ch. 1–5 up to 495k/run endgame.",
+                "bestMissionId": "M9-6-2",
+                "enemyId": "enemy_holy_tonberry",
+                "recommendedGear": ["item_precious_watch", "item_jeweled_ring", "item_mogs_amulet", "item_brigands_gloves", "item_mug"],
                 "steps": [
-                    {"stage": "Early (Lv 1–25 · Ch. 1–5)", "missionId": "M1-2-1", "detail": "Clear M1, M3, and M4 story-unlocked branches naturally. Level-ups occur when hidden EXP crosses a threshold AND the DMW hits 7-7-7; banked EXP carries over seamlessly so you never lose progress."},
-                    {"stage": "Midgame (Lv 25–55 · Ch. 6–8)", "missionId": "M6-5-3", "detail": "Buy Status Ward + Hell Blizzaga from Wutai Secret Shop (M4-2-6). Pairing them gives immunity to status ailments while wiping non-boss encounters via instant Death for rapid 6–7★ EXP."},
-                    {"stage": "Endgame (Lv 55–99 · Ch. 9+)", "missionId": "M8-6-4", "detail": "Farm Scissor Chitins in M8-6-4 (5,460 EXP each) with Costly Punch + Break Damage Limit, or clear Goliath encounters in M9-6-5 (23,264 EXP each) once your VIT/SPR are 200+."},
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · No Farming Gear Needed)",
+                        "missionId": "M5-1-1",
+                        "enemyId": "enemy_ifrit",
+                        "yield": "180+ Gil / fight + Sell Gear",
+                        "gearIds": ["item_bronze_bangle", "item_wrist_band", "item_cura"],
+                        "detail": "Farm Ifrit in M5-1-1/M8-1-1 (180 Gil + Hi-Potion/ATK Up drops & Wrist Band rare steal) or Guard Spider in M3-1-2 (120 Gil + Bulletproof Vest steal) and Sweeper in M7-1-2 (84 Gil + Power Wrist steal). Open M6-1-x chests and sell duplicate bangles and Ether/armlets you don't equip."
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Pre-Sector 7 Shop)",
+                        "missionId": "M3-2-2",
+                        "enemyId": "enemy_g_blader",
+                        "yield": "720–4,000 Gil / kill",
+                        "gearIds": ["item_assault_twister", "item_barrier", "item_cura"],
+                        "detail": "Farm G Bladers in M3-2-2 (3★) or M3-2-3 (4★) for 720 Gil per kill, G Smashers in M3-2-1 (640 Gil + Diamond Gloves rare steal), and Master Tonberry in M10-2-3 (1,000 Gil). Once strong enough for 4★ bosses, repeat Angeal Penance in M5-1-6 for 4,000 Gil + Lightning Armlet per clear—this easily funds your Sector 7 Shop purchases!"
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–7 (5–7★ · Sector 7 Shop Unlocked)",
+                        "missionId": "M5-2-3",
+                        "enemyId": "enemy_hollander",
+                        "yield": "3,000+ Gil + Armlets & Dark Matter",
+                        "gearIds": ["item_mug", "item_brigands_gloves", "item_mogs_amulet", "item_wall"],
+                        "detail": "Open the Sector 7 Shop chest in M4-4-3 (6★) and buy Mog's Amulet + Brigand's Gloves (10,000 Gil each), plus clear M1-1-6 (6★) for Mug. Farm Hollander in M5-2-3 (3,000 Gil + Dark Matter steals), G Paladin in M7-3-5 (1,240 Gil + Mythril), or Guardian Eyes in M1-5-6 (611 Gil + sellable Shinra Beta+)."
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (9–10★ · Full Economy Break)",
+                        "missionId": "M9-6-2",
+                        "enemyId": "enemy_holy_tonberry",
+                        "yield": "70k–495k Gil / run",
+                        "gearIds": ["item_precious_watch", "item_jeweled_ring", "item_mogs_amulet", "item_brigands_gloves", "item_mug"],
+                        "detail": "Buy Precious Watch (2x battle Gil) and Jeweled Ring (2x item drops) in Online Shop Shade (M9-5-4). Farm Holy Tonberry in M9-6-2 (20,000 base Gil -> 40k w/ Precious Watch + Gold Rolling Pin rare steal worth 50,000 Gil each!), M9-5-3 Three Stars (sell Mythril Armlets & Tri-Thundaga), or Mug Minerva in M9-6-6 for 99x Phoenix Downs (495,000 Gil/run)."
+                    }
                 ],
-                "proTip": "You do NOT need to sit in one spot waiting for 7-7-7—hidden EXP accumulates silently and triggers multiple rapid level-ups as soon as the DMW rolls 7-7-7."
+                "proTip": "Don't waste Gil buying Potions late-game once you have Cura/Curaga; prioritize Sector 7 Shop (M4-4-3) for Brigand's Gloves + Mog's Amulet first, and save 1,000,000 Gil in endgame for Genji Helm."
             },
             {
                 "id": "farm_sp",
-                "shortLabel": "SP (SOLDIER Pts)",
-                "title": "SP (SOLDIER Points) Farming Playbook",
-                "badge": "20,000+ SP/Kill",
-                "summary": "Fund million-SP endgame Materia fusions and SP Master builds without running dry.",
+                "shortLabel": "SP (All Stages)",
+                "title": "SP (SOLDIER Points) Playbook (Early → Endgame)",
+                "badge": "80 → 40k SP/Kill",
+                "summary": "How to build SP from Chapter 1 (without Mover EX or Three Stars) all the way up to 40,000 SP endgame payouts.",
                 "bestMissionId": "M9-5-3",
                 "enemyId": "enemy_three_stars",
                 "recommendedGear": ["item_costly_punch", "item_mug", "item_mogs_amulet", "item_genji_glove"],
                 "steps": [
-                    {"stage": "Early / Mid (Ch. 4–7)", "missionId": "M6-6-3", "detail": "Convert duplicate low-rank Materia into SP via the Materia menu, and farm Mover EX / Lesser Worms in M6-6-3 while collecting Dark Matter."},
-                    {"stage": "Endgame #1: Three Stars", "missionId": "M9-5-3", "detail": "Run M9-5-3 (Unusually Strong Monsters). Three Stars grants 20,000 SP per kill—equip Costly Punch + Break Damage Limit to one-shot packs on repeat."},
-                    {"stage": "Endgame #2: Minerva", "missionId": "M9-6-6", "detail": "Each Minerva clear yields 40,000 SP (plus 99x Phoenix Downs via Mug). For pure speed per minute, M9-5-3 Three Stars remains faster."}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Materia Convert + Bosses)",
+                        "missionId": "M5-1-1",
+                        "enemyId": "enemy_ifrit",
+                        "yield": "80–162 SP / kill + Convert",
+                        "gearIds": ["item_bronze_bangle", "item_cura", "item_assault_twister"],
+                        "detail": "Convert unwanted duplicate Materia into SP from the Materia menu (your #1 early SP source!). In combat, hunt Vajradhara Tai & Wu in M4-1-2 (1★, 80 SP each), A-Ahriman in M5-1-3 (2★, 80 SP), and Ifrit in M5-1-1 / M8-1-1 (2★, 162 SP)."
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Kactuer & Angeal Penance)",
+                        "missionId": "M10-1-3",
+                        "enemyId": "enemy_kactuer",
+                        "yield": "408–3,000 SP / kill",
+                        "gearIds": ["item_assault_twister", "item_barrier", "item_cura"],
+                        "detail": "Hunt Kactuer in M10-1-3 (4★, 800 SP per kill + sellable Silver/Gold Armlets) and Bahamut in M5-1-2 / M8-1-4 (3★, 408 SP). Ready for a 4★ boss? Repeat Angeal Penance in M5-1-6 for 3,000 SP per clear! Also SP-convert extra Drainra/Osmose stolen from M3-2-2 G Bladers."
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–8 (6–8★ · Mover SP Chain)",
+                        "missionId": "M8-5-2",
+                        "enemyId": "enemy_mover",
+                        "yield": "2,000–8,000 SP (2–3x Chain!)",
+                        "gearIds": ["item_wall", "item_curaga", "item_mug", "item_adaman_bangle"],
+                        "detail": "Farm Mover in M8-5-2 (6★, 2,000 SP base) and Hollander in M5-2-3 (6★, 1,780 SP). HIDDEN REUNION TIP: Kill weaker enemies BEFORE finishing Movers without taking damage to stack a 2x–3x SP Chain multiplier! At 8★, upgrade to Mover RE (M2-3-3/M6-4-2, 4,000 SP) and Mover EX (M6-6-3, 8,000 SP + steal Flare to SP-convert!)."
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 9–10 (9–10★ · Three Stars & Minerva)",
+                        "missionId": "M9-5-3",
+                        "enemyId": "enemy_three_stars",
+                        "yield": "20,000–40,000 SP / kill",
+                        "gearIds": ["item_costly_punch", "item_genji_glove", "item_mug", "item_mogs_amulet"],
+                        "detail": "Farm Three Stars in M9-5-3 / M9-5-2 (20,000 SP base + Tri-Fire/Tri-Thundaga steals to convert), Kactuare in M9-6-1 (24,000 SP), or Minerva in M9-6-6 (40,000 SP per clear). Keep 500k+ SP in reserve before doing +98/+980% fusions or using SP Turbo/Master."
+                    }
                 ],
-                "proTip": "Always keep a buffer of 500k+ SP before combining high-tier +98/+980% Materia—SP Turbo / SP Master also drain SP per hit in combat."
+                "proTip": "Reunion hides an SP Chain bonus: defeating small adds before killing a Mover/Three Stars without taking HP damage boosts your SP payout up to 3x!"
             },
             {
-                "id": "farm_gil",
-                "shortLabel": "Gil & Loot",
-                "title": "Gil & Rare Drop Economy Playbook",
-                "badge": "495k Gil / Run",
-                "summary": "Break the game's Gil economy to afford 1,000,000 Gil Genji Helm and unlimited shop Materia.",
-                "bestMissionId": "M9-5-3",
-                "enemyId": "enemy_three_stars",
-                "recommendedGear": ["item_precious_watch", "item_jeweled_ring", "item_mogs_amulet", "item_brigands_gloves"],
+                "id": "farm_exp",
+                "shortLabel": "EXP (All Stages)",
+                "title": "EXP & Character Leveling Playbook (Lv 1 → 99)",
+                "badge": "Lv 1 → 99",
+                "summary": "Fastest EXP missions for every tier of the game, paired with accessible defensive gear (no Costly Punch required early).",
+                "bestMissionId": "M8-6-4",
+                "enemyId": "enemy_scissor_chitin",
+                "recommendedGear": ["item_costly_punch", "item_brutal", "item_genji_glove", "item_status_ward", "item_hell_blizzaga"],
                 "steps": [
-                    {"stage": "Know the 3 Farming Accessories", "missionId": "M4-4-3", "detail": "Mog's Amulet (Sector 7 Shop M4-4-3) forces Rare Drops; Brigand's Gloves guarantees 100% Steal/Mug; Jeweled Ring doubles item drops; Precious Watch doubles battle Gil (both in Online Shop Shade M9-5-4)."},
-                    {"stage": "M9-5-3 Three Stars & Tycoon Loop", "missionId": "M9-5-3", "detail": "Equip Mog's Amulet + Jeweled Ring + Precious Watch + Mug in M9-5-3. Sell stolen Tri-Thundaga / Mythril Armlets and dropped accessories for 50,000+ Gil/minute."},
-                    {"stage": "Minerva 99x Phoenix Down Trick", "missionId": "M9-6-6", "detail": "Enter M9-6-6, Mug Minerva once to steal 99x Phoenix Downs, then intentionally lose or finish. Selling 99x Phoenix Downs nets 495,000 Gil per run."}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Lv 1–16)",
+                        "missionId": "M10-4-2",
+                        "enemyId": "enemy_sea_worm",
+                        "yield": "69–177 EXP / kill",
+                        "gearIds": ["item_bronze_bangle", "item_assault_twister", "item_cura"],
+                        "detail": "Clear M1, M3, M4, and M8 branches naturally. Top 1–2★ EXP targets are Sea Worm (M10-4-2, 177 EXP), Guard Spider (M3-1-2, 162 EXP), and Ifrit (M5-1-1/M8-1-1, 162 EXP). Level-ups happen when hidden EXP crosses a threshold AND DMW hits 7-7-7. CRITICAL: Never forfeit/abandon a mission or all EXP gained during it is wiped!"
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Lv 16–30)",
+                        "missionId": "M5-1-6",
+                        "enemyId": "enemy_angeal_penance",
+                        "yield": "665–4,711 EXP / kill",
+                        "gearIds": ["item_assault_twister", "item_barrier", "item_cura", "item_hp_up"],
+                        "detail": "General's Tank (918 EXP) and G Blader (665 EXP) in M3-2-3 give reliable 4★ mob EXP, while Angeal Penance in M5-1-6 awards a huge 4,711 EXP (plus 3,000 SP & 4,000 Gil) per clear. Also clear M8-3-2 (4★) for free Status Ward early!"
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–8 (5–7★ · Lv 30–55)",
+                        "missionId": "M1-5-6",
+                        "enemyId": "enemy_guardian_eyes",
+                        "yield": "5,769–9,977 EXP / kill",
+                        "gearIds": ["item_wall", "item_curaga", "item_adaman_bangle", "item_status_ward"],
+                        "detail": "Hunt Guardian Eyes in M1-5-6 (8,083 EXP), Tarantula in M1-5-3 (6,380 EXP), and Hollander in M5-2-3 (9,977 EXP). Clear M7-3-6 (6★) for Adaman Bangle and M7-4-6 (7★, Wyerd 5,966 EXP) for Brutal, or reach 23% Buster Sword Proficiency for free Break Damage Limit."
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (8–10★ · Lv 55–99)",
+                        "missionId": "M8-6-4",
+                        "enemyId": "enemy_scissor_chitin",
+                        "yield": "5,460–31,936 EXP / kill",
+                        "gearIds": ["item_costly_punch", "item_genji_glove", "item_status_ward", "item_hell_blizzaga"],
+                        "detail": "Farm G Dominator in M7-4-5 (8★, 7,770 EXP) or loop Scissor Chitins in M8-6-4 (9★, 5,460 EXP, very fast spawns) with Costly Punch + Break Damage Limit. At 10★ with 200+ VIT/SPR, Goliath (M9-6-5, 23,264 EXP) and Great Malboro (M9-6-4, 31,936 EXP) rocket you to Lv. 99."
+                    }
                 ],
-                "proTip": "Don't waste Gil on consumables late-game once you have Curaga + Aerial Drain; save 1,000,000 Gil first for Genji Helm in Online Shop Shade."
+                "proTip": "You do NOT need to stay in one fight waiting for 7-7-7—hidden EXP keeps accumulating across missions and triggers rapid catch-up level-ups whenever 7-7-7 hits, as long as you finish the mission."
             },
             {
                 "id": "farm_catalysts",
                 "shortLabel": "Stat Catalysts",
-                "title": "Max-Tier Fusion Material Playbook",
-                "badge": "Reunion Meta",
-                "summary": "Since Reunion removed repeatable Mission Clear Rewards, use the M6-6-3 Dark Matter + 98/980% Libra loop alongside direct catalyst farms.",
+                "title": "Stat Catalyst & Fusion Farming Playbook (All Stages)",
+                "badge": "Mako → Max Tier",
+                "summary": "Progress from Ch. 1–4 Mako Stones and 50 Gil Potions to 5–7★ Stat Stones and the endgame 98/980% Dark Matter Libra trick.",
                 "bestMissionId": "M6-6-3",
                 "enemyId": "enemy_lesser_worm",
                 "recommendedGear": ["item_mogs_amulet", "item_brigands_gloves", "item_jeweled_ring", "item_mug"],
                 "steps": [
-                    {"stage": "1. Dark Matter Base (Fastest Overall)", "missionId": "M6-6-3", "detail": "Equip Mog's Amulet + Jeweled Ring in M6-6-3. Lesser Worms drop Dark Matter reliably—stack 98 Dark Matter onto a cheap Libra Materia (+98 MAG), then fuse with JUST ONE target catalyst (Adamantite/Mythril/Hero Drink/Fat Chocobo Feather) to convert it!"},
-                    {"stage": "2. Direct VIT & SPR Farms", "missionId": "M9-6-5", "detail": "Adamantite (VIT): Goliath in M9-6-5 (Drop & Steal), Crazy Sword in M7-6-4/M9-4-1, Grandpanzer in M9-3-3. Mythril (SPR): G Purgatorio in M3-4-6 / M8-6-6 (Rare Drop & Steal)."},
-                    {"stage": "3. Direct ATK & HP% Farms", "missionId": "M9-6-3", "detail": "Hero Drink (ATK): Master Blade in M9-6-3 or Iron Claw in M6-5-6/M9-3-6. Fat Chocobo Feather (HP%): Jabberwock in M9-2-6 or Humbaba in M6-6-6 (also 50 Gil Shinra Potions amplify existing HP%!)."}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Pre-Item Fusion)",
+                        "missionId": "M10-4-2",
+                        "enemyId": "enemy_sea_worm",
+                        "yield": "Stockpile Mako Stones (5 = +1/+10%)",
+                        "gearIds": ["item_bronze_bangle", "item_cura"],
+                        "detail": "Item Fusion isn't unlocked until Chapter 4 (M7-2-1), so NEVER sell Mako Stones or Potions! Stockpile early drops/steals from Sea Worm in M10-4-2 (MAG/SPR/MP Mako Stones) and Grashtrike in M2-1-1 (ATK Mako Stones)."
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Item Fusion Tome + Potions)",
+                        "missionId": "M7-2-1",
+                        "enemyId": "enemy_g_eraser",
+                        "yield": "Potions (+HP%) & Mako Stones (+40)",
+                        "gearIds": ["item_hp_up", "item_vit_up", "item_spr_up", "item_libra"],
+                        "detail": "Clear M7-2-1 (3★) to unlock Item Fusion! Buy HP Up (Sec. 8 M6-2-1) and cheap 50 Gil Shinra Potions—remember consumables ONLY amplify an EXISTING HP% stat! Farm 3–4★ Mako Stones from General's Tank M3-2-3 (HP), Tonberry M10-2-1 (ATK/HP), Coast Runner M10-4-1 (VIT/LCK), G Diver M3-2-2 (SPR), and Kactuer M10-1-3 (LCK)."
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–7 (5–7★ · Stat Stones + Early Dark Matter)",
+                        "missionId": "M5-2-3",
+                        "enemyId": "enemy_hollander",
+                        "yield": "Stat Stones (3 = +1) + Early Dark Matter",
+                        "gearIds": ["item_mug", "item_brigands_gloves", "item_mogs_amulet", "item_libra"],
+                        "detail": "Farm Stat Stones (cap +66) from Break Machine M1-5-4 (HP/Guard), Spike Machine M1-5-5 (Power/Guard), Evilgoyle M7-3-1 (Magic), and Nightmare M8-3-3 (Mind). Huge midgame shortcut: Steal Dark Matter from Hollander in M5-2-3 (6★) and rare-steal Mythril from G Paladin in M7-3-5 (7★)!"
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (8–10★ · 98/980% Libra Loop)",
+                        "missionId": "M6-6-3",
+                        "enemyId": "enemy_lesser_worm",
+                        "yield": "+100 Stats & +999% HP",
+                        "gearIds": ["item_mogs_amulet", "item_jeweled_ring", "item_brigands_gloves", "item_mug"],
+                        "detail": "With Mog's Amulet + Jeweled Ring, Lesser Worms in M6-6-3 drop Dark Matter rapidly—stack 98 onto a Libra (+98 MAG) and convert it with JUST ONE Adamantite (Goliath M9-6-5), Mythril (G Purgatorio M3-4-6), Hero Drink (Master Blade M9-6-3), Fat Chocobo Feather (Jabberwock M9-2-6 / Humbaba M6-6-6), or Gysahl Greens (Kactuare M9-6-1)."
+                    }
                 ],
-                "proTip": "Never farm 99 Adamantite or 99 Gysahl Greens manually unless you want to—98 Dark Matter + 1 single target catalyst achieves the exact same +100 stat!"
+                "proTip": "Reunion removed repeatable Mission Clear Rewards, so don't burn 99x rare catalysts—build a +98 MAG / +980% HP Libra carrier and use ONE final catalyst to convert it cleanly."
             },
             {
                 "id": "farm_materia_mastery",
                 "shortLabel": "Materia Mastery",
-                "title": "Materia Leveling & AFK Mastering Playbook",
-                "badge": "AFK M1-1-1",
-                "summary": "How hidden Materia EXP and DMW slot 1–6 reels level Materia, plus the zero-effort M1-1-1 AFK setup.",
+                "title": "Materia Leveling & AFK Mastering Playbook (All Stages)",
+                "badge": "Slots 1–6 → AFK",
+                "summary": "How to level Materia quickly from Chapter 1 onward, before and after unlocking Moogle Power & Faerie Ring.",
                 "bestMissionId": "M1-1-1",
                 "enemyId": "enemy_sentry",
                 "recommendedGear": ["item_moogle_power", "item_faerie_ring", "item_safety_bit"],
                 "steps": [
-                    {"stage": "1. Unlock Moogle Power", "missionId": "M8-4-4", "detail": "Complete M8-4-4 (Suspicious Mail 4) to unlock Moogle on DMW, then buy Moogle Power Materia from Junon Souvenirs (M2-4-1)."},
-                    {"stage": "2. Set Up the AFK M1-1-1 Loadout", "missionId": "M1-1-1", "detail": "Equip 1–2 Moogle Power Materia (levels ALL equipped Materia at once when Moogle triggers) in slots alongside the Materia you want to master, plus Faerie Ring (auto-Regen)."},
-                    {"stage": "3. Let Reels Spin & Clear Mission", "missionId": "M1-1-1", "detail": "Enter M1-1-1, leave 1 Sentry alive (or hold block), and let DMW reels spin. CRITICAL: You MUST finish the mission before exiting—forfeiting discards Materia levels!"}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Active DMW Slot Leveling)",
+                        "missionId": "M1-1-1",
+                        "enemyId": "enemy_sentry",
+                        "yield": "Slots 1–4 Level Ups",
+                        "gearIds": ["item_bronze_bangle", "item_cura"],
+                        "detail": "Your equipped Materia slots correspond to DMW numbers 1–6! Rolling a double number levels that exact slot (+1), while triples jump +2 to +3 levels immediately. Fight longer multi-wave early missions (like M1-1-x) so reels keep spinning."
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Unlock 6 Slots & Safety Bit)",
+                        "missionId": "M1-1-1",
+                        "enemyId": "enemy_sentry",
+                        "yield": "Safe Passive Loop (Pre-Moogle)",
+                        "gearIds": ["item_safety_bit", "item_barrier", "item_cura"],
+                        "detail": "Grab a free Safety Bit from the chest in M10-1-3 (4★) and reach Chapter 5+ for 6 Materia slots. If you need quick mastery before Moogle Power, idle in M1-1-1 behind Barrier/guarding while healing periodically—always kill the final Sentry to save levels!"
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–7 (5–7★ · Unlock Moogle Power AFK)",
+                        "missionId": "M8-4-4",
+                        "enemyId": "enemy_guard_fang",
+                        "yield": "Full AFK 6-Slot Mastery",
+                        "gearIds": ["item_moogle_power", "item_faerie_ring", "item_safety_bit"],
+                        "detail": "Clear M8-4-4 (6★) to unlock Moogle DMW, then unlock Junon Souvenirs (chest in M2-4-1, 6★) to buy Moogle Power Materia and Mythril Mine Trading (clear M2-4-5, 6★) for Faerie Ring (Auto-Regen). Now Moogle Power levels ALL equipped Materia at once!"
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (8–10★ · High-Grade Materia AFK)",
+                        "missionId": "M1-1-1",
+                        "enemyId": "enemy_sentry",
+                        "yield": "Master 4–5 Endgame Slots AFK",
+                        "gearIds": ["item_moogle_power", "item_faerie_ring", "item_genji_armor"],
+                        "detail": "Equip 1–2 mastered Moogle Power Materia alongside Costly Punch, Aerial Drain, Wall, and Curaga, put on Faerie Ring (or Genji Armor), enter M1-1-1, and let Sentries hit Zack AFK. CRITICAL: Finish the mission before leaving or all levels are lost!"
+                    }
                 ],
-                "proTip": "Matching two numbers 1–6 levels the Materia in that exact slot number; triple matches jump +2 or +3 levels immediately."
+                "proTip": "NEVER leave an AFK farming mission via Abandon Mission—you must clear the encounter for Materia levels and EXP to lock in."
             },
             {
                 "id": "farm_buster_sword",
                 "shortLabel": "Buster Sword 100%",
                 "title": "Buster Sword Proficiency Playbook (Reunion)",
                 "badge": "23% / 47% Perks",
-                "summary": "Reunion-exclusive stance progression: unlock Damage Limit Break at 23% and Barrier Piercing at 47%.",
+                "summary": "Reunion-exclusive stance progression from Chapter 1 onward: unlock Damage Limit Break at 23% and Barrier Pierce at 47%.",
                 "bestMissionId": "M1-2-1",
                 "enemyId": None,
-                "recommendedGear": ["item_costly_punch", "item_darkness"],
+                "recommendedGear": ["item_costly_punch", "item_assault_twister", "item_darkness"],
                 "steps": [
-                    {"stage": "Pool 1: Perfect Guard (31.66% cap)", "missionId": "M1-2-1", "detail": "Enter M1-2-1, hold Battle Stance near the rapid-fire Security Officers in the lower area, and absorb gunfire blocks repeatedly."},
-                    {"stage": "Pool 2 & 3: Strong Attack + Command Kills (63.32%)", "missionId": "M1-1-3", "detail": "Enter M1-1-3 (50 Shinra Troopers). Enter Battle Stance before every swing or AoE Command Materia (Darkness / High Jump) until both pools cap out."},
-                    {"stage": "Pool 4: Barrier Piercing (5% cap)", "missionId": "M9-6-5", "detail": "Wait until enemies cast Barrier/MBarrier in late missions like M9-6-5, then finish them while in Battle Stance to hit 100%."}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Unlock Stance Habit)",
+                        "missionId": "M1-1-1",
+                        "enemyId": "enemy_sentry",
+                        "yield": "Start Guard & Strong Pools",
+                        "gearIds": ["item_assault_twister", "item_bronze_bangle"],
+                        "detail": "As soon as Zack inherits the Buster Sword, build the habit of snapping into Battle Stance before unleashing Assault Twister or Strong Attack finishers—even early 1–2★ clears chip away at the 63.32% offense pools."
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (2–4★ · Rush 23% Damage Break)",
+                        "missionId": "M3-1-2",
+                        "enemyId": "enemy_heli_gunner",
+                        "yield": "23% = Free 99,999 Damage Break",
+                        "gearIds": ["item_barrier", "item_assault_twister", "item_cura"],
+                        "detail": "Use gunfire from Heli Gunner (M3-1-2) or early rapid-fire troopers to practice Perfect Guards in Battle Stance (31.66% pool) + Command kills. Hitting just 23% proficiency gives every Battle Stance attack/skill Break Damage Limit BEFORE Brutal or Genji Glove!"
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–7 (5–7★ · M1-2-1 & M1-1-3 Max Pools)",
+                        "missionId": "M1-1-3",
+                        "enemyId": "enemy_sergeant",
+                        "yield": "47% = Free Barrier Pierce",
+                        "gearIds": ["item_assault_twister", "item_wall", "item_adaman_bangle"],
+                        "detail": "Farm Perfect Guards in M1-2-1 (5★ Security Officers) and Strong Attack / Command Materia kills in M1-1-3 (5★, 50 Shinra Troopers) with AoE Assault Twister / Quake. Crossing 47% lets Battle Stance bypass enemy Barrier & MBarrier!"
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (8–10★ · 5% Barrier Pool & Limit Breaks)",
+                        "missionId": "M9-6-5",
+                        "enemyId": "enemy_goliath",
+                        "yield": "100% Cap + Boss Skill Power Break",
+                        "gearIds": ["item_costly_punch", "item_genji_glove"],
+                        "detail": "Finish the final 5% Barrier-piercing kill pool in M9-6-5 against buffed Mock Troopers / Goliath. Against Hard Mode bosses (including Minerva), snap into Battle Stance + Costly Punch to drain their purple Skill Power bar and cancel Limit Breaks."
+                    }
                 ],
-                "proTip": "Every time you see a boss charging a Skill Power bar in Reunion, enter Battle Stance and hit with Costly Punch—draining the gauge weakens or cancels their Limit Break."
+                "proTip": "Reaching 23% Buster Sword Proficiency lets Battle Stance Costly Punch hit 99,999 without needing Genji Glove or Brutal—a massive power spike in midgame!"
             },
             {
                 "id": "farm_dmw",
                 "shortLabel": "DMW 100% (Genji)",
-                "title": "100% DMW & Genji Armor Playbook",
+                "title": "100% DMW & Genji Armor Playbook (Chapter-by-Chapter)",
                 "badge": "18 Images",
-                "summary": "Unlock all 7 Characters + 11 Summons/Chocobo Modes and push every entry to 100%.",
+                "summary": "Track every DMW character, summon, and Chocobo Mode by story chapter so nothing gets missed on your way to Genji Armor.",
                 "bestMissionId": "M1-1-1",
                 "enemyId": None,
-                "recommendedGear": ["item_genji_armor", "item_faerie_ring"],
+                "recommendedGear": ["item_genji_armor", "item_faerie_ring", "item_moogle_power"],
                 "steps": [
-                    {"stage": "1. Secure Missable Ch. 8 Phoenix", "missionId": "M8-1-1", "detail": "Talk to the boy near Nibelheim Inn in Chapter 8 and examine the Water Tower for Phoenix (the ONLY missable DMW). Clear M8-1-1, M8-1-4, M8-1-6, M8-4-1..4, M8-5-6, M10-1-3, M10-2-3 for the rest."},
-                    {"stage": "2. Summons vs. Character Memories", "missionId": "M10-2-3", "detail": "Summons & Chocobo Modes jump straight to 100% the very first time they trigger. Characters require viewing 6 memory scenes each (you can skip cutscenes and still get credit!)."},
-                    {"stage": "3. AFK Farm Remaining % in M1-1-1", "missionId": "M1-1-1", "detail": "Buy DMW-boost Materia from Research Dept. QMC+ (Ch. 9), Junon Souvenirs (M2-4-1), and Bone Village Outlet (M7-5-3), equip them in M1-1-1 with Faerie Ring, and idle until 100% → Genji Armor!"}
+                    {
+                        "tier": "early",
+                        "stage": "Early · Ch. 1–3 (1–2★ · Story Cast + Ifrit)",
+                        "missionId": "M8-1-1",
+                        "enemyId": "enemy_ifrit",
+                        "yield": "Zack, Sephiroth, Angeal, Tseng, Ifrit",
+                        "gearIds": ["item_bronze_bangle", "item_cura"],
+                        "detail": "Sephiroth, Angeal (Ch. 1), and Tseng (Ch. 2) join through story. Clear M8-1-1 (2★) to unlock Ifrit DMW immediately—summons hit 100% the very first time they trigger in combat!"
+                    },
+                    {
+                        "tier": "early-mid",
+                        "stage": "Early-Mid · Ch. 4–5 (3–4★ · Cloud, Aerith, Cissnei & Chocobo Trio)",
+                        "missionId": "M10-1-3",
+                        "enemyId": "enemy_kactuer",
+                        "yield": "Bahamut, Cactuar, Tonberry, Magic Pot",
+                        "gearIds": ["item_assault_twister", "item_barrier", "item_safety_bit"],
+                        "detail": "Story adds Cloud & Aerith (Ch. 4) and Cissnei (Ch. 5). Early missions unlock Bahamut (M8-1-4, 3★), Cactuar (M10-1-3, 4★), Tonberry & Magic Pot (M10-2-3, 3★ — obey Magic Pot's Jump -> Fira -> Gravity -> Assault Twister sequence!)."
+                    },
+                    {
+                        "tier": "mid-late",
+                        "stage": "Mid-Late · Ch. 6–7 (5–7★ · Odin, Moogle, Cait Sith, Chocobo)",
+                        "missionId": "M8-4-4",
+                        "enemyId": "enemy_guard_fang",
+                        "yield": "16/18 Unlocks Before Leaving Midgar",
+                        "gearIds": ["item_moogle_power", "item_faerie_ring"],
+                        "detail": "Clear M8-1-6 (6★ Odin), M8-4-1 (5★ Chocobo), M8-4-3 (6★ Cait Sith), and M8-4-4 (6★ Moogle). Also unlock Junon Souvenirs (M2-4-1, 6★) & Bone Village Outlet (M7-5-3, 7★) for summon/Chocobo boost Materia."
+                    },
+                    {
+                        "tier": "endgame",
+                        "stage": "Endgame · Ch. 8–10 (8–10★ · Ch. 8 Phoenix + QMC+ → 100%)",
+                        "missionId": "M1-1-1",
+                        "enemyId": None,
+                        "yield": "100% DMW = Genji Armor",
+                        "gearIds": ["item_genji_armor", "item_faerie_ring", "item_octaslash"],
+                        "detail": "MISSABLE ALERT: In Ch. 8 Nibelheim, inspect the Water Tower via Seven Wonders for Phoenix DMW. Clear M8-5-6 (9★) for Bahamut Fury, grab Research Dept. QMC+ in Ch. 9 Gongaga for character boost Materia, then idle in M1-1-1 with Faerie Ring until 100% unlocks Genji Armor! (Skipping cutscenes still counts!)"
+                    }
                 ],
-                "proTip": "Check the Shops, DMW & Missables tab to check off all 18 DMW portraits and verify you bought the exact boost Materia."
+                "proTip": "Check the Shops, DMW & Missables tab to check off all 18 portraits—every character needs 6 memory scenes (skipping cutscenes counts!), while Summons need just 1 trigger."
             },
         ],
         "statLevelingGuides": [
@@ -2119,6 +2359,12 @@ def validate_dataset(data_dir: Path) -> None:
     mission_by_id = {m["id"]: m for m in missions}
     enemy_by_id = {e["id"]: e for e in enemies}
 
+    mission_enemies = {
+        m["id"]: set(m.get("bossEnemyIds", []) + m.get("randomEnemyIds", []))
+        for m in missions
+    }
+    valid_stages = {"early", "early-mid", "mid-late", "endgame"}
+
     for b in guides.get("levelBrackets", []):
         for mid in b.get("priorityMissions", []):
             if mid not in mission_ids:
@@ -2127,6 +2373,9 @@ def validate_dataset(data_dir: Path) -> None:
         mid = fm.get("bestMissionId")
         eid = fm.get("enemyId")
         iid = fm.get("itemId")
+        st = fm.get("stage")
+        if st not in valid_stages:
+            errors.append(f"Invalid farmingMatrix stage '{st}' in {fm.get('resource')}")
         if mid and mid not in mission_ids:
             errors.append(f"Broken farmingMatrix mission ref {mid}")
         if eid and eid not in enemy_ids:
@@ -2134,8 +2383,7 @@ def validate_dataset(data_dir: Path) -> None:
         if iid and iid not in item_ids:
             errors.append(f"Broken farmingMatrix item ref {iid}")
         if mid and eid:
-            m_obj = mission_by_id[mid]
-            if eid not in (m_obj.get("bossEnemyIds", []) + m_obj.get("randomEnemyIds", [])):
+            if eid not in mission_enemies.get(mid, set()):
                 errors.append(f"FarmingMatrix mismatch: {eid} does not spawn in {mid}")
         if fm.get("category") == "Fusion Stats" and eid and iid:
             en_obj = enemy_by_id[eid]
@@ -2171,8 +2419,21 @@ def validate_dataset(data_dir: Path) -> None:
             if iid not in item_ids:
                 errors.append(f"Broken playbook gear {iid}")
         for st in pb.get("steps", []):
-            if st.get("missionId") and st["missionId"] not in mission_ids:
-                errors.append(f"Broken playbook step missionId {st['missionId']}")
+            tier = st.get("tier")
+            smid = st.get("missionId")
+            seid = st.get("enemyId")
+            if tier not in valid_stages:
+                errors.append(f"Invalid playbook step tier '{tier}' in {pb['id']}")
+            if smid and smid not in mission_ids:
+                errors.append(f"Broken playbook step missionId {smid}")
+            if seid:
+                if seid not in enemy_ids:
+                    errors.append(f"Broken playbook step enemyId {seid} in {pb['id']}")
+                elif smid and seid not in mission_enemies.get(smid, set()):
+                    errors.append(f"Playbook step mismatch in {pb['id']}: {seid} does not spawn in {smid}")
+            for giid in st.get("gearIds", []):
+                if giid not in item_ids:
+                    errors.append(f"Broken playbook step gearId {giid} in {pb['id']}")
 
     for sg in guides.get("statLevelingGuides", []):
         for k in ("consumableItemId", "makoStoneId", "statStoneId", "maxItemId"):

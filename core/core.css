@@ -401,6 +401,49 @@ button, input, select, textarea {
   margin-bottom: 5px;
 }
 
+.step-item.tier-early { border-left-color: #34d399; }
+.step-item.tier-early-mid { border-left-color: #38bdf8; }
+.step-item.tier-mid-late { border-left-color: #f59e0b; }
+.step-item.tier-endgame { border-left-color: #c084fc; }
+
+.stage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.stage-early { background: rgba(52, 211, 153, 0.14); border: 1px solid rgba(52, 211, 153, 0.4); color: #6ee7b7; }
+.stage-early-mid { background: rgba(56, 189, 248, 0.14); border: 1px solid rgba(56, 189, 248, 0.4); color: #7dd3fc; }
+.stage-mid-late { background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.4); color: #fcd34d; }
+.stage-endgame { background: rgba(192, 132, 252, 0.14); border: 1px solid rgba(192, 132, 252, 0.4); color: #d8b4fe; }
+
+.step-enemy-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 7px 10px;
+  margin: 6px 0 8px;
+  border-radius: 8px;
+  background: rgba(15, 23, 34, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.14);
+}
+.step-gear-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  padding-top: 7px;
+  border-top: 1px dashed rgba(56, 189, 248, 0.14);
+}
+
 .stat-tile {
   background: rgba(11, 17, 25, 0.88);
   border: 1px solid rgba(56, 189, 248, 0.14);

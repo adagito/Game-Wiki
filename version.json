@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
-  "buildDate": "2026-11-26T22:22:00-05:00",
-  "notes": "v3.1.0: 365/365 real enemy image URLs with no-referrer hotlink fix, tap-to-zoom portraits everywhere, and redesigned 2x2 color-coded Enemy Drop & Steal displays."
+  "version": "3.2.0",
+  "buildDate": "2026-11-26T22:50:00-05:00",
+  "notes": "v3.2.0: All-stage farming playbooks (Early, Early-Mid, Mid-Late, Endgame) with interactive Stage Filter, Zack Match shortcut, and stage-appropriate gear & enemy portraits."
 }

@@ -1,4 +1,20 @@
-import { escapeHtml } from '../../../core/ui.js';
+import { escapeHtml, openImageLightbox } from '../../../core/ui.js';
+
+const STAGE_META = {
+  early: { label: 'Early · 1–2★', icon: '🌱', cls: 'stage-early' },
+  'early-mid': { label: 'Early-Mid · 3–4★', icon: '⚡', cls: 'stage-early-mid' },
+  'mid-late': { label: 'Mid-Late · 5–7★', icon: '🔥', cls: 'stage-mid-late' },
+  endgame: { label: 'Endgame · 8–10★', icon: '👑', cls: 'stage-endgame' },
+};
+
+function formatYieldStats(st) {
+  if (!st) return '';
+  const parts = [];
+  if (st.gil > 0) parts.push(`${st.gil.toLocaleString()} Gil`);
+  if (st.sp > 0) parts.push(`${st.sp.toLocaleString()} SP`);
+  if (st.exp > 0) parts.push(`${st.exp.toLocaleString()} EXP`);
+  return parts.join(' · ');
+}
 
 export function renderGuidesView(container, ctx, selectedSectionId = null) {
   const slug = ctx.meta.slug;
@@ -8,7 +24,18 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
   const matrix = ctx.data.guides.farmingMatrix || [];
   const sections = ctx.data.guides.sections || [];
 
+  const zack = ctx.getZackState ? ctx.getZackState() : { level: 1, chapter: 1 };
+  const recommendedStage =
+    zack.chapter <= 3 && zack.level < 15
+      ? 'early'
+      : zack.chapter <= 5 && zack.level < 25
+        ? 'early-mid'
+        : zack.chapter <= 7 && zack.level < 42
+          ? 'mid-late'
+          : 'endgame';
+
   let activeMode = ctx.storage.get('guidesTab', 'playbooks'); // 'playbooks' | 'stats' | 'systems'
+  let activeStage = ctx.storage.get('guidesStage', 'all'); // 'all' | 'early' | 'early-mid' | 'mid-late' | 'endgame'
   if (selectedSectionId) {
     if (playbooks.some((p) => p.id === selectedSectionId)) activeMode = 'playbooks';
     else if (statGuides.some((s) => s.id === selectedSectionId)) activeMode = 'stats';
@@ -26,10 +53,11 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
     return `<a class="pill pill-link pill-cyan" href="#/game/${escapeHtml(slug)}/items/${encodeURIComponent(it.id)}">${prefix ? `${escapeHtml(prefix)}: ` : ''}${escapeHtml(it.name)}</a>`;
   };
 
-  const missionPill = (mid) => {
+  const missionPill = (mid, withStars = false) => {
     if (!mid) return '';
     const m = ctx.indexes.missionById.get(mid);
-    return `<a class="pill pill-link pill-mako mono" href="#/game/${escapeHtml(slug)}/missions/${encodeURIComponent(mid)}">${escapeHtml(mid)}${m ? ` · ${escapeHtml(m.title)}` : ''}</a>`;
+    const starTxt = withStars && m?.stars ? ` (${m.stars}★)` : '';
+    return `<a class="pill pill-link pill-mako mono" href="#/game/${escapeHtml(slug)}/missions/${encodeURIComponent(mid)}">${escapeHtml(mid)}${escapeHtml(starTxt)}${m ? ` · ${escapeHtml(m.title)}` : ''}</a>`;
   };
 
   const enemyPill = (eid) => {
@@ -37,6 +65,12 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
     const en = ctx.indexes.enemyById.get(eid);
     if (!en) return '';
     return `<a class="pill pill-link pill-danger" href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}">${escapeHtml(en.name)}</a>`;
+  };
+
+  const stageBadgeHtml = (tier) => {
+    const meta = STAGE_META[tier];
+    if (!meta) return '';
+    return `<span class="stage-badge ${meta.cls}">${meta.icon} ${escapeHtml(meta.label)}</span>`;
   };
 
   function renderCatalystLiveSources(itemId, label) {
@@ -115,9 +149,23 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
 
     if (activeMode === 'playbooks') {
       const pb = playbooks.find((p) => p.id === activePlaybookId) || playbooks[0];
+      const stepsAll = pb?.steps || [];
+      const visibleSteps = activeStage === 'all' ? stepsAll : stepsAll.filter((st) => st.tier === activeStage);
+      const filteredMatrix = activeStage === 'all' ? matrix : matrix.filter((r) => r.stage === activeStage);
+      const showEndgameHeader = activeStage === 'all' || activeStage === 'endgame';
+
       body.innerHTML = `
         <div class="chip-row" id="pb-chips">
           ${playbooks.map((p) => `<button class="chip ${p.id === pb?.id ? 'active' : ''}" data-pb="${escapeHtml(p.id)}">${escapeHtml(p.shortLabel)}</button>`).join('')}
+        </div>
+
+        <div class="chip-row" id="stage-chips" style="margin-bottom:14px;">
+          <button class="chip ${activeStage === 'all' ? 'active' : ''}" data-stage="all">All Stages</button>
+          <button class="chip ${activeStage === 'early' ? 'active' : ''}" data-stage="early">🌱 Early (1–2★)</button>
+          <button class="chip ${activeStage === 'early-mid' ? 'active' : ''}" data-stage="early-mid">⚡ Early-Mid (3–4★)</button>
+          <button class="chip ${activeStage === 'mid-late' ? 'active' : ''}" data-stage="mid-late">🔥 Mid-Late (5–7★)</button>
+          <button class="chip ${activeStage === 'endgame' ? 'active' : ''}" data-stage="endgame">👑 Endgame (8–10★)</button>
+          <button class="chip ${activeStage === recommendedStage ? 'active' : ''}" data-stage="match-zack" title="Jump to stage matching Zack's Ch. ${zack.chapter} Lv. ${zack.level}">🎯 Match Zack (Ch. ${zack.chapter} · Lv. ${zack.level})</button>
         </div>
 
         ${
@@ -132,25 +180,74 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
               <span class="pill pill-mako mono">${escapeHtml(pb.badge)}</span>
             </div>
 
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 14px;">
-              ${missionPill(pb.bestMissionId)}
-              ${enemyPill(pb.enemyId)}
-              ${(pb.recommendedGear || []).map((g) => itemPill(g)).join('')}
-            </div>
+            ${
+              showEndgameHeader
+                ? `
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0 14px;">
+                <span class="small muted">Endgame Peak Setup:</span>
+                ${missionPill(pb.bestMissionId, true)}
+                ${enemyPill(pb.enemyId)}
+                ${(pb.recommendedGear || []).map((g) => itemPill(g)).join('')}
+              </div>
+            `
+                : `
+              <div class="small muted" style="margin:8px 0 12px;">
+                Showing ${stageBadgeHtml(activeStage)} routes with accessible gear for this tier.
+              </div>
+            `
+            }
 
             <div class="step-timeline" style="margin-bottom:14px;">
-              ${(pb.steps || [])
-                .map(
-                  (st, idx) => `
-                  <div class="step-item">
+              ${visibleSteps
+                .map((st, idx) => {
+                  const tier = st.tier || 'early';
+                  const en = st.enemyId ? ctx.indexes.enemyById.get(st.enemyId) : null;
+                  const src = en ? en.portrait?.imageUrl || `./${en.portrait?.fallbackSvg}` : '';
+                  const fb = en ? `./${en.portrait?.fallbackSvg}` : '';
+                  const yieldStats = en ? formatYieldStats(en.stats) : '';
+                  return `
+                  <div class="step-item tier-${escapeHtml(tier)}">
                     <div class="step-item-head">
-                      <strong style="color:var(--accent);">${idx + 1}. ${escapeHtml(st.stage)}</strong>
-                      ${missionPill(st.missionId)}
+                      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                        ${stageBadgeHtml(tier)}
+                        <strong style="color:var(--accent);">${activeStage === 'all' ? `${idx + 1}. ` : ''}${escapeHtml(st.stage)}</strong>
+                      </div>
+                      ${missionPill(st.missionId, true)}
                     </div>
+                    ${
+                      en || st.yield
+                        ? `
+                      <div class="step-enemy-bar">
+                        <div style="display:flex;align-items:center;gap:9px;min-width:0;flex-wrap:wrap;">
+                          ${
+                            en
+                              ? `
+                            <img class="mini-portrait js-zoom-portrait" referrerpolicy="no-referrer" src="${escapeHtml(src)}" data-fallback="./${escapeHtml(en.portrait?.fallbackSvg || '')}" data-name="${escapeHtml(en.name)}" data-sub="${escapeHtml(en.family)}${en.stats?.level ? ` · Lv. ${en.stats.level}` : ''}" alt="${escapeHtml(en.name)}" style="width:40px;height:40px;cursor:zoom-in;" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
+                            ${enemyPill(en.id)}
+                            ${yieldStats ? `<span class="small muted mono">${escapeHtml(yieldStats)}</span>` : ''}
+                          `
+                              : ''
+                          }
+                        </div>
+                        ${st.yield ? `<span class="pill pill-mako mono">${escapeHtml(st.yield)}</span>` : ''}
+                      </div>
+                    `
+                        : ''
+                    }
                     <div class="prose">${escapeHtml(st.detail)}</div>
+                    ${
+                      (st.gearIds || []).length
+                        ? `
+                      <div class="step-gear-row">
+                        <span class="small muted">Gear for this stage:</span>
+                        ${st.gearIds.map((g) => itemPill(g)).join('')}
+                      </div>
+                    `
+                        : ''
+                    }
                   </div>
-                `
-                )
+                `;
+                })
                 .join('')}
             </div>
 
@@ -162,23 +259,26 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
 
         <details class="guide-accordion">
           <summary>
-            <strong>📊 Quick Farming Reference Table (All ${matrix.length} Resources)</strong>
+            <strong>📊 Quick Farming Reference (${filteredMatrix.length}${activeStage === 'all' ? ' Total Resources' : ` matching / ${matrix.length} total`})</strong>
             <span class="pill pill-cyan">Expand</span>
           </summary>
           <div class="guide-accordion-body">
             <div class="grid-2" style="padding-top:12px;">
-              ${matrix
+              ${filteredMatrix
                 .map(
                   (r) => `
                   <div class="sub-panel" style="display:flex;flex-direction:column;gap:6px;">
-                    <div style="display:flex;justify-content:space-between;gap:6px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;">
                       <strong style="color:var(--accent);">${escapeHtml(r.resource)}</strong>
-                      <span class="pill pill-cyan">${escapeHtml(r.category)}</span>
+                      <div style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
+                        ${stageBadgeHtml(r.stage)}
+                        <span class="pill pill-cyan">${escapeHtml(r.category)}</span>
+                      </div>
                     </div>
                     <div class="small"><strong>Setup:</strong> ${escapeHtml(r.setup)}</div>
                     <div class="small muted">${escapeHtml(r.method)}</div>
                     <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;">
-                      ${missionPill(r.bestMissionId)}
+                      ${missionPill(r.bestMissionId, true)}
                       ${enemyPill(r.enemyId)}
                       ${itemPill(r.itemId)}
                       <span class="pill mono">${escapeHtml(r.yield)}</span>
@@ -196,6 +296,21 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
         btn.addEventListener('click', () => {
           activePlaybookId = btn.dataset.pb;
           render();
+        });
+      });
+
+      body.querySelectorAll('#stage-chips .chip').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const st = btn.dataset.stage;
+          activeStage = st === 'match-zack' ? recommendedStage : st;
+          ctx.storage.set('guidesStage', activeStage);
+          render();
+        });
+      });
+
+      body.querySelectorAll('.js-zoom-portrait').forEach((img) => {
+        img.addEventListener('click', () => {
+          openImageLightbox(img.src, img.dataset.name || 'Enemy', img.dataset.sub || '', img.dataset.fallback || '');
         });
       });
     } else if (activeMode === 'stats') {
