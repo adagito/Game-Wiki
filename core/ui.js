@@ -68,7 +68,7 @@ export function openLightbox({ src, fallbackSrc, title = '', subtitle = '' }) {
         <button class="btn btn-ghost btn-sm" id="lb-close" aria-label="Close">✕</button>
       </div>
       <div class="lightbox-body">
-        <img id="lb-img" src="${escapeHtml(src || fallbackSrc || '')}" alt="${escapeHtml(title)}" />
+        <img id="lb-img" referrerpolicy="no-referrer" src="${escapeHtml(src || fallbackSrc || '')}" alt="${escapeHtml(title)}" />
       </div>
     </div>
   `;

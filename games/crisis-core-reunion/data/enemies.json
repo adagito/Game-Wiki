@@ -381,8 +381,8 @@
     "family": "Fiend",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "Ahriman-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/2/2e/Ahriman-ccvii.png/revision/latest?cb=20130225161329",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-fiend.svg"
     },
     "stats": {
@@ -1325,8 +1325,8 @@
     "family": "Shinra",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "BeeSaucer-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/b/b8/BeeSaucer-ccvii.png/revision/latest?cb=20130223062233",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-shinra.svg"
     },
     "stats": {
@@ -2013,8 +2013,8 @@
     "family": "Fiend",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "BlueMateria-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/f/f8/BlueMateria-ccvii.png/revision/latest?cb=20130226163939",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-fiend.svg"
     },
     "stats": {
@@ -6271,8 +6271,8 @@
     "family": "Beast",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "Behemoth-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/0/01/Behemoth-ccvii.png/revision/latest?cb=20130302163142",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-beast.svg"
     },
     "stats": {
@@ -8224,8 +8224,8 @@
     "family": "Genesis Copy",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "GCaina-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/5/58/GCaina-ccvii.png/revision/latest?cb=20130304182826",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-genesis-copy.svg"
     },
     "stats": {
@@ -8338,8 +8338,8 @@
     "family": "Genesis Copy",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "GCaina-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/5/58/GCaina-ccvii.png/revision/latest?cb=20130304182826",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-genesis-copy.svg"
     },
     "stats": {
@@ -8682,8 +8682,8 @@
     "family": "Genesis Copy",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "GCaina-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/5/58/GCaina-ccvii.png/revision/latest?cb=20130304182826",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-genesis-copy.svg"
     },
     "stats": {
@@ -9882,7 +9882,7 @@
     "isBoss": true,
     "portrait": {
       "imageFile": "Genesis_from_Crisis_Core_Reunion_Modeoheim_Boss_Render.png",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/4/45/Genesis_from_Crisis_Core_Reunion_Modeoheim_Boss_Render.png/revision/latest?cb=20221221061650",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-boss.svg"
     },
     "stats": {
@@ -11572,8 +11572,8 @@
     "family": "Machine",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "AlertHead-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/8/8d/AlertHead-ccvii.png/revision/latest?cb=20130302220930",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-machine.svg"
     },
     "stats": {
@@ -14715,8 +14715,8 @@
     "family": "Fiend",
     "isBoss": false,
     "portrait": {
-      "imageFile": "",
-      "imageUrl": "",
+      "imageFile": "Grangalan-ccvii.png",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/4/4d/Grangalan-ccvii.png/revision/latest?cb=20130303175424",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-fiend.svg"
     },
     "stats": {
@@ -21365,7 +21365,7 @@
     "isBoss": false,
     "portrait": {
       "imageFile": "Wutai_Captain.jpg",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/b/b1/Wutai_Captain.jpg/revision/latest?cb=20080411224951",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-shinra.svg"
     },
     "stats": {
@@ -21701,7 +21701,7 @@
     "isBoss": false,
     "portrait": {
       "imageFile": "Wutai Sergeant_Major.jpg",
-      "imageUrl": "",
+      "imageUrl": "https://static.wikia.nocookie.net/finalfantasy/images/2/2e/Wutai_Sergeant_Major.jpg/revision/latest?cb=20080411224932",
       "fallbackSvg": "games/crisis-core-reunion/assets/portraits/family-wutai.svg"
     },
     "stats": {

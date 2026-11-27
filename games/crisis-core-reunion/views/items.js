@@ -1,4 +1,4 @@
-import { escapeHtml, formatNum, renderSortableTable } from '../../../core/ui.js';
+import { escapeHtml, formatNum, openLightbox, renderSortableTable } from '../../../core/ui.js';
 
 const CATEGORIES = [
   { id: 'all', label: 'All Items' },
@@ -125,7 +125,7 @@ function renderItemDossier(container, ctx, item) {
   const loot = ctx.getItemLootSources(item.id);
   const slug = ctx.meta.slug;
 
-  const renderQuadrant = (title, toneClass, enemies) => {
+  const renderQuadrant = (title, qClass, toneClass, enemies) => {
     const body = enemies.length
       ? enemies
           .map((en) => {
@@ -141,13 +141,15 @@ function renderItemDossier(container, ctx, item) {
             const fb = `./${en.portrait?.fallbackSvg}`;
             return `
               <div class="enemy-source-row">
-                <img class="mini-portrait" src="${escapeHtml(src)}" alt="${escapeHtml(en.name)}" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
+                <div class="enemy-thumb" data-zoom-eid="${escapeHtml(en.id)}" title="Tap to zoom ${escapeHtml(en.name)}" style="width:52px;height:52px;">
+                  <img referrerpolicy="no-referrer" src="${escapeHtml(src)}" alt="${escapeHtml(en.name)}" loading="lazy" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
+                </div>
                 <div style="min-width:0;flex:1;">
-                  <div style="display:flex;justify-content:space-between;gap:6px;align-items:center;">
-                    <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}" style="font-weight:600;">${escapeHtml(en.name)}</a>
-                    <span class="small muted mono">Lv.${en.stats?.level ?? '?'}</span>
+                  <div style="display:flex;justify-content:space-between;gap:6px;align-items:center;flex-wrap:wrap;">
+                    <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}" style="font-weight:700;">${escapeHtml(en.name)}</a>
+                    <span class="small muted mono">Lv.${en.stats?.level ?? '?'} · HP ${formatNum(en.stats?.hpHard)}</span>
                   </div>
-                  <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:5px;">
+                  <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;">
                     ${missionBadges || '<span class="small muted">Story / Field</span>'} ${more}
                   </div>
                 </div>
@@ -158,7 +160,7 @@ function renderItemDossier(container, ctx, item) {
       : '<div class="small muted">No enemy sources in this slot.</div>';
 
     return `
-      <div class="matrix-quadrant">
+      <div class="matrix-quadrant ${qClass}">
         <h4><span>${escapeHtml(title)}</span><span class="pill ${toneClass}">${enemies.length}</span></h4>
         ${body}
       </div>
@@ -219,10 +221,10 @@ function renderItemDossier(container, ctx, item) {
     <section class="card" style="margin-bottom:16px;">
       <h3 style="margin-top:0;">4-Quadrant Enemy Drop & Steal Matrix <span class="small muted">(Live from enemies.json)</span></h3>
       <div class="matrix-grid">
-        ${renderQuadrant('Common Drop', 'pill-mako', loot.commonDrop)}
-        ${renderQuadrant('Rare Drop (Guaranteed w/ Mog\'s Amulet)', 'pill-cyan', loot.rareDrop)}
-        ${renderQuadrant('Common Steal', 'pill-warn', loot.commonSteal)}
-        ${renderQuadrant('Rare Steal', 'pill-danger', loot.rareSteal)}
+        ${renderQuadrant('Common Drop', 'q-cd', 'pill-mako', loot.commonDrop)}
+        ${renderQuadrant('Rare Drop (Mog\'s Amulet)', 'q-rd', 'pill-cyan', loot.rareDrop)}
+        ${renderQuadrant('Common Steal', 'q-cs', 'pill-warn', loot.commonSteal)}
+        ${renderQuadrant('Rare Steal', 'q-rs', 'pill-danger', loot.rareSteal)}
       </div>
     </section>
 
@@ -241,4 +243,17 @@ function renderItemDossier(container, ctx, item) {
       </section>
     </div>
   `;
+
+  container.querySelectorAll('[data-zoom-eid]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const en = ctx.indexes.enemyById.get(el.dataset.zoomEid);
+      if (!en) return;
+      openLightbox({
+        src: en.portrait?.imageUrl || `./${en.portrait?.fallbackSvg}`,
+        fallbackSrc: `./${en.portrait?.fallbackSvg}`,
+        title: en.name,
+        subtitle: `${en.family} · Lv.${en.stats?.level ?? '?'} · Hard HP ${formatNum(en.stats?.hpHard)}`
+      });
+    });
+  });
 }

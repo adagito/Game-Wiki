@@ -1,4 +1,4 @@
-import { escapeHtml, formatNum, renderSortableTable } from '../../../core/ui.js';
+import { escapeHtml, formatNum, openLightbox, renderSortableTable } from '../../../core/ui.js';
 
 export function renderMissionsView(container, ctx, selectedMissionId = null) {
   if (selectedMissionId && ctx.indexes.missionById.has(selectedMissionId)) {
@@ -188,33 +188,50 @@ function renderMissionDossier(container, ctx, mission) {
 
   const renderEnemyCards = (eids, badgeLabel, tone) => {
     if (!eids.length) return '<div class="small muted">None listed.</div>';
+    const slots = [
+      { key: 'commonDrop', label: 'Common Drop', cls: 'loot-common-drop' },
+      { key: 'rareDrop', label: 'Rare Drop', cls: 'loot-rare-drop' },
+      { key: 'commonSteal', label: 'Common Steal', cls: 'loot-common-steal' },
+      { key: 'rareSteal', label: 'Rare Steal', cls: 'loot-rare-steal' }
+    ];
     return eids
       .map((eid) => {
         const en = ctx.indexes.enemyById.get(eid);
         if (!en) return '';
         const src = en.portrait?.imageUrl || `./${en.portrait?.fallbackSvg}`;
         const fb = `./${en.portrait?.fallbackSvg}`;
-        const lootChips = ['commonDrop', 'rareDrop', 'commonSteal', 'rareSteal']
-          .map((slot) => {
-            const iid = en.loot?.[slot];
-            const it = iid ? ctx.indexes.itemById.get(iid) : null;
-            if (!it) return '';
-            const short = { commonDrop: 'Drop', rareDrop: 'Rare Drop', commonSteal: 'Steal', rareSteal: 'Rare Steal' }[slot];
-            return `<a class="pill pill-link pill-cyan" href="#/game/${escapeHtml(slug)}/items/${encodeURIComponent(it.id)}">${short}: ${escapeHtml(it.name)}</a>`;
-          })
-          .filter(Boolean)
-          .join(' ');
+        const weakText = (en.affinities?.weak || []).length ? `Weak: ${en.affinities.weak.join(', ')}` : '';
         return `
-          <div class="enemy-source-row">
-            <img class="mini-portrait" src="${escapeHtml(src)}" alt="${escapeHtml(en.name)}" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
-            <div style="flex:1;min-width:0;">
-              <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
-                <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}" style="font-weight:700;">${escapeHtml(en.name)}</a>
-                <span class="pill ${tone}">${escapeHtml(badgeLabel)} · Lv.${en.stats?.level ?? '?'} · HP ${formatNum(en.stats?.hpHard)}</span>
+          <div class="enemy-hunt-card">
+            <div class="enemy-hunt-head">
+              <div class="enemy-thumb" data-zoom-eid="${escapeHtml(en.id)}" title="Tap to zoom ${escapeHtml(en.name)}">
+                <img referrerpolicy="no-referrer" src="${escapeHtml(src)}" alt="${escapeHtml(en.name)}" loading="lazy" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
               </div>
-              <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;">
-                ${lootChips || '<span class="small muted">No notable drops/steals</span>'}
+              <div style="flex:1;min-width:0;">
+                <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;">
+                  <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(en.id)}" style="font-weight:700;font-size:1rem;">${escapeHtml(en.name)}</a>
+                  <span class="pill ${tone}">${escapeHtml(badgeLabel)} · Lv.${en.stats?.level ?? '?'}</span>
+                </div>
+                <div class="small muted mono" style="margin-top:3px;">
+                  Hard HP: ${formatNum(en.stats?.hpHard)} · EXP ${formatNum(en.stats?.exp)} · SP ${formatNum(en.stats?.sp)}${weakText ? ` · <span style="color:var(--accent-secondary)">${escapeHtml(weakText)}</span>` : ''}
+                </div>
               </div>
+            </div>
+            <div class="loot-grid">
+              ${slots
+                .map((s) => {
+                  const iid = en.loot?.[s.key];
+                  const it = iid ? ctx.indexes.itemById.get(iid) : null;
+                  return `
+                    <div class="loot-cell ${s.cls} ${it ? '' : 'loot-cell-empty'}">
+                      <span class="loot-cell-label">${escapeHtml(s.label)}</span>
+                      <span class="loot-cell-val">
+                        ${it ? `<a href="#/game/${escapeHtml(slug)}/items/${encodeURIComponent(it.id)}">${escapeHtml(it.name)}</a>` : '<span class="muted">—</span>'}
+                      </span>
+                    </div>
+                  `;
+                })
+                .join('')}
             </div>
           </div>
         `;
@@ -300,5 +317,18 @@ function renderMissionDossier(container, ctx, mission) {
     const now = ctx.toggleMissionComplete(mission.id);
     e.currentTarget.classList.toggle('btn-primary', now);
     e.currentTarget.textContent = now ? '✓ Cleared (Click to Undo)' : 'Mark Mission Cleared';
+  });
+
+  container.querySelectorAll('[data-zoom-eid]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const en = ctx.indexes.enemyById.get(el.dataset.zoomEid);
+      if (!en) return;
+      openLightbox({
+        src: en.portrait?.imageUrl || `./${en.portrait?.fallbackSvg}`,
+        fallbackSrc: `./${en.portrait?.fallbackSvg}`,
+        title: en.name,
+        subtitle: `${en.family} · Lv.${en.stats?.level ?? '?'} · Hard HP ${formatNum(en.stats?.hpHard)}`
+      });
+    });
   });
 }

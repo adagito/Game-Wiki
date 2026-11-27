@@ -266,6 +266,7 @@ def fetch_image_urls(filenames: list[str]) -> dict[str, str]:
             info = p.get("imageinfo") or []
             if info and info[0].get("url"):
                 bare = t.replace("File:", "", 1).strip()
+                url_map[bare.replace("_", " ").lower()] = info[0]["url"]
                 url_map[bare.lower()] = info[0]["url"]
     return url_map
 
@@ -751,10 +752,12 @@ def parse_enemies(
     boss_names: set[str],
     boss_page_titles: set[str],
     valid_mission_ids: set[str],
+    gallery_image_map: dict[str, str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, str], list[str]]:
     enemies: list[dict[str, Any]] = []
     name_to_id: dict[str, str] = {}
     image_files: list[str] = []
+    gallery_image_map = gallery_image_map or {}
 
     for page_title, text in sorted(enemy_pages.items()):
         stats_fields = parse_infobox_fields(text, "infobox enemy stats VIICC")
@@ -774,6 +777,12 @@ def parse_enemies(
             eid = f"enemy_{slugify(page_title)}"
 
         image_file = clean_wiki_text(info_fields.get("image") or stats_fields.get("image") or "")
+        if not image_file:
+            image_file = gallery_image_map.get(name.lower(), "")
+        if not image_file:
+            m_file = re.search(r"\[\[(?:File|Image):([^|\]]+\.(?:png|jpe?g|webp|gif))", text, flags=re.I)
+            if m_file:
+                image_file = m_file.group(1).strip()
         if image_file:
             image_files.append(image_file)
 
@@ -2229,16 +2238,25 @@ def main() -> None:
     bestiary_index_pages = fetch_pages_by_titles(["Crisis Core -Final Fantasy VII- enemies"])
     idx_txt = bestiary_index_pages.get("Crisis Core -Final Fantasy VII- enemies", "")
     boss_names: set[str] = {"minerva", "bahamut", "bahamut fury", "ifrit", "sephiroth", "angeal penance", "genesis", "genesis avatar"}
+    gallery_image_map: dict[str, str] = {}
+    for line in idx_txt.splitlines():
+        if "|" in line:
+            left, right = line.split("|", 1)
+            left_s = left.strip()
+            if re.search(r"\.(?:png|jpe?g|webp|gif)$", left_s, flags=re.I):
+                ename = clean_wiki_text(right).strip()
+                if ename:
+                    gallery_image_map.setdefault(ename.lower(), left_s)
     if "==Bosses==" in idx_txt:
         boss_sec = idx_txt.split("==Bosses==", 1)[1]
         for line in boss_sec.splitlines():
             if "|" in line:
                 boss_names.add(clean_wiki_text(line.split("|", 1)[1]).lower())
 
-    enemies, enemy_name_to_id, image_files = parse_enemies(enemy_pages, boss_names, boss_page_titles, valid_mids)
+    enemies, enemy_name_to_id, image_files = parse_enemies(enemy_pages, boss_names, boss_page_titles, valid_mids, gallery_image_map)
     img_urls = fetch_image_urls(image_files)
     for en in enemies:
-        fname = en["portrait"]["imageFile"].lower()
+        fname = en["portrait"]["imageFile"].replace("_", " ").lower().strip()
         if fname and fname in img_urls:
             en["portrait"]["imageUrl"] = img_urls[fname]
     print(f"      Parsed {len(enemies)} verified enemies/bosses.")

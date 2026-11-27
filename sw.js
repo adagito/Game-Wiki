@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-wiki-hub-v3';
+const CACHE_NAME = 'game-wiki-hub-v3-1';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -61,10 +61,7 @@ self.addEventListener('fetch', (event) => {
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) {
-    // External images (e.g. wiki renders): network first, optional cache fallback
-    event.respondWith(
-      fetch(req).catch(() => caches.match(req))
-    );
+    // Let browser handle external CDN images natively so referrerpolicy="no-referrer" applies
     return;
   }
 

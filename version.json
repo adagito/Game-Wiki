@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
-  "buildDate": "2026-11-26T22:08:00-05:00",
-  "notes": "v3.0.0: Overhauled mobile/desktop UI flow (bottom nav, card-tables, swipeable rails, segmented tabs), 7 deep Farming Playbooks, all 8 Stat-Leveling Materia Guides with live enemy drop/steal links, and 3 endgame 6-Materia blueprints."
+  "version": "3.1.0",
+  "buildDate": "2026-11-26T22:22:00-05:00",
+  "notes": "v3.1.0: 365/365 real enemy image URLs with no-referrer hotlink fix, tap-to-zoom portraits everywhere, and redesigned 2x2 color-coded Enemy Drop & Steal displays."
 }

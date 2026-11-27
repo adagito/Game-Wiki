@@ -70,11 +70,16 @@ export function renderGuidesView(container, ctx, selectedSectionId = null) {
             ? topSources
                 .map(({ enemy, slots }) => {
                   const firstM = (enemy.spawns || [])[0]?.missionId;
+                  const src = enemy.portrait?.imageUrl || `./${enemy.portrait?.fallbackSvg}`;
+                  const fb = `./${enemy.portrait?.fallbackSvg}`;
                   return `
-                  <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;padding:4px 0;border-top:1px solid rgba(56,189,248,0.08);flex-wrap:wrap;">
-                    <span class="small">
-                      <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(enemy.id)}">${escapeHtml(enemy.name)}</a>
-                      <span class="muted">(${escapeHtml(slots.join(', '))})</span>
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-top:1px solid rgba(56,189,248,0.08);flex-wrap:wrap;">
+                    <span class="small" style="display:flex;align-items:center;gap:8px;min-width:0;">
+                      <img class="mini-portrait" referrerpolicy="no-referrer" src="${escapeHtml(src)}" alt="" style="width:34px;height:34px;" onerror="this.onerror=null;this.src='${escapeHtml(fb)}';" />
+                      <span>
+                        <a href="#/game/${escapeHtml(slug)}/enemies/${encodeURIComponent(enemy.id)}" style="font-weight:600;">${escapeHtml(enemy.name)}</a>
+                        <div class="muted" style="font-size:0.74rem;">${escapeHtml(slots.join(', '))}</div>
+                      </span>
                     </span>
                     ${firstM ? `<a class="pill pill-link pill-cyan mono" href="#/game/${escapeHtml(slug)}/missions/${encodeURIComponent(firstM)}">${escapeHtml(firstM)}</a>` : ''}
                   </div>
