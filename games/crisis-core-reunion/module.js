@@ -155,6 +155,28 @@ export async function createGameModule({ meta, config, storage, router }) {
         route: `#/game/${meta.slug}/compendium/dmw`
       });
     }
+    for (const pb of guides.farmingPlaybooks || []) {
+      out.push({
+        id: pb.id,
+        type: 'playbook',
+        typeLabel: 'Farming Playbook',
+        title: pb.title,
+        subtitle: pb.summary,
+        keywords: `${pb.shortLabel} ${pb.proTip}`,
+        route: `#/game/${meta.slug}/guides/${encodeURIComponent(pb.id)}`
+      });
+    }
+    for (const sg of guides.statLevelingGuides || []) {
+      out.push({
+        id: sg.id,
+        type: 'statguide',
+        typeLabel: `${sg.stat} Guide`,
+        title: sg.title,
+        subtitle: `${sg.cap} · ${sg.priority}`,
+        keywords: `${sg.stat} ${sg.whyMatters}`,
+        route: `#/game/${meta.slug}/guides/${encodeURIComponent(sg.id)}`
+      });
+    }
     for (const sec of guides.sections || []) {
       out.push({
         id: sec.id,

@@ -197,6 +197,21 @@ function renderShell({ route, navInfo, gameInstance }) {
         .join('')}
     `;
 
+  const activeTabObj = isGame ? tabs.find((t) => t.id === activeView) : null;
+  const crumbLabel = isGame ? (activeTabObj?.label || activeView) : 'Game Library';
+
+  const bottomNavHtml = isGame
+    ? `
+      <nav class="mobile-bottom-nav" aria-label="Quick Navigation">
+        <button class="mbn-btn ${activeView === 'missions' ? 'active' : ''}" data-nav="#/game/${escapeHtml(gameInstance.meta.slug)}/missions"><span>🎯</span><span>Missions</span></button>
+        <button class="mbn-btn ${activeView === 'items' ? 'active' : ''}" data-nav="#/game/${escapeHtml(gameInstance.meta.slug)}/items"><span>🧪</span><span>Items</span></button>
+        <button class="mbn-btn ${activeView === 'enemies' ? 'active' : ''}" data-nav="#/game/${escapeHtml(gameInstance.meta.slug)}/enemies"><span>👾</span><span>Bestiary</span></button>
+        <button class="mbn-btn ${activeView === 'guides' ? 'active' : ''}" data-nav="#/game/${escapeHtml(gameInstance.meta.slug)}/guides"><span>📘</span><span>Guides</span></button>
+        <button class="mbn-btn" id="mbn-more"><span>☰</span><span>More</span></button>
+      </nav>
+    `
+    : '';
+
   appEl.innerHTML = `
     <div class="layout">
       <div class="drawer-backdrop ${state.drawerOpen ? 'open' : ''}" id="drawer-backdrop"></div>
@@ -224,7 +239,7 @@ function renderShell({ route, navInfo, gameInstance }) {
             <button class="btn btn-icon mobile-menu-btn" id="drawer-open" aria-label="Open Menu">☰</button>
             <button class="btn btn-icon" id="nav-back" ${navInfo.canGoBack ? '' : 'disabled'} title="Back">←</button>
             <button class="btn btn-icon" id="nav-fwd" ${navInfo.canGoForward ? '' : 'disabled'} title="Forward">→</button>
-            <span class="small muted" id="crumb-label" style="margin-left:4px;display:none;"></span>
+            <span class="topbar-title" id="crumb-label">${escapeHtml(crumbLabel)}</span>
           </div>
           <div class="topbar-right">
             <button class="search-trigger" id="omni-btn">
@@ -234,6 +249,7 @@ function renderShell({ route, navInfo, gameInstance }) {
           </div>
         </header>
         <main class="page-content" id="page-content"></main>
+        ${bottomNavHtml}
       </div>
     </div>
   `;
@@ -245,6 +261,7 @@ function renderShell({ route, navInfo, gameInstance }) {
   };
 
   appEl.querySelector('#drawer-open')?.addEventListener('click', () => setDrawer(true));
+  appEl.querySelector('#mbn-more')?.addEventListener('click', () => setDrawer(true));
   appEl.querySelector('#drawer-close')?.addEventListener('click', () => setDrawer(false));
   appEl.querySelector('#drawer-backdrop')?.addEventListener('click', () => setDrawer(false));
   appEl.querySelector('#nav-back')?.addEventListener('click', () => router.back());

@@ -37,10 +37,10 @@ export function renderCompendiumView(container, ctx, selectedSection = null) {
         </div>
       </div>
 
-      <div class="chip-row" id="comp-tabs">
-        <button class="chip ${activeTab === 'shops' ? 'active' : ''}" data-ctab="shops">🏪 All 16 Shops</button>
-        <button class="chip ${activeTab === 'dmw' ? 'active' : ''}" data-ctab="dmw">🎰 18-Image DMW Tracker</button>
-        <button class="chip ${activeTab === 'missables' ? 'active' : ''}" data-ctab="missables">⚠️ Chapter Missables</button>
+      <div class="seg-tabs" id="comp-tabs">
+        <button class="seg-tab ${activeTab === 'shops' ? 'active' : ''}" data-ctab="shops">🏪 All 16 Shops</button>
+        <button class="seg-tab ${activeTab === 'dmw' ? 'active' : ''}" data-ctab="dmw">🎰 18-Image DMW Tracker</button>
+        <button class="seg-tab ${activeTab === 'missables' ? 'active' : ''}" data-ctab="missables">⚠️ Chapter Missables</button>
       </div>
 
       <div id="comp-body"></div>
@@ -233,7 +233,7 @@ export function renderCompendiumView(container, ctx, selectedSection = null) {
       });
     }
 
-    container.querySelectorAll('#comp-tabs .chip').forEach((btn) => {
+    container.querySelectorAll('#comp-tabs .seg-tab').forEach((btn) => {
       btn.addEventListener('click', () => {
         activeTab = btn.dataset.ctab;
         ctx.storage.set('compendiumTab', activeTab);

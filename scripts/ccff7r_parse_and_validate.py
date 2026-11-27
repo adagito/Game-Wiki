@@ -1568,6 +1568,326 @@ def build_guides_json() -> dict[str, Any]:
                 ],
             },
         ],
+        "farmingPlaybooks": [
+            {
+                "id": "farm_exp",
+                "shortLabel": "EXP (Lv 1–99)",
+                "title": "EXP & Character Leveling Playbook",
+                "badge": "Lv 1 → 99",
+                "summary": "How hidden EXP + DMW 7-7-7 level-ups work, and the fastest EXP missions from Chapter 1 to Lv 99.",
+                "bestMissionId": "M8-6-4",
+                "enemyId": "enemy_scissor_chitin",
+                "recommendedGear": ["item_costly_punch", "item_brutal", "item_genji_glove", "item_status_ward", "item_hell_blizzaga"],
+                "steps": [
+                    {"stage": "Early (Lv 1–25 · Ch. 1–5)", "missionId": "M1-2-1", "detail": "Clear M1, M3, and M4 story-unlocked branches naturally. Level-ups occur when hidden EXP crosses a threshold AND the DMW hits 7-7-7; banked EXP carries over seamlessly so you never lose progress."},
+                    {"stage": "Midgame (Lv 25–55 · Ch. 6–8)", "missionId": "M6-5-3", "detail": "Buy Status Ward + Hell Blizzaga from Wutai Secret Shop (M4-2-6). Pairing them gives immunity to status ailments while wiping non-boss encounters via instant Death for rapid 6–7★ EXP."},
+                    {"stage": "Endgame (Lv 55–99 · Ch. 9+)", "missionId": "M8-6-4", "detail": "Farm Scissor Chitins in M8-6-4 (5,460 EXP each) with Costly Punch + Break Damage Limit, or clear Goliath encounters in M9-6-5 (23,264 EXP each) once your VIT/SPR are 200+."},
+                ],
+                "proTip": "You do NOT need to sit in one spot waiting for 7-7-7—hidden EXP accumulates silently and triggers multiple rapid level-ups as soon as the DMW rolls 7-7-7."
+            },
+            {
+                "id": "farm_sp",
+                "shortLabel": "SP (SOLDIER Pts)",
+                "title": "SP (SOLDIER Points) Farming Playbook",
+                "badge": "20,000+ SP/Kill",
+                "summary": "Fund million-SP endgame Materia fusions and SP Master builds without running dry.",
+                "bestMissionId": "M9-5-3",
+                "enemyId": "enemy_three_stars",
+                "recommendedGear": ["item_costly_punch", "item_mug", "item_mogs_amulet", "item_genji_glove"],
+                "steps": [
+                    {"stage": "Early / Mid (Ch. 4–7)", "missionId": "M6-6-3", "detail": "Convert duplicate low-rank Materia into SP via the Materia menu, and farm Mover EX / Lesser Worms in M6-6-3 while collecting Dark Matter."},
+                    {"stage": "Endgame #1: Three Stars", "missionId": "M9-5-3", "detail": "Run M9-5-3 (Unusually Strong Monsters). Three Stars grants 20,000 SP per kill—equip Costly Punch + Break Damage Limit to one-shot packs on repeat."},
+                    {"stage": "Endgame #2: Minerva", "missionId": "M9-6-6", "detail": "Each Minerva clear yields 40,000 SP (plus 99x Phoenix Downs via Mug). For pure speed per minute, M9-5-3 Three Stars remains faster."}
+                ],
+                "proTip": "Always keep a buffer of 500k+ SP before combining high-tier +98/+980% Materia—SP Turbo / SP Master also drain SP per hit in combat."
+            },
+            {
+                "id": "farm_gil",
+                "shortLabel": "Gil & Loot",
+                "title": "Gil & Rare Drop Economy Playbook",
+                "badge": "495k Gil / Run",
+                "summary": "Break the game's Gil economy to afford 1,000,000 Gil Genji Helm and unlimited shop Materia.",
+                "bestMissionId": "M9-5-3",
+                "enemyId": "enemy_three_stars",
+                "recommendedGear": ["item_precious_watch", "item_jeweled_ring", "item_mogs_amulet", "item_brigands_gloves"],
+                "steps": [
+                    {"stage": "Know the 3 Farming Accessories", "missionId": "M4-4-3", "detail": "Mog's Amulet (Sector 7 Shop M4-4-3) forces Rare Drops; Brigand's Gloves guarantees 100% Steal/Mug; Jeweled Ring doubles item drops; Precious Watch doubles battle Gil (both in Online Shop Shade M9-5-4)."},
+                    {"stage": "M9-5-3 Three Stars & Tycoon Loop", "missionId": "M9-5-3", "detail": "Equip Mog's Amulet + Jeweled Ring + Precious Watch + Mug in M9-5-3. Sell stolen Tri-Thundaga / Mythril Armlets and dropped accessories for 50,000+ Gil/minute."},
+                    {"stage": "Minerva 99x Phoenix Down Trick", "missionId": "M9-6-6", "detail": "Enter M9-6-6, Mug Minerva once to steal 99x Phoenix Downs, then intentionally lose or finish. Selling 99x Phoenix Downs nets 495,000 Gil per run."}
+                ],
+                "proTip": "Don't waste Gil on consumables late-game once you have Curaga + Aerial Drain; save 1,000,000 Gil first for Genji Helm in Online Shop Shade."
+            },
+            {
+                "id": "farm_catalysts",
+                "shortLabel": "Stat Catalysts",
+                "title": "Max-Tier Fusion Material Playbook",
+                "badge": "Reunion Meta",
+                "summary": "Since Reunion removed repeatable Mission Clear Rewards, use the M6-6-3 Dark Matter + 98/980% Libra loop alongside direct catalyst farms.",
+                "bestMissionId": "M6-6-3",
+                "enemyId": "enemy_lesser_worm",
+                "recommendedGear": ["item_mogs_amulet", "item_brigands_gloves", "item_jeweled_ring", "item_mug"],
+                "steps": [
+                    {"stage": "1. Dark Matter Base (Fastest Overall)", "missionId": "M6-6-3", "detail": "Equip Mog's Amulet + Jeweled Ring in M6-6-3. Lesser Worms drop Dark Matter reliably—stack 98 Dark Matter onto a cheap Libra Materia (+98 MAG), then fuse with JUST ONE target catalyst (Adamantite/Mythril/Hero Drink/Fat Chocobo Feather) to convert it!"},
+                    {"stage": "2. Direct VIT & SPR Farms", "missionId": "M9-6-5", "detail": "Adamantite (VIT): Goliath in M9-6-5 (Drop & Steal), Crazy Sword in M7-6-4/M9-4-1, Grandpanzer in M9-3-3. Mythril (SPR): G Purgatorio in M3-4-6 / M8-6-6 (Rare Drop & Steal)."},
+                    {"stage": "3. Direct ATK & HP% Farms", "missionId": "M9-6-3", "detail": "Hero Drink (ATK): Master Blade in M9-6-3 or Iron Claw in M6-5-6/M9-3-6. Fat Chocobo Feather (HP%): Jabberwock in M9-2-6 or Humbaba in M6-6-6 (also 50 Gil Shinra Potions amplify existing HP%!)."}
+                ],
+                "proTip": "Never farm 99 Adamantite or 99 Gysahl Greens manually unless you want to—98 Dark Matter + 1 single target catalyst achieves the exact same +100 stat!"
+            },
+            {
+                "id": "farm_materia_mastery",
+                "shortLabel": "Materia Mastery",
+                "title": "Materia Leveling & AFK Mastering Playbook",
+                "badge": "AFK M1-1-1",
+                "summary": "How hidden Materia EXP and DMW slot 1–6 reels level Materia, plus the zero-effort M1-1-1 AFK setup.",
+                "bestMissionId": "M1-1-1",
+                "enemyId": "enemy_sentry",
+                "recommendedGear": ["item_moogle_power", "item_faerie_ring", "item_safety_bit"],
+                "steps": [
+                    {"stage": "1. Unlock Moogle Power", "missionId": "M8-4-4", "detail": "Complete M8-4-4 (Suspicious Mail 4) to unlock Moogle on DMW, then buy Moogle Power Materia from Junon Souvenirs (M2-4-1)."},
+                    {"stage": "2. Set Up the AFK M1-1-1 Loadout", "missionId": "M1-1-1", "detail": "Equip 1–2 Moogle Power Materia (levels ALL equipped Materia at once when Moogle triggers) in slots alongside the Materia you want to master, plus Faerie Ring (auto-Regen)."},
+                    {"stage": "3. Let Reels Spin & Clear Mission", "missionId": "M1-1-1", "detail": "Enter M1-1-1, leave 1 Sentry alive (or hold block), and let DMW reels spin. CRITICAL: You MUST finish the mission before exiting—forfeiting discards Materia levels!"}
+                ],
+                "proTip": "Matching two numbers 1–6 levels the Materia in that exact slot number; triple matches jump +2 or +3 levels immediately."
+            },
+            {
+                "id": "farm_buster_sword",
+                "shortLabel": "Buster Sword 100%",
+                "title": "Buster Sword Proficiency Playbook (Reunion)",
+                "badge": "23% / 47% Perks",
+                "summary": "Reunion-exclusive stance progression: unlock Damage Limit Break at 23% and Barrier Piercing at 47%.",
+                "bestMissionId": "M1-2-1",
+                "enemyId": None,
+                "recommendedGear": ["item_costly_punch", "item_darkness"],
+                "steps": [
+                    {"stage": "Pool 1: Perfect Guard (31.66% cap)", "missionId": "M1-2-1", "detail": "Enter M1-2-1, hold Battle Stance near the rapid-fire Security Officers in the lower area, and absorb gunfire blocks repeatedly."},
+                    {"stage": "Pool 2 & 3: Strong Attack + Command Kills (63.32%)", "missionId": "M1-1-3", "detail": "Enter M1-1-3 (50 Shinra Troopers). Enter Battle Stance before every swing or AoE Command Materia (Darkness / High Jump) until both pools cap out."},
+                    {"stage": "Pool 4: Barrier Piercing (5% cap)", "missionId": "M9-6-5", "detail": "Wait until enemies cast Barrier/MBarrier in late missions like M9-6-5, then finish them while in Battle Stance to hit 100%."}
+                ],
+                "proTip": "Every time you see a boss charging a Skill Power bar in Reunion, enter Battle Stance and hit with Costly Punch—draining the gauge weakens or cancels their Limit Break."
+            },
+            {
+                "id": "farm_dmw",
+                "shortLabel": "DMW 100% (Genji)",
+                "title": "100% DMW & Genji Armor Playbook",
+                "badge": "18 Images",
+                "summary": "Unlock all 7 Characters + 11 Summons/Chocobo Modes and push every entry to 100%.",
+                "bestMissionId": "M1-1-1",
+                "enemyId": None,
+                "recommendedGear": ["item_genji_armor", "item_faerie_ring"],
+                "steps": [
+                    {"stage": "1. Secure Missable Ch. 8 Phoenix", "missionId": "M8-1-1", "detail": "Talk to the boy near Nibelheim Inn in Chapter 8 and examine the Water Tower for Phoenix (the ONLY missable DMW). Clear M8-1-1, M8-1-4, M8-1-6, M8-4-1..4, M8-5-6, M10-1-3, M10-2-3 for the rest."},
+                    {"stage": "2. Summons vs. Character Memories", "missionId": "M10-2-3", "detail": "Summons & Chocobo Modes jump straight to 100% the very first time they trigger. Characters require viewing 6 memory scenes each (you can skip cutscenes and still get credit!)."},
+                    {"stage": "3. AFK Farm Remaining % in M1-1-1", "missionId": "M1-1-1", "detail": "Buy DMW-boost Materia from Research Dept. QMC+ (Ch. 9), Junon Souvenirs (M2-4-1), and Bone Village Outlet (M7-5-3), equip them in M1-1-1 with Faerie Ring, and idle until 100% → Genji Armor!"}
+                ],
+                "proTip": "Check the Shops, DMW & Missables tab to check off all 18 DMW portraits and verify you bought the exact boost Materia."
+            },
+        ],
+        "statLevelingGuides": [
+            {
+                "id": "stat_hp",
+                "stat": "HP%",
+                "title": "HP% Stat-Leveling Materia Guide",
+                "cap": "+999% HP",
+                "priority": "Critical (Hard Mode Core)",
+                "whyMatters": "Costly Punch ignores enemy VIT/DEF and deals 99,999 damage when Zack's current HP is high. Paired with Adaman Bangle or Genji Armor (Break HP Limit), +999% HP lets Zack survive Minerva's Judgment Arrow.",
+                "consumableItemId": "item_potion",
+                "consumableRule": "20 Potions = +10% (10 Hi-Potions / 5 X-Potions / 1 Elixir = +10%). CRITICAL: Consumables ONLY work if one of the two fused Materia ALREADY has an HP% bonus!",
+                "makoStoneId": "item_hp_mako_stone",
+                "statStoneId": "item_hp_stone",
+                "maxItemId": "item_fat_chocobo_feather",
+                "targetMateriaIds": ["item_costly_punch", "item_curaga", "item_aerial_drain", "item_hp_up"],
+                "phases": [
+                    {"phase": "Early (Ch. 4 — Item Fusion Tome M7-2-1)", "missionId": "M7-2-1", "detail": "Buy HP Up from Sector 8 Materia Shop (M6-2-1) so you already have an HP% stat. Fuse it with cheap 50 Gil Shinra Shop Potions (99 Potions = +40–50% per fusion) or mix in HP Mako Stones."},
+                    {"phase": "Midgame (HP Stones & HP Up++)", "missionId": "M6-2-1", "detail": "Use HP Stones (3 = +10%, max +660%) or keep stacking Potions/Hi-Potions onto a Libra carrier until you cross +500% HP. Equip Adaman Bangle (M7-3-6) to break the 9,999 HP ceiling."},
+                    {"phase": "Endgame (+999% HP via 980% Trick)", "missionId": "M9-2-6", "detail": "Build a Libra up to +980% HP using Potions/X-Potions/Elixirs or Fat Chocobo Feathers (Jabberwock M9-2-6 / Humbaba M6-6-6), then fuse with Costly Punch + 1–2 Fat Chocobo Feathers to hit +999% HP."}
+                ],
+                "proTip": "One single +999% HP Materia plus Zack's Lv. 70+ base HP (~7,500–9,999) + Genji Armor/Adaman Bangle easily reaches 99,999 HP without wasting a second Materia slot on HP%!"
+            },
+            {
+                "id": "stat_vit",
+                "stat": "VIT",
+                "title": "VIT (Vitality) Stat-Leveling Materia Guide",
+                "cap": "+100 VIT",
+                "priority": "Critical (255 VIT Mandatory)",
+                "whyMatters": "Reduces all physical damage taken on Hard Mode. At 255 VIT + Barrier/Wall, endgame bosses deal survivable chip damage instead of 50,000+ one-shots.",
+                "consumableItemId": None,
+                "consumableRule": "No shop consumable raises VIT—start with VIT Mako Stones, Guard Stones, or Dark Matter converted via Adamantite.",
+                "makoStoneId": "item_vit_mako_stone",
+                "statStoneId": "item_guard_stone",
+                "maxItemId": "item_adamantite",
+                "targetMateriaIds": ["item_aerial_drain", "item_wall", "item_mug", "item_high_jump"],
+                "phases": [
+                    {"phase": "Early (VIT Mako Stones)", "missionId": "M8-2-2", "detail": "Farm VIT Mako Stones (5 = +1 VIT, max +40) from early Shinra/Wutai missions and stack onto a Libra or Barrier Materia."},
+                    {"phase": "Midgame (Guard Stones)", "missionId": "M7-6-4", "detail": "Steal Guard Stones (3 = +1 VIT, max +66) from Crazy Sword (M3-5-4 / M7-6-4) or heavy mech units while unlocking Break Limit gear."},
+                    {"phase": "Endgame (+100 VIT Conversion)", "missionId": "M9-6-5", "detail": "Either farm Adamantite directly from Goliath (M9-6-5) / Crazy Sword (M7-6-4, M9-4-1) / Grandpanzer (M9-3-3), OR stack 98 Dark Matter on Libra in M6-6-3 and convert with just 1–2 Adamantite!"}
+                ],
+                "proTip": "At Lv. 75+, Zack has ~60–75 base VIT. One +100 VIT Materia + Ziedrich (+100 VIT) or Divine Slayer (+50 VIT) + a second +100 VIT Materia hits the 255 cap cleanly."
+            },
+            {
+                "id": "stat_spr",
+                "stat": "SPR",
+                "title": "SPR (Spirit) Stat-Leveling Materia Guide",
+                "cap": "+100 SPR",
+                "priority": "Critical (255 SPR Mandatory)",
+                "whyMatters": "Reduces all magical damage (including Minerva's Ultima, Crimson Flare, and Krysta) and boosts Curaga healing.",
+                "consumableItemId": "item_phoenix_down",
+                "consumableRule": "Phoenix Down acts as a +1 SPR (max +100) catalyst in Materia Fusion! You can steal 99x from Minerva (M9-6-6) or convert via Mythril.",
+                "makoStoneId": "item_spr_mako_stone",
+                "statStoneId": "item_mind_stone",
+                "maxItemId": "item_mythril",
+                "targetMateriaIds": ["item_curaga", "item_wall", "item_status_ward", "item_sp_master"],
+                "phases": [
+                    {"phase": "Early (SPR Mako Stones)", "missionId": "M8-2-1", "detail": "Stack SPR Mako Stones (5 = +1 SPR, max +40) onto Cura or Barrier early for magic defense against mages."},
+                    {"phase": "Midgame (Mind Stones & Mythril)", "missionId": "M3-4-6", "detail": "Equip Mog's Amulet + Brigand's Gloves and Mug G Purgatorio in M3-4-6 (or M8-6-6) for direct Mythril (+1 SPR each, max +100) and Mind Stones."},
+                    {"phase": "Endgame (+100 SPR Conversion)", "missionId": "M9-6-6", "detail": "Build a +98 Dark Matter Libra in M6-6-3 and fuse with 1–2 Mythril (or Phoenix Downs stolen from Minerva in M9-6-6) onto Curaga or Status Ward."}
+                ],
+                "proTip": "Always put +100 SPR on your healing/defensive staple (Curaga or Wall) and +100 VIT on Aerial Drain or Mug so your stats never leave your loadout when swapping offensive spells."
+            },
+            {
+                "id": "stat_atk",
+                "stat": "ATK",
+                "title": "ATK (Attack) Stat-Leveling Materia Guide",
+                "cap": "+100 ATK",
+                "priority": "High (Physical / Battle Stance)",
+                "whyMatters": "Maximizes Battle Stance Strong Attacks, Aerial Drain, High Jump, Assault Twister+, and Mug. Note: Costly Punch ignores ATK and scales off HP instead!",
+                "consumableItemId": None,
+                "consumableRule": "No consumable raises ATK—use ATK Mako Stones, Power Stones, or Hero Drinks (1 = +1 ATK, max +100).",
+                "makoStoneId": "item_atk_mako_stone",
+                "statStoneId": "item_power_stone",
+                "maxItemId": "item_hero_drink",
+                "targetMateriaIds": ["item_aerial_drain", "item_high_jump", "item_darkness", "item_mug"],
+                "phases": [
+                    {"phase": "Early (ATK Mako Stones)", "missionId": "M1-3-1", "detail": "Stack ATK Mako Stones (5 = +1 ATK, max +40) onto Assault Twister or Jump in early chapters."},
+                    {"phase": "Midgame (Power Stones)", "missionId": "M8-6-4", "detail": "Use Power Stones (3 = +1 ATK, max +66) dropped by mid/late physical enemies and clear rewards."},
+                    {"phase": "Endgame (+100 ATK via Hero Drink)", "missionId": "M9-6-3", "detail": "Farm Hero Drinks from Master Blade (M9-6-3) or Iron Claw (M6-5-6 / M9-3-6), or convert a +98 Dark Matter Libra using 1–2 Hero Drinks onto Aerial Drain."}
+                ],
+                "proTip": "If you run a Costly Punch build for Minerva, prioritize HP%, VIT 255, and SPR 255 BEFORE ATK—only add +100 ATK on your 4th/5th slot once defenses are capped."
+            },
+            {
+                "id": "stat_mag",
+                "stat": "MAG",
+                "title": "MAG (Magic) Stat-Leveling Materia Guide",
+                "cap": "+100 MAG",
+                "priority": "High (Easiest Stat to Max)",
+                "whyMatters": "Drives Electrocute, Energy, Quake, Ultima, Hell-aga, and Curaga. Because Dark Matter is effortless to farm in M6-6-3, MAG is the universal backbone for leveling ALL other stats!",
+                "consumableItemId": None,
+                "consumableRule": "No consumable raises MAG—Dark Matter (1 = +1 MAG, max +100) is the fastest-farmed catalyst in the game.",
+                "makoStoneId": "item_mag_mako_stone",
+                "statStoneId": "item_magic_stone",
+                "maxItemId": "item_dark_matter",
+                "targetMateriaIds": ["item_electrocute", "item_energy", "item_quake", "item_ultima", "item_hell_blizzaga"],
+                "phases": [
+                    {"phase": "Early (MAG Mako Stones)", "missionId": "M8-2-3", "detail": "Feed MAG Mako Stones (5 = +1 MAG, max +40) into Fira/Blizzara/Thundara for early caster clears."},
+                    {"phase": "Midgame (Magic Stones)", "missionId": "M6-6-3", "detail": "Lesser Worms in M6-6-3 drop both Dark Matter (Common) and Magic Stones (Rare) at once."},
+                    {"phase": "Endgame (+100 MAG & Conversion Hub)", "missionId": "M6-6-3", "detail": "Farm 99x Dark Matter from Lesser Worms in M6-6-3 (with Mog's Amulet + Jeweled Ring). Fuse 98 onto Libra for any stat conversion, or 99 directly onto Dualcast/Electrocute/Ultima!"}
+                ],
+                "proTip": "Keep a spare stack of 99 Dark Matter at all times—it turns any new Materia into a +98/+100 stat stick in 60 seconds."
+            },
+            {
+                "id": "stat_lck",
+                "stat": "LCK",
+                "title": "LCK (Luck) Stat-Leveling Materia Guide",
+                "cap": "+100 LCK",
+                "priority": "Situational (Crit & Steal)",
+                "whyMatters": "Increases Critical Hit rate and slightly aids drop/steal consistency. Note: Genji Glove guarantees 100% critical hits regardless of LCK.",
+                "consumableItemId": None,
+                "consumableRule": "No consumable raises LCK—use LCK Mako Stones, Luck Stones, or Gysahl Greens (1 = +1 LCK, max +100).",
+                "makoStoneId": "item_lck_mako_stone",
+                "statStoneId": "item_luck_stone",
+                "maxItemId": "item_gysahl_greens",
+                "targetMateriaIds": ["item_mug", "item_sp_master", "item_libra"],
+                "phases": [
+                    {"phase": "Early / Mid (LCK Mako & Luck Stones)", "missionId": "M8-2-6", "detail": "Only invest spare LCK stones if not equipping Genji Glove."},
+                    {"phase": "Endgame (+100 LCK via 1 Gysahl Greens)", "missionId": "M9-6-4", "detail": "Grab Gysahl Greens from M9-6-x chests or M10-3-2, then convert a +98 Dark Matter Libra with 1 Gysahl Greens if you want 255 LCK without Genji Glove."}
+                ],
+                "proTip": "If you already wear Genji Glove (M9-6-4) or Divine Slayer (M9-6-6), skip LCK completely and put VIT/SPR/ATK/MAG on your Materia slots instead."
+            },
+            {
+                "id": "stat_mp",
+                "stat": "MP%",
+                "title": "MP% Stat-Leveling Materia Guide",
+                "cap": "+999% MP",
+                "priority": "Situational (Pre-Genji Helm)",
+                "whyMatters": "Fuels Dualcast + Ultima / Electrocute / Curaga spam before you obtain Genji Helm (which makes all MP & AP costs 0).",
+                "consumableItemId": "item_ether",
+                "consumableRule": "10 Ethers = +10% MP (max +999%). Requires an EXISTING MP% bonus on one of the two fused Materia!",
+                "makoStoneId": "item_mp_mako_stone",
+                "statStoneId": "item_mp_stone",
+                "maxItemId": "item_lunar_harp",
+                "targetMateriaIds": ["item_dualcast", "item_ultima", "item_electrocute", "item_curaga"],
+                "phases": [
+                    {"phase": "Early / Mid (MP Up + Ethers)", "missionId": "M6-2-1", "detail": "Buy MP Up from Sector 8 Materia Shop (M6-2-1) and feed cheap Shinra Shop Ethers (200 Gil) or MP Mako Stones."},
+                    {"phase": "Endgame (Lunar Harp or Skip via Genji Helm)", "missionId": "M9-5-4", "detail": "Convert a +980% HP/MP Libra with 1 Lunar Harp if needed, OR buy Genji Helm from Online Shop Shade (M9-5-4) for 1,000,000 Gil to make MP% completely unnecessary!"}
+                ],
+                "proTip": "Once you buy Genji Helm (0 MP/AP cost), replace any +MP% Materia with +HP%, +VIT, +SPR, or +MAG."
+            },
+            {
+                "id": "stat_ap",
+                "stat": "AP%",
+                "title": "AP% Stat-Leveling Materia Guide",
+                "cap": "+999% AP",
+                "priority": "Situational (Pre-Genji Helm)",
+                "whyMatters": "Powers Aerial Drain, High Jump, and Assault Twister+ spam before acquiring Genji Helm (0 AP cost). Note: Costly Punch costs HP, not AP!",
+                "consumableItemId": "item_soma",
+                "consumableRule": "10 Soma = +10% AP (max +999%). Requires an EXISTING AP% bonus on one of the two fused Materia!",
+                "makoStoneId": "item_ap_mako_stone",
+                "statStoneId": "item_ap_stone",
+                "maxItemId": "item_zeio_nut",
+                "targetMateriaIds": ["item_aerial_drain", "item_high_jump", "item_costly_punch"],
+                "phases": [
+                    {"phase": "Early / Mid (AP Up + Soma)", "missionId": "M6-2-1", "detail": "Buy AP Up from Sector 8 Materia Shop (M6-2-1) and stack Shinra Shop Soma (200 Gil) or AP Stones."},
+                    {"phase": "Endgame (Zeio Nut or Genji Helm)", "missionId": "M9-5-4", "detail": "Convert with 1 Zeio Nut (M9-6-x chests) if needed, or simply equip Genji Helm (M9-5-4) for infinite AP."}
+                ],
+                "proTip": "Buster Sword Proficiency's passive Necromose also refunds MP/AP on every kill, making dedicated +AP% Materia rarely needed."
+            },
+        ],
+        "endgameBuildBlueprints": [
+            {
+                "id": "build_minerva_slayer",
+                "name": "Minerva Hard Mode Slayer (255 VIT/SPR · 99,999 HP)",
+                "role": "Endgame Bosses & M9-6-6",
+                "accessories": ["item_genji_helm", "item_genji_armor", "item_genji_shield", "item_genji_glove"],
+                "altAccessories": "Pre-Genji swap: Adaman Bangle (M7-3-6) + Brutal (M7-4-6) + Ziedrich (M9-5-6)",
+                "materiaSlots": [
+                    {"materiaId": "item_costly_punch", "stat": "HP% +999%", "role": "Primary 99,999 defense-ignoring DPS"},
+                    {"materiaId": "item_aerial_drain", "stat": "VIT +100", "role": "Invulnerability frames + full heal + VIT cap"},
+                    {"materiaId": "item_curaga", "stat": "SPR +100", "role": "Emergency burst heal + SPR cap"},
+                    {"materiaId": "item_mug", "stat": "VIT +100", "role": "Steal 99x Phoenix Downs + second VIT cap"},
+                    {"materiaId": "item_wall", "stat": "SPR +100", "role": "Backup Barrier/MBarrier + second SPR cap"},
+                    {"materiaId": "item_sp_master", "stat": "ATK +100", "role": "Extra damage/mitigation (or Libra / High Jump)"},
+                ],
+            },
+            {
+                "id": "build_arcane_dualcast",
+                "name": "Dualcast Arcane Nuke (255 MAG · 255 VIT/SPR)",
+                "role": "AoE Speed Clearing (M8-6-4 / M9-5-3)",
+                "accessories": ["item_genji_helm", "item_genji_armor", "item_ziedrich", "item_genji_glove"],
+                "altAccessories": "Genji Helm gives 0 MP cost; Ziedrich adds +100 to ATK/VIT/MAG/SPR!",
+                "materiaSlots": [
+                    {"materiaId": "item_dualcast", "stat": "MAG +100", "role": "Double-casts every offensive spell"},
+                    {"materiaId": "item_electrocute", "stat": "MAG +100", "role": "Heavy multi-hit lightning burst"},
+                    {"materiaId": "item_ultima", "stat": "HP% +999%", "role": "Screen-wide non-elemental finisher"},
+                    {"materiaId": "item_hell_blizzaga", "stat": "VIT +100", "role": "Instant-death mob wipe"},
+                    {"materiaId": "item_status_ward", "stat": "SPR +100", "role": "All-ailment immunity paired w/ Hell Blizzaga"},
+                    {"materiaId": "item_curaga", "stat": "SPR +100", "role": "Full heal + 255 SPR"},
+                ],
+            },
+            {
+                "id": "build_loot_farmer",
+                "name": "All-Purpose Loot, SP & Gil Farmer",
+                "role": "M6-6-3 · M9-5-3 · M9-6-3 · M3-4-6",
+                "accessories": ["item_mogs_amulet", "item_jeweled_ring", "item_precious_watch", "item_brigands_gloves"],
+                "altAccessories": "Swap Brigand's Gloves for Genji Glove once Buster Sword 23%+ breaks damage cap.",
+                "materiaSlots": [
+                    {"materiaId": "item_costly_punch", "stat": "HP% +999%", "role": "One-shots tough targets"},
+                    {"materiaId": "item_mug", "stat": "VIT +100", "role": "100% Steal + damage in one action"},
+                    {"materiaId": "item_hell_blizzaga", "stat": "MAG +100", "role": "Instant-kills trash packs"},
+                    {"materiaId": "item_status_ward", "stat": "SPR +100", "role": "Stops Stop/Death/Stun ambushes"},
+                    {"materiaId": "item_aerial_drain", "stat": "ATK +100", "role": "Sustained HP heal"},
+                    {"materiaId": "item_moogle_power", "stat": "LCK +100", "role": "Levels equipped Materia passively"},
+                ],
+            },
+        ],
     }
 
 
@@ -1833,15 +2153,47 @@ def validate_dataset(data_dir: Path) -> None:
         if rec.get("resultId") not in item_ids:
             errors.append(f"Broken fusion recipe resultId {rec.get('resultId')}")
 
+    for pb in guides.get("farmingPlaybooks", []):
+        if pb.get("bestMissionId") and pb["bestMissionId"] not in mission_ids:
+            errors.append(f"Broken playbook bestMissionId {pb['bestMissionId']}")
+        if pb.get("enemyId") and pb["enemyId"] not in enemy_ids:
+            errors.append(f"Broken playbook enemyId {pb['enemyId']}")
+        for iid in pb.get("recommendedGear", []):
+            if iid not in item_ids:
+                errors.append(f"Broken playbook gear {iid}")
+        for st in pb.get("steps", []):
+            if st.get("missionId") and st["missionId"] not in mission_ids:
+                errors.append(f"Broken playbook step missionId {st['missionId']}")
+
+    for sg in guides.get("statLevelingGuides", []):
+        for k in ("consumableItemId", "makoStoneId", "statStoneId", "maxItemId"):
+            if sg.get(k) and sg[k] not in item_ids:
+                errors.append(f"Broken statGuide {sg['id']} {k}={sg[k]}")
+        for iid in sg.get("targetMateriaIds", []):
+            if iid not in item_ids:
+                errors.append(f"Broken statGuide targetMateria {iid}")
+        for ph in sg.get("phases", []):
+            if ph.get("missionId") and ph["missionId"] not in mission_ids:
+                errors.append(f"Broken statGuide phase missionId {ph['missionId']}")
+
+    for bp in guides.get("endgameBuildBlueprints", []):
+        for iid in bp.get("accessories", []):
+            if iid not in item_ids:
+                errors.append(f"Broken blueprint accessory {iid}")
+        for ms in bp.get("materiaSlots", []):
+            if ms.get("materiaId") not in item_ids:
+                errors.append(f"Broken blueprint materiaId {ms.get('materiaId')}")
+
     if errors:
         for err in errors[:30]:
             print(f"[ERROR] {err}", file=sys.stderr)
         raise SystemExit(f"Validation FAILED with {len(errors)} error(s).")
 
     print(
-        f"[OK] Validated Crisis Core Reunion v2 dataset: "
+        f"[OK] Validated Crisis Core Reunion v3 dataset: "
         f"{len(missions)} missions (0 enemy-less), {len(enemies)} enemies, {len(items)} items, "
-        f"{len(shops)} shops, {len(guides.get('dmwImages', []))} DMW, {len(guides.get('sections', []))} guide sections, "
+        f"{len(shops)} shops, {len(guides.get('dmwImages', []))} DMW, {len(guides.get('farmingPlaybooks', []))} playbooks, "
+        f"{len(guides.get('statLevelingGuides', []))} stat guides, {len(guides.get('sections', []))} guide sections, "
         f"0 broken IDs, Strict Relational Rule passed."
     )
 

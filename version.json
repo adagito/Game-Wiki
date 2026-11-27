@@ -1,5 +1,5 @@
 {
-  "version": "2.0.1",
-  "buildDate": "2026-11-26T18:36:00-05:00",
-  "notes": "Data accuracy audit fixes: restored plain shop stock rows (ATK/VIT/MAG/SPR Up, Element Blade), corrected Hero Drink/Adamantite/Mythril/Status Ward farming & recipe links, fixed M10-2-3 & key mission star ratings, eliminated 11 remaining dirty item IDs."
+  "version": "3.0.0",
+  "buildDate": "2026-11-26T22:08:00-05:00",
+  "notes": "v3.0.0: Overhauled mobile/desktop UI flow (bottom nav, card-tables, swipeable rails, segmented tabs), 7 deep Farming Playbooks, all 8 Stat-Leveling Materia Guides with live enemy drop/steal links, and 3 endgame 6-Materia blueprints."
 }
