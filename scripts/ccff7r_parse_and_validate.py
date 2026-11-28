@@ -15,6 +15,7 @@ Uses Python 3 standard library only.
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import hashlib
 import json
 import re
@@ -25,6 +26,19 @@ import urllib.request
 import zlib
 from pathlib import Path
 from typing import Any
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from ccff7r_compendium_data import (
+    CURATED_MISSION_ROUTE_NOTES,
+    EXPANDED_MISSABLES,
+    STORY_ENEMY_CHAPTERS,
+    build_compendium_extra_json,
+    build_full_fusion_rules,
+    enrich_items_metadata,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "games" / "crisis-core-reunion" / "data"
@@ -792,6 +806,16 @@ def parse_enemies(
             if mc in valid_mission_ids and mc not in mission_codes:
                 mission_codes.append(mc)
 
+        story_locations: list[str] = []
+        for raw_line in re.split(r"[\n;]|<br\s*/?>", loc_text, flags=re.I):
+            cl = clean_wiki_text(raw_line).strip(" .,-")
+            if not cl or re.search(r"M\d+-\d+-\d+", cl):
+                continue
+            if cl.lower() in ("missions", "mission", "none", "n/a", "-", "—"):
+                continue
+            if cl not in story_locations:
+                story_locations.append(cl)
+
         is_boss_global = (
             page_title in boss_page_titles
             or name.lower() in boss_names
@@ -803,7 +827,7 @@ def parse_enemies(
 
         weak = [clean_wiki_text(x).strip() for x in re.split(r",|<br\s*/?>", stats_fields.get("weak", "")) if clean_wiki_text(x).strip()]
         resist = [clean_wiki_text(x).strip() for x in re.split(r",|<br\s*/?>", stats_fields.get("halves", "") or stats_fields.get("resist", "")) if clean_wiki_text(x).strip()]
-        nulls = [clean_wiki_text(x).strip() for x in re.split(r",|<br\s*/?>", stats_fields.get("null", "")) if clean_wiki_text(x).strip()]
+        nulls = [clean_wiki_text(x).strip() for x in re.split(r",|<br\s*/?>", stats_fields.get("null", "") or stats_fields.get("nullifies", "")) if clean_wiki_text(x).strip()]
         absorb = [clean_wiki_text(x).strip() for x in re.split(r",|<br\s*/?>", stats_fields.get("absorb", "")) if clean_wiki_text(x).strip()]
         immune = []
         for elem in ("fire", "ice", "lightning", "water", "wind", "earth", "holy", "dark", "gravity"):
@@ -815,7 +839,7 @@ def parse_enemies(
                 weak.append(elabel)
             elif ("halv" in ev or "resist" in ev) and elabel not in resist:
                 resist.append(elabel)
-            elif "null" in ev and elabel not in nulls:
+            elif ("null" in ev or "void" in ev or ev == "0") and elabel not in nulls:
                 nulls.append(elabel)
             elif "absorb" in ev and elabel not in absorb:
                 absorb.append(elabel)
@@ -825,6 +849,42 @@ def parse_enemies(
             val = clean_wiki_text(stats_fields.get(status_k, ""))
             if val.lower() == "immune":
                 immune.append(status_k.title())
+
+        def _parse_bool_flag(raw_v: str) -> bool:
+            return clean_wiki_text(raw_v).lower() in ("true", "yes", "1", "y")
+
+        def _parse_float_stat(raw_v: str) -> float | None:
+            cv = clean_wiki_text(raw_v).replace(",", "")
+            mm = re.search(r"-?\d+(?:\.\d+)?", cv)
+            return float(mm.group(0)) if mm else None
+
+        combat_flags = {
+            "nullPhysical": _parse_bool_flag(stats_fields.get("nullphysical", "") or stats_fields.get("null physical", "")),
+            "nullMagic": _parse_bool_flag(stats_fields.get("nullmagic", "") or stats_fields.get("nullmagical", "") or stats_fields.get("null magic", "")),
+            "interruptible": _parse_bool_flag(stats_fields.get("interruptible", "")),
+            "stagger": _parse_float_stat(stats_fields.get("stagger", "")),
+            "recovery": _parse_float_stat(stats_fields.get("recovery", "")),
+        }
+
+        story_chapter = STORY_ENEMY_CHAPTERS.get(eid)
+        if not story_chapter and story_locations:
+            loc_low = " ".join(story_locations).lower()
+            if "prologue" in loc_low or "tamblin" in loc_low or "wutai" in loc_low:
+                story_chapter = 1
+            elif "banora village" in loc_low or "banora" in loc_low and "underground" not in loc_low:
+                story_chapter = 2
+            elif "sector 5" in loc_low or "slums" in loc_low:
+                story_chapter = 4
+            elif "modeo" in loc_low or "excavation" in loc_low:
+                story_chapter = 5
+            elif "junon" in loc_low or "costa" in loc_low:
+                story_chapter = 6
+            elif "nibel" in loc_low or "manor" in loc_low:
+                story_chapter = 8
+            elif "gongaga" in loc_low:
+                story_chapter = 9
+            elif "underground" in loc_low or "judgment" in loc_low or "caged" in loc_low or "lake" in loc_low:
+                story_chapter = 10
 
         abilities = [
             clean_wiki_text(a).strip()
@@ -864,6 +924,7 @@ def parse_enemies(
             "portrait": {
                 "imageFile": image_file,
                 "imageUrl": "",
+                "localPath": None,
                 "fallbackSvg": f"games/crisis-core-reunion/assets/portraits/family-{family_slug}.svg",
             },
             "stats": {
@@ -887,6 +948,9 @@ def parse_enemies(
                 "absorb": absorb,
                 "immune": immune,
             },
+            "combatFlags": combat_flags,
+            "storyLocations": story_locations,
+            "storyChapter": story_chapter,
             "abilities": abilities,
             "loot": loot,
             "spawns": spawns,
@@ -1053,6 +1117,7 @@ def parse_items_and_shops(pages: dict[str, str]) -> tuple[dict[str, dict[str, An
         ("Support materia (Crisis Core)", "Support"),
         ("Special materia", "Independent"),
     ]
+    materia_table_meta: dict[str, dict[str, Any]] = {}
     for ptitle, subcat in materia_pages:
         mtxt = pages.get(ptitle, "")
         for row in parse_wikitable_rows(mtxt):
@@ -1062,7 +1127,23 @@ def parse_items_and_shops(pages: dict[str, str]) -> tuple[dict[str, dict[str, An
             if not name or name.lower() in ("name", "materia"):
                 continue
             desc = clean_wiki_text(row[2])
-            ensure_item(name, "materia", subcat, desc, None)
+            it = ensure_item(name, "materia", subcat, desc, None)
+            cost_val = None
+            cost_type = "None"
+            grade_val = None
+            if subcat in ("Command", "Magic") and len(row) >= 6:
+                cost_val = parse_int_stat(row[4])
+                cost_type = "AP" if subcat == "Command" else "MP"
+                grade_val = parse_int_stat(row[5])
+            elif len(row) >= 5:
+                grade_val = parse_int_stat(row[4])
+            if grade_val is not None:
+                grade_val = max(1, min(8, grade_val))
+            materia_table_meta[it["id"]] = {
+                "cost": cost_val,
+                "costType": cost_type,
+                "grade": grade_val,
+            }
 
     curated_fusion = [
         ("Potion", "consumables", "Restores a small amount of HP.", "HP%", 10, 20, 999, True, "Only amplifies an EXISTING HP% stat on one of the two Materia."),
@@ -1147,7 +1228,7 @@ def parse_items_and_shops(pages: dict[str, str]) -> tuple[dict[str, dict[str, An
             if not any(s["shopName"] == sh["name"] for s in it["shops"]):
                 it["shops"].append({"shopName": sh["name"], "price": entry["price"], "unlockHint": sh["unlockCondition"]})
 
-    return items, shops
+    return items, shops, materia_table_meta
 
 
 def parse_fusion_note(item_name: str, note: str) -> dict[str, Any] | None:
@@ -1331,6 +1412,1050 @@ def reconcile_relations(
             if m["id"] not in items[iid]["treasureMissions"]:
                 items[iid]["treasureMissions"].append(m["id"])
 
+        unlock_str = m.get("unlockCondition") or ""
+        prereqs = []
+        for pm in re.findall(r"M\d+-\d+-\d+", unlock_str):
+            if pm in mission_by_id and pm != m["id"] and pm not in prereqs:
+                prereqs.append(pm)
+        m["prerequisiteMissionIds"] = prereqs
+        low_un = unlock_str.lower()
+        if prereqs:
+            m["unlockType"] = "mission"
+        elif any(k in low_un for k in ("talk", "speak", "npc", "midgar", "shinra", "fan", "reporter", "spy", "director", "wonder", "chest")):
+            m["unlockType"] = "npc"
+        elif any(k in low_un for k in ("chapter", "story", "automatic", "start", "prologue", "available")):
+            m["unlockType"] = "story"
+        else:
+            m["unlockType"] = "progression"
+
+        if m["id"] in CURATED_MISSION_ROUTE_NOTES:
+            m["routeNotes"] = CURATED_MISSION_ROUTE_NOTES[m["id"]]
+
+
+CURATED_BOSS_GUIDES: dict[str, dict[str, Any]] = {
+    "M9-6-6": {
+        "targetName": "Minerva",
+        "encounterType": "Superboss",
+        "threatRating": "Extreme",
+        "summary": "Hard Mode's ultimate 20,000,000 HP superboss. Requires 99,999 HP, 255 VIT & SPR, Costly Punch, and Mug for 99x Phoenix Downs.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Curaga", "Wall", "Mug", "Aerial Drain", "SP Master"],
+            "accessories": ["Genji Shield", "Genji Armor", "Genji Glove", "Genji Helm / Ziedrich"],
+            "statTargets": "Rec Lv.85+ · HP 99,999 · VIT 255 · SPR 255"
+        },
+        "weaknessesAndCounters": [
+            "No elemental weaknesses; halves/resists Fire, Ice, and Lightning — use defense-ignoring Costly Punch (99,999 dmg per swing).",
+            "Immune to all status ailments, Gravity, and Death; SP Master + Genji Shield/Ziedrich keeps damage survivable.",
+            "Carries 99x Phoenix Downs as Rare Steal — use Mug with Mog's Amulet + Brigand's Gloves (or Heike Soul) to restock Raise mid-fight."
+        ],
+        "keyAttacksToWatch": [
+            "Judgment Arrow: Ultimate attack — breaks your Auto-Raise (Reraise) buff and hits hard; break her Limit Gauge during windup or immediately reapply Phoenix Down.",
+            "Photon Feather / Crimson Flare: Rapid homing orbs and flame pillars — sidestep/dash perpendicularly or iframe with Aerial Drain.",
+            "Thor's Hammer / Krysta: Heavy lightning/ice bursts — keep Wall active and heal immediately with Curaga."
+        ],
+        "killSteps": [
+            "Open with Phoenix Down (Auto-Raise) and Wall, then Mug Minerva once to snag 99x Phoenix Downs.",
+            "Circle behind Minerva, dodge her Photon Feathers/slashed combos, and punish openings with Costly Punch for 99,999 damage.",
+            "When she charges Judgment Arrow, burst the gauge down to reduce damage; if Judgment Arrow lands, immediately use another Phoenix Down.",
+            "Keep HP above 40,000 with Curaga/X-Potions (staying below ~110% HP threshold if needed for Costly Punch, though 99,999 HP works cleanly) until 20M HP hits zero."
+        ],
+        "proTip": "Judgment Arrow removes Auto-Raise even if you survive it — make re-popping a Phoenix Down your #1 reflex right after the animation ends."
+    },
+    "M5-1-1": {
+        "targetName": "Ifrit",
+        "encounterType": "Story Boss",
+        "threatRating": "Low",
+        "summary": "Classic fire summon boss weak to Ice. Keep Barrier up and break Hellfire's gauge to win cleanly.",
+        "recommendedLoadout": {
+            "materia": ["Blizzara / Blizzaga", "Barrier", "Cura", "Assault Twister", "Libra"],
+            "accessories": ["Flame Armlet", "Bronze Bangle", "Earrings"],
+            "statTargets": "Rec Lv.12+ · HP 2,200+ · VIT 25 · SPR 25"
+        },
+        "weaknessesAndCounters": [
+            "Weak to Ice — Blizzara/Blizzaga and Blizzard Blade deal bonus damage and stagger him faster.",
+            "Absorbs Fire — never cast Fire/Fira/Hell Firaga or you will heal him."
+        ],
+        "keyAttacksToWatch": [
+            "Hellfire: Limit Gauge finisher — unload Ice spells and Strong Attacks during the countdown to drop the gauge.",
+            "Crimson Rush / Fireball: Telegraphed lunge and fire projectiles — dodge sideways and punish from his flank."
+        ],
+        "killSteps": [
+            "Cast Barrier at the start and lock on while strafing around Ifrit's melee swings.",
+            "Spam Blizzara/Blizzaga from mid-range or weave Battle Stance combos after dodging his lunge.",
+            "Focus everything into breaking the Hellfire gauge when he charges, then finish with Ice burst."
+        ],
+        "proTip": "Equipping Flame Armlet or Fire-warding accessories trivializes his fire attacks even on Hard Mode."
+    },
+    "M8-1-1": {
+        "targetName": "Ifrit",
+        "encounterType": "Story Boss",
+        "threatRating": "Low",
+        "summary": "Rematch against Ifrit to unlock his DMW summon. Weak to Ice and absorbs all Fire damage.",
+        "recommendedLoadout": {
+            "materia": ["Blizzara / Blizzaga", "Barrier", "Cura", "Assault Twister"],
+            "accessories": ["Flame Armlet", "Bronze Bangle", "Earrings"],
+            "statTargets": "Rec Lv.12+ · HP 2,200+ · VIT 25 · SPR 25"
+        },
+        "weaknessesAndCounters": [
+            "Weak to Ice — Blizzara/Blizzaga shreds his HP and quickly empties the Hellfire gauge.",
+            "Absorbs Fire — remove any Fire Materia before entering."
+        ],
+        "keyAttacksToWatch": [
+            "Hellfire: Limit Gauge attack — break the gauge with Ice casts + Buster Sword Stance.",
+            "Blazing Slam / Fireballs: Sidestep out of the red impact zone and counter."
+        ],
+        "killSteps": [
+            "Open with Barrier and circle Ifrit to bait his melee slam.",
+            "Chain Blizzara/Blizzaga casts whenever he recovers from an attack.",
+            "Break Hellfire's gauge to earn a free stagger window and claim the Ifrit DMW unlock."
+        ],
+        "proTip": "Clearing M8-1-1 unlocks the Ifrit Materia for your DMW roster — an easy early Ch. 2/3 grab."
+    },
+    "M5-1-2": {
+        "targetName": "Bahamut",
+        "encounterType": "Story Boss",
+        "threatRating": "Low",
+        "summary": "Aerial dragon boss with no elemental weaknesses. Dodge claw swipes, jump through beams, and break Megaflare.",
+        "recommendedLoadout": {
+            "materia": ["High Jump", "Wall / Barrier", "Cura", "Darkness", "Fira / Thundara"],
+            "accessories": ["Muscle Belt", "Shinra Beta", "Bulletproof Vest"],
+            "statTargets": "Rec Lv.18+ · HP 4,000+ · VIT 45 · SPR 45"
+        },
+        "weaknessesAndCounters": [
+            "No elemental weaknesses; relies on balanced physical and non-elemental beam damage.",
+            "High Jump / Aerial Drain grants invincibility frames to dodge sweeping breath attacks while dealing heavy physical hits."
+        ],
+        "keyAttacksToWatch": [
+            "Megaflare: Major Limit Gauge laser — burst the gauge to minimize damage or hold Wall + full HP.",
+            "Flare Breath / Claw Combo: Wide front cone — dodge behind Bahamut's wings to stay safe."
+        ],
+        "killSteps": [
+            "Apply Wall or Barrier/MBarrier immediately at the start of the fight.",
+            "Stay behind or beside Bahamut, using High Jump or Battle Stance slashes after his claw combos.",
+            "Save Limit Breaks or high-damage Command Materia to shatter the Megaflare gauge."
+        ],
+        "proTip": "Watch Bahamut's wings: when he hovers back to charge a beam, trigger High Jump to evade completely and land a counter."
+    },
+    "M8-1-4": {
+        "targetName": "Bahamut",
+        "encounterType": "Story Boss",
+        "threatRating": "Low",
+        "summary": "DMW unlock rematch vs Bahamut. Maintain Wall, stay off his centerline, and burst Megaflare.",
+        "recommendedLoadout": {
+            "materia": ["High Jump", "Wall / Barrier", "Cura", "Darkness"],
+            "accessories": ["Muscle Belt", "Shinra Beta", "Bulletproof Vest"],
+            "statTargets": "Rec Lv.18+ · HP 4,000+ · VIT 45 · SPR 45"
+        },
+        "weaknessesAndCounters": [
+            "Balanced defenses without elemental weak points — physical Command Materia and Buster Sword Stance hit reliably.",
+            "Vulnerable to sustained stagger pressure during Megaflare windup."
+        ],
+        "keyAttacksToWatch": [
+            "Megaflare: Charge attack — break the gauge quickly or guard with MBarrier + full HP.",
+            "Tail Sweep & Flare Breath: Avoid standing directly in front of his head."
+        ],
+        "killSteps": [
+            "Cast Wall/MBarrier and close distance diagonally.",
+            "Alternate High Jump and Strong Attack punishes on his flanks.",
+            "Drain the Megaflare gauge whenever it appears and finish him for the Bahamut DMW Materia."
+        ],
+        "proTip": "Clearing M8-1-4 unlocks Bahamut on the DMW, progressing your 100% DMW Genji Armor requirement."
+    },
+    "M5-1-4": {
+        "targetName": "Bahamut Fury",
+        "encounterType": "Story Boss",
+        "threatRating": "Extreme",
+        "summary": "9★ Hard Mode cosmic dragon boss. Hits very hard with Exaflare and Cluster projectiles; bring Break HP Limit + Wall.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Graviga / Darkness"],
+            "accessories": ["Adaman Bangle", "Brutal / Genji Glove", "Ziedrich", "Sprint Shoes"],
+            "statTargets": "Rec Lv.68+ · HP 35,000+ · VIT 180+ · SPR 180+"
+        },
+        "weaknessesAndCounters": [
+            "No elemental weakness and immune to most ailments — pure non-elemental Costly Punch + Aerial Drain is king.",
+            "High Hard Mode HP (353,970) rewards Break Damage Limit (Brutal or Buster Sword 23%+)."
+        ],
+        "keyAttacksToWatch": [
+            "Exaflare: Screen-filling Limit Gauge blast — break the gauge with Costly Punch or hold Wall + Auto-Raise (Phoenix Down).",
+            "Cluster / Hexafang: Tracking energy spheres and dash strikes — dodge sideways continuously until the salvo finishes."
+        ],
+        "killSteps": [
+            "Pop Phoenix Down and Wall immediately at mission start.",
+            "Dash laterally through Cluster volleys, then close in for Costly Punch or Aerial Drain.",
+            "Break Exaflare's gauge with rapid Costly Punch hits to prevent heavy party-wipe damage."
+        ],
+        "proTip": "Aerial Drain's hang-time dodges Hexafang cleanly while topping off your HP bar."
+    },
+    "M8-5-6": {
+        "targetName": "Bahamut Fury",
+        "encounterType": "Story Boss",
+        "threatRating": "Extreme",
+        "summary": "9★ Treasure Info finale featuring Bahamut Fury. Maintain Wall, dodge Cluster orbs, and punish with Costly Punch.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Mug"],
+            "accessories": ["Adaman Bangle", "Brutal / Genji Glove", "Ziedrich", "Champion Belt"],
+            "statTargets": "Rec Lv.68+ · HP 35,000+ · VIT 180+ · SPR 180+"
+        },
+        "weaknessesAndCounters": [
+            "No elemental weaknesses; Costly Punch ignores his high defenses for consistent 99,999 hits.",
+            "Bring Adaman Bangle (M7-3-6) and Brutal (M7-4-6) so Exaflare cannot one-shot you."
+        ],
+        "keyAttacksToWatch": [
+            "Exaflare: Limit Gauge nuke — burst down the gauge or rely on Phoenix Down + Wall.",
+            "Cluster / Homing Lasers: Sprint and roll laterally, never straight backward."
+        ],
+        "killSteps": [
+            "Buff Wall and Phoenix Down before engaging.",
+            "Bait his melee swipe, dodge behind him, and land Costly Punch or Aerial Drain.",
+            "Focus every hit into the Exaflare gauge during charge phases until Bahamut Fury falls."
+        ],
+        "proTip": "Clearing M8-5-6 unlocks the Bahamut Fury DMW summon (Exaflare)."
+    },
+    "M5-1-5": {
+        "targetName": "Genesis",
+        "encounterType": "Story Boss",
+        "threatRating": "High",
+        "summary": "Fast swordsman & mage boss who chains Black Flurry and Dark Energy. Guard his slashes and punish recovery.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch / High Jump", "Curaga", "Wall", "Darkness", "Aerial Drain"],
+            "accessories": ["Adaman Bangle", "Brutal", "Force Bracelet", "Twisted Headband"],
+            "statTargets": "Rec Lv.46+ · HP 18,000+ · VIT 135 · SPR 135"
+        },
+        "weaknessesAndCounters": [
+            "Immune to instant-death cheese and most statuses; weak to aggressive stagger pressure after his sword combos.",
+            "Physical attacks from behind or during Dark Energy recovery deal reliable criticals."
+        ],
+        "keyAttacksToWatch": [
+            "Black Flurry / Apocalypse: Multi-hit dark slash and beam — guard or dash wide around him.",
+            "Dark Energy / Homing Fireballs: Circle-strafe until orbs dissipate before rushing in."
+        ],
+        "killSteps": [
+            "Keep Wall active and stay mid-range to read his sword dash tells.",
+            "Guard or dodge behind his 3-hit slash combo, then counter with Costly Punch or Battle Stance Strong Attack.",
+            "Burn the Limit Gauge if Apocalypse begins charging, and heal with Curaga between waves."
+        ],
+        "proTip": "Buster Sword Stance Guard absorbs Genesis's physical flurries and turns every parry into a boosted punish."
+    },
+    "M5-1-6": {
+        "targetName": "Angeal Penance",
+        "encounterType": "Story Boss",
+        "threatRating": "Moderate",
+        "summary": "Winged boss with directional Defense of Lust counter-stance and elemental wing attacks. Always flank behind him.",
+        "recommendedLoadout": {
+            "materia": ["High Jump", "Wall / Barrier", "Cura / Curaga", "Darkness", "Assault Twister+"],
+            "accessories": ["Shinra Beta", "Earrings", "Doc's Code", "Safety Bit"],
+            "statTargets": "Rec Lv.28+ · HP 7,500+ · VIT 75 · SPR 75"
+        },
+        "weaknessesAndCounters": [
+            "No elemental weaknesses; punishes frontal attacks whenever his Defense of Lust shield is raised.",
+            "Always circle to his back — back-attacks bypass Defense of Lust and score guaranteed crits."
+        ],
+        "keyAttacksToWatch": [
+            "Charge of Greed / Thunder of Envy: Lightning and rush attacks — equip Thunder/Lightning ward or Wall and dodge laterally.",
+            "Wings of Pride: Heavy Limit Gauge attack — burst the gauge down from behind."
+        ],
+        "killSteps": [
+            "Cast Wall and immediately roll behind Angeal Penance.",
+            "Pause frontal strikes when he raises his wing guard (Defense of Lust) and reposition behind him.",
+            "Use High Jump or Assault Twister+ into his back until he falls."
+        ],
+        "proTip": "Never mash into his front guard — one dash behind him turns Defense of Lust into a free damage window."
+    },
+    "M5-2-1": {
+        "targetName": "Sephiroth",
+        "encounterType": "Story Boss",
+        "threatRating": "High",
+        "summary": "Deadly duelist featuring Heartless Angel (drops HP to 1) and Octaslash. Keep a fast heal ready at all times.",
+        "recommendedLoadout": {
+            "materia": ["Curaga", "Wall", "Costly Punch / High Jump", "Aerial Drain", "Mug"],
+            "accessories": ["Adaman Bangle", "Brutal", "Ziedrich / Shinra Alpha", "Safety Bit"],
+            "statTargets": "Rec Lv.40+ · HP 14,000+ · VIT 120 · SPR 120"
+        },
+        "weaknessesAndCounters": [
+            "Immune to Death and Stop; vulnerable to quick counter-attacks right after his Masamune dash combos.",
+            "Keep X-Potions/Elixirs or Curaga slotted next to your primary attack for instant Heartless Angel recovery."
+        ],
+        "keyAttacksToWatch": [
+            "Heartless Angel: Drops Zack's HP to 1 — dodge or immediately cast Curaga/X-Potion before his next slash.",
+            "Telluric Fury / Shadow Flare: Wide ground wave and tracking dark orbs — sidestep and keep moving.",
+            "Octaslash: Limit Gauge finisher — burst the gauge down to avoid lethal multi-slash damage."
+        ],
+        "killSteps": [
+            "Apply Wall and Phoenix Down at the start so a sudden Heartless Angel combo cannot end the run.",
+            "Stay at medium range, dodge his Masamune lunge, and punish his back with High Jump or Costly Punch.",
+            "The instant you see Heartless Angel, cancel into Curaga or an X-Potion before re-engaging."
+        ],
+        "proTip": "If you stay close and stun/interrupt him during Heartless Angel's hover windup, you can sometimes cancel it altogether."
+    },
+    "M5-2-2": {
+        "targetName": "Sephiroth + 4 Materia Orbs",
+        "encounterType": "Multi-Target Boss",
+        "threatRating": "Extreme",
+        "summary": "Sephiroth backed by Fire, Blizzard, Thunder, and Support Materia orbs. Destroy the Support/Elemental orbs first.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch / Darkness", "Quake / Ultima", "Curaga", "Wall", "Aerial Drain"],
+            "accessories": ["Adaman Bangle", "Brutal", "Elemental Ring / Force Bracelet", "Ribbon / Super Ribbon"],
+            "statTargets": "Rec Lv.45+ · HP 18,000+ · VIT 135 · SPR 135"
+        },
+        "weaknessesAndCounters": [
+            "Destroying the 4 floating Materia orbs strips Sephiroth's elemental barrage and buff/heal support.",
+            "AoE Darkness, Quake, or Assault Twister+ clips multiple orbs while damaging Sephiroth."
+        ],
+        "keyAttacksToWatch": [
+            "Heartless Angel: Drops HP to 1 — follow immediately with Curaga or X-Potion.",
+            "Synchronized Firaga/Blizzaga/Thundaga from the orbs — keep Wall up and prioritize the Support Materia orb first."
+        ],
+        "killSteps": [
+            "Cast Wall + Phoenix Down, then immediately target and destroy Support Materia and the elemental orbs.",
+            "Use Quake/Darkness or Aerial Drain to clear remaining orbs while dodging Sephiroth's lunges.",
+            "Once alone, punish Sephiroth's sword swings and heal instantly after any Heartless Angel."
+        ],
+        "proTip": "Killing the Support Materia orb first stops it from buffing and supporting Sephiroth throughout the fight."
+    },
+    "M5-2-3": {
+        "targetName": "Hollander",
+        "encounterType": "Story Boss",
+        "threatRating": "High",
+        "summary": "Ailment-spamming boss who summons Land Worms and heals himself. Status immunity (Ribbon / Status Ward) trivializes him.",
+        "recommendedLoadout": {
+            "materia": ["Hell Firaga / Hell Blizzaga", "Status Ward", "Costly Punch / Darkness", "Curaga", "Dispel"],
+            "accessories": ["Ribbon / Super Ribbon", "Adaman Bangle", "Brigand's Gloves", "Shinra Alpha"],
+            "statTargets": "Rec Lv.40+ · HP 14,000+ · VIT 115 · SPR 115"
+        },
+        "weaknessesAndCounters": [
+            "Hollander's main threat is Poison, Silence, Curse, and Stop flasks — equip Ribbon or Status Ward + Hell-aga for 100% status immunity.",
+            "High burst damage stops him from out-healing with potions/Curaga and clears summoned Land Worms fast."
+        ],
+        "keyAttacksToWatch": [
+            "Status Flasks / Bad Breath-style debuffs: Blocked completely by Status Ward + Hell Firaga/Blizzaga.",
+            "Land Worm Summon + Self-Heal: Wipe Land Worms with AoE Darkness/Quake so they don't Stop-lock you."
+        ],
+        "killSteps": [
+            "Equip Status Ward + a Hell-aga Materia (or Ribbon) before starting the mission.",
+            "Open with Wall and rush Hollander down with Costly Punch or High Jump.",
+            "Clear any spawned Land Worms immediately with AoE Command/Magic Materia, then finish Hollander."
+        ],
+        "proTip": "A single Hell Firaga/Blizzaga + Status Ward combo completely shuts down both Hollander's flasks and Land Worm Stop."
+    },
+    "M1-1-1": {
+        "targetName": "Sentry",
+        "encounterType": "Mission Boss",
+        "threatRating": "Low",
+        "summary": "Introductory SOLDIER simulation against Shinra Sentries. Great spot for Battle Stance practice and AFK DMW spins.",
+        "recommendedLoadout": {
+            "materia": ["Fire / Thunder", "Cure", "Assault Twister", "Libra"],
+            "accessories": ["Bronze Bangle", "Earrings"],
+            "statTargets": "Rec Lv.3+ · HP 900+ · VIT 15 · SPR 15"
+        },
+        "weaknessesAndCounters": [
+            "Low Hard HP (945) and no elemental immunities — basic sword combos and Fire/Thunder clear in seconds."
+        ],
+        "keyAttacksToWatch": [
+            "Quintuple Shot / Tonfa: Block with Guard or Battle Stance to build early Buster Sword Proficiency."
+        ],
+        "killSteps": [
+            "Activate Battle Stance, block or sidestep the Sentry's Tonfa swing, and land Strong Attack.",
+            "Sweep groups with Assault Twister or basic combos."
+        ],
+        "proTip": "Later on, M1-1-1 is the #1 AFK DMW mastering mission: equip 4x boost Materia + Regen/Auto-Potion and let Sentries hit you while you earn 100% DMW."
+    },
+    "M1-1-3": {
+        "targetName": "50 Shinra Troopers (Sergeant & Chief Petty Officer)",
+        "encounterType": "Endurance Gauntlet",
+        "threatRating": "Moderate",
+        "summary": "50-wave Shinra infantry gauntlet. Bring AoE wave-clear and sustain so chip damage doesn't add up.",
+        "recommendedLoadout": {
+            "materia": ["Darkness / Assault Twister+", "Quake / Thundaga", "Aerial Drain", "Wall", "Curaga"],
+            "accessories": ["Adaman Bangle / Platinum Bangle", "Brutal", "Twisted Headband"],
+            "statTargets": "Rec Lv.30+ · HP 8,500+ · VIT 85 · SPR 85"
+        },
+        "weaknessesAndCounters": [
+            "No elemental immunities; AoE Darkness, Quake, or Assault Twister+ clears entire squads in one cast.",
+            "Raise Buster Sword Proficiency to 23%+ for Break Damage Limit on Strong Attacks."
+        ],
+        "keyAttacksToWatch": [
+            "Concentrated Gunfire & Grenades: Keep Wall active so stray shots don't stagger or chip you down."
+        ],
+        "killSteps": [
+            "Cast Wall and group troopers together by circling the perimeter.",
+            "Spam Darkness, Quake, or Assault Twister+ to wipe waves instantly.",
+            "Top off HP with Aerial Drain or Curaga between spawns until all 50 fall."
+        ],
+        "proTip": "Pairing Drain/Aerial Drain with Wall lets you clear all 50 troopers without spending items."
+    },
+    "M1-1-4": {
+        "targetName": "100 Shinra Troopers (Sergeant Major & Special Ops)",
+        "encounterType": "Endurance Gauntlet",
+        "threatRating": "Moderate",
+        "summary": "100-enemy Shinra survival gauntlet. AoE Command/Magic Materia and Regen/Drain sustain make it effortless.",
+        "recommendedLoadout": {
+            "materia": ["Darkness / Assault Twister+", "Quake / Electrocute", "Aerial Drain", "Wall", "Curaga"],
+            "accessories": ["Adaman Bangle", "Brutal", "Sprint Shoes"],
+            "statTargets": "Rec Lv.30+ · HP 8,500+ · VIT 85 · SPR 85"
+        },
+        "weaknessesAndCounters": [
+            "Troopers lack high magical/physical resistances — AoE Quake or Darkness hits every spawn simultaneously."
+        ],
+        "keyAttacksToWatch": [
+            "Crossfire & Stun Grenades: Keep moving, maintain Wall, and stay near the edges to prevent being surrounded."
+        ],
+        "killSteps": [
+            "Maintain Wall and herd enemies into tight packs.",
+            "Clear packs with Quake, Electrocute, or Darkness.",
+            "Use Aerial Drain whenever HP dips below 60% until all 100 are defeated."
+        ],
+        "proTip": "Great early-mid spot to farm SP and DMW limit triggers while building Buster Sword Proficiency."
+    },
+    "M1-1-5": {
+        "targetName": "200 Shinra Troopers (Warrant Officer & Combatant)",
+        "encounterType": "Endurance Gauntlet",
+        "threatRating": "Moderate",
+        "summary": "200-trooper endurance mission. Prioritize MP/HP sustain (Osmose/Aerial Drain/Regen) alongside fast AoE clears.",
+        "recommendedLoadout": {
+            "materia": ["Quake / Darkness", "Aerial Drain", "Wall", "Osmose / Curaga", "Assault Twister+"],
+            "accessories": ["Adaman Bangle", "Brutal", "Precious Watch / Gold Hairpin"],
+            "statTargets": "Rec Lv.32+ · HP 9,500+ · VIT 90 · SPR 90"
+        },
+        "weaknessesAndCounters": [
+            "Warrant Officers have ~94k Hard HP — Break Damage Limit (23%+ Buster Sword or Brutal) cuts clear time in half."
+        ],
+        "keyAttacksToWatch": [
+            "Multi-directional rifle volleys and grenades — never stand stationary in the center of the arena."
+        ],
+        "killSteps": [
+            "Open with Wall and circle-strafe to keep all troopers on one side of Zack.",
+            "Chain Quake/Darkness/Assault Twister+ and recover HP with Aerial Drain.",
+            "Refresh Wall every few waves until the 200-kill counter finishes."
+        ],
+        "proTip": "Clear reward is HP Up++, and Warrant Officers/Combatants feed steady SP for fusion."
+    },
+    "M1-1-6": {
+        "targetName": "1,000 Shinra Troopers (Ensign & Guard)",
+        "encounterType": "Endurance Gauntlet",
+        "threatRating": "High",
+        "summary": "The famous 1,000-trooper marathon. Bring Genji Helm (0 MP/AP) or Osmose + Quake/Electrocute/Darkness for fast clears.",
+        "recommendedLoadout": {
+            "materia": ["Quake / Electrocute", "Darkness", "Aerial Drain", "Wall", "Curaga", "Osmose"],
+            "accessories": ["Adaman Bangle", "Brutal", "Genji Helm / Soul of Thamasa", "Precious Watch"],
+            "statTargets": "Rec Lv.38+ · HP 15,000+ · VIT 110+ · SPR 110+"
+        },
+        "weaknessesAndCounters": [
+            "Ensigns reach 122,520 Hard HP — Quake + Dualcast or Costly Punch / Assault Twister+ clears waves quickly.",
+            "0-MP/AP accessories (Genji Helm, Soul of Thamasa, Black Cowl) prevent running dry mid-marathon."
+        ],
+        "keyAttacksToWatch": [
+            "Endless flanking gunfire & status/knockback hits — keep Wall up and use Aerial Drain to heal off chip damage."
+        ],
+        "killSteps": [
+            "Equip AoE clear (Quake/Electrocute/Darkness) and sustain (Wall + Aerial Drain + Curaga).",
+            "Hug one edge of the map so spawns funnel in front of you rather than behind.",
+            "Rhythmically wipe waves and refresh Wall/MP until all 1,000 troopers drop for the Mug Materia reward."
+        ],
+        "proTip": "Reward is Mug — a mandatory Materia for stealing 99x Phoenix Downs from Minerva and farming Mako/Stat Stones."
+    },
+    "M3-2-3": {
+        "targetName": "General's Tank + Support Machine",
+        "encounterType": "Multi-Target Boss",
+        "threatRating": "Moderate",
+        "summary": "Armored tank boss paired with a Support Machine that heals and buffs it. Kill the Support Machine first!",
+        "recommendedLoadout": {
+            "materia": ["Thundara / Thundaga", "High Jump", "Wall / Barrier", "Cura", "Dispel"],
+            "accessories": ["Muscle Belt", "Shinra Beta", "Earrings"],
+            "statTargets": "Rec Lv.24+ · HP 6,000+ · VIT 65 · SPR 65"
+        },
+        "weaknessesAndCounters": [
+            "Mechanical targets — Lightning spells (Thundara/Thundaga) deal heavy bonus damage.",
+            "Destroying the Support Machine immediately stops constant barrier/heal casts on the General's Tank."
+        ],
+        "keyAttacksToWatch": [
+            "Tank Cannon & Support Repairs: Dodge behind the tank's turret and eliminate the Support Machine right away."
+        ],
+        "killSteps": [
+            "Cast Barrier/Wall and immediately focus down the Support Machine with Thundara/High Jump.",
+            "Circle behind the General's Tank to avoid frontal cannon blasts.",
+            "Finish the Tank with Lightning magic and Battle Stance Strong Attacks."
+        ],
+        "proTip": "Always prioritize Support Machine adds in Shinra mech fights — removing their healing cuts the fight length by 70%."
+    },
+    "M6-6-5": {
+        "targetName": "Gaea Malboro",
+        "encounterType": "Mission Boss",
+        "threatRating": "Extreme",
+        "summary": "10★ endgame Malboro with 1.28M Hard HP, Really Bad Breath, and Ultima. Status immunity is mandatory.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Hell Firaga / Hell Blizzaga", "Status Ward", "Wall", "Curaga", "Aerial Drain"],
+            "accessories": ["Genji Shield / Super Ribbon", "Adaman Bangle", "Genji Glove / Brutal", "Ziedrich"],
+            "statTargets": "Rec Lv.75+ · HP 50,000+ · VIT 200+ · SPR 200+"
+        },
+        "weaknessesAndCounters": [
+            "Zero elemental weaknesses and huge 1.28M Hard HP — Costly Punch (99,999 dmg) is the fastest kill tool.",
+            "Super Ribbon, Genji Shield, or Status Ward + Hell-aga completely neutralizes Really Bad Breath."
+        ],
+        "keyAttacksToWatch": [
+            "Really Bad Breath: Inflicts Poison, Silence, Stop, Curse, and Stun simultaneously — fatal without status protection.",
+            "Ultima: Massive non-elemental nuke — keep Wall up and HP above 30,000."
+        ],
+        "killSteps": [
+            "Verify Ribbon/Genji Shield or Status Ward + Hell-aga is equipped before starting.",
+            "Open with Wall + Phoenix Down and circle behind Gaea Malboro.",
+            "Burst down its 1.28M HP with Costly Punch, healing with Curaga/Aerial Drain after Ultima."
+        ],
+        "proTip": "Steal or farm safely only after locking in full Stop/Status immunity."
+    },
+    "M7-6-6": {
+        "targetName": "Diatryma (Plus Magic Pot Genji Shield Encounter)",
+        "encounterType": "Mission Boss",
+        "threatRating": "Extreme",
+        "summary": "10★ mission boss Diatryma — and home of the special Magic Pot that awards the Genji Shield!",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Gil Toss", "Octaslash DMW (optional)", "Curaga", "Wall", "Aerial Drain"],
+            "accessories": ["Adaman Bangle", "Genji Glove / Brutal", "Ziedrich", "Super Ribbon"],
+            "statTargets": "Rec Lv.75+ · HP 50,000+ · VIT 200+ · SPR 200+"
+        },
+        "weaknessesAndCounters": [
+            "Diatryma hits hard physically and casts high-tier magic — Costly Punch + Wall handles it cleanly.",
+            "Magic Pot bonus encounter: Must satisfy Gil Toss → Costly Punch → 99,999 damage → Octaslash to earn Genji Shield!"
+        ],
+        "keyAttacksToWatch": [
+            "Diatryma Aerial Dive & Flare/Energy: Dodge sideways and keep Wall active.",
+            "Magic Pot Escape: Do NOT attack Magic Pot normally; perform its exact 4 requested moves."
+        ],
+        "killSteps": [
+            "Bring Gil Toss, Costly Punch, and ≥99,999 damage capability (plus Octaslash Materia if hunting Magic Pot).",
+            "For Diatryma: open with Wall + Phoenix Down, dodge its dives, and punch it down with Costly Punch.",
+            "If Magic Pot spawns in random battles, follow its prompts (Gil Toss, Costly Punch, 99,999 hit, Octaslash) to claim Genji Shield."
+        ],
+        "proTip": "Equip Octaslash DMW Materia (from M1-3-x/Shop) in M7-6-6 to boost Sephiroth's Octaslash rate when Magic Pot asks for it."
+    },
+    "M9-6-4": {
+        "targetName": "Great Malboro / Emperor Sahagin / Diatryma",
+        "encounterType": "Multi-Target Boss",
+        "threatRating": "Extreme",
+        "summary": "10★ cavern biomegauntlet housing the Genji Glove treasure chest. Bring full status immunity and Costly Punch.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Mug"],
+            "accessories": ["Genji Shield / Super Ribbon", "Adaman Bangle", "Brutal", "Ziedrich"],
+            "statTargets": "Rec Lv.80+ · HP 60,000+ · VIT 220+ · SPR 220+"
+        },
+        "weaknessesAndCounters": [
+            "Great Malboro's Bad Breath inflicts Stop/Death/ailments — Genji Shield or Super Ribbon is essential.",
+            "Costly Punch ignores high endgame VIT/SPR across all targets."
+        ],
+        "keyAttacksToWatch": [
+            "Bad Breath / Gastric Juice: Instant status lock without Ribbon/Status Ward.",
+            "Ultima / Energy from endgame mobs: Keep Wall + Phoenix Down active."
+        ],
+        "killSteps": [
+            "Grab every chest along the cavern paths (especially Genji Glove!) before fighting the boss marker.",
+            "Pop Phoenix Down + Wall, then focus down Great Malboro first with Costly Punch.",
+            "Clean up Emperor Sahagin and Diatryma using Costly Punch + Aerial Drain sustain."
+        ],
+        "proTip": "Don't forget to open the side chest for Genji Glove — it grants permanent Break Damage Limit & 100% Critical!"
+    },
+    "M9-6-5": {
+        "targetName": "Goliath & Mock Troopers A/B/C",
+        "encounterType": "Multi-Target Boss",
+        "threatRating": "Extreme",
+        "summary": "10★ final cavern gauntlet guarding SP Master. Goliath has 1.75M+ Hard HP — burst it down with Costly Punch.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Mug"],
+            "accessories": ["Genji Shield", "Genji Glove / Brutal", "Adaman Bangle", "Ziedrich"],
+            "statTargets": "Rec Lv.82+ · HP 75,000+ · VIT 230+ · SPR 230+"
+        },
+        "weaknessesAndCounters": [
+            "High endgame defenses across Goliath and Mock Troopers — Costly Punch (99,999 dmg) bypasses all armor.",
+            "Kill Mock Troopers quickly with Aerial Drain / Costly Punch so they cannot flank while you fight Goliath."
+        ],
+        "keyAttacksToWatch": [
+            "Goliath Heavy Cannon & Power Slams: Massive physical/energy bursts — stay behind Goliath with Wall + Phoenix Down up."
+        ],
+        "killSteps": [
+            "Apply Wall and Phoenix Down before engaging the boss arena.",
+            "Eliminate Mock Trooper adds quickly or kite behind Goliath to avoid crossfire.",
+            "Circle behind Goliath and loop Costly Punch + Curaga until it drops for SP Master."
+        ],
+        "proTip": "Clearing M9-6-5 rewards SP Master, which pairs with M9-5-3 SP farming for the Minerva fight."
+    },
+    "M10-1-1": {
+        "targetName": "Kactuar",
+        "targetEnemyIds": ["enemy_kactuar"],
+        "encounterType": "Mission Boss",
+        "threatRating": "Low",
+        "summary": "Nimble desert Cactoid that fires fixed-damage 1,000 Needles. Keep HP > 1,500 and rush it down.",
+        "recommendedLoadout": {
+            "materia": ["Assault Twister / High Jump", "Cura", "Barrier", "Fira / Blizzara"],
+            "accessories": ["Bronze Bangle", "Sprint Shoes", "Twisted Headband"],
+            "statTargets": "Rec Lv.15+ · HP 2,000+ · VIT 30 · SPR 30"
+        },
+        "weaknessesAndCounters": [
+            "Low HP pool; fast-startup Command Materia or basic melee combos finish Kactuar before it flees or spams Needles."
+        ],
+        "keyAttacksToWatch": [
+            "1,000 Needles: Deals fixed 1,000 damage ignoring defense — dodge sideways when it stops and shakes."
+        ],
+        "killSteps": [
+            "Keep HP above 1,500 at all times so 1,000 Needles cannot one-shot you.",
+            "Close distance with dash attacks or High Jump to interrupt its Needle windup.",
+            "Finish Kactuar quickly before Raijincho lightning adds chip your HP."
+        ],
+        "proTip": "Fixed-damage Needle attacks bypass VIT/Barrier — raw max HP is your best safety net."
+    },
+    "M10-1-2": {
+        "targetName": "Kactuar",
+        "encounterType": "Mission Boss",
+        "threatRating": "Low",
+        "summary": "Second Cactoid hunt with Raijincho & Trap support. Watch for 1,000 Needles fixed damage.",
+        "recommendedLoadout": {
+            "materia": ["High Jump / Assault Twister", "Cura", "Barrier", "Blizzara"],
+            "accessories": ["Shinra Beta", "Thunder Armlet", "Twisted Headband"],
+            "statTargets": "Rec Lv.18+ · HP 2,800+ · VIT 35 · SPR 35"
+        },
+        "weaknessesAndCounters": [
+            "Low HP; burst Kactuar immediately and avoid Raijincho's Lightning strikes."
+        ],
+        "keyAttacksToWatch": [
+            "1,000 Needles: Fixed 1,000 damage — roll sideways out of line-of-sight."
+        ],
+        "killSteps": [
+            "Maintain HP > 1,500 and rush Kactuar down first.",
+            "Dodge sideways on Needle windup and punish with High Jump / Strong Attack."
+        ],
+        "proTip": "Grab the Cursed Ring / AP Up chest along the path before ending the mission."
+    },
+    "M10-1-3": {
+        "targetName": "Kactuer",
+        "targetEnemyIds": ["enemy_kactuer"],
+        "encounterType": "Mission Boss",
+        "threatRating": "Moderate",
+        "summary": "King Cactoid boss armed with 10,000 Needles! Keep HP above 10,000 or dodge every Needle volley.",
+        "recommendedLoadout": {
+            "materia": ["Costly Punch / High Jump", "Curaga", "Wall", "Darkness"],
+            "accessories": ["Adaman Bangle / Platinum Bangle", "Brutal", "Twisted Headband"],
+            "statTargets": "Rec Lv.25+ · HP 11,000+ · VIT 55 · SPR 55"
+        },
+        "weaknessesAndCounters": [
+            "Low overall HP for its threat level — High Jump or Costly Punch ends the fight in a few clean hits.",
+            "10,000 Needles ignores VIT/Wall, so Break HP Limit (Adaman Bangle or +HP% Materia) prevents one-shots."
+        ],
+        "keyAttacksToWatch": [
+            "10,000 Needles: Fixed 10,000 damage — fatal if HP ≤ 9,999! Dodge laterally or jump over it with High Jump/Aerial Drain."
+        ],
+        "killSteps": [
+            "Boost max HP over 10,500 (via HP Up% Materia or Adaman Bangle) or bring Phoenix Down.",
+            "Track Kactuer closely and punish its pauses with High Jump or Costly Punch.",
+            "Heal immediately after any 10,000 Needles hit and finish it to earn the Cactus Thorn (Cactuar DMW)."
+        ],
+        "proTip": "Completing M10-1-3 awards Cactus Thorn, unlocking Cactuar on your DMW!"
+    },
+    "M10-2-1": {
+        "targetName": "Tonberry",
+        "encounterType": "Mission Boss",
+        "threatRating": "Low",
+        "summary": "Slow but lethal close-range stalker with Chef's Knife & Everyone's Grudge. Kite and strike from behind.",
+        "recommendedLoadout": {
+            "materia": ["High Jump", "Fira / Thundara", "Cura", "Barrier"],
+            "accessories": ["Safety Bit", "Shinra Beta", "Earrings"],
+            "statTargets": "Rec Lv.18+ · HP 3,500+ · VIT 40 · SPR 40"
+        },
+        "weaknessesAndCounters": [
+            "Very slow movement speed — ranged magic and Jump attacks hit safely without entering Chef's Knife range."
+        ],
+        "keyAttacksToWatch": [
+            "Chef's Knife / Everyone's Grudge: Heavy close-range stab & grudge damage — never trade hits face-to-face."
+        ],
+        "killSteps": [
+            "Stay out of melee range until Tonberry finishes its slow step forward.",
+            "Flank behind Tonberry and strike with High Jump or elemental spells, then back out."
+        ],
+        "proTip": "Never stand directly in front of a Tonberry; circle behind it for safe critical hits."
+    },
+    "M10-2-2": {
+        "targetName": "Tonberry",
+        "encounterType": "Mission Boss",
+        "threatRating": "Low",
+        "summary": "Swarm of Tonberries in the cavern. Avoid getting cornered by multiple Chef's Knives at once.",
+        "recommendedLoadout": {
+            "materia": ["Darkness / Assault Twister", "High Jump", "Cura", "Barrier"],
+            "accessories": ["Safety Bit", "Shinra Beta", "Muscle Belt"],
+            "statTargets": "Rec Lv.20+ · HP 4,000+ · VIT 45 · SPR 45"
+        },
+        "weaknessesAndCounters": [
+            "Slow walk speed lets you kite packs in circles and cleave them with Darkness or Assault Twister."
+        ],
+        "keyAttacksToWatch": [
+            "Chef's Knife / Everyone's Grudge: High burst if two Tonberries stab together — keep moving."
+        ],
+        "killSteps": [
+            "Kite the Tonberry group into a tight cluster.",
+            "Drop AoE Darkness/Quake or High Jump in and roll back out.",
+            "Pick off survivors from behind."
+        ],
+        "proTip": "Watch your mini-map corners so you don't back into a trailing Tonberry."
+    },
+    "M10-2-3": {
+        "targetName": "Master Tonberry",
+        "encounterType": "Mission Boss",
+        "threatRating": "Moderate",
+        "summary": "King of Tonberries with lethal Chef's Knife & Everyone's Grudge (plus optional Magic Pot encounters). Stay mobile!",
+        "recommendedLoadout": {
+            "materia": ["High Jump / Aerial Drain", "Costly Punch", "Curaga", "Wall"],
+            "accessories": ["Safety Bit / Ribbon", "Adaman Bangle", "Brutal"],
+            "statTargets": "Rec Lv.25+ · HP 8,000+ · VIT 65 · SPR 65"
+        },
+        "weaknessesAndCounters": [
+            "Slow turning speed makes back-attacks easy; Aerial Drain / High Jump dodges Chef's Knife cleanly.",
+            "Magic Pot can spawn in random encounters here — bring Jump, Fira, Gravity, and Assault Twister if hunting its DMW."
+        ],
+        "keyAttacksToWatch": [
+            "Chef's Knife & Everyone's Grudge: Massive burst at close range — dodge behind him or use Jump i-frames."
+        ],
+        "killSteps": [
+            "Apply Wall and kite Master Tonberry into open space.",
+            "Bait his Chef's Knife lunge, roll behind him, and punish with High Jump/Costly Punch.",
+            "Finish Master Tonberry to claim Tonberry's Knife and unlock Tonberry on your DMW."
+        ],
+        "proTip": "Clearing M10-2-3 awards Tonberry's Knife (Tonberry DMW). Don't attack Magic Pot if it appears — match its 4 skill requests!"
+    },
+}
+
+
+ABILITY_COUNTERS: dict[str, str] = {
+    "ultima": "Ultima (AoE non-elemental nuke): Keep Wall + high HP/SPR active and heal immediately with Curaga.",
+    "flare": "Flare (Heavy non-elemental magic): Maintain MBarrier/Wall and sprint laterally during cast.",
+    "energy": "Energy (Piercing non-elemental blasts): Sidestep continuously and counter during recovery.",
+    "exaflare": "Exaflare (Massive beam finisher): Burst the Limit Gauge down or hold Wall + Phoenix Down.",
+    "megaflare": "Megaflare (Dragon beam finisher): Break the Limit Gauge before cast completes or guard with Wall.",
+    "judgment arrow": "Judgment Arrow (Dispels Auto-Raise + massive hit): Break gauge if possible and immediately re-pop Phoenix Down.",
+    "graviga": "Graviga (% HP gravity nuke): Pair Safety Bit/Death ward or heal right away with Curaga.",
+    "gravity": "Gravity (% HP damage): Keep HP topped up so follow-up hits aren't lethal.",
+    "firaga": "Firaga (Heavy Fire AoE): Dodge out of the flame ring or equip Fire Armlet / Flame Armlet.",
+    "tri-fire": "Tri-Fire (3x homing Fire): Roll diagonally through the gaps or wear Fire-absorbing gear.",
+    "blizzaga": "Blizzaga (Ice burst): Dash clear of the frost ground telegraph; Ice-warding gear helps.",
+    "thundaga": "Thundaga (Lightning strike): Keep moving or equip Thunder/Lightning Armlet.",
+    "tri-thundaga": "Tri-Thundaga (Triple lightning orbs): Sprint laterally until all 3 bolts detonate.",
+    "electrocute": "Electrocute (Multi-hit lightning field): Stay outside the electric ring with ranged/Jump attacks.",
+    "self-destruct": "Self-Destruct (Kamikaze explosion): Burst down before low HP or dodge back / Aerial Drain to iframe.",
+    "bad breath": "Bad Breath (Multi-status cone): Equip Ribbon, Super Ribbon, or Status Ward + Hell-aga.",
+    "really bad breath": "Really Bad Breath (All-ailment + Stop): Mandatory Ribbon / Genji Shield / Status Ward + Hell-aga.",
+    "nightmare breath": "Nightmare Breath (Status/heavy breath): Dodge behind the enemy or run Status Ward.",
+    "silence gas": "Silence Gas (Inflicts Silence): Equip Status Ward, Esuna/Remedy, or rely on Command Materia (Punch/Jump).",
+    "smoke vent": "Smoke Vent (Blind/status cloud): Flank behind the mech and stay out of frontal vents.",
+    "anesthetic missile": "Anesthetic Missile (Stun/Stop risk): Dodge laterally and keep Status Ward/Ribbon on.",
+    "anti-ap field": "Anti-AP Field (Drains AP): Lean on Magic/Costly Punch or carry Soma/Genji Helm.",
+    "anti-mp field": "Anti-MP Field (Drains MP): Rely on Command Materia (Costly Punch/Aerial Drain) or Ethers.",
+    "osmose": "Osmose (MP drain): Bring Ethers or 0-MP gear like Genji Helm.",
+    "drain": "Drain (HP leech): Out-DPS with Costly Punch or interrupt with Battle Stance Strong Attack.",
+    "curaga": "Curaga (Boss self-heal): Pressure relentlessly with Break Damage Limit so it cannot stall.",
+    "cura": "Cura (Boss heal): Interrupt cast animations with Strong Attacks or Jump.",
+    "wall": "Wall (Boss casts Barrier + MBarrier): Cast Dispel immediately or pierce it with Costly Punch / Buster Sword 47%+.",
+    "barrier": "Barrier (Halves physical damage): Strip with Dispel, switch to Magic, or pierce with Costly Punch.",
+    "mbarrier": "MBarrier (Halves magic damage): Strip with Dispel or switch to physical Command attacks.",
+    "dispel": "Dispel (Removes Zack's Wall/Barrier): Reapply Wall right after getting hit.",
+    "blast shot": "Blast Shot (Heavy shot + Stun/Silence): Roll sideways when cannon locks on.",
+    "shinra type-100 cannon": "Shinra Type-100 Cannon (Heavy beam): Strafe behind the turret and punish the long cooldown.",
+    "quintuple shot": "Quintuple Shot (5-hit gunfire): Guard with Buster Sword Stance or dodge behind cover.",
+    "blood spiller": "Blood Spiller (Multi-slash): Guard or back-dash, then counter-hit.",
+    "combo attack": "Combo Attack (Melee flurry): Block in Battle Stance or roll behind their back.",
+    "drill attack": "Drill Attack (Spinning rush): Sidestep the charge line and attack the rear.",
+    "1,000 needles": "1,000 Needles (Fixed 1,000 dmg): Keep HP > 1,500 and sidestep.",
+    "10,000 needles": "10,000 Needles (Fixed 10,000 dmg): Break HP Limit (> 10k HP) or dodge/Jump.",
+    "chef's knife": "Chef's Knife (Heavy close stab): Kite and strike only from behind.",
+    "everyone's grudge": "Everyone's Grudge (Burst counter): Keep Wall up and avoid trading head-on.",
+}
+
+
+def _select_boss_targets(mission: dict[str, Any], enemy_by_id: dict[str, dict[str, Any]]) -> list[dict[str, Any]]:
+    boss_ids = list(dict.fromkeys(mission.get("bossEnemyIds") or []))
+    if boss_ids:
+        if mission["id"] == "M5-2-2" and "enemy_sephiroth" in boss_ids:
+            boss_ids = ["enemy_sephiroth"] + [eid for eid in boss_ids if eid != "enemy_sephiroth"]
+        return [enemy_by_id[eid] for eid in boss_ids if eid in enemy_by_id]
+
+    rand_ids = list(dict.fromkeys(mission.get("randomEnemyIds") or []))
+    cands = [enemy_by_id[eid] for eid in rand_ids if eid in enemy_by_id and eid != "enemy_magic_pot"]
+    if not cands:
+        cands = [enemy_by_id[eid] for eid in rand_ids if eid in enemy_by_id]
+    if not cands:
+        return []
+
+    title_desc = f"{mission.get('title', '')} {mission.get('description', '')}".lower()
+    named = [e for e in cands if len(e["name"]) >= 4 and e["name"].lower() in title_desc]
+    if named:
+        named.sort(key=lambda e: (e["stats"].get("hpHard") or 0, e["stats"].get("level") or 0), reverse=True)
+        return named[:4]
+
+    cands.sort(key=lambda e: (e["stats"].get("hpHard") or 0, e["stats"].get("level") or 0), reverse=True)
+    top_hp = cands[0]["stats"].get("hpHard") or 0
+    if mission["id"] in ("M1-1-3", "M1-1-4", "M1-1-5", "M1-1-6"):
+        return cands[:2]
+    same_tier = [e for e in cands if (e["stats"].get("hpHard") or 0) == top_hp]
+    if len(same_tier) > 1:
+        return same_tier[:4]
+    return [cands[0]]
+
+
+def _build_synthesized_boss_guide(
+    mission: dict[str, Any],
+    targets: list[dict[str, Any]],
+    enemy_by_id: dict[str, dict[str, Any]],
+    item_by_id: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    primary = targets[0]
+    stars = mission.get("stars", 5)
+    bm = mission.get("hardModeBenchmarks") or {}
+    rec_lv = bm.get("recommendedLevel") or 1
+    rec_hp = bm.get("hp") or 1500
+    rec_vit = bm.get("vit") or 20
+    rec_spr = bm.get("spr") or 20
+
+    target_ids = [e["id"] for e in targets]
+    target_name = (
+        primary["name"]
+        if len(targets) == 1
+        else " + ".join(e["name"] for e in targets[:3]) + (f" (+{len(targets) - 3} more)" if len(targets) > 3 else "")
+    )
+    max_hp = max((e["stats"].get("hpHard") or 0) for e in targets)
+
+    if mission["id"] == "M9-6-6":
+        enc_type = "Superboss"
+    elif mission["id"] in ("M1-1-3", "M1-1-4", "M1-1-5", "M1-1-6"):
+        enc_type = "Endurance Gauntlet"
+    elif mission["branch"] == "M5" or mission["id"] in ("M8-1-1", "M8-1-4", "M8-5-6", "M3-1-3", "M3-2-4", "M3-2-6", "M4-1-2"):
+        enc_type = "Story Boss"
+    elif len(targets) > 1:
+        enc_type = "Multi-Target Boss"
+    elif mission.get("bossEnemyIds"):
+        enc_type = "Mission Boss"
+    else:
+        enc_type = "Primary Target"
+
+    if stars >= 9 or max_hp >= 500000:
+        threat = "Extreme"
+    elif stars >= 7 or max_hp >= 180000:
+        threat = "High"
+    elif stars >= 4 or max_hp >= 40000:
+        threat = "Moderate"
+    else:
+        threat = "Low"
+
+    # Aggregate affinities & stats across target(s)
+    weaks: list[str] = []
+    avoid_elems: list[str] = []
+    immunes: list[str] = []
+    all_abilities: list[str] = []
+    for e in targets:
+        aff = e.get("affinities") or {}
+        for w in aff.get("weak", []):
+            if w not in weaks:
+                weaks.append(w)
+        for av in aff.get("absorb", []) + aff.get("null", []) + aff.get("resist", []):
+            if av not in avoid_elems:
+                avoid_elems.append(av)
+        for im in aff.get("immune", []):
+            if im not in immunes:
+                immunes.append(im)
+        for ab in e.get("abilities", []):
+            if ab not in all_abilities:
+                all_abilities.append(ab)
+
+    p_stats = primary.get("stats") or {}
+    p_vit = p_stats.get("vit") or 0
+    p_spr = p_stats.get("spr") or 0
+
+    weaknesses_counters: list[str] = []
+    elem_spell_map = {
+        "Fire": ("Fira / Firaga", "Fire"),
+        "Ice": ("Blizzara / Blizzaga", "Ice"),
+        "Lightning": ("Thundara / Thundaga", "Lightning"),
+        "Water": ("Water / Watera", "Water"),
+    }
+    if weaks:
+        recs = [f"{w} ({elem_spell_map.get(w, (w + ' Magic', w))[0]})" for w in weaks]
+        weaknesses_counters.append(f"Elemental Weaknesses: Hit with {', '.join(recs)} for bonus damage and faster staggers.")
+    else:
+        weaknesses_counters.append("No elemental weaknesses — rely on non-elemental Command Materia or physical crits from behind.")
+
+    if avoid_elems:
+        weaknesses_counters.append(f"Elemental Warning: Resists/Absorbs/Nulls {', '.join(avoid_elems)} — keep those elements off your loadout.")
+
+    if p_vit >= 90 and p_spr >= 90:
+        weaknesses_counters.append(
+            f"High Hard Mode Defenses (VIT {p_vit} / SPR {p_spr}): Use defense-ignoring Costly Punch, Graviga, or Buster Sword 47%+ Barrier Pierce."
+        )
+    elif p_vit > p_spr * 1.25 and p_vit >= 30:
+        weaknesses_counters.append(
+            f"Physical Tank (VIT {p_vit} vs SPR {p_spr}): Magic attacks (Firaga/Blizzaga/Electrocute/Energy) or Costly Punch outperform basic slashes."
+        )
+    elif p_spr > p_vit * 1.25 and p_spr >= 30:
+        weaknesses_counters.append(
+            f"Magic Resistant (SPR {p_spr} vs VIT {p_vit}): Physical Command Materia (High Jump, Aerial Drain, Assault Twister+, Battle Stance) hits hardest."
+        )
+    else:
+        weaknesses_counters.append(
+            f"Balanced Defenses (VIT {p_vit} / SPR {p_spr}): Back-attacks with Battle Stance Strong Attack or your highest-stat Materia melt HP cleanly."
+        )
+
+    if "Stop" not in immunes and stars <= 8:
+        weaknesses_counters.append("Not listed as Stop-immune: Stop Blade or Hell-aga Materia can lock the target in place.")
+    elif "Death" not in immunes and stars <= 7 and not mission.get("bossEnemyIds"):
+        weaknesses_counters.append("Not Death-immune: Hell Firaga / Hell Blizzaga / Hell Thundaga (+ Status Strike) can trigger instant-kill procs.")
+    elif immunes:
+        weaknesses_counters.append(f"Status/Effect Immunities: {', '.join(immunes[:6])}.")
+
+    # Key attacks
+    attacks_watch: list[str] = []
+    has_status_hazard = False
+    has_buff_hazard = False
+    for ab in all_abilities:
+        low_ab = ab.lower()
+        if any(k in low_ab for k in ("breath", "silence", "smoke", "anesthetic", "poison", "stop", "stun", "death")):
+            has_status_hazard = True
+        if any(k in low_ab for k in ("wall", "barrier", "mbarrier", "curaga", "cura")):
+            has_buff_hazard = True
+        matched = ABILITY_COUNTERS.get(low_ab)
+        if matched and matched not in attacks_watch:
+            attacks_watch.append(matched)
+        elif len(attacks_watch) < 4:
+            attacks_watch.append(f"{ab}: Watch the windup animation, dodge diagonally behind {primary['name']}, and punish recovery.")
+        if len(attacks_watch) >= 4:
+            break
+    if not attacks_watch:
+        attacks_watch.append(
+            f"Standard {primary['family']} melee & ranged volleys: Guard in Battle Stance or roll behind {primary['name']} before countering."
+        )
+
+    # Star-scaled Materia & Accessories
+    if stars <= 2:
+        mat_list = ["Cure / Cura", "Barrier", "Assault Twister", "Libra"]
+        acc_list = ["Bronze Bangle", "Earrings / Muscle Belt"]
+        opener = "Cast Barrier if needed, lock on, and circle behind the target."
+        damage_loop = "Weave Battle Stance Strong Attacks and Assault Twister into the enemy's back for guaranteed crits."
+    elif stars <= 4:
+        mat_list = ["Cura", "Barrier / Wall", "High Jump", "Assault Twister"]
+        acc_list = ["Shinra Beta", "Muscle Belt", "Earrings"]
+        opener = "Open with Barrier (or Wall) so Hard Mode hits stay manageable."
+        damage_loop = "Use High Jump to dodge telegraphed swings and follow with Battle Stance or elemental weakness spells."
+    elif stars <= 6:
+        mat_list = ["Curaga", "Wall", "High Jump / Aerial Drain", "Darkness"]
+        acc_list = ["Adaman Bangle (or Platinum Bangle)", "Shinra Alpha", "Force Bracelet / Champion Belt"]
+        opener = "Cast Wall right away and equip Break HP Limit (Adaman Bangle from M7-3-6) if available."
+        damage_loop = "Clear surrounding adds with Darkness/Quake, then focus the boss with Aerial Drain or High Jump back-attacks."
+    elif stars <= 8:
+        mat_list = ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Mug"]
+        acc_list = ["Adaman Bangle", "Brutal", "Ziedrich / Shinra Alpha", "Brigand's Gloves"]
+        opener = "Apply Wall (and Phoenix Down for safety) before closing in."
+        damage_loop = "Flank behind the target and loop Costly Punch (99,999 dmg w/ Brutal) and Aerial Drain for invincibility + full heals."
+    else:
+        mat_list = ["Costly Punch", "Aerial Drain", "Curaga", "Wall", "Mug"]
+        acc_list = ["Adaman Bangle", "Genji Glove / Brutal", "Genji Shield / Super Ribbon", "Genji Helm / Ziedrich"]
+        opener = "Pop Phoenix Down (Auto-Raise) + Wall at second zero — 9–10★ Hard Mode enemies can spike 20k+ damage."
+        damage_loop = "Stay behind the boss, dodge heavy casts laterally, and loop Costly Punch + Aerial Drain until HP hits zero."
+
+    if weaks:
+        spell_rec = elem_spell_map.get(weaks[0], (f"{weaks[0]} Magic", weaks[0]))[0]
+        if spell_rec not in mat_list:
+            mat_list.insert(2, spell_rec)
+    if has_status_hazard:
+        if "Status Ward" not in mat_list:
+            mat_list.append("Status Ward")
+        if stars >= 5 and not any("Ribbon" in a for a in acc_list):
+            acc_list.append("Ribbon / Super Ribbon")
+    if has_buff_hazard and "Dispel" not in mat_list:
+        mat_list.append("Dispel")
+
+    kill_steps = [
+        f"Prep & Opener: {opener}",
+        f"Core Kill Loop: {damage_loop}",
+        f"Counter Hazards: {attacks_watch[0]}",
+    ]
+    if len(targets) > 1:
+        kill_steps.append(
+            f"Multi-Target Priority: Focus down one target at a time (starting with {primary['name']} or any healer/support unit) to stop crossfire."
+        )
+
+    # Check notable loot or Magic Pot spawn for step 4 / Pro Tip
+    all_mission_eids = set((mission.get("bossEnemyIds") or []) + (mission.get("randomEnemyIds") or []))
+    rare_steal_id = (primary.get("loot") or {}).get("rareSteal")
+    rare_drop_id = (primary.get("loot") or {}).get("rareDrop")
+    rare_steal_name = item_by_id[rare_steal_id]["name"] if rare_steal_id in item_by_id else None
+    rare_drop_name = item_by_id[rare_drop_id]["name"] if rare_drop_id in item_by_id else None
+
+    if "enemy_magic_pot" in all_mission_eids and mission["id"] != "M7-6-6":
+        pro_tip = "Bonus Magic Pot spawns in random encounters here! Don't kill it — perform its 4 requested skills/spells to earn rare rewards."
+    elif rare_steal_name:
+        pro_tip = f"{primary['name']} carries {rare_steal_name} as a Rare Steal — weave a Mug (w/ Brigand's Gloves + Mog's Amulet) before landing the killing blow."
+    elif rare_drop_name:
+        pro_tip = f"Equip Mog's Amulet (Sector 7 Shop, M4-4-3) to guarantee {primary['name']}'s Rare Drop: {rare_drop_name}."
+    elif stars >= 7:
+        pro_tip = "Raise Buster Sword Proficiency to 23% (Break Damage Limit) and 47% (Barrier Pierce) so Battle Stance slices straight through Hard Mode guards."
+    else:
+        pro_tip = "Use Buster Sword Battle Stance + Perfect Guard on telegraphed hits to build Proficiency while dealing heavy counter damage."
+
+    summary = (
+        f"Defeat {target_name} (Lv.{p_stats.get('level') or '?'}, {max_hp:,} Hard HP). "
+        + (f"Weak to {', '.join(weaks)}. " if weaks else "No elemental weakness; ")
+        + (f"Watch for {all_abilities[0]}." if all_abilities else "Flank from behind and punish recovery.")
+    )
+
+    return {
+        "targetName": target_name,
+        "targetEnemyIds": target_ids,
+        "encounterType": enc_type,
+        "threatRating": threat,
+        "summary": summary,
+        "recommendedLoadout": {
+            "materia": mat_list[:6],
+            "accessories": acc_list[:4],
+            "statTargets": f"Rec Lv.{rec_lv} · HP {rec_hp:,} · VIT {rec_vit} · SPR {rec_spr}",
+        },
+        "weaknessesAndCounters": weaknesses_counters,
+        "keyAttacksToWatch": attacks_watch,
+        "killSteps": kill_steps,
+        "proTip": pro_tip,
+    }
+
+
+def attach_mission_boss_guides(
+    missions: list[dict[str, Any]],
+    enemies: list[dict[str, Any]],
+    items: dict[str, dict[str, Any]],
+) -> None:
+    enemy_by_id = {e["id"]: e for e in enemies}
+    for m in missions:
+        targets = _select_boss_targets(m, enemy_by_id)
+        if not targets:
+            raise RuntimeError(f"Mission {m['id']} has no enemies to build bossGuide")
+        synth = _build_synthesized_boss_guide(m, targets, enemy_by_id, items)
+        curated = CURATED_BOSS_GUIDES.get(m["id"])
+        if curated:
+            guide = {
+                "targetName": curated["targetName"],
+                "targetEnemyIds": curated.get("targetEnemyIds") or synth["targetEnemyIds"],
+                "encounterType": curated["encounterType"],
+                "threatRating": curated["threatRating"],
+                "summary": curated["summary"],
+                "recommendedLoadout": curated["recommendedLoadout"],
+                "weaknessesAndCounters": curated["weaknessesAndCounters"],
+                "keyAttacksToWatch": curated["keyAttacksToWatch"],
+                "killSteps": curated["killSteps"],
+                "proTip": curated["proTip"],
+            }
+        else:
+            guide = synth
+        m["bossGuide"] = guide
+        if not m["bossEnemyIds"] and guide.get("targetEnemyIds"):
+            m["bossEnemyIds"] = list(guide["targetEnemyIds"])
+            m["randomEnemyIds"] = [eid for eid in m.get("randomEnemyIds", []) if eid not in m["bossEnemyIds"]]
+            for beid in m["bossEnemyIds"]:
+                en = enemy_by_id.get(beid)
+                if not en:
+                    continue
+                existing_sp = next((sp for sp in en["spawns"] if sp["missionId"] == m["id"]), None)
+                if existing_sp:
+                    existing_sp["role"] = "boss"
+                else:
+                    en["spawns"].append({"missionId": m["id"], "role": "boss"})
+
 
 def build_guides_json() -> dict[str, Any]:
     return {
@@ -1461,18 +2586,7 @@ def build_guides_json() -> dict[str, Any]:
             {"id": "dmw_moogle", "name": "Moogle", "group": "Chocobo Mode", "limitBreak": "Moogle Power", "unlockCondition": "Clear Mission M8-4-4 (Suspicious Mail 4)", "missionId": "M8-4-4", "missable": False, "boostMateriaId": "item_moogle_power"},
             {"id": "dmw_magic_pot", "name": "Magic Pot", "group": "Chocobo Mode", "limitBreak": "Item Mugger", "unlockCondition": "Satisfy Magic Pot in M10-2-3 (Jump -> Fira -> Gravity -> Assault Twister)", "missionId": "M10-2-3", "missable": False, "boostMateriaId": "item_item_mugger"},
         ],
-        "missablesByChapter": [
-            {"id": "miss_ch1_fort_tamblin", "chapter": "Chapter 1", "title": "Hero of the Wutai War? (All 16 Groups)", "category": "Trophy / Gear", "detail": "In Fort Tamblin Courtyard, defeat all 16 enemy groups (including rotating walls & watchtowers) to receive the top evaluation from Lazard.", "missionId": None},
-            {"id": "miss_ch1_cursed_ring", "chapter": "Chapter 1", "title": "Cursed Ring (Supply Pod)", "category": "Accessory", "detail": "Before departing for Wutai, inspect the Supply Pod 20 times in the Training Room/briefing area to receive Cursed Ring.", "missionId": None},
-            {"id": "miss_ch2_mako_miner", "chapter": "Chapter 2", "title": "Master Mako Stone Miner / Materia Room", "category": "Trophy", "detail": "Complete all Materia Room mini-requests in Shinra Building before progressing to Banora.", "missionId": None},
-            {"id": "miss_ch2_fan_clubs", "chapter": "Chapter 2–3", "title": "Join 3 Fan Clubs (Genesis, Angeal, LOVELESS)", "category": "Mail Senders", "detail": "Talk to the fans in Sector 8 Fountain & Loveless Avenue in Ch. 2 or Ch. 3 (last chance!) for Mail Completionist.", "missionId": None},
-            {"id": "miss_ch4_minigames", "chapter": "Chapter 4", "title": "Aerith Affection & Sector 5/8 Mini-Games", "category": "Trophies", "detail": "Win Perfume Blending 3x perfectly, Number Guessing, Wallet Catch, and Spy Catching before leaving Midgar.", "missionId": None},
-            {"id": "miss_ch5_reporter_silver", "chapter": "Chapter 5", "title": "Reporter Mail & Silver Elite Mission NPC", "category": "Missions & Mail", "detail": "Do NOT report the Sector 8 Reporter; answer his quiz. Talk to the Shinra Entrance employee for Silver Elite missions & mail.", "missionId": None},
-            {"id": "miss_ch6_cissnei_mail", "chapter": "Chapter 6", "title": "Zack Fan Club (Talk to Cissnei in Junon)", "category": "Mail Senders", "detail": "After Junon Defense, speak to Cissnei before leaving Junon; then finish with the Shinra receptionist in Ch. 7.", "missionId": None},
-            {"id": "miss_ch7_point_of_no_return", "chapter": "Chapter 7 (CRITICAL)", "title": "Midgar Point of No Return — All 16 NPC Mission Chains", "category": "Point of No Return", "detail": "Leaving Midgar at the end of Ch. 7 permanently locks all Midgar NPC mission givers (M1-2-x, M2-1-x, M2-2-x, M4-3-x, M6-2-x, M7-1-x), Flower Wagon, and Fan Club mail!", "missionId": "M6-2-1"},
-            {"id": "miss_ch8_phoenix", "chapter": "Chapter 8", "title": "Phoenix DMW Summon (Nibelheim Water Tower)", "category": "MISSABLE DMW", "detail": "Talk to the boy near the Nibelheim Inn to start Seven Wonders, then examine the Water Tower to earn Phoenix. Only missable DMW!", "missionId": None},
-            {"id": "miss_ch9_qmc_plus", "chapter": "Chapter 9", "title": "Research Dept. QMC+ Shop (Gongaga Chest)", "category": "MISSABLE SHOP", "detail": "Open the hidden chest in Gongaga Village outskirts in Ch. 9/10 to unlock Research Dept. QMC+ before the final dungeon.", "missionId": None},
-        ],
+        "missablesByChapter": EXPANDED_MISSABLES,
         "sections": [
             {
                 "id": "guide_exp_leveling",
@@ -1521,13 +2635,14 @@ def build_guides_json() -> dict[str, Any]:
             },
             {
                 "id": "guide_magic_pot",
-                "title": "5. Magic Pot Complete Encounters Guide",
+                "title": "5. Magic Pot Complete Encounters Guide (All 6 Missions)",
                 "badge": "Genji Shield",
-                "summary": "Exact locations and attack sequences for every Magic Pot encounter, including M10-2-3 (DMW) and M7-6-6 (Genji Shield).",
-                "refs": {"missions": ["M10-2-3", "M7-6-6", "M2-2-6", "M2-5-4"], "items": ["item_genji_shield", "item_costly_punch", "item_gil_toss", "item_octaslash"]},
+                "summary": "Exact locations and attack sequences for all 6 Magic Pot encounters: M10-2-3 (DMW), M7-6-6 (Genji Shield), M2-2-6, M2-5-4, M2-5-5, and M2-5-6.",
+                "refs": {"missions": ["M10-2-3", "M7-6-6", "M2-2-6", "M2-5-4", "M2-5-5", "M2-5-6"], "items": ["item_genji_shield", "item_costly_punch", "item_gil_toss", "item_octaslash", "item_ultima"]},
                 "blocks": [
                     {"heading": "M10-2-3: Unlock Magic Pot DMW (Do This First!)", "body": "Equip Jump, Fira, Gravity, and Assault Twister. Enter M10-2-3 (Master Tonberry), dodge Tonberries until Magic Pot appears, do NOT attack it blindly—wait for its speech bubbles and cast Jump -> Fira -> Gravity -> Assault Twister in order."},
-                    {"heading": "M7-6-6: Obtain Genji Shield", "body": "Equip Gil Toss, Costly Punch, Break Damage Limit (Brutal/Genji Glove/Buster Sword 23%+), and Octaslash Materia (Research Dept. QMC+). In M7-6-6, perform: Gil Toss -> Costly Punch -> 99,999 Damage -> Octaslash DMW. (Note: M2-2-6 & M2-5-4 also host early Magic Pots requesting Blizzard/Fire/Thunder/Gravity or Ultima.)"},
+                    {"heading": "M7-6-6: Obtain Genji Shield", "body": "Equip Gil Toss, Costly Punch, Break Damage Limit (Brutal/Genji Glove/Buster Sword 23%+), and Octaslash Materia (Research Dept. QMC+). In M7-6-6, perform: Gil Toss -> Costly Punch -> 99,999 Damage -> Octaslash DMW."},
+                    {"heading": "M2-2-6, M2-5-4, M2-5-5 & M2-5-6 Bonus Encounters", "body": "M2-2-6 requests Blizzard -> Fire -> Thunder -> Gravity. M2-5-4 requests Ultima -> Tri-Fire -> Iron Fist -> Electrocute. M2-5-5 requests Ultima -> Tri-Thundaga -> Electrocute -> Flare. M2-5-6 requests Flare -> Energy -> Ultima -> Costly Punch. See the Story & Side-Quests tab for interactive checklists!"},
                 ],
             },
             {
@@ -2140,40 +3255,62 @@ def build_guides_json() -> dict[str, Any]:
     }
 
 
-def build_fusion_rules_json() -> dict[str, Any]:
-    return {
-        "statCategories": ["HP%", "MP%", "AP%", "ATK", "VIT", "MAG", "SPR", "LCK"],
-        "rulesNotes": [
-            "Consumables (Potion, Hi-Potion, X-Potion, Ether, Soma, Elixir) ONLY amplify an existing matching stat bonus on one of the fused Materia. On two +0 Materia they add +0.",
-            "Mako Stones add +1 per 5 stones (max +40) or +10% per 5 stones (max +400%).",
-            "Stat Stones add +1 per 3 stones (max +66) or +10% per 3 stones (max +660%).",
-            "Max-tier fusion items (Hero Drink, Adamantite, Dark Matter, Mythril, Gysahl Greens, Fat Chocobo Feather, Lunar Harp, Zeio Nut) add +1 (max +100) or +10% (max +999%) per item.",
-            "When building a Libra transfer Materia, stop at +98 (or +980% HP) so it remains open to item conversion during final fusion.",
-        ],
-        "keyRecipes": [
-            {"result": "Costly Punch", "resultId": "item_costly_punch", "ingredientA": "Goblin Punch / Iron Fist / Magical Punch", "ingredientB": "Any DMW Materia (or Libra w/ +980% HP)", "note": "Hard Mode MVP: ignores defense, 99,999 damage at high HP."},
-            {"result": "Magical Punch", "resultId": "item_magical_punch", "ingredientA": "Goblin Punch", "ingredientB": "Firaga / Blizzaga / Thundaga", "note": "Strong midgame bridge into Costly Punch."},
-            {"result": "Aerial Drain", "resultId": "item_aerial_drain", "ingredientA": "High Jump", "ingredientB": "Drain / Osmose / Assault Twister", "note": "Grants invincibility frames during jump and heals to full HP."},
-            {"result": "High Jump", "resultId": "item_high_jump", "ingredientA": "Jump", "ingredientB": "Darkness / Assault Twister", "note": "Upgraded jump; prerequisite for Aerial Drain."},
-            {"result": "Darkness", "resultId": "item_darkness", "ingredientA": "Assault Twister / Jump", "ingredientB": "Drain / Gravity / Dark Fire", "note": "Fast midgame AoE HP-cost wave clear."},
-            {"result": "Assault Twister+", "resultId": "item_assault_twister_plus", "ingredientA": "Assault Twister (M)", "ingredientB": "Vitality Up / Status Strike", "note": "Multi-hit spin attack; strong early Command Materia."},
-            {"result": "Curaga", "resultId": "item_curaga", "ingredientA": "Cura", "ingredientB": "HP Up / Libra / Barrier", "note": "Full-heal staple; fuse with Potions/Feathers for +999% HP."},
-            {"result": "Wall", "resultId": "item_wall", "ingredientA": "Barrier", "ingredientB": "MBarrier", "note": "Applies both Barrier and MBarrier in one cast."},
-            {"result": "Hell Blizzaga", "resultId": "item_hell_blizzaga", "ingredientA": "Blizzaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
-            {"result": "Hell Firaga", "resultId": "item_hell_firaga", "ingredientA": "Firaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
-            {"result": "Hell Thundaga", "resultId": "item_hell_thundaga", "ingredientA": "Thundaga", "ingredientB": "Status Strike / Poison / Silence / Stop", "note": "Pair with Status Ward for multi-ailment immunity + AoE Death."},
-            {"result": "Status Ward", "resultId": "item_status_ward", "ingredientA": "Buy: Wutai Secret Shop (M4-2-6, 40k Gil)", "ingredientB": "Or Esuna + Libra / Dispel", "note": "Protects against all statuses listed on paired Hell-aga Materia."},
-            {"result": "Dualcast", "resultId": "item_dualcast", "ingredientA": "Buy: Online Shop Shade (M9-5-4)", "ingredientB": "Or High-Rank Magic + Ultima/Energy", "note": "Casts equipped Magic Materia twice per turn."},
-            {"result": "Electrocute", "resultId": "item_electrocute", "ingredientA": "Thundaga (M)", "ingredientB": "Graviga / Flare / Energy", "note": "Massive multi-hit lightning magic burst."},
-            {"result": "Energy", "resultId": "item_energy", "ingredientA": "Graviga / Flare", "ingredientB": "Status Ward / Dualcast / Libra", "note": "Non-elemental piercing magic; strong with Dualcast."},
-            {"result": "Quake", "resultId": "item_quake", "ingredientA": "Graviga", "ingredientB": "Assault Twister+ / Darkness", "note": "Fast screen-wide AoE magic for farming."},
-            {"result": "Ultima", "resultId": "item_ultima", "ingredientA": "Flare / Energy / Tri-Thundaga", "ingredientB": "DMW Materia / Libra", "note": "Highest single-cast AoE magic burst."},
-            {"result": "Tri-Thundaga", "resultId": "item_tri_thundaga", "ingredientA": "Thundaga (M)", "ingredientB": "Steal: Three Stars (M9-5-3)", "note": "Triple lightning orbs; great for fusion rank ups."},
-            {"result": "Mug", "resultId": "item_mug", "ingredientA": "Steal", "ingredientB": "Assault Twister / Vital Slash", "note": "Deals damage while stealing; essential for Minerva 99x Phoenix Downs."},
-            {"result": "Gil Toss", "resultId": "item_gil_toss", "ingredientA": "Reward: M7-4-2 / M4-5-2", "ingredientB": "Command + Libra", "note": "Required for M7-6-6 Magic Pot (Genji Shield)."},
-            {"result": "SP Master", "resultId": "item_sp_master", "ingredientA": "Reward: M9-6-5", "ingredientB": "SP Turbo + SP Barrier", "note": "Boosts damage & defense at SP cost; ideal with M9-5-3 SP farm."},
-        ],
-    }
+def build_fusion_rules_json(fusion_txt: str = "", items: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
+    return build_full_fusion_rules(fusion_txt, items or {})
+
+
+def download_enemy_portraits(enemies: list[dict[str, Any]]) -> tuple[int, int, int]:
+    """Downloads compact Fandom thumbnails locally so the PWA works 100% offline."""
+    out_dir = PORTRAITS_DIR / "enemies"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    def _to_thumb_url(raw_url: str) -> str:
+        if not raw_url:
+            return ""
+        if "/revision/latest" in raw_url and "scale-to-width-down" not in raw_url:
+            return raw_url.replace("/revision/latest", "/revision/latest/scale-to-width-down/220", 1)
+        return raw_url
+
+    def _fetch_one(en: dict[str, Any]) -> tuple[str, str | None, bool]:
+        eid = en["id"]
+        url = _to_thumb_url(en["portrait"].get("imageUrl", ""))
+        if not url:
+            return eid, None, False
+        ext_m = re.search(r"\.(png|jpe?g|webp|gif)(?:\?|$|/)", en["portrait"].get("imageFile", "") or url, flags=re.I)
+        ext = f".{ext_m.group(1).lower()}" if ext_m else ".png"
+        if ext == ".jpeg":
+            ext = ".jpg"
+        dest = out_dir / f"{eid}{ext}"
+        rel_path = f"games/crisis-core-reunion/assets/portraits/enemies/{eid}{ext}"
+        if dest.exists() and dest.stat().st_size > 200:
+            return eid, rel_path, True
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) PersonalGameWikiHub/4.0",
+                "Referer": "https://finalfantasy.fandom.com/",
+            })
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = resp.read()
+            if data and len(data) > 200:
+                dest.write_bytes(data)
+                return eid, rel_path, True
+        except Exception:
+            pass
+        return eid, None, False
+
+    ok = 0
+    fail = 0
+    by_id = {e["id"]: e for e in enemies}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(_fetch_one, en) for en in enemies]
+        for fut in as_completed(futures):
+            eid, rel_path, success = fut.result()
+            if success and rel_path:
+                by_id[eid]["portrait"]["localPath"] = rel_path
+                ok += 1
+            else:
+                fail += 1
+    return ok, fail, len(enemies)
 
 
 def make_png_rgba(width: int, height: int, pixel_fn) -> bytes:
@@ -2282,6 +3419,10 @@ def validate_dataset(data_dir: Path) -> None:
     shops = json.loads((data_dir / "shops.json").read_text(encoding="utf-8"))
     guides = json.loads((data_dir / "guides.json").read_text(encoding="utf-8"))
     fusion_rules = json.loads((data_dir / "fusion-rules.json").read_text(encoding="utf-8"))
+    extra_path = data_dir / "compendium-extra.json"
+    if not extra_path.exists():
+        raise SystemExit("Validation FAILED: missing compendium-extra.json")
+    extra = json.loads(extra_path.read_text(encoding="utf-8"))
 
     errors: list[str] = []
 
@@ -2325,9 +3466,15 @@ def validate_dataset(data_dir: Path) -> None:
                 errors.append(f"Broken mission ref {sp['missionId']} in enemy {en['id']}")
 
     no_enemy_missions = []
+    missing_boss_guides = []
     for m in missions:
+        if not m.get("bossEnemyIds"):
+            errors.append(f"Mission {m['id']} has empty bossEnemyIds")
         if not m.get("bossEnemyIds") and not m.get("randomEnemyIds"):
             no_enemy_missions.append(m["id"])
+        for pm in m.get("prerequisiteMissionIds", []):
+            if pm not in mission_ids:
+                errors.append(f"Broken prerequisiteMissionId {pm} in mission {m['id']}")
         cr = m.get("clearReward")
         if cr and cr.get("itemId") not in item_ids:
             errors.append(f"Broken clearReward {cr.get('itemId')} in mission {m['id']}")
@@ -2337,6 +3484,27 @@ def validate_dataset(data_dir: Path) -> None:
         for eid in m.get("bossEnemyIds", []) + m.get("randomEnemyIds", []):
             if eid not in enemy_ids:
                 errors.append(f"Broken enemy ref {eid} in mission {m['id']}")
+        bg = m.get("bossGuide")
+        if not isinstance(bg, dict):
+            missing_boss_guides.append(m["id"])
+        else:
+            for req_str in ("targetName", "encounterType", "threatRating", "summary", "proTip"):
+                if not str(bg.get(req_str) or "").strip():
+                    errors.append(f"Missing bossGuide.{req_str} in mission {m['id']}")
+            t_ids = bg.get("targetEnemyIds") or []
+            if not t_ids:
+                errors.append(f"Empty bossGuide.targetEnemyIds in mission {m['id']}")
+            for teid in t_ids:
+                if teid not in enemy_ids:
+                    errors.append(f"Broken bossGuide targetEnemyId {teid} in mission {m['id']}")
+            loadout = bg.get("recommendedLoadout") or {}
+            if not loadout.get("materia") or not loadout.get("accessories") or not str(loadout.get("statTargets") or "").strip():
+                errors.append(f"Incomplete bossGuide.recommendedLoadout in mission {m['id']}")
+            if not bg.get("weaknessesAndCounters") or not bg.get("keyAttacksToWatch") or len(bg.get("killSteps") or []) < 2:
+                errors.append(f"Incomplete bossGuide tactics/steps in mission {m['id']}")
+
+    if missing_boss_guides:
+        errors.append(f"{len(missing_boss_guides)} mission(s) missing bossGuide: {missing_boss_guides[:10]}")
 
     if no_enemy_missions:
         errors.append(f"{len(no_enemy_missions)} mission(s) have 0 enemies: {no_enemy_missions[:10]}")
@@ -2410,6 +3578,50 @@ def validate_dataset(data_dir: Path) -> None:
         if rec.get("resultId") not in item_ids:
             errors.append(f"Broken fusion recipe resultId {rec.get('resultId')}")
 
+    mat_catalog = fusion_rules.get("materiaCatalog") or {}
+    for it in items:
+        if it.get("category") == "materia" and it["id"] not in mat_catalog:
+            errors.append(f"Materia {it['id']} missing from fusion-rules.json materiaCatalog")
+    for ov in fusion_rules.get("specialOverrides", []):
+        if ov.get("resultId") not in item_ids:
+            errors.append(f"Broken specialOverride resultId {ov.get('resultId')}")
+
+    # Validate compendium-extra.json
+    story_chapters = extra.get("storyChapters", [])
+    trophies = extra.get("trophies", [])
+    mail_senders = extra.get("mailSenders", [])
+    magic_pots = extra.get("magicPotEncounters", [])
+    if len(story_chapters) != 10:
+        errors.append(f"Expected 10 storyChapters, found {len(story_chapters)}")
+    if len(trophies) != 51:
+        errors.append(f"Expected 51 trophies, found {len(trophies)}")
+    if len(mail_senders) != 20:
+        errors.append(f"Expected 20 mailSenders, found {len(mail_senders)}")
+    if len(magic_pots) != 6:
+        errors.append(f"Expected 6 magicPotEncounters, found {len(magic_pots)}")
+    story_ids = {sc["id"] for sc in story_chapters}
+    for sc in story_chapters:
+        for b in sc.get("bosses", []):
+            if b.get("enemyId") not in enemy_ids:
+                errors.append(f"Broken story boss enemyId {b.get('enemyId')} in {sc['id']}")
+    for tr in trophies:
+        if tr.get("missionId") and tr["missionId"] not in mission_ids:
+            errors.append(f"Broken trophy missionId {tr['missionId']} in {tr['id']}")
+        if tr.get("storyChapterId") and tr["storyChapterId"] not in story_ids:
+            errors.append(f"Broken trophy storyChapterId {tr['storyChapterId']} in {tr['id']}")
+    for mp in magic_pots:
+        if mp.get("missionId") not in mission_ids:
+            errors.append(f"Broken magicPot missionId {mp.get('missionId')}")
+        if mp.get("rewardItemId") and mp["rewardItemId"] not in item_ids:
+            errors.append(f"Broken magicPot rewardItemId {mp['rewardItemId']}")
+        for rq in mp.get("requests", []):
+            if rq.get("itemId") and rq["itemId"] not in item_ids:
+                errors.append(f"Broken magicPot request itemId {rq['itemId']}")
+    for se in (extra.get("mechanics") or {}).get("statusEffects", []):
+        for iid in se.get("itemIds", []):
+            if iid not in item_ids:
+                errors.append(f"Broken statusEffect itemId {iid} in {se['id']}")
+
     for pb in guides.get("farmingPlaybooks", []):
         if pb.get("bestMissionId") and pb["bestMissionId"] not in mission_ids:
             errors.append(f"Broken playbook bestMissionId {pb['bestMissionId']}")
@@ -2459,11 +3671,14 @@ def validate_dataset(data_dir: Path) -> None:
             print(f"[ERROR] {err}", file=sys.stderr)
         raise SystemExit(f"Validation FAILED with {len(errors)} error(s).")
 
+    boss_guide_count = sum(1 for m in missions if isinstance(m.get("bossGuide"), dict))
+    boss_eid_count = sum(1 for m in missions if m.get("bossEnemyIds"))
     print(
-        f"[OK] Validated Crisis Core Reunion v3 dataset: "
-        f"{len(missions)} missions (0 enemy-less), {len(enemies)} enemies, {len(items)} items, "
-        f"{len(shops)} shops, {len(guides.get('dmwImages', []))} DMW, {len(guides.get('farmingPlaybooks', []))} playbooks, "
-        f"{len(guides.get('statLevelingGuides', []))} stat guides, {len(guides.get('sections', []))} guide sections, "
+        f"[OK] Validated Crisis Core Reunion v4 dataset: "
+        f"{len(missions)} missions (0 enemy-less, {boss_eid_count} bossEnemyIds, {boss_guide_count} boss guides), "
+        f"{len(enemies)} enemies, {len(items)} items, {len(shops)} shops, "
+        f"{len(guides.get('dmwImages', []))} DMW, {len(trophies)} trophies, {len(story_chapters)} chapters, "
+        f"{len(mail_senders)} mail senders, {len(magic_pots)} magic pots, "
         f"0 broken IDs, Strict Relational Rule passed."
     )
 
@@ -2471,6 +3686,7 @@ def validate_dataset(data_dir: Path) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--validate-only", action="store_true", help="Only validate existing JSON datasets")
+    parser.add_argument("--download-portraits", action="store_true", help="Bundle compact enemy portraits locally for offline PWA")
     args = parser.parse_args()
 
     if args.validate_only:
@@ -2520,6 +3736,16 @@ def main() -> None:
         fname = en["portrait"]["imageFile"].replace("_", " ").lower().strip()
         if fname and fname in img_urls:
             en["portrait"]["imageUrl"] = img_urls[fname]
+        # Preserve already-bundled local portrait if present on disk
+        for ext in (".png", ".jpg", ".webp", ".gif"):
+            cand = PORTRAITS_DIR / "enemies" / f"{en['id']}{ext}"
+            if cand.exists() and cand.stat().st_size > 200:
+                en["portrait"]["localPath"] = f"games/crisis-core-reunion/assets/portraits/enemies/{en['id']}{ext}"
+                break
+    if args.download_portraits:
+        print("      Bundling compact enemy portraits locally for offline PWA...")
+        ok_p, fail_p, tot_p = download_enemy_portraits(enemies)
+        print(f"      Portraits bundled: {ok_p}/{tot_p} succeeded ({fail_p} fallback).")
     print(f"      Parsed {len(enemies)} verified enemies/bosses.")
 
     print("[3/6] Fetching items, accessories, materia & all 16 shops...")
@@ -2534,16 +3760,19 @@ def main() -> None:
         "Materia Fusion",
     ]
     item_pages = fetch_pages_by_titles(item_titles)
-    items_dict, shops = parse_items_and_shops(item_pages)
+    items_dict, shops, materia_table_meta = parse_items_and_shops(item_pages)
     print(f"      Parsed {len(shops)} shops.")
 
-    print("[4/6] Reconciling Item <-> Enemy <-> Mission <-> Shop links...")
+    print("[4/6] Reconciling Item <-> Enemy <-> Mission <-> Shop links & Boss Kill Guides...")
     reconcile_relations(missions, enemies, enemy_name_to_id, items_dict, shops)
+    attach_mission_boss_guides(missions, enemies, items_dict)
+    enrich_items_metadata(items_dict, materia_table_meta)
     items_list = sorted(items_dict.values(), key=lambda x: (x["category"], x["name"].lower()))
 
     print("[5/6] Writing normalized JSON databases...")
     guides = build_guides_json()
-    fusion_rules = build_fusion_rules_json()
+    fusion_rules = build_fusion_rules_json(item_pages.get("Materia Fusion", ""), items_dict)
+    compendium_extra = build_compendium_extra_json(enemies, items_dict, missions)
 
     (DATA_DIR / "missions.json").write_text(json.dumps(missions, indent=2, ensure_ascii=False), encoding="utf-8")
     (DATA_DIR / "enemies.json").write_text(json.dumps(enemies, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -2551,6 +3780,7 @@ def main() -> None:
     (DATA_DIR / "shops.json").write_text(json.dumps(shops, indent=2, ensure_ascii=False), encoding="utf-8")
     (DATA_DIR / "guides.json").write_text(json.dumps(guides, indent=2, ensure_ascii=False), encoding="utf-8")
     (DATA_DIR / "fusion-rules.json").write_text(json.dumps(fusion_rules, indent=2, ensure_ascii=False), encoding="utf-8")
+    (DATA_DIR / "compendium-extra.json").write_text(json.dumps(compendium_extra, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print("[6/6] Running strict integrity validation...")
     validate_dataset(DATA_DIR)

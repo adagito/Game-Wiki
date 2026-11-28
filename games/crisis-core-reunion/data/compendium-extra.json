@@ -1,0 +1,2952 @@
+{
+  "storyChapters": [
+    {
+      "id": "ch_1",
+      "chapter": 1,
+      "title": "Chapter 1: Hold Onto Your Dreams",
+      "location": "Midgar Simulation · Wutai (Fort Tamblin)",
+      "summary": "Zack's first mission as SOLDIER 2nd Class alongside Angeal in Wutai's Fort Tamblin, ending with the summon ambush by Genesis's allies.",
+      "keyObjectives": [
+        "Defeat Behemoth on the simulated Midgar train.",
+        "Inspect the Supply Pod 20 times in the Training Room/briefing area for Cursed Ring (MISSABLE).",
+        "Defeat all 16 enemy groups in Fort Tamblin Courtyard (including rotating walls & watchtowers) for Lazard's top evaluation (MISSABLE).",
+        "Defeat Vajradhara Wu & Tai and then Ifrit with Sephiroth's aid."
+      ],
+      "storyPickups": [
+        "Cursed Ring (Supply Pod x20)",
+        "Fire Armlet (Fort Tamblin)",
+        "Elixir (Fort Tamblin)",
+        "Earrings / Soma"
+      ],
+      "missableAlert": "MISSABLE: Supply Pod Cursed Ring & Hero of the Wutai War? (16 enemy groups in Fort Tamblin Courtyard).",
+      "bosses": [
+        {
+          "enemyId": "enemy_behemoth",
+          "name": "Behemoth",
+          "tactics": "Stay behind its tail to avoid Double Claw Swipe and Gyro Tail; use Battle Stance Strong Attacks."
+        },
+        {
+          "enemyId": "enemy_vajradhara_wu",
+          "name": "Vajradhara Wu & Tai",
+          "tactics": "Separate them with dodges, cast Barrier, and focus one down at a time."
+        },
+        {
+          "enemyId": "enemy_ifrit",
+          "name": "Ifrit",
+          "tactics": "Weak to Ice (Blizzard). Never cast Fire. Break Hellfire's Skill Power gauge immediately."
+        }
+      ]
+    },
+    {
+      "id": "ch_2",
+      "chapter": 2,
+      "title": "Chapter 2: We're Not Monsters",
+      "location": "Shinra Building · Banora Village",
+      "summary": "Zack investigates Angeal's hometown of Banora alongside Tseng, uncovering Genesis's clones and a hidden factory.",
+      "keyObjectives": [
+        "Complete all Materia Room mini-requests in Shinra Building (MISSABLE trophy).",
+        "Join Genesis Red Leather, Genesis Study Group, and Angeal Fan Clubs in Sector 8 (Ch. 2–3).",
+        "Collect all 5 glowing Lifestream spots in Banora before the bombing raid (MISSABLE trophy).",
+        "Slice all 10 artillery shells outside the Banora factory (MISSABLE)."
+      ],
+      "storyPickups": [
+        "5 Banora Lifestream Treasures",
+        "Magic/Power/Guard Mako Stones",
+        "Banora Apple Juice / Hi-Potions"
+      ],
+      "missableAlert": "MISSABLE: Master Mako Stone Miner (Materia Room), Banora 5 Lifestream Treasures, and Fan Club triggers.",
+      "bosses": [
+        {
+          "enemyId": "enemy_guard_spider",
+          "name": "Guard Spider",
+          "tactics": "Weak to Lightning. Circle behind it when it fires machine-gun volleys."
+        },
+        {
+          "enemyId": "enemy_g_eraser",
+          "name": "G Eraser (Ch.3) / Banora Units",
+          "tactics": "Use Thunder/Assault Twister and guard melee rushes in Battle Stance."
+        }
+      ]
+    },
+    {
+      "id": "ch_3",
+      "chapter": 3,
+      "title": "Chapter 3: The Angels Dream of One Thing",
+      "location": "Shinra Building · Sector 8 Streets",
+      "summary": "Zack is promoted to SOLDIER 1st Class as Genesis Copies invade the Shinra Building.",
+      "keyObjectives": [
+        "Do Squat mini-game in SOLDIER Training Room as tiers unlock.",
+        "LAST CHANCE: Join all 3 Sector 8 Fan Clubs (Red Leather, Study Group, Keepers of Honor) and give supportive dialogue.",
+        "Defend Shinra Building floors and defeat G Eraser (auto-unlocks Research Dept. QMC shop!)."
+      ],
+      "storyPickups": [
+        "Research Dept. QMC Shop (Story automatic)",
+        "Cura / Barrier chests during Shinra defense"
+      ],
+      "missableAlert": "LAST CHANCE for Sector 8 Fan Clubs & dialogue choices before Ch. 4 locks them!",
+      "bosses": [
+        {
+          "enemyId": "enemy_g_eraser",
+          "name": "G Eraser",
+          "tactics": "Guard his spin slash in Battle Stance and punish with Fire/Thunder or Assault Twister. Unlocks Research Dept. QMC."
+        }
+      ]
+    },
+    {
+      "id": "ch_4",
+      "chapter": 4,
+      "title": "Chapter 4: Where Did Everyone Go?",
+      "location": "Sector 5 Slums · Sector 8 · Shinra HQ",
+      "summary": "Zack meets Aerith Gainsborough in the Sector 5 Church and explores the slums before returning to Midgar during an emergency.",
+      "keyObjectives": [
+        "Win Sector 5 mini-games: Number Guessing, Perfume Blending (perfect drops), Materia Pick-Up, and Wallet Thief (MISSABLE trophies).",
+        "Catch all 6 Wutai Spies in Midgar for the SOLDIER in Loveless Avenue (unlocks M4-3-x & Happy Turtle).",
+        "Clear M7-2-1 ASAP for Item Fusion Tome and M6-2-1/M6-2-3 for Sector 8 & 5 Shops."
+      ],
+      "storyPickups": [
+        "Aerith Affection Points",
+        "Item Fusion Tome (M7-2-1)",
+        "Happy Turtle (M4-3-6)"
+      ],
+      "missableAlert": "MISSABLE: Sector 5 mini-game trophies, Aerith affection bonuses, and 6 Wutai Spies.",
+      "bosses": [
+        {
+          "enemyId": "enemy_grosspanzer",
+          "name": "Grosspanzer",
+          "tactics": "Weak to Lightning. Dodging behind the tank avoids Cannon blasts; finish off Panzer Jr. adds first."
+        },
+        {
+          "enemyId": "enemy_guard_scorpion",
+          "name": "Guard Scorpion",
+          "tactics": "Cast Barrier, hit with Thunder/Thundara, and guard Tail Laser in Battle Stance."
+        }
+      ]
+    },
+    {
+      "id": "ch_5",
+      "chapter": 5,
+      "title": "Chapter 5: So Good to Be Back",
+      "location": "Modeoheim · Mako Excavation Facility",
+      "summary": "Zack and Cloud infiltrate snowy Modeoheim to confront Hollander, Genesis, and Angeal.",
+      "keyObjectives": [
+        "Before leaving Midgar: answer the Reporter's quiz (do NOT report him) and talk to Silver Elite & City Planning Director.",
+        "Ace the Modeoheim Sniper mini-game without missing or overheating (MISSABLE trophy).",
+        "Sneak past guards in Mako Excavation Facility and open all 5 chests undetected (MISSABLE trophy)."
+      ],
+      "storyPickups": [
+        "5 Stealth Facility Chests",
+        "Dispel / Lightning Armlet",
+        "M6-2-6 trigger"
+      ],
+      "missableAlert": "MISSABLE: Sniper Elite & Master Infiltrator trophies in Modeoheim; Reporter & Silver Elite NPCs in Midgar.",
+      "bosses": [
+        {
+          "enemyId": "enemy_g_eliminator",
+          "name": "G Eliminator",
+          "tactics": "Keep Barrier up, stay behind him, and interrupt his charged slash."
+        },
+        {
+          "enemyId": "enemy_angeal_penance",
+          "name": "Angeal Penance",
+          "tactics": "Never attack his front when Defense of Lust is raised! Circle behind for back-crit Strong Attacks & High Jump."
+        }
+      ]
+    },
+    {
+      "id": "ch_6",
+      "chapter": 6,
+      "title": "Chapter 6: Are You Still Protecting Your Honor?",
+      "location": "Costa del Sol · Junon",
+      "summary": "Zack rests at Costa del Sol before defending Junon against a massive Genesis machine assault.",
+      "keyObjectives": [
+        "Defeat all invading machines during Junon Defense without letting any pass the line (MISSABLE trophy).",
+        "Talk to Cissnei in Junon after the defense to start Zack's Fan Club (MISSABLE mail sender).",
+        "Unlock Sector 7 Shop (M4-4-3) for Mog's Amulet & Brigand's Gloves and M7-2-2/M7-2-5 for 4 Accessory Slots."
+      ],
+      "storyPickups": [
+        "Junon Defense Bonus Reward",
+        "Cissnei Fan Club Starter",
+        "4 Accessory Slots (M7-2-2 & M7-2-5)"
+      ],
+      "missableAlert": "MISSABLE: Junon Defense perfect clear trophy & Cissnei Zack Fan Club trigger.",
+      "bosses": [
+        {
+          "enemyId": "enemy_generals_tank",
+          "name": "General's Tank",
+          "tactics": "Weak to Lightning. Use Thundara/Thundaga and Wall/Barrier to shrug off cannon fire."
+        },
+        {
+          "enemyId": "enemy_hollander",
+          "name": "Hollander",
+          "tactics": "Steal/Mug if possible, dodge his AoE potions/bombs, and punish with High Jump."
+        }
+      ]
+    },
+    {
+      "id": "ch_7",
+      "chapter": 7,
+      "title": "Chapter 7: I Can't Stay Here Any Longer",
+      "location": "Midgar (Sector 5, Sector 8, Shinra HQ)",
+      "summary": "Zack returns to Midgar for the last time—building Flower Wagons for Aerith before departing for Nibelheim.",
+      "keyObjectives": [
+        "Build ALL 3 Flower Wagons for Aerith before speaking to Tseng/departing Midgar (MISSABLE trophy).",
+        "Complete Zack Fan Club with the Shinra Receptionist.",
+        "CRITICAL: Finish ALL 16 Midgar NPC mission triggers (M1-2-x, M2-1-x, M2-2-x, M4-3-x, M6-2-x, M7-1-x) BEFORE leaving!"
+      ],
+      "storyPickups": [
+        "3 Flower Wagons",
+        "All Midgar Mission Unlocks",
+        "Bone Village Outlet (M7-5-3)"
+      ],
+      "missableAlert": "POINT OF NO RETURN: Leaving Midgar at the end of Chapter 7 locks out Midgar forever!",
+      "bosses": [
+        {
+          "enemyId": "enemy_cutter_machine",
+          "name": "Cutter / Pile / Shot Machines",
+          "tactics": "Clear Support Machine first or use Quake/Darkness + Wall."
+        }
+      ]
+    },
+    {
+      "id": "ch_8",
+      "chapter": 8,
+      "title": "Chapter 8: If This World Were Mine",
+      "location": "Nibelheim · Mt. Nibel · Shinra Manor",
+      "summary": "Zack, Cloud, Tifa, and Sephiroth arrive in Nibelheim, where Sephiroth discovers his origins in Shinra Manor.",
+      "keyObjectives": [
+        "Complete Seven Wonders of Nibelheim #1–#6 (Water Tower = MISSABLE Phoenix DMW!; Shinra Manor Safe = Vital Slash + 4-digit peephole code).",
+        "Watch the Shinra Manor Basement cutscene and survive the burning Nibelheim encounter.",
+        "Do NOT miss Wonder #7 in Nibelheim Outskirts right after the fire!"
+      ],
+      "storyPickups": [
+        "Phoenix DMW (Water Tower — MISSABLE)",
+        "Vital Slash (Shinra Manor Safe)",
+        "Wall / Drainga chests"
+      ],
+      "missableAlert": "MISSABLE: Phoenix DMW (only missable DMW!) & Seven Wonders Expert trophy.",
+      "bosses": [
+        {
+          "enemyId": "enemy_sephiroth",
+          "name": "Sephiroth (Reactor)",
+          "tactics": "Phase 1: Guard/dodge Octaslash & Heartless Angel; Phase 2: Stay away from the edge so you aren't knocked off the bridge!"
+        }
+      ]
+    },
+    {
+      "id": "ch_9",
+      "chapter": 9,
+      "title": "Chapter 9: We'll All Be Heroes",
+      "location": "Nibelheim Outskirts · Gongaga",
+      "summary": "Four years after Nibelheim, Zack escapes with Cloud and fights through Shinra forces to Gongaga.",
+      "keyObjectives": [
+        "Complete Seven Wonders #7 in Nibelheim Outskirts for Wall Materia.",
+        "Open the hidden chest in Gongaga Outskirts for Research Dept. QMC+ Shop (MISSABLE).",
+        "Complete the Gongaga Waterfall 7-Chest mini-game (MISSABLE trophy)."
+      ],
+      "storyPickups": [
+        "Research Dept. QMC+ (MISSABLE SHOP)",
+        "7 Gongaga Waterfall Chests",
+        "Wall Materia (Wonder #7)"
+      ],
+      "missableAlert": "MISSABLE: Research Dept. QMC+ shop chest & Waterfall Chaser 7-chest trophy.",
+      "bosses": [
+        {
+          "enemyId": "enemy_hollander",
+          "name": "Hollander (Gongaga)",
+          "tactics": "Uses Genesis Copy clones & status bombs. Bring Status Ward or Ribbon + High Jump / Costly Punch."
+        }
+      ]
+    },
+    {
+      "id": "ch_10",
+      "chapter": 10,
+      "title": "Chapter 10: My Living Legacy",
+      "location": "Banora Underground · Depths of Judgment · Midgar Outskirts",
+      "summary": "The final chapter inside Banora's Lifestream cavern: solve the LOVELESS tablets, collect the 7 Goddess Materia, and defeat Genesis.",
+      "keyObjectives": [
+        "Collect all 7 Goddess Materia in Banora Underground to unlock the Depths of Judgment gate.",
+        "Optional: Defeat Behemoth King in the Depths of Judgment for Goddess Key.",
+        "Before touching the final save point/Genesis trigger, finish all remaining Missions (M1-M10) or prep for New Game+."
+      ],
+      "storyPickups": [
+        "7 Goddess Materia (Light, Heaven, Ground, Star, Life, Being, Sabbath)",
+        "Goddess Key (Behemoth King)",
+        "Energy / Flare chests"
+      ],
+      "missableAlert": "Point of No Return inside Lake of Oblivion—save at the final save point before triggering the ending!",
+      "bosses": [
+        {
+          "enemyId": "enemy_behemoth_king",
+          "name": "Behemoth King",
+          "tactics": "Optional Depth of Judgment boss (576k Hard HP). Drops Goddess Key. Loop Costly Punch behind it and heal through Comet/Quake."
+        },
+        {
+          "enemyId": "enemy_genesis_avatar",
+          "name": "Genesis Avatar",
+          "tactics": "Break his sword barriers and clear summoned G Shadow adds with Quake/Darkness before bursting the Avatar."
+        },
+        {
+          "enemyId": "enemy_genesis_final_boss",
+          "name": "Genesis (Final)",
+          "tactics": "Keep Wall + Phoenix Down active, dodge Black Flurry/Apocalypse, and finish with Costly Punch or Battle Stance."
+        }
+      ]
+    }
+  ],
+  "trophies": [
+    {
+      "id": "tr_01",
+      "name": "My Living Legacy",
+      "grade": "Platinum",
+      "chapter": "Endgame",
+      "missable": false,
+      "category": "Collection",
+      "description": "Acquire all trophies.",
+      "howToUnlock": "Unlock all other 50 trophies across one or multiple playthroughs (or NG+).",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_02",
+      "name": "Come and Get It",
+      "grade": "Bronze",
+      "chapter": "Ch. 1",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 1.",
+      "howToUnlock": "Clear the Wutai invasion and defeat Ifrit in Chapter 1.",
+      "missionId": null,
+      "storyChapterId": "ch_1"
+    },
+    {
+      "id": "tr_03",
+      "name": "We're Not Monsters",
+      "grade": "Bronze",
+      "chapter": "Ch. 2",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 2.",
+      "howToUnlock": "Investigate Banora and escape the bombing raid.",
+      "missionId": null,
+      "storyChapterId": "ch_2"
+    },
+    {
+      "id": "tr_04",
+      "name": "Angels Dream of One Thing",
+      "grade": "Bronze",
+      "chapter": "Ch. 3",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 3.",
+      "howToUnlock": "Defend Shinra HQ and defeat Genesis's forces.",
+      "missionId": null,
+      "storyChapterId": "ch_3"
+    },
+    {
+      "id": "tr_05",
+      "name": "Where Did Everyone Go?",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 4.",
+      "howToUnlock": "Meet Aerith, clear Sector 5, and defeat Guard Scorpion.",
+      "missionId": null,
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_06",
+      "name": "Protect Your Honor",
+      "grade": "Bronze",
+      "chapter": "Ch. 5",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 5.",
+      "howToUnlock": "Infiltrate Modeoheim and defeat Angeal Penance.",
+      "missionId": null,
+      "storyChapterId": "ch_5"
+    },
+    {
+      "id": "tr_07",
+      "name": "Did You Think I Was Dead?",
+      "grade": "Bronze",
+      "chapter": "Ch. 6",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 6.",
+      "howToUnlock": "Defend Junon and confront Hollander.",
+      "missionId": null,
+      "storyChapterId": "ch_6"
+    },
+    {
+      "id": "tr_08",
+      "name": "I May Leave Shinra",
+      "grade": "Bronze",
+      "chapter": "Ch. 7",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 7.",
+      "howToUnlock": "Build the Flower Wagon and depart Midgar for Nibelheim.",
+      "missionId": null,
+      "storyChapterId": "ch_7"
+    },
+    {
+      "id": "tr_09",
+      "name": "I'm Coming to See You",
+      "grade": "Bronze",
+      "chapter": "Ch. 8",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 8.",
+      "howToUnlock": "Survive the Nibelheim Incident and face Sephiroth.",
+      "missionId": null,
+      "storyChapterId": "ch_8"
+    },
+    {
+      "id": "tr_10",
+      "name": "We'll All Be Heroes",
+      "grade": "Bronze",
+      "chapter": "Ch. 9",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete Chapter 9.",
+      "howToUnlock": "Escape Nibelheim and survive Gongaga.",
+      "missionId": null,
+      "storyChapterId": "ch_9"
+    },
+    {
+      "id": "tr_11",
+      "name": "Thank You, Zack",
+      "grade": "Silver",
+      "chapter": "Ch. 10",
+      "missable": false,
+      "category": "Story",
+      "description": "Complete the game.",
+      "howToUnlock": "Defeat Genesis Avatar and Genesis in Chapter 10.",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_12",
+      "name": "He Wouldn't Betray Us",
+      "grade": "Bronze",
+      "chapter": "Ch. 1",
+      "missable": false,
+      "category": "Combat",
+      "description": "Use a Limit Break for the first time.",
+      "howToUnlock": "Roll any triple character image on the DMW and activate Limit Verge.",
+      "missionId": null,
+      "storyChapterId": "ch_1"
+    },
+    {
+      "id": "tr_13",
+      "name": "Embrace Your Dreams",
+      "grade": "Bronze",
+      "chapter": "Ch. 1",
+      "missable": false,
+      "category": "Combat",
+      "description": "Master a Materia for the first time.",
+      "howToUnlock": "Level any Materia to Lv. 5 (Master) via DMW reels.",
+      "missionId": "M1-1-1",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_14",
+      "name": "Overpowered",
+      "grade": "Bronze",
+      "chapter": "Ch. 4+",
+      "missable": false,
+      "category": "Combat",
+      "description": "Perform Materia Fusion for the first time.",
+      "howToUnlock": "Unlock Materia Fusion in Ch. 3/4 and fuse any two Materia.",
+      "missionId": "M7-2-1",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_15",
+      "name": "First-Rate SOLDIER",
+      "grade": "Bronze",
+      "chapter": "Any",
+      "missable": false,
+      "category": "Combat",
+      "description": "Defeat 100 enemies using Skills or Magic.",
+      "howToUnlock": "Unlocked naturally while clearing missions and story.",
+      "missionId": null,
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_16",
+      "name": "Limit Break Collector",
+      "grade": "Bronze",
+      "chapter": "Ch. 1",
+      "missable": false,
+      "category": "Combat",
+      "description": "Use Buster Sword Stance for the first time.",
+      "howToUnlock": "Enter Battle Stance (Square+X / Guard+Attack) after inheriting Buster Sword.",
+      "missionId": "M1-2-1",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_17",
+      "name": "SOLDIER of Legend",
+      "grade": "Silver",
+      "chapter": "Ch. 10",
+      "missable": false,
+      "category": "Combat",
+      "description": "Complete the game on Hard Mode.",
+      "howToUnlock": "Beat Chapter 10 on Hard difficulty (can switch to Hard right before final boss, or play whole run on Hard).",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_18",
+      "name": "Hero of the Wutai War?",
+      "grade": "Bronze",
+      "chapter": "Ch. 1",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Receive the top evaluation from Lazard in Wutai.",
+      "howToUnlock": "In Ch. 1 Fort Tamblin Courtyard, defeat all 16 enemy groups (including rotating walls & watchtowers) before entering the castle.",
+      "missionId": null,
+      "storyChapterId": "ch_1"
+    },
+    {
+      "id": "tr_19",
+      "name": "Master Mako Stone Miner",
+      "grade": "Bronze",
+      "chapter": "Ch. 2",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Obtain all items from the Materia Room.",
+      "howToUnlock": "In Ch. 2 Shinra Building Materia Room, complete the researcher's Mako extraction mini-tasks for all 5 Mako Stones.",
+      "missionId": null,
+      "storyChapterId": "ch_2"
+    },
+    {
+      "id": "tr_20",
+      "name": "Banora Treasures",
+      "grade": "Bronze",
+      "chapter": "Ch. 2",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Collect all items in Banora and enter the house before time runs out.",
+      "howToUnlock": "Grab all 5 glowing Lifestream items around Banora Village before entering Angeal's house.",
+      "missionId": null,
+      "storyChapterId": "ch_2"
+    },
+    {
+      "id": "tr_21",
+      "name": "Slicin' SOLDIER",
+      "grade": "Bronze",
+      "chapter": "Ch. 2",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Cut down all 10 artillery shells in Banora.",
+      "howToUnlock": "Time your sword swings to slice all 10 shells outside the Banora factory.",
+      "missionId": null,
+      "storyChapterId": "ch_2"
+    },
+    {
+      "id": "tr_22",
+      "name": "Everyone's Hero",
+      "grade": "Bronze",
+      "chapter": "Ch. 3",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Save all Shinra employees during the Sector 8 assault.",
+      "howToUnlock": "Check every corridor in Shinra Building during the Ch. 3 attack and rescue every trapped employee.",
+      "missionId": null,
+      "storyChapterId": "ch_3"
+    },
+    {
+      "id": "tr_23",
+      "name": "Fan Club Aficionado",
+      "grade": "Bronze",
+      "chapter": "Ch. 2–7",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Join every Fan Club.",
+      "howToUnlock": "Join Red Leather, Study Group, Keepers of Honor (Ch. 2–3), Silver Elite (Ch. 5), and Zack Fan Club (Ch. 6–7).",
+      "missionId": null,
+      "storyChapterId": "ch_3"
+    },
+    {
+      "id": "tr_24",
+      "name": "Master Blender",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Mix the perfect perfume for Aerith.",
+      "howToUnlock": "In Ch. 4 Sector 5 Slums, match the shopkeeper's exact drop count/timing at the perfume stand.",
+      "missionId": null,
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_25",
+      "name": "Bingo!",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Guess the exact number in the Sector 5 Market.",
+      "howToUnlock": "Ask the kids for clues to narrow down the 1-digit secret number on your first try.",
+      "missionId": null,
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_26",
+      "name": "Godlike",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Collect Materia fastest in the Sector 5 mini-game.",
+      "howToUnlock": "Clear the Materia Pick-Up mini-game in Sector 5 Market under 14 seconds.",
+      "missionId": null,
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_27",
+      "name": "Good Match For Aerith",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Max out Aerith's affection evaluation.",
+      "howToUnlock": "Reach high Aerith affection by acing Sector 5 mini-games and returning the stolen wallet quickly.",
+      "missionId": null,
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_28",
+      "name": "Wutai's Nemesis",
+      "grade": "Bronze",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Capture all Wutai spies in Midgar.",
+      "howToUnlock": "Find and speak to all 6 disguised Wutai spies across Midgar in Chapter 4.",
+      "missionId": "M4-3-6",
+      "storyChapterId": "ch_4"
+    },
+    {
+      "id": "tr_29",
+      "name": "Fan Club Savior",
+      "grade": "Bronze",
+      "chapter": "Ch. 3–7",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Prevent all Fan Clubs from disbanding.",
+      "howToUnlock": "Pick supportive dialogue for Red Leather (Ch. 3), Study Group (Ch. 3/5), and Keepers of Honor (Ch. 5).",
+      "missionId": null,
+      "storyChapterId": "ch_5"
+    },
+    {
+      "id": "tr_30",
+      "name": "Sniper Elite",
+      "grade": "Bronze",
+      "chapter": "Ch. 5",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Destroy all escaping enemies with the Sniper Rifle without missing or overheating.",
+      "howToUnlock": "In Modeoheim ravine, upgrade the rifle at the start and snipe every fleeing guard cleanly.",
+      "missionId": null,
+      "storyChapterId": "ch_5"
+    },
+    {
+      "id": "tr_31",
+      "name": "Master Infiltrator",
+      "grade": "Bronze",
+      "chapter": "Ch. 5",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Open all 5 chests in the Modeoheim facility without being spotted.",
+      "howToUnlock": "Crouch behind crates in Mako Excavation Facility and loot all 5 chests unseen.",
+      "missionId": null,
+      "storyChapterId": "ch_5"
+    },
+    {
+      "id": "tr_32",
+      "name": "Immovable Object",
+      "grade": "Bronze",
+      "chapter": "Ch. 6",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Defeat every enemy invading Junon without letting any pass.",
+      "howToUnlock": "Intercept all waves on the Junon Upper Path before any robot reaches the elevator gate.",
+      "missionId": null,
+      "storyChapterId": "ch_6"
+    },
+    {
+      "id": "tr_33",
+      "name": "Midgar Full of Flowers",
+      "grade": "Bronze",
+      "chapter": "Ch. 7",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Build all 3 Flower Wagons for Aerith.",
+      "howToUnlock": "Collect parts from Training Room Squats, Midgar NPCs, and Shinra HQ and craft all 3 wagons in Ch. 7.",
+      "missionId": null,
+      "storyChapterId": "ch_7"
+    },
+    {
+      "id": "tr_34",
+      "name": "Seven Wonders Expert",
+      "grade": "Bronze",
+      "chapter": "Ch. 8–9",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Solve all Seven Wonders of Nibelheim.",
+      "howToUnlock": "Complete Wonders 1–6 in Ch. 8 (Water Tower, Portrait, Bomb, Manor Safe, Cave, Fire) and Wonder 7 in Ch. 9 Outskirts.",
+      "missionId": null,
+      "storyChapterId": "ch_8"
+    },
+    {
+      "id": "tr_35",
+      "name": "Cage Opener",
+      "grade": "Bronze",
+      "chapter": "Ch. 10",
+      "missable": false,
+      "category": "Story",
+      "description": "Unlock all cages in the Depths of Judgment.",
+      "howToUnlock": "Collect all 7 Goddess Materia in Banora Underground and open the cells.",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_36",
+      "name": "Waterfall Chaser",
+      "grade": "Bronze",
+      "chapter": "Ch. 9",
+      "missable": true,
+      "category": "Missable Mini-Game",
+      "description": "Open all 7 treasure chests falling down the Gongaga waterfall.",
+      "howToUnlock": "In Ch. 9 Gongaga Hills, dodge monsters and collect all 7 chests.",
+      "missionId": null,
+      "storyChapterId": "ch_9"
+    },
+    {
+      "id": "tr_37",
+      "name": "Precise Restoration",
+      "grade": "Bronze",
+      "chapter": "Ch. 10",
+      "missable": false,
+      "category": "Combat",
+      "description": "Obtain 100% accuracy in the Ch. 10 Escape / Shinra ambush.",
+      "howToUnlock": "Clear all enemy waves cleanly in the Ch. 10 finale encounters.",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_38",
+      "name": "Mission Completionist: 25%",
+      "grade": "Bronze",
+      "chapter": "Any",
+      "missable": false,
+      "category": "Missions",
+      "description": "Complete 25% of all missions (75/300).",
+      "howToUnlock": "Clear any 75 missions across M1–M10.",
+      "missionId": null,
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_39",
+      "name": "Mission Completionist: 50%",
+      "grade": "Bronze",
+      "chapter": "Any",
+      "missable": false,
+      "category": "Missions",
+      "description": "Complete 50% of all missions (150/300).",
+      "howToUnlock": "Clear any 150 missions across M1–M10.",
+      "missionId": null,
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_40",
+      "name": "Mission Completionist: 75%",
+      "grade": "Bronze",
+      "chapter": "Any",
+      "missable": false,
+      "category": "Missions",
+      "description": "Complete 75% of all missions (225/300).",
+      "howToUnlock": "Clear any 225 missions across M1–M10.",
+      "missionId": null,
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_41",
+      "name": "Mission Completionist: 100%",
+      "grade": "Gold",
+      "chapter": "Endgame",
+      "missable": true,
+      "category": "Missions",
+      "description": "Complete all 300 missions.",
+      "howToUnlock": "Unlock all Midgar NPC missions before Ch. 7 Point of No Return and clear M1-1-1 through M10-4-3 (awards Heike Soul).",
+      "missionId": "M9-6-6",
+      "storyChapterId": "ch_7"
+    },
+    {
+      "id": "tr_42",
+      "name": "Mail Completionist",
+      "grade": "Silver",
+      "chapter": "Ch. 1–10",
+      "missable": true,
+      "category": "Collection",
+      "description": "Receive mail from every sender (all 20 senders).",
+      "howToUnlock": "Join all 5 Fan Clubs, prevent disbands, and trigger all missable NPCs (Reporter, Cissnei, Silver Elite) before Ch. 7 ends.",
+      "missionId": null,
+      "storyChapterId": "ch_7"
+    },
+    {
+      "id": "tr_43",
+      "name": "Shop Completionist",
+      "grade": "Silver",
+      "chapter": "Ch. 1–10",
+      "missable": true,
+      "category": "Collection",
+      "description": "Unlock all 16 shops.",
+      "howToUnlock": "Unlock all mission/story shops plus the MISSABLE Research Dept. QMC+ chest in Ch. 9/10 Gongaga.",
+      "missionId": "M9-5-4",
+      "storyChapterId": "ch_9"
+    },
+    {
+      "id": "tr_44",
+      "name": "DMW Master",
+      "grade": "Gold",
+      "chapter": "Ch. 1–10",
+      "missable": true,
+      "category": "Collection",
+      "description": "Achieve 100% on every DMW entry (all 18 images).",
+      "howToUnlock": "Don't miss Phoenix in Ch. 8 Nibelheim! Clear M8-x / M10-x summon & Chocobo missions, then AFK in M1-1-1 (awards Genji Armor).",
+      "missionId": "M1-1-1",
+      "storyChapterId": "ch_8"
+    },
+    {
+      "id": "tr_45",
+      "name": "Genji Equipment",
+      "grade": "Bronze",
+      "chapter": "Endgame",
+      "missable": true,
+      "category": "Collection",
+      "description": "Collect all 4 Genji equipment pieces.",
+      "howToUnlock": "Helm (Online Shop Shade M9-5-4), Armor (100% DMW), Shield (Magic Pot M7-6-6), Glove (M9-6-4 chest).",
+      "missionId": "M7-6-6",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_46",
+      "name": "Divine Rule Broken",
+      "grade": "Silver",
+      "chapter": "Endgame",
+      "missable": false,
+      "category": "Superboss",
+      "description": "Defeat Minerva in Mission M9-6-6.",
+      "howToUnlock": "Defeat Minerva (10M Normal / 20M Hard HP) in M9-6-6 using 99,999 HP, 255 VIT/SPR, Costly Punch & Mug.",
+      "missionId": "M9-6-6",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_47",
+      "name": "Goddess Base Discovered",
+      "grade": "Bronze",
+      "chapter": "Ch. 10",
+      "missable": false,
+      "category": "Story",
+      "description": "Defeat Behemoth King in the Depths of Judgment.",
+      "howToUnlock": "Open the locked gate with the 7 Goddess Materia in Ch. 10 and defeat Behemoth King.",
+      "missionId": null,
+      "storyChapterId": "ch_10"
+    },
+    {
+      "id": "tr_48",
+      "name": "Buster Sword Proficiency 100%",
+      "grade": "Bronze",
+      "chapter": "Any",
+      "missable": false,
+      "category": "Combat",
+      "description": "Reach 100% Buster Sword Proficiency (or unlock Battle Stance perks).",
+      "howToUnlock": "Max all 4 proficiency pools: Perfect Guard (31.66%), Strong Attack (31.66%), Command Kills (31.66%), Barrier Pierce (5%).",
+      "missionId": "M1-2-1",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_49",
+      "name": "Limit Verge Master",
+      "grade": "Bronze",
+      "chapter": "Ch. 1+",
+      "missable": false,
+      "category": "Combat",
+      "description": "Cancel an enemy's Skill Power gauge completely.",
+      "howToUnlock": "Attack a charging boss with Battle Stance / Costly Punch until the Skill Power bar hits 0%.",
+      "missionId": "M5-1-1",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_50",
+      "name": "99,999 Damage!",
+      "grade": "Bronze",
+      "chapter": "Ch. 6+",
+      "missable": false,
+      "category": "Combat",
+      "description": "Deal 99,999 damage in a single hit.",
+      "howToUnlock": "Equip Brutal (M7-4-6) or Genji Glove (M9-6-4) or reach 23% Buster Sword Proficiency, then use Costly Punch.",
+      "missionId": "M7-4-6",
+      "storyChapterId": null
+    },
+    {
+      "id": "tr_51",
+      "name": "Magic Pot's Favorite",
+      "grade": "Bronze",
+      "chapter": "Ch. 5+",
+      "missable": false,
+      "category": "Collection",
+      "description": "Satisfy Magic Pot and earn its DMW or Genji Shield.",
+      "howToUnlock": "Perform all 4 requested actions in M10-2-3 (Jump -> Fira -> Gravity -> Assault Twister) or M7-6-6 (Genji Shield).",
+      "missionId": "M10-2-3",
+      "storyChapterId": null
+    }
+  ],
+  "mailSenders": [
+    {
+      "id": "mail_shinra_news",
+      "name": "Shinra News",
+      "category": "Shinra / News",
+      "mailCount": 12,
+      "chapters": "Ch. 1–10",
+      "missable": false,
+      "unlockCondition": "Automatic story dispatches across all chapters.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_angeal",
+      "name": "Angeal",
+      "category": "Character",
+      "mailCount": 2,
+      "chapters": "Ch. 1–2",
+      "missable": false,
+      "unlockCondition": "Automatic story mails in Chapters 1 & 2.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_kunsel",
+      "name": "Kunsel",
+      "category": "Character",
+      "mailCount": 13,
+      "chapters": "Ch. 1–10",
+      "missable": false,
+      "unlockCondition": "Automatic story & mission-progress mails from Kunsel.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_lazard",
+      "name": "Director Lazard",
+      "category": "Character",
+      "mailCount": 2,
+      "chapters": "Ch. 2–5",
+      "missable": false,
+      "unlockCondition": "Automatic story progression mails.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_tseng",
+      "name": "Tseng",
+      "category": "Character",
+      "mailCount": 3,
+      "chapters": "Ch. 2–7",
+      "missable": false,
+      "unlockCondition": "Automatic story progression mails.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_sephiroth",
+      "name": "Sephiroth",
+      "category": "Character",
+      "mailCount": 1,
+      "chapters": "Ch. 3",
+      "missable": false,
+      "unlockCondition": "Automatic story progression mail.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_aerith",
+      "name": "Aerith",
+      "category": "Character",
+      "mailCount": 7,
+      "chapters": "Ch. 4–9",
+      "missable": true,
+      "unlockCondition": "Met in Chapter 4; more mails arrive based on affection & Ch. 7 Flower Wagons.",
+      "missableChoices": "Do Ch. 4 Sector 5 mini-games and Ch. 7 Flower Wagons before leaving Midgar."
+    },
+    {
+      "id": "mail_cissnei",
+      "name": "Cissnei",
+      "category": "Character",
+      "mailCount": 6,
+      "chapters": "Ch. 4–9",
+      "missable": false,
+      "unlockCondition": "Automatic story progression + Junon conversation.",
+      "missableChoices": "Talk to Cissnei in Junon (Ch. 6) to also unlock Zack Fan Club."
+    },
+    {
+      "id": "mail_cloud",
+      "name": "Cloud",
+      "category": "Character",
+      "mailCount": 3,
+      "chapters": "Ch. 5–8",
+      "missable": false,
+      "unlockCondition": "Automatic story mails after Modeoheim & Nibelheim.",
+      "missableChoices": "Cannot be missed."
+    },
+    {
+      "id": "mail_red_leather",
+      "name": "Red Leather (Genesis Fan Club)",
+      "category": "Fan Club",
+      "mailCount": 4,
+      "chapters": "Ch. 2–7",
+      "missable": true,
+      "unlockCondition": "Join from the girl in Sector 8 Fountain in Ch. 2 or Ch. 3.",
+      "missableChoices": "In Ch. 3 Sector 8 Fountain, choose 'Someone wealthy' when asked how to save the club so it doesn't disband!"
+    },
+    {
+      "id": "mail_study_group",
+      "name": "Study Group (Genesis Fan Club)",
+      "category": "Fan Club",
+      "mailCount": 4,
+      "chapters": "Ch. 2–7",
+      "missable": true,
+      "unlockCondition": "Join from the fan in Loveless Avenue in Ch. 2 or Ch. 3.",
+      "missableChoices": "In Ch. 3/5, speak to her again and encourage her to merge/keep studying LOVELESS so the club survives."
+    },
+    {
+      "id": "mail_keepers_honor",
+      "name": "Keepers of Honor (Angeal Fan Club)",
+      "category": "Fan Club",
+      "mailCount": 4,
+      "chapters": "Ch. 2–7",
+      "missable": true,
+      "unlockCondition": "Join from the fan near Sector 8 Fountain in Ch. 2 or Ch. 3.",
+      "missableChoices": "In Ch. 5, talk to the boy outside Sector 8 Entrance & his mother in Sector 5 Slums to prevent disbanding."
+    },
+    {
+      "id": "mail_silver_elite",
+      "name": "Silver Elite (Sephiroth Fan Club)",
+      "category": "Fan Club",
+      "mailCount": 5,
+      "chapters": "Ch. 5–7",
+      "missable": true,
+      "unlockCondition": "In Ch. 5–7, speak to the woman in Sector 6 Park (children's playground) and answer her Sephiroth quiz ('Masamune', 'Super Nova', 'Left-handed').",
+      "missableChoices": "Answer all 3 Sephiroth trivia questions correctly before Ch. 7 ends."
+    },
+    {
+      "id": "mail_zack_club",
+      "name": "Zack Fan Club",
+      "category": "Fan Club",
+      "mailCount": 2,
+      "chapters": "Ch. 6–7",
+      "missable": true,
+      "unlockCondition": "Talk to Cissnei in Junon (Ch. 6), then speak to the Receptionist in Shinra Building Entrance (Ch. 7).",
+      "missableChoices": "Must talk to Cissnei in Junon BEFORE boarding the helicopter!"
+    },
+    {
+      "id": "mail_reporter",
+      "name": "Reporter",
+      "category": "Secret / Side-Quest",
+      "mailCount": 3,
+      "chapters": "Ch. 5–7",
+      "missable": true,
+      "unlockCondition": "Speak to the suspicious Reporter near Sector 8 Fountain/Loveless Avenue in Ch. 5–7.",
+      "missableChoices": "Choose 'Don't report him' to Hojo/Shinra! Reporting him permanently blocks his mail chain."
+    },
+    {
+      "id": "mail_shinra_trooper",
+      "name": "Shinra Trooper",
+      "category": "Secret / Side-Quest",
+      "mailCount": 2,
+      "chapters": "Ch. 3–7",
+      "missable": true,
+      "unlockCondition": "Defeat the Shinra Trooper in Training Room Squats (Tier 1–2).",
+      "missableChoices": "Complete Squat challenges before leaving Midgar at end of Ch. 7."
+    },
+    {
+      "id": "mail_shinra_captain",
+      "name": "Shinra Captain",
+      "category": "Secret / Side-Quest",
+      "mailCount": 2,
+      "chapters": "Ch. 3–7",
+      "missable": true,
+      "unlockCondition": "Defeat the SOLDIER 3rd/2nd Class opponents in Training Room Squats (Tier 3–4).",
+      "missableChoices": "Complete all 4 Squat tiers before leaving Midgar at end of Ch. 7."
+    },
+    {
+      "id": "mail_treasure_princess",
+      "name": "Treasure Princess (Yuffie)",
+      "category": "Secret / Side-Quest",
+      "mailCount": 14,
+      "chapters": "Ch. 1–10",
+      "missable": false,
+      "unlockCondition": "Triggered by clearing M8-4-x / M8-5-x treasure mail missions.",
+      "missableChoices": "Clear Yuffie's mission chains (M8-4-x through M8-6-x)."
+    },
+    {
+      "id": "mail_lord_duo",
+      "name": "Lord Duo",
+      "category": "Secret / Side-Quest",
+      "mailCount": 2,
+      "chapters": "Ch. 7–10",
+      "missable": false,
+      "unlockCondition": "Arrives after unlocking Online Shop Duo (M9-3-3).",
+      "missableChoices": "Unlock Online Shop Duo in M9-3-3."
+    },
+    {
+      "id": "mail_mysterious",
+      "name": "???",
+      "category": "Secret / Side-Quest",
+      "mailCount": 6,
+      "chapters": "Ch. 5–10",
+      "missable": false,
+      "unlockCondition": "Arrives automatically as you clear M8-4-x Suspicious Mail & M9-x Great Cavern missions.",
+      "missableChoices": "Clear M8-4-1..6 & M9-x."
+    }
+  ],
+  "minigames": [
+    {
+      "id": "mg_seven_wonders",
+      "title": "Seven Wonders of Nibelheim & Shinra Manor Safe Code",
+      "chapter": "Ch. 8–9",
+      "missable": true,
+      "trophy": "Seven Wonders Expert",
+      "summary": "Talk to the boy near the Nibelheim Inn to start each Wonder in order. Includes the MISSABLE Phoenix DMW (#1) and the Shinra Manor Safe (#4).",
+      "steps": [
+        "Wonder 1 (Water Tower — MISSABLE DMW): Climb/examine the Nibelheim Water Tower for the Phoenix DMW Materia.",
+        "Wonder 2 (Inn Portrait): Inspect the painting of the girl on the 2nd floor of the Nibelheim Inn, leave & return until it disappears, then check the Innkeeper.",
+        "Wonder 3 (Mt. Nibel Bomb): Head onto Mt. Nibel trail and defeat the special Bomb monster (rewards Gold Shard / Safety Bit).",
+        "Wonder 4 (Shinra Manor Safe): Inspect the locked safe upstairs in Shinra Manor. Look through the 4 keyholes in the manor rooms to count: [1] Books not on shelf (East room), [2] Smiling Faces / Ghosts (West room), [3] Banora Apples + Cans (2F East), [4] Chairs (2F West). Use the Safe Code Calculator below!",
+        "Wonder 5 (Manor Basement): Examine the coffins in the underground cave/basement (rewards Vital Slash / Moogle).",
+        "Wonder 6 (Burning Nibelheim): During the fire, rescue the boy's mother inside the burning house (1-minute timer; rewards ATK Up++).",
+        "Wonder 7 (Ch. 9 Outskirts): In Chapter 9 Nibelheim Outskirts, inspect the glowing spot near the fence for Wall Materia."
+      ]
+    },
+    {
+      "id": "mg_flower_wagons",
+      "title": "Aerith's 3 Flower Wagons",
+      "chapter": "Ch. 7",
+      "missable": true,
+      "trophy": "Midgar Full of Flowers",
+      "summary": "Build all 3 Flower Wagons in Sector 5 Church BEFORE leaving Midgar at the end of Chapter 7.",
+      "steps": [
+        "Wagon 1 (Cute Wagon — Automatic Story): Tools (Sector 5/Church), Old Lumber (Loveless Ave), Worn Tires (Sector 8), Artisan's Specs (M1-2-x / Shinra).",
+        "Wagon 2 (Cool Shinra Wagon): Clear all 4 Squat tiers in SOLDIER Training Room for Shinra Lunch Cart Specs, Shinra Ceramic, Shinra Treads, and Shinra Solder.",
+        "Wagon 3 (Gorgeous Wagon): Craft via Mythril Tools (talk to researcher in Shinra Exhibit Room), Walnut Wood (Sector 8), Premium Tires (Sector 5), and Craftsmanship (Loveless Ave)."
+      ]
+    },
+    {
+      "id": "mg_perfume",
+      "title": "Sector 5 Perfume Blending",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "trophy": "Master Blender",
+      "summary": "At the Sector 5 Slums perfume stall, add the exact target drops of Mako perfume oil—zero over/under pours.",
+      "steps": [
+        "Wait for the shopkeeper's prompt: 1-drop gentle pour = tap once; large pour = hold briefly, or count the exact verbal recipe (e.g. 'just right' = 5 drops).",
+        "Mixing the exact count yields '+10 Aerith Affection' and unlocks Master Blender."
+      ]
+    },
+    {
+      "id": "mg_number_guess",
+      "title": "Sector 5 Number Guessing",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "trophy": "Bingo!",
+      "summary": "Pay 50 Gil to play, then ask the three nearby children for hints before locking your 1-digit guess.",
+      "steps": [
+        "Talk to all 3 kids around the market stall: Kid 1 reveals odd/even, Kid 2 reveals >5 or <=5, Kid 3 narrows it to 2 numbers.",
+        "Guess correctly on the first attempt for Bingo! trophy and maximum Aerith Affection."
+      ]
+    },
+    {
+      "id": "mg_materia_pickup_wallet",
+      "title": "Sector 5 Materia Pick-Up & Wallet Thief",
+      "chapter": "Ch. 4",
+      "missable": true,
+      "trophy": "Godlike / Good Match For Aerith",
+      "summary": "Clear the Materia Pick-Up speed test under 14 seconds and catch the fleeing thief near the Sector 5 gate.",
+      "steps": [
+        "Materia Pick-Up: Sprint in a tight clockwise loop starting from the top-left chest to finish in ~11–13 seconds (under 14s = 'Godlike').",
+        "Wallet Thief: Chase the kid along Sector 5 Market -> Station Street -> defeat the monsters quickly to boost Aerith Affection."
+      ]
+    },
+    {
+      "id": "mg_aerith_affection",
+      "title": "Aerith Affection Hidden Counter",
+      "chapter": "Ch. 4 & Ch. 7",
+      "missable": true,
+      "trophy": "Good Match For Aerith",
+      "summary": "Zack's hidden affection score with Aerith unlocks extra mails and the 'Good Match For Aerith' trophy.",
+      "steps": [
+        "+10 pts: Perfect Perfume Blend; +10 pts: Guess Number in 1 try; +10 pts: Godlike (<14s) Materia Pick-Up.",
+        "+5 pts: Buy Aerith the white flower ribbon / accessories at market; +10 pts: Catch Wallet Thief within 15 seconds.",
+        "+5 pts each: Dialogue choices praising Aerith or promising to come back in Ch. 4 & Ch. 7.",
+        "Threshold: 60+ total points in Ch. 4 triggers the 'Good Match For Aerith' evaluation and trophy."
+      ]
+    },
+    {
+      "id": "mg_banora_shells",
+      "title": "Banora 5 Lifestream Treasures & 10 Shells",
+      "chapter": "Ch. 2",
+      "missable": true,
+      "trophy": "Banora Treasures & Slicin' SOLDIER",
+      "summary": "Collect all 5 glowing Lifestream items before entering Angeal's house, then slice all 10 artillery shells outside the factory.",
+      "steps": [
+        "5 Spots (75-second timer): [1] North road near water, [2] Orchard path east, [3] Behind factory entrance, [4] Town square well, [5] Near Angeal's house.",
+        "10 Shells: Watch the red flash/spark as each shell approaches Zack and press Attack right before impact."
+      ]
+    },
+    {
+      "id": "mg_squats",
+      "title": "SOLDIER Training Room Squats (4 Tiers)",
+      "chapter": "Ch. 3–7",
+      "missable": true,
+      "trophy": "Midgar Full of Flowers / Mail",
+      "summary": "Beat all 4 challengers in the Shinra HQ SOLDIER Training Room.",
+      "steps": [
+        "Tier 1 (Shinra Trooper): 20+ squats -> Shinra Lunch Cart Specs + Trooper Mail.",
+        "Tier 2 (SOLDIER 3rd Class): 30+ squats -> Shinra Ceramic.",
+        "Tier 3 (SOLDIER 2nd Class): 45+ squats -> Shinra Treads.",
+        "Tier 4 (SOLDIER 1st Class Captain): 60+ squats -> Shinra Solder + Captain Mail. Watch Zack's knees hit the lowest point before tapping!"
+      ]
+    },
+    {
+      "id": "mg_modeoheim",
+      "title": "Modeoheim Sniper & Stealth Infiltration",
+      "chapter": "Ch. 5",
+      "missable": true,
+      "trophy": "Sniper Elite & Master Infiltrator",
+      "summary": "Zero-miss Sniper Rifle run followed by 5-chest Stealth Infiltration in the Mako Excavation Facility.",
+      "steps": [
+        "Sniper: Upgrade the rifle with enemy drops (Power/Barrel) from the first crate/guards; lead moving targets slightly and release zoom between shots to cool down.",
+        "Stealth (5 Chests): Crouch behind crates when guards turn away; only move when the guard's patrol icon faces opposite. Loot all 5 chests before entering the boiler door."
+      ]
+    },
+    {
+      "id": "mg_gongaga_depths",
+      "title": "Gongaga Waterfall 7 Chests & Ch. 10 LOVELESS Puzzle",
+      "chapter": "Ch. 9–10",
+      "missable": true,
+      "trophy": "Waterfall Chaser / Cage Opener",
+      "summary": "Collect all 7 waterfall chests in Ch. 9 Gongaga, then gather all 7 Goddess Materia in Ch. 10 Banora Underground.",
+      "steps": [
+        "Gongaga Waterfall (Ch. 9): Hug the left/right edges of the river basin while chests fall; dodge Sahagin spawns and open all 7 chests.",
+        "Depths of Judgment (Ch. 10): Inspect the 5 LOVELESS stone tablets to reveal portals, collect all 7 Goddess Materia (Light, Heaven, Ground, Star, Life, Being, Sabbath), and insert them into the altar to open the sealed cages & Behemoth King."
+      ]
+    }
+  ],
+  "magicPotEncounters": [
+    {
+      "id": "mp_m10_2_3",
+      "missionId": "M10-2-3",
+      "title": "M10-2-3: Master Tonberry — Magic Pot DMW Unlock",
+      "priority": "DO THIS FIRST (Unlocks Magic Pot DMW)",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Jump",
+          "itemId": "item_jump"
+        },
+        {
+          "step": 2,
+          "action": "Fira",
+          "itemId": "item_fira"
+        },
+        {
+          "step": 3,
+          "action": "Gravity",
+          "itemId": "item_gravity"
+        },
+        {
+          "step": 4,
+          "action": "Assault Twister",
+          "itemId": "item_assault_twister"
+        }
+      ],
+      "rewardName": "Magic Pot DMW Image (Item Mugger)",
+      "rewardItemId": "item_item_mugger",
+      "tips": "Equip Jump, Fira, Gravity, and Assault Twister before entering. Trigger random encounters until Magic Pot appears; wait for each speech bubble before performing the exact skill."
+    },
+    {
+      "id": "mp_m7_6_6",
+      "missionId": "M7-6-6",
+      "title": "M7-6-6: The Determined Recruiter — Genji Shield",
+      "priority": "REQUIRED FOR GENJI SET & TROPHY",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Gil Toss",
+          "itemId": "item_gil_toss"
+        },
+        {
+          "step": 2,
+          "action": "Costly Punch",
+          "itemId": "item_costly_punch"
+        },
+        {
+          "step": 3,
+          "action": "Deal 99,999 Damage (Break Damage Limit)",
+          "itemId": "item_brutal"
+        },
+        {
+          "step": 4,
+          "action": "Octaslash (DMW Limit)",
+          "itemId": "item_octaslash"
+        }
+      ],
+      "rewardName": "Genji Shield",
+      "rewardItemId": "item_genji_shield",
+      "tips": "Equip Gil Toss, Costly Punch, Brutal/Genji Glove (or 23%+ Buster Sword), and 4x Octaslash Materia (buy from Research Dept. QMC+!). Wait patiently in battle for Octaslash to trigger as step 4."
+    },
+    {
+      "id": "mp_m2_2_6",
+      "missionId": "M2-2-6",
+      "title": "M2-2-6: The Nightmare Begins — Early Magic Pot",
+      "priority": "Bonus Early Encounter",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Blizzard",
+          "itemId": "item_blizzard"
+        },
+        {
+          "step": 2,
+          "action": "Fire",
+          "itemId": "item_fire"
+        },
+        {
+          "step": 3,
+          "action": "Thunder",
+          "itemId": "item_thunder"
+        },
+        {
+          "step": 4,
+          "action": "Gravity",
+          "itemId": "item_gravity"
+        }
+      ],
+      "rewardName": "Elixir / Magic Pot Bonus",
+      "rewardItemId": "item_elixir",
+      "tips": "Early mission Magic Pot testing basic elemental spells + Gravity."
+    },
+    {
+      "id": "mp_m2_5_4",
+      "missionId": "M2-5-4",
+      "title": "M2-5-4: New Cavern — Midgame Magic Pot",
+      "priority": "Bonus Midgame Encounter",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Ultima",
+          "itemId": "item_ultima"
+        },
+        {
+          "step": 2,
+          "action": "Tri-Fire",
+          "itemId": "item_tri_fire"
+        },
+        {
+          "step": 3,
+          "action": "Iron Fist",
+          "itemId": "item_iron_fist"
+        },
+        {
+          "step": 4,
+          "action": "Electrocute",
+          "itemId": "item_electrocute"
+        }
+      ],
+      "rewardName": "Elixir / Precious Watch / Rare Drop",
+      "rewardItemId": "item_elixir",
+      "tips": "Bring high-rank Magic (Ultima, Tri-Fire, Electrocute) plus Iron Fist before farming this random spawn."
+    },
+    {
+      "id": "mp_m2_5_5",
+      "missionId": "M2-5-5",
+      "title": "M2-5-5: Another Cavern — Advanced Magic Pot",
+      "priority": "Bonus Encounter",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Ultima",
+          "itemId": "item_ultima"
+        },
+        {
+          "step": 2,
+          "action": "Tri-Thundaga",
+          "itemId": "item_tri_thundaga"
+        },
+        {
+          "step": 3,
+          "action": "Electrocute",
+          "itemId": "item_electrocute"
+        },
+        {
+          "step": 4,
+          "action": "Flare",
+          "itemId": "item_flare"
+        }
+      ],
+      "rewardName": "Elixir / High-Tier Catalyst",
+      "rewardItemId": "item_elixir",
+      "tips": "Requires late-game Ultimate Magic Materia; equip Genji Helm (0 MP) or Dualcast/Ethers."
+    },
+    {
+      "id": "mp_m2_5_6",
+      "missionId": "M2-5-6",
+      "title": "M2-5-6: The Great Beast — Endgame Magic Pot",
+      "priority": "Bonus Encounter",
+      "requests": [
+        {
+          "step": 1,
+          "action": "Flare",
+          "itemId": "item_flare"
+        },
+        {
+          "step": 2,
+          "action": "Energy",
+          "itemId": "item_energy"
+        },
+        {
+          "step": 3,
+          "action": "Ultima",
+          "itemId": "item_ultima"
+        },
+        {
+          "step": 4,
+          "action": "Costly Punch",
+          "itemId": "item_costly_punch"
+        }
+      ],
+      "rewardName": "Elixir / Rare Accessory",
+      "rewardItemId": "item_elixir",
+      "tips": "Pairs cleanly with an Arcane/Costly Punch endgame loadout while clearing M2-5-6."
+    }
+  ],
+  "mechanics": {
+    "zackBaseStats": [
+      {
+        "level": 1,
+        "hp": 610,
+        "mp": 37,
+        "ap": 42,
+        "atk": 11,
+        "vit": 11,
+        "mag": 11,
+        "spr": 11,
+        "lck": 10,
+        "totalExp": 0
+      },
+      {
+        "level": 2,
+        "hp": 665,
+        "mp": 42,
+        "ap": 47,
+        "atk": 12,
+        "vit": 12,
+        "mag": 12,
+        "spr": 12,
+        "lck": 10,
+        "totalExp": 85
+      },
+      {
+        "level": 3,
+        "hp": 720,
+        "mp": 48,
+        "ap": 52,
+        "atk": 12,
+        "vit": 12,
+        "mag": 12,
+        "spr": 12,
+        "lck": 11,
+        "totalExp": 170
+      },
+      {
+        "level": 4,
+        "hp": 775,
+        "mp": 53,
+        "ap": 57,
+        "atk": 13,
+        "vit": 13,
+        "mag": 13,
+        "spr": 13,
+        "lck": 12,
+        "totalExp": 255
+      },
+      {
+        "level": 5,
+        "hp": 830,
+        "mp": 58,
+        "ap": 62,
+        "atk": 14,
+        "vit": 14,
+        "mag": 14,
+        "spr": 14,
+        "lck": 12,
+        "totalExp": 340
+      },
+      {
+        "level": 6,
+        "hp": 898,
+        "mp": 64,
+        "ap": 68,
+        "atk": 15,
+        "vit": 15,
+        "mag": 15,
+        "spr": 15,
+        "lck": 13,
+        "totalExp": 720
+      },
+      {
+        "level": 7,
+        "hp": 966,
+        "mp": 70,
+        "ap": 74,
+        "atk": 16,
+        "vit": 16,
+        "mag": 16,
+        "spr": 16,
+        "lck": 13,
+        "totalExp": 1100
+      },
+      {
+        "level": 8,
+        "hp": 1034,
+        "mp": 76,
+        "ap": 80,
+        "atk": 16,
+        "vit": 16,
+        "mag": 16,
+        "spr": 16,
+        "lck": 14,
+        "totalExp": 1480
+      },
+      {
+        "level": 9,
+        "hp": 1102,
+        "mp": 82,
+        "ap": 86,
+        "atk": 17,
+        "vit": 17,
+        "mag": 17,
+        "spr": 17,
+        "lck": 14,
+        "totalExp": 1860
+      },
+      {
+        "level": 10,
+        "hp": 1170,
+        "mp": 88,
+        "ap": 92,
+        "atk": 18,
+        "vit": 18,
+        "mag": 18,
+        "spr": 18,
+        "lck": 15,
+        "totalExp": 2240
+      },
+      {
+        "level": 11,
+        "hp": 1258,
+        "mp": 95,
+        "ap": 99,
+        "atk": 19,
+        "vit": 19,
+        "mag": 19,
+        "spr": 19,
+        "lck": 16,
+        "totalExp": 3312
+      },
+      {
+        "level": 12,
+        "hp": 1346,
+        "mp": 102,
+        "ap": 106,
+        "atk": 20,
+        "vit": 20,
+        "mag": 20,
+        "spr": 20,
+        "lck": 16,
+        "totalExp": 4384
+      },
+      {
+        "level": 13,
+        "hp": 1434,
+        "mp": 110,
+        "ap": 114,
+        "atk": 20,
+        "vit": 20,
+        "mag": 20,
+        "spr": 20,
+        "lck": 17,
+        "totalExp": 5456
+      },
+      {
+        "level": 14,
+        "hp": 1522,
+        "mp": 117,
+        "ap": 121,
+        "atk": 21,
+        "vit": 21,
+        "mag": 21,
+        "spr": 21,
+        "lck": 17,
+        "totalExp": 6528
+      },
+      {
+        "level": 15,
+        "hp": 1610,
+        "mp": 124,
+        "ap": 128,
+        "atk": 22,
+        "vit": 22,
+        "mag": 22,
+        "spr": 22,
+        "lck": 18,
+        "totalExp": 7600
+      },
+      {
+        "level": 16,
+        "hp": 1714,
+        "mp": 132,
+        "ap": 136,
+        "atk": 23,
+        "vit": 23,
+        "mag": 23,
+        "spr": 23,
+        "lck": 19,
+        "totalExp": 9780
+      },
+      {
+        "level": 17,
+        "hp": 1818,
+        "mp": 141,
+        "ap": 145,
+        "atk": 24,
+        "vit": 24,
+        "mag": 24,
+        "spr": 24,
+        "lck": 19,
+        "totalExp": 11960
+      },
+      {
+        "level": 18,
+        "hp": 1922,
+        "mp": 149,
+        "ap": 153,
+        "atk": 24,
+        "vit": 24,
+        "mag": 24,
+        "spr": 24,
+        "lck": 20,
+        "totalExp": 14140
+      },
+      {
+        "level": 19,
+        "hp": 2026,
+        "mp": 158,
+        "ap": 162,
+        "atk": 25,
+        "vit": 25,
+        "mag": 25,
+        "spr": 25,
+        "lck": 20,
+        "totalExp": 16320
+      },
+      {
+        "level": 20,
+        "hp": 2130,
+        "mp": 166,
+        "ap": 170,
+        "atk": 26,
+        "vit": 26,
+        "mag": 26,
+        "spr": 26,
+        "lck": 21,
+        "totalExp": 18500
+      },
+      {
+        "level": 21,
+        "hp": 2250,
+        "mp": 176,
+        "ap": 180,
+        "atk": 27,
+        "vit": 27,
+        "mag": 27,
+        "spr": 27,
+        "lck": 22,
+        "totalExp": 22240
+      },
+      {
+        "level": 22,
+        "hp": 2370,
+        "mp": 185,
+        "ap": 189,
+        "atk": 28,
+        "vit": 28,
+        "mag": 28,
+        "spr": 28,
+        "lck": 22,
+        "totalExp": 25980
+      },
+      {
+        "level": 23,
+        "hp": 2490,
+        "mp": 195,
+        "ap": 199,
+        "atk": 28,
+        "vit": 28,
+        "mag": 28,
+        "spr": 28,
+        "lck": 23,
+        "totalExp": 29720
+      },
+      {
+        "level": 24,
+        "hp": 2610,
+        "mp": 204,
+        "ap": 208,
+        "atk": 29,
+        "vit": 29,
+        "mag": 29,
+        "spr": 29,
+        "lck": 23,
+        "totalExp": 33460
+      },
+      {
+        "level": 25,
+        "hp": 2730,
+        "mp": 214,
+        "ap": 218,
+        "atk": 30,
+        "vit": 30,
+        "mag": 30,
+        "spr": 30,
+        "lck": 24,
+        "totalExp": 37200
+      },
+      {
+        "level": 26,
+        "hp": 2868,
+        "mp": 225,
+        "ap": 229,
+        "atk": 31,
+        "vit": 31,
+        "mag": 31,
+        "spr": 31,
+        "lck": 25,
+        "totalExp": 42980
+      },
+      {
+        "level": 27,
+        "hp": 3006,
+        "mp": 236,
+        "ap": 240,
+        "atk": 32,
+        "vit": 32,
+        "mag": 32,
+        "spr": 32,
+        "lck": 25,
+        "totalExp": 48760
+      },
+      {
+        "level": 28,
+        "hp": 3144,
+        "mp": 246,
+        "ap": 250,
+        "atk": 32,
+        "vit": 32,
+        "mag": 32,
+        "spr": 32,
+        "lck": 26,
+        "totalExp": 54540
+      },
+      {
+        "level": 29,
+        "hp": 3282,
+        "mp": 257,
+        "ap": 261,
+        "atk": 33,
+        "vit": 33,
+        "mag": 33,
+        "spr": 33,
+        "lck": 26,
+        "totalExp": 60320
+      },
+      {
+        "level": 30,
+        "hp": 3420,
+        "mp": 268,
+        "ap": 272,
+        "atk": 34,
+        "vit": 34,
+        "mag": 34,
+        "spr": 34,
+        "lck": 27,
+        "totalExp": 66100
+      },
+      {
+        "level": 31,
+        "hp": 3574,
+        "mp": 280,
+        "ap": 284,
+        "atk": 35,
+        "vit": 35,
+        "mag": 35,
+        "spr": 35,
+        "lck": 28,
+        "totalExp": 75690
+      },
+      {
+        "level": 32,
+        "hp": 3728,
+        "mp": 292,
+        "ap": 296,
+        "atk": 35,
+        "vit": 35,
+        "mag": 35,
+        "spr": 35,
+        "lck": 28,
+        "totalExp": 85280
+      },
+      {
+        "level": 33,
+        "hp": 3882,
+        "mp": 303,
+        "ap": 307,
+        "atk": 36,
+        "vit": 36,
+        "mag": 36,
+        "spr": 36,
+        "lck": 28,
+        "totalExp": 94870
+      },
+      {
+        "level": 34,
+        "hp": 4036,
+        "mp": 315,
+        "ap": 319,
+        "atk": 37,
+        "vit": 37,
+        "mag": 37,
+        "spr": 37,
+        "lck": 29,
+        "totalExp": 104460
+      },
+      {
+        "level": 35,
+        "hp": 4190,
+        "mp": 327,
+        "ap": 331,
+        "atk": 38,
+        "vit": 38,
+        "mag": 38,
+        "spr": 38,
+        "lck": 30,
+        "totalExp": 114050
+      },
+      {
+        "level": 36,
+        "hp": 4344,
+        "mp": 339,
+        "ap": 343,
+        "atk": 38,
+        "vit": 38,
+        "mag": 38,
+        "spr": 38,
+        "lck": 30,
+        "totalExp": 123640
+      },
+      {
+        "level": 37,
+        "hp": 4498,
+        "mp": 351,
+        "ap": 355,
+        "atk": 39,
+        "vit": 39,
+        "mag": 39,
+        "spr": 39,
+        "lck": 30,
+        "totalExp": 133230
+      },
+      {
+        "level": 38,
+        "hp": 4652,
+        "mp": 362,
+        "ap": 366,
+        "atk": 40,
+        "vit": 40,
+        "mag": 40,
+        "spr": 40,
+        "lck": 31,
+        "totalExp": 142820
+      },
+      {
+        "level": 39,
+        "hp": 4806,
+        "mp": 374,
+        "ap": 378,
+        "atk": 40,
+        "vit": 40,
+        "mag": 40,
+        "spr": 40,
+        "lck": 32,
+        "totalExp": 152410
+      },
+      {
+        "level": 40,
+        "hp": 4960,
+        "mp": 386,
+        "ap": 390,
+        "atk": 41,
+        "vit": 41,
+        "mag": 41,
+        "spr": 41,
+        "lck": 32,
+        "totalExp": 162000
+      },
+      {
+        "level": 41,
+        "hp": 5122,
+        "mp": 399,
+        "ap": 403,
+        "atk": 42,
+        "vit": 42,
+        "mag": 42,
+        "spr": 42,
+        "lck": 32,
+        "totalExp": 178200
+      },
+      {
+        "level": 42,
+        "hp": 5284,
+        "mp": 412,
+        "ap": 416,
+        "atk": 42,
+        "vit": 42,
+        "mag": 42,
+        "spr": 42,
+        "lck": 33,
+        "totalExp": 194400
+      },
+      {
+        "level": 43,
+        "hp": 5446,
+        "mp": 424,
+        "ap": 428,
+        "atk": 43,
+        "vit": 43,
+        "mag": 43,
+        "spr": 43,
+        "lck": 34,
+        "totalExp": 210600
+      },
+      {
+        "level": 44,
+        "hp": 5608,
+        "mp": 437,
+        "ap": 441,
+        "atk": 44,
+        "vit": 44,
+        "mag": 44,
+        "spr": 44,
+        "lck": 34,
+        "totalExp": 226800
+      },
+      {
+        "level": 45,
+        "hp": 5770,
+        "mp": 450,
+        "ap": 454,
+        "atk": 44,
+        "vit": 44,
+        "mag": 44,
+        "spr": 44,
+        "lck": 34,
+        "totalExp": 243000
+      },
+      {
+        "level": 46,
+        "hp": 5932,
+        "mp": 463,
+        "ap": 467,
+        "atk": 45,
+        "vit": 45,
+        "mag": 45,
+        "spr": 45,
+        "lck": 35,
+        "totalExp": 259200
+      },
+      {
+        "level": 47,
+        "hp": 6094,
+        "mp": 476,
+        "ap": 480,
+        "atk": 46,
+        "vit": 46,
+        "mag": 46,
+        "spr": 46,
+        "lck": 36,
+        "totalExp": 275400
+      },
+      {
+        "level": 48,
+        "hp": 6256,
+        "mp": 488,
+        "ap": 492,
+        "atk": 47,
+        "vit": 47,
+        "mag": 47,
+        "spr": 47,
+        "lck": 36,
+        "totalExp": 291600
+      },
+      {
+        "level": 49,
+        "hp": 6418,
+        "mp": 501,
+        "ap": 505,
+        "atk": 47,
+        "vit": 47,
+        "mag": 47,
+        "spr": 47,
+        "lck": 36,
+        "totalExp": 307800
+      },
+      {
+        "level": 50,
+        "hp": 6580,
+        "mp": 514,
+        "ap": 518,
+        "atk": 48,
+        "vit": 48,
+        "mag": 48,
+        "spr": 48,
+        "lck": 37,
+        "totalExp": 324000
+      },
+      {
+        "level": 51,
+        "hp": 6714,
+        "mp": 527,
+        "ap": 531,
+        "atk": 49,
+        "vit": 49,
+        "mag": 49,
+        "spr": 49,
+        "lck": 38,
+        "totalExp": 349400
+      },
+      {
+        "level": 52,
+        "hp": 6848,
+        "mp": 540,
+        "ap": 544,
+        "atk": 49,
+        "vit": 49,
+        "mag": 49,
+        "spr": 49,
+        "lck": 38,
+        "totalExp": 374800
+      },
+      {
+        "level": 53,
+        "hp": 6982,
+        "mp": 554,
+        "ap": 558,
+        "atk": 50,
+        "vit": 50,
+        "mag": 50,
+        "spr": 50,
+        "lck": 38,
+        "totalExp": 400200
+      },
+      {
+        "level": 54,
+        "hp": 7116,
+        "mp": 567,
+        "ap": 571,
+        "atk": 51,
+        "vit": 51,
+        "mag": 51,
+        "spr": 51,
+        "lck": 39,
+        "totalExp": 425600
+      },
+      {
+        "level": 55,
+        "hp": 7250,
+        "mp": 580,
+        "ap": 584,
+        "atk": 52,
+        "vit": 52,
+        "mag": 52,
+        "spr": 52,
+        "lck": 40,
+        "totalExp": 451000
+      },
+      {
+        "level": 56,
+        "hp": 7384,
+        "mp": 593,
+        "ap": 597,
+        "atk": 52,
+        "vit": 52,
+        "mag": 52,
+        "spr": 52,
+        "lck": 40,
+        "totalExp": 476400
+      },
+      {
+        "level": 57,
+        "hp": 7518,
+        "mp": 606,
+        "ap": 610,
+        "atk": 53,
+        "vit": 53,
+        "mag": 53,
+        "spr": 53,
+        "lck": 40,
+        "totalExp": 501800
+      },
+      {
+        "level": 58,
+        "hp": 7652,
+        "mp": 620,
+        "ap": 624,
+        "atk": 54,
+        "vit": 54,
+        "mag": 54,
+        "spr": 54,
+        "lck": 41,
+        "totalExp": 527200
+      },
+      {
+        "level": 59,
+        "hp": 7786,
+        "mp": 633,
+        "ap": 637,
+        "atk": 54,
+        "vit": 54,
+        "mag": 54,
+        "spr": 54,
+        "lck": 42,
+        "totalExp": 552600
+      },
+      {
+        "level": 60,
+        "hp": 7920,
+        "mp": 646,
+        "ap": 650,
+        "atk": 55,
+        "vit": 55,
+        "mag": 55,
+        "spr": 55,
+        "lck": 42,
+        "totalExp": 578000
+      },
+      {
+        "level": 61,
+        "hp": 8017,
+        "mp": 659,
+        "ap": 663,
+        "atk": 56,
+        "vit": 56,
+        "mag": 56,
+        "spr": 56,
+        "lck": 42,
+        "totalExp": 614700
+      },
+      {
+        "level": 62,
+        "hp": 8114,
+        "mp": 672,
+        "ap": 676,
+        "atk": 56,
+        "vit": 56,
+        "mag": 56,
+        "spr": 56,
+        "lck": 43,
+        "totalExp": 651400
+      },
+      {
+        "level": 63,
+        "hp": 8211,
+        "mp": 684,
+        "ap": 688,
+        "atk": 57,
+        "vit": 57,
+        "mag": 57,
+        "spr": 57,
+        "lck": 43,
+        "totalExp": 688100
+      },
+      {
+        "level": 64,
+        "hp": 8308,
+        "mp": 697,
+        "ap": 701,
+        "atk": 57,
+        "vit": 57,
+        "mag": 57,
+        "spr": 57,
+        "lck": 44,
+        "totalExp": 724800
+      },
+      {
+        "level": 65,
+        "hp": 8405,
+        "mp": 710,
+        "ap": 714,
+        "atk": 58,
+        "vit": 58,
+        "mag": 58,
+        "spr": 58,
+        "lck": 44,
+        "totalExp": 761500
+      },
+      {
+        "level": 66,
+        "hp": 8502,
+        "mp": 723,
+        "ap": 727,
+        "atk": 59,
+        "vit": 59,
+        "mag": 59,
+        "spr": 59,
+        "lck": 44,
+        "totalExp": 798200
+      },
+      {
+        "level": 67,
+        "hp": 8599,
+        "mp": 736,
+        "ap": 740,
+        "atk": 59,
+        "vit": 59,
+        "mag": 59,
+        "spr": 59,
+        "lck": 45,
+        "totalExp": 834900
+      },
+      {
+        "level": 68,
+        "hp": 8696,
+        "mp": 748,
+        "ap": 752,
+        "atk": 60,
+        "vit": 60,
+        "mag": 60,
+        "spr": 60,
+        "lck": 45,
+        "totalExp": 871600
+      },
+      {
+        "level": 69,
+        "hp": 8793,
+        "mp": 761,
+        "ap": 765,
+        "atk": 60,
+        "vit": 60,
+        "mag": 60,
+        "spr": 60,
+        "lck": 46,
+        "totalExp": 908300
+      },
+      {
+        "level": 70,
+        "hp": 8890,
+        "mp": 774,
+        "ap": 778,
+        "atk": 61,
+        "vit": 61,
+        "mag": 61,
+        "spr": 61,
+        "lck": 46,
+        "totalExp": 945000
+      },
+      {
+        "level": 71,
+        "hp": 8949,
+        "mp": 785,
+        "ap": 789,
+        "atk": 62,
+        "vit": 62,
+        "mag": 62,
+        "spr": 62,
+        "lck": 46,
+        "totalExp": 995000
+      },
+      {
+        "level": 72,
+        "hp": 9008,
+        "mp": 796,
+        "ap": 800,
+        "atk": 62,
+        "vit": 62,
+        "mag": 62,
+        "spr": 62,
+        "lck": 47,
+        "totalExp": 1045000
+      },
+      {
+        "level": 73,
+        "hp": 9067,
+        "mp": 806,
+        "ap": 810,
+        "atk": 62,
+        "vit": 62,
+        "mag": 62,
+        "spr": 62,
+        "lck": 47,
+        "totalExp": 1095000
+      },
+      {
+        "level": 74,
+        "hp": 9126,
+        "mp": 817,
+        "ap": 821,
+        "atk": 63,
+        "vit": 63,
+        "mag": 63,
+        "spr": 63,
+        "lck": 48,
+        "totalExp": 1145000
+      },
+      {
+        "level": 75,
+        "hp": 9185,
+        "mp": 828,
+        "ap": 832,
+        "atk": 64,
+        "vit": 64,
+        "mag": 64,
+        "spr": 64,
+        "lck": 48,
+        "totalExp": 1195000
+      },
+      {
+        "level": 76,
+        "hp": 9244,
+        "mp": 839,
+        "ap": 843,
+        "atk": 64,
+        "vit": 64,
+        "mag": 64,
+        "spr": 64,
+        "lck": 48,
+        "totalExp": 1245000
+      },
+      {
+        "level": 77,
+        "hp": 9303,
+        "mp": 850,
+        "ap": 854,
+        "atk": 64,
+        "vit": 64,
+        "mag": 64,
+        "spr": 64,
+        "lck": 49,
+        "totalExp": 1295000
+      },
+      {
+        "level": 78,
+        "hp": 9362,
+        "mp": 860,
+        "ap": 864,
+        "atk": 65,
+        "vit": 65,
+        "mag": 65,
+        "spr": 65,
+        "lck": 49,
+        "totalExp": 1345000
+      },
+      {
+        "level": 79,
+        "hp": 9421,
+        "mp": 871,
+        "ap": 875,
+        "atk": 66,
+        "vit": 66,
+        "mag": 66,
+        "spr": 66,
+        "lck": 50,
+        "totalExp": 1395000
+      },
+      {
+        "level": 80,
+        "hp": 9480,
+        "mp": 882,
+        "ap": 886,
+        "atk": 66,
+        "vit": 66,
+        "mag": 66,
+        "spr": 66,
+        "lck": 50,
+        "totalExp": 1445000
+      },
+      {
+        "level": 81,
+        "hp": 9514,
+        "mp": 889,
+        "ap": 893,
+        "atk": 66,
+        "vit": 66,
+        "mag": 66,
+        "spr": 66,
+        "lck": 50,
+        "totalExp": 1511000
+      },
+      {
+        "level": 82,
+        "hp": 9548,
+        "mp": 897,
+        "ap": 901,
+        "atk": 67,
+        "vit": 67,
+        "mag": 67,
+        "spr": 67,
+        "lck": 51,
+        "totalExp": 1577000
+      },
+      {
+        "level": 83,
+        "hp": 9582,
+        "mp": 904,
+        "ap": 908,
+        "atk": 68,
+        "vit": 68,
+        "mag": 68,
+        "spr": 68,
+        "lck": 51,
+        "totalExp": 1643000
+      },
+      {
+        "level": 84,
+        "hp": 9616,
+        "mp": 912,
+        "ap": 916,
+        "atk": 68,
+        "vit": 68,
+        "mag": 68,
+        "spr": 68,
+        "lck": 51,
+        "totalExp": 1709000
+      },
+      {
+        "level": 85,
+        "hp": 9650,
+        "mp": 919,
+        "ap": 923,
+        "atk": 68,
+        "vit": 68,
+        "mag": 68,
+        "spr": 68,
+        "lck": 52,
+        "totalExp": 1775000
+      },
+      {
+        "level": 86,
+        "hp": 9684,
+        "mp": 926,
+        "ap": 930,
+        "atk": 69,
+        "vit": 69,
+        "mag": 69,
+        "spr": 69,
+        "lck": 52,
+        "totalExp": 1841000
+      },
+      {
+        "level": 87,
+        "hp": 9718,
+        "mp": 934,
+        "ap": 938,
+        "atk": 70,
+        "vit": 70,
+        "mag": 70,
+        "spr": 70,
+        "lck": 52,
+        "totalExp": 1907000
+      },
+      {
+        "level": 88,
+        "hp": 9752,
+        "mp": 941,
+        "ap": 945,
+        "atk": 70,
+        "vit": 70,
+        "mag": 70,
+        "spr": 70,
+        "lck": 52,
+        "totalExp": 1973000
+      },
+      {
+        "level": 89,
+        "hp": 9786,
+        "mp": 949,
+        "ap": 953,
+        "atk": 70,
+        "vit": 70,
+        "mag": 70,
+        "spr": 70,
+        "lck": 53,
+        "totalExp": 2039000
+      },
+      {
+        "level": 90,
+        "hp": 9820,
+        "mp": 956,
+        "ap": 960,
+        "atk": 71,
+        "vit": 71,
+        "mag": 71,
+        "spr": 71,
+        "lck": 53,
+        "totalExp": 2105000
+      },
+      {
+        "level": 91,
+        "hp": 9840,
+        "mp": 961,
+        "ap": 964,
+        "atk": 71,
+        "vit": 71,
+        "mag": 71,
+        "spr": 71,
+        "lck": 53,
+        "totalExp": 2188889
+      },
+      {
+        "level": 92,
+        "hp": 9860,
+        "mp": 966,
+        "ap": 969,
+        "atk": 72,
+        "vit": 72,
+        "mag": 72,
+        "spr": 72,
+        "lck": 54,
+        "totalExp": 2272778
+      },
+      {
+        "level": 93,
+        "hp": 9880,
+        "mp": 970,
+        "ap": 973,
+        "atk": 72,
+        "vit": 72,
+        "mag": 72,
+        "spr": 72,
+        "lck": 54,
+        "totalExp": 2356667
+      },
+      {
+        "level": 94,
+        "hp": 9900,
+        "mp": 975,
+        "ap": 977,
+        "atk": 73,
+        "vit": 73,
+        "mag": 73,
+        "spr": 73,
+        "lck": 54,
+        "totalExp": 2440556
+      },
+      {
+        "level": 95,
+        "hp": 9919,
+        "mp": 980,
+        "ap": 982,
+        "atk": 73,
+        "vit": 73,
+        "mag": 73,
+        "spr": 73,
+        "lck": 55,
+        "totalExp": 2524444
+      },
+      {
+        "level": 96,
+        "hp": 9939,
+        "mp": 985,
+        "ap": 986,
+        "atk": 74,
+        "vit": 74,
+        "mag": 74,
+        "spr": 74,
+        "lck": 55,
+        "totalExp": 2608333
+      },
+      {
+        "level": 97,
+        "hp": 9959,
+        "mp": 989,
+        "ap": 990,
+        "atk": 74,
+        "vit": 74,
+        "mag": 74,
+        "spr": 74,
+        "lck": 55,
+        "totalExp": 2692222
+      },
+      {
+        "level": 98,
+        "hp": 9979,
+        "mp": 994,
+        "ap": 995,
+        "atk": 75,
+        "vit": 75,
+        "mag": 75,
+        "spr": 75,
+        "lck": 56,
+        "totalExp": 2776111
+      },
+      {
+        "level": 99,
+        "hp": 9999,
+        "mp": 999,
+        "ap": 999,
+        "atk": 75,
+        "vit": 75,
+        "mag": 75,
+        "spr": 75,
+        "lck": 56,
+        "totalExp": 2860000
+      }
+    ],
+    "dmwMechanics": {
+      "hiddenExpRule": "Zack has a hidden EXP counter alongside DMW reels. Crossing the level EXP threshold enables level-ups ONLY when the DMW rolls 7-7-7. Excess EXP banks cleanly across missions (as long as you clear, not abandon!).",
+      "emotionalPhases": [
+        {
+          "state": "Normal (Lv. 1)",
+          "multiplier": "1.0x",
+          "notes": "Baseline reel speed and Modulating Phase frequency."
+        },
+        {
+          "state": "High (Lv. 2)",
+          "multiplier": "1.5x",
+          "notes": "Boosted by story events, DMW character matches, or Limit Breaks."
+        },
+        {
+          "state": "Sky High (Lv. 3)",
+          "multiplier": "2.0x",
+          "notes": "Frequent double/triple number Materia level-ups."
+        },
+        {
+          "state": "Heavenly (Lv. 4)",
+          "multiplier": "4.0x+",
+          "notes": "Highest chance of 7-7-7 Level Up, Limit Breaks, and Summons (triggered often after Cissnei Lucky Stars!)."
+        }
+      ],
+      "limitVerge": "In Reunion, Limit Breaks & Summons store into a Limit Verge button instead of auto-firing. Hold a stored Limit Verge (like Octaslash or Costly Punch combos) to shatter boss Skill Power bars immediately.",
+      "curseWarning": "Curse status (from Cursed Ring, Heike Soul, or enemy hits) freezes DMW reels completely—remove Heike Soul / Cursed Ring when AFK mastering Materia or farming 100% DMW in M1-1-1!"
+    },
+    "reunionCombat": {
+      "skillPowerGauge": [
+        {
+          "threshold": "100% – 76%",
+          "reduction": "0% (Full Ultimate Damage)",
+          "note": "Dangerous on Hard Mode; Minerva's Judgment Arrow can wipe without Auto-Raise."
+        },
+        {
+          "threshold": "75% – 51%",
+          "reduction": "-25% Ultimate Damage",
+          "note": "Moderate mitigation; keep Wall active."
+        },
+        {
+          "threshold": "50% – 26%",
+          "reduction": "-50% Ultimate Damage",
+          "note": "Survivable with 255 VIT/SPR + Wall."
+        },
+        {
+          "threshold": "25% – 1%",
+          "reduction": "-75% Ultimate Damage",
+          "note": "Minimal chip damage."
+        },
+        {
+          "threshold": "0% (Broken!)",
+          "reduction": "100% Cancelled + Boss Staggered",
+          "note": "Cancels the ultimate completely and opens a huge free damage window!"
+        }
+      ],
+      "battleStance": [
+        {
+          "perk": "Enter Battle Stance (Guard + Attack)",
+          "unlock": "Inherited in Ch. 1/2",
+          "effect": "Reduces incoming damage dramatically while charging Strong Attack or Command Materia (+50% to +100% damage boost)."
+        },
+        {
+          "perk": "Damage Limit Break (99,999)",
+          "unlock": "23% Proficiency",
+          "effect": "All Battle Stance attacks and Command Materia cast from Battle Stance break the 9,999 damage cap without Brutal/Genji Glove!"
+        },
+        {
+          "perk": "Barrier Piercing",
+          "unlock": "47% Proficiency",
+          "effect": "Attacks & skills from Battle Stance ignore and shatter enemy Barrier / MBarrier."
+        },
+        {
+          "perk": "Necromose / Stance Drain",
+          "unlock": "100% Proficiency",
+          "effect": "Every Battle Stance kill restores HP/MP/AP and maximizes Strong Attack damage multiplier."
+        }
+      ]
+    },
+    "statusEffects": [
+      {
+        "id": "st_poison",
+        "name": "Poison",
+        "kind": "Ailment",
+        "effect": "Drains 5% Max HP periodically over time.",
+        "counter": "Cure with Esuna, Remedy, or Potion; prevent with Star Pendant, Pearl Necklace, Ribbon, or Status Ward + Hell-aga.",
+        "itemIds": [
+          "item_star_pendant",
+          "item_status_ward",
+          "item_super_ribbon"
+        ]
+      },
+      {
+        "id": "st_silence",
+        "name": "Silence",
+        "kind": "Ailment",
+        "effect": "Prevents casting Magic Materia (Curaga, Wall, Ultima). Command Materia still works.",
+        "counter": "Cure with Esuna or Remedy; prevent with White Cape, Mystile, Pearl Necklace, or Status Ward.",
+        "itemIds": [
+          "item_white_cape",
+          "item_esuna",
+          "item_status_ward"
+        ]
+      },
+      {
+        "id": "st_stun",
+        "name": "Stun",
+        "kind": "Ailment",
+        "effect": "Freezes Zack completely until the duration expires or he is struck.",
+        "counter": "Prevent with Headband, Chocobo Armlets, Ribbon, Super Ribbon, or Status Ward + Hell-aga.",
+        "itemIds": [
+          "item_headband",
+          "item_super_ribbon",
+          "item_status_ward"
+        ]
+      },
+      {
+        "id": "st_stop",
+        "name": "Stop",
+        "kind": "Ailment",
+        "effect": "Halts all movement, actions, and DMW reels—extremely lethal on Hard Mode.",
+        "counter": "Prevent with Sprint Shoes, Ribbon, Super Ribbon, or Status Ward + Hell-aga (e.g., Hell Blizzaga).",
+        "itemIds": [
+          "item_sprint_shoes",
+          "item_hell_blizzaga",
+          "item_status_ward"
+        ]
+      },
+      {
+        "id": "st_death",
+        "name": "Instant Death",
+        "kind": "Ailment",
+        "effect": "Kills Zack immediately regardless of HP/VIT/SPR (unless Auto-Raise is active).",
+        "counter": "Note: Standard Ribbon does NOT block Death! Use Safety Bit, Super Ribbon, Genji Shield, or Status Ward + Hell-aga.",
+        "itemIds": [
+          "item_safety_bit",
+          "item_super_ribbon",
+          "item_genji_shield"
+        ]
+      },
+      {
+        "id": "st_curse",
+        "name": "Curse",
+        "kind": "Ailment",
+        "effect": "Stops the DMW reels completely (no Limit Breaks, no Materia level-ups, no DMW EXP level-ups).",
+        "counter": "Inherent to Cursed Ring & Heike Soul. Cure with Remedy/Esuna or prevent with Gris-Gris Bag / Super Ribbon.",
+        "itemIds": [
+          "item_gris_gris_bag",
+          "item_cursed_ring",
+          "item_heike_soul"
+        ]
+      },
+      {
+        "id": "st_barrier",
+        "name": "Barrier",
+        "kind": "Buff",
+        "effect": "Halves incoming physical damage. Stacks multiplicatively with 255 VIT.",
+        "counter": "Apply via Barrier, Wall, Moon Bracer, Protect Ring, or Genji Shield.",
+        "itemIds": [
+          "item_wall",
+          "item_protect_ring",
+          "item_genji_shield"
+        ]
+      },
+      {
+        "id": "st_mbarrier",
+        "name": "MBarrier",
+        "kind": "Buff",
+        "effect": "Halves incoming magical damage. Essential for Minerva's Crimson Flare/Krysta/Ultima.",
+        "counter": "Apply via MBarrier, Wall, Shining Bracer, Protect Ring, or Genji Shield.",
+        "itemIds": [
+          "item_wall",
+          "item_protect_ring",
+          "item_genji_shield"
+        ]
+      },
+      {
+        "id": "st_regen",
+        "name": "Regen",
+        "kind": "Buff",
+        "effect": "Continuously restores HP over time—powers AFK M1-1-1 DMW farming.",
+        "counter": "Apply via Regen Materia, Faerie Ring, or Genji Armor.",
+        "itemIds": [
+          "item_regen",
+          "item_faerie_ring",
+          "item_genji_armor"
+        ]
+      },
+      {
+        "id": "st_endure",
+        "name": "Endure",
+        "kind": "Buff",
+        "effect": "Prevents Zack from flinching or getting interrupted during animations.",
+        "counter": "Granted by Twisted Headband or Genji Armor.",
+        "itemIds": [
+          "item_twisted_headband",
+          "item_genji_armor"
+        ]
+      },
+      {
+        "id": "st_raise",
+        "name": "Auto-Raise (Reraise)",
+        "kind": "Buff",
+        "effect": "Automatically revives Zack with full HP once upon KO. Dispelled by Minerva's Judgment Arrow!",
+        "counter": "Use Phoenix Down in battle or trigger Phoenix (Rebirth Flame) DMW.",
+        "itemIds": [
+          "item_phoenix_down",
+          "item_rebirth_flame"
+        ]
+      },
+      {
+        "id": "st_null_phys_mag",
+        "name": "Null Physical / Null Magic",
+        "kind": "Enemy Flag",
+        "effect": "Certain enemies (Movers, Magic Pots, Elementals) completely negate Physical or Magic hits.",
+        "counter": "Swap to Costly Punch/Magic vs Null Physical, or physical Command Materia vs Null Magic.",
+        "itemIds": [
+          "item_costly_punch",
+          "item_electrocute"
+        ]
+      },
+      {
+        "id": "st_zero_mp_ap",
+        "name": "Zero MP / AP Cost",
+        "kind": "Buff",
+        "effect": "Reduces all spell MP or skill AP costs to 0.",
+        "counter": "Granted by Genji Helm (both), Soul of Thamasa (MP), Laurel Crown (AP), or DMW Modulating Phase.",
+        "itemIds": [
+          "item_genji_helm",
+          "item_soul_of_thamasa",
+          "item_laurel_crown"
+        ]
+      },
+      {
+        "id": "st_critical",
+        "name": "Always Critical",
+        "kind": "Buff",
+        "effect": "Forces every physical hit/skill to deal critical 2x damage.",
+        "counter": "Granted by Genji Glove, Sniper Eye, or attacking directly behind an enemy's back.",
+        "itemIds": [
+          "item_genji_glove",
+          "item_sniper_eye"
+        ]
+      }
+    ],
+    "reunionVsPsp": [
+      {
+        "feature": "Boss Skill Power Gauge",
+        "psp": "Not present (boss ultimate moves always dealt full damage).",
+        "reunion": "Added to every boss! Depleting the purple bar reduces ultimate damage by 25%/50%/75% or completely cancels it at 0%."
+      },
+      {
+        "feature": "Buster Sword Battle Stance & Proficiency",
+        "psp": "Basic guard & combo only; no stance proficiency.",
+        "reunion": "New Battle Stance (Guard + Attack): builds 0–100% Proficiency, unlocking Break Damage Limit at 23% and Barrier Pierce at 47%."
+      },
+      {
+        "feature": "Minerva Hard Mode HP",
+        "psp": "10,000,000 HP (Normal) / 20,000,000 HP (Hard) — PSP Hard Minerva had 20M.",
+        "reunion": "10,000,000 HP (Normal) / 20,000,000 HP (Hard) with 255 stats and Skill Power Judgment Arrow."
+      },
+      {
+        "feature": "Mission Clear Rewards",
+        "psp": "Repeatable mission clear rewards on certain missions.",
+        "reunion": "Mission Clear Rewards are awarded ONCE ONLY! Use M6-6-3 Dark Matter + 98/980% Libra conversion instead."
+      },
+      {
+        "feature": "DMW Limit Verge",
+        "psp": "Limit Breaks triggered immediately when rolled, interrupting combat.",
+        "reunion": "Limit Breaks & Summons are STORED in a Limit Verge slot so you can trigger them on demand (e.g., to break Skill Power gauges!)."
+      },
+      {
+        "feature": "DMW Cutscenes & Modulating Phase",
+        "psp": "Forced full-length summon & flashback animations.",
+        "reunion": "Skippable animations (skipping still counts toward 100% DMW!) and faster combat flow."
+      },
+      {
+        "feature": "X-Potion & Healing Caps",
+        "psp": "X-Potion healed ~2,500 HP, making it useless at 99,999 HP.",
+        "reunion": "X-Potion heals up to 99,999 HP in Reunion, making it viable against Minerva alongside Curaga."
+      },
+      {
+        "feature": "Instant-Cast & Shortcuts",
+        "psp": "L/R scrolling menu only.",
+        "reunion": "L1+Face Button instant shortcuts for all 6 equipped Materia + full 360° camera control."
+      }
+    ],
+    "ngPlusCarryover": [
+      {
+        "item": "Zack's Level, EXP, HP/MP/AP/Stats, Gil, SP",
+        "carriesOver": true,
+        "note": "All character stats and currencies carry over untouched."
+      },
+      {
+        "item": "Equipped & Inventory Materia (including +999%/+100 stats & Mastered levels)",
+        "carriesOver": true,
+        "note": "All Materia and fusion bonuses carry over."
+      },
+      {
+        "item": "Accessories & Consumables / Fusion Catalysts",
+        "carriesOver": true,
+        "note": "Genji Gear, Divine Slayer, Heike Soul, Adaman Bangle, Dark Matter, etc. carry over."
+      },
+      {
+        "item": "Buster Sword Proficiency %",
+        "carriesOver": true,
+        "note": "Carries over once Buster Sword is inherited in Ch. 1/2."
+      },
+      {
+        "item": "DMW Completion % & Unlocked Portraits",
+        "carriesOver": true,
+        "note": "Wait: DMW images re-lock visually until story points, OR keep %? In Reunion, DMW % carries over! Still grab Phoenix in Ch. 8 if missed."
+      },
+      {
+        "item": "Key Items (Item Fusion Tome, Keychain, Backpack, Shops)",
+        "carriesOver": false,
+        "note": "RESET! You must re-clear M7-2-1, M7-2-2, M7-2-5 and re-unlock all 16 shops."
+      },
+      {
+        "item": "300 Mission Completion Progress",
+        "carriesOver": false,
+        "note": "RESET to 0/300! Finish all 300 missions in ONE playthrough if going for Heike Soul / 100%."
+      },
+      {
+        "item": "Mail Inbox & Fan Club Memberships",
+        "carriesOver": false,
+        "note": "RESET! Must re-join all 5 Fan Clubs and re-collect all 20 mail senders in one run for Mail Completionist."
+      }
+    ]
+  }
+}

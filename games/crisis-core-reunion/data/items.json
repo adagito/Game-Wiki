@@ -13,7 +13,15 @@
     "treasureMissions": [
       "M9-2-4",
       "M9-5-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Break HP Limit"
+      ],
+      "statMods": {
+        "breakHp": true
+      }
+    }
   },
   {
     "id": "item_aegis_armlet",
@@ -30,7 +38,20 @@
       "M3-3-4",
       "M9-3-1",
       "M9-5-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 20,
+        "spr": 20,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_amulet",
@@ -56,7 +77,15 @@
     "clearRewardMissions": [
       "M5-1-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 30
+      }
+    }
   },
   {
     "id": "item_assault_targe",
@@ -67,7 +96,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 50,
+        "vit": 50,
+        "mag": -80,
+        "spr": -80
+      }
+    }
   },
   {
     "id": "item_black_belt",
@@ -90,7 +130,20 @@
     "treasureMissions": [
       "M2-5-3",
       "M9-2-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 20,
+        "vit": 20,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_black_cowl",
@@ -106,7 +159,15 @@
     "treasureMissions": [
       "M2-5-5",
       "M9-3-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Break AP Limit"
+      ],
+      "statMods": {
+        "breakAp": true
+      }
+    }
   },
   {
     "id": "item_blaze_armlet",
@@ -130,7 +191,19 @@
       "M4-5-1",
       "M6-5-3",
       "M8-6-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Absorb",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 30,
+        "absorbElems": [
+          "Fire"
+        ]
+      }
+    }
   },
   {
     "id": "item_bolt_armlet",
@@ -152,7 +225,19 @@
       "M6-4-6",
       "M7-6-1",
       "M8-5-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Absorb",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 30,
+        "absorbElems": [
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_brigands_gloves",
@@ -173,7 +258,13 @@
     ],
     "treasureMissions": [
       "M9-3-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Drop/Steal Boost"
+      ],
+      "statMods": {}
+    }
   },
   {
     "id": "item_bronze_armlet",
@@ -202,7 +293,15 @@
       "M6-1-5",
       "M6-3-2",
       "M9-1-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 20
+      }
+    }
   },
   {
     "id": "item_bronze_bangle",
@@ -228,7 +327,15 @@
     "clearRewardMissions": [
       "M3-1-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 10
+      }
+    }
   },
   {
     "id": "item_brutal",
@@ -244,7 +351,15 @@
     ],
     "treasureMissions": [
       "M9-6-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Break Damage Limit"
+      ],
+      "statMods": {
+        "breakDmg": true
+      }
+    }
   },
   {
     "id": "item_bulletproof_vest",
@@ -270,7 +385,15 @@
     "clearRewardMissions": [
       "M4-1-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 30
+      }
+    }
   },
   {
     "id": "item_carbon_bangle",
@@ -297,7 +420,15 @@
     "treasureMissions": [
       "M1-5-1",
       "M8-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 40
+      }
+    }
   },
   {
     "id": "item_champion_belt",
@@ -324,7 +455,20 @@
       "M7-3-4",
       "M7-3-6",
       "M7-5-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 10,
+        "vit": 10,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_chocobo_armlet",
@@ -352,7 +496,15 @@
     ],
     "treasureMissions": [
       "M2-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "apPct": 20
+      }
+    }
   },
   {
     "id": "item_circlet",
@@ -372,7 +524,15 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M8-4-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 10
+      }
+    }
   },
   {
     "id": "item_crystal_bracelet",
@@ -388,7 +548,20 @@
     "treasureMissions": [
       "M9-1-4",
       "M9-2-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 20,
+        "spr": 20,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_crystal_gloves",
@@ -413,7 +586,20 @@
       "M1-4-5",
       "M6-3-4",
       "M9-4-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 20,
+        "mag": 20,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_crystal_orb",
@@ -440,7 +626,15 @@
       "M9-3-2",
       "M9-3-3",
       "M9-3-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 80
+      }
+    }
   },
   {
     "id": "item_cursed_ring",
@@ -454,7 +648,25 @@
     "treasureMissions": [
       "M2-4-4",
       "M10-1-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 50,
+        "mpPct": 50,
+        "apPct": 50,
+        "atk": 30,
+        "vit": 30,
+        "mag": 30,
+        "spr": 30,
+        "lck": 30,
+        "autoBuffs": [
+          "Curse"
+        ]
+      }
+    }
   },
   {
     "id": "item_dark_agent",
@@ -467,7 +679,23 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-4-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Zero MP/AP",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 50,
+        "apPct": 50,
+        "atk": 100,
+        "vit": 100,
+        "mpPct": -50,
+        "mag": -100,
+        "spr": -100,
+        "zeroAp": true
+      }
+    }
   },
   {
     "id": "item_diamond_bracelet",
@@ -494,7 +722,20 @@
       "M8-4-6",
       "M8-5-3",
       "M8-6-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 10,
+        "spr": 10,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_diamond_gloves",
@@ -520,7 +761,20 @@
       "M8-3-4",
       "M9-1-2",
       "M9-2-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 10,
+        "mag": 10,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_divine_slayer",
@@ -533,7 +787,36 @@
     "clearRewardMissions": [
       "M9-6-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Break HP Limit",
+        "Break MP Limit",
+        "Break AP Limit",
+        "Break Damage Limit",
+        "Elemental Absorb",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 100,
+        "mpPct": 100,
+        "apPct": 100,
+        "atk": 50,
+        "vit": 50,
+        "mag": 50,
+        "spr": 50,
+        "lck": 50,
+        "breakHp": true,
+        "breakMp": true,
+        "breakAp": true,
+        "breakDmg": true,
+        "absorbElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_docs_code",
@@ -548,7 +831,13 @@
     ],
     "treasureMissions": [
       "M9-5-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Utility"
+      ],
+      "statMods": {}
+    }
   },
   {
     "id": "item_dragon_armlet",
@@ -572,7 +861,21 @@
     "clearRewardMissions": [
       "M7-2-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Elemental Halve",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 30,
+        "halveElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_earrings",
@@ -596,7 +899,15 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_element_blade",
@@ -624,7 +935,17 @@
     "treasureMissions": [
       "M2-5-1",
       "M6-6-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 50,
+        "atk": 5,
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_energy_suit",
@@ -640,7 +961,21 @@
     ],
     "treasureMissions": [
       "M9-6-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 20,
+        "apPct": 100,
+        "atk": 100,
+        "vit": 50,
+        "mpPct": -50,
+        "mag": -100,
+        "spr": -50
+      }
+    }
   },
   {
     "id": "item_escort_guard",
@@ -661,7 +996,23 @@
     ],
     "treasureMissions": [
       "M9-5-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Immunity",
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 30,
+        "spr": 30,
+        "immuneElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_faerie_ring",
@@ -681,7 +1032,19 @@
       "M2-5-5",
       "M7-6-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "autoBuffs": [
+          "Regen"
+        ]
+      }
+    }
   },
   {
     "id": "item_feather_cap",
@@ -694,7 +1057,13 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M4-3-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Utility"
+      ],
+      "statMods": {}
+    }
   },
   {
     "id": "item_fire_armlet",
@@ -722,7 +1091,21 @@
     ],
     "treasureMissions": [
       "M8-1-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Halve",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "vit": 5,
+        "spr": 5,
+        "halveElems": [
+          "Fire"
+        ]
+      }
+    }
   },
   {
     "id": "item_fire_ring",
@@ -750,7 +1133,17 @@
     ],
     "treasureMissions": [
       "M9-1-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "atk": 5,
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_flame_armlet",
@@ -772,7 +1165,19 @@
       "M4-4-4",
       "M6-3-5",
       "M8-6-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 20,
+        "immuneElems": [
+          "Fire"
+        ]
+      }
+    }
   },
   {
     "id": "item_force_bracelet",
@@ -795,7 +1200,16 @@
     "treasureMissions": [
       "M7-3-1",
       "M8-5-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 5,
+        "spr": 5
+      }
+    }
   },
   {
     "id": "item_force_of_nature",
@@ -806,7 +1220,21 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Elemental Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 40,
+        "immuneElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_four_slots",
@@ -830,7 +1258,16 @@
       "M2-1-6",
       "M3-3-1",
       "M7-2-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 5,
+        "spr": 5
+      }
+    }
   },
   {
     "id": "item_frost_armlet",
@@ -853,7 +1290,19 @@
     "treasureMissions": [
       "M1-4-1",
       "M9-1-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 20,
+        "immuneElems": [
+          "Ice"
+        ]
+      }
+    }
   },
   {
     "id": "item_fury_ring",
@@ -864,7 +1313,13 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Utility"
+      ],
+      "statMods": {}
+    }
   },
   {
     "id": "item_genji_armor",
@@ -875,7 +1330,20 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Break HP Limit",
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "breakHp": true,
+        "autoBuffs": [
+          "Endure",
+          "Regen"
+        ]
+      }
+    }
   },
   {
     "id": "item_genji_glove",
@@ -888,7 +1356,19 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-6-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Break Damage Limit",
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "breakDmg": true,
+        "autoBuffs": [
+          "Critical"
+        ]
+      }
+    }
   },
   {
     "id": "item_genji_helm",
@@ -905,7 +1385,20 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Zero MP/AP",
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "zeroMp": true,
+        "zeroAp": true,
+        "autoBuffs": [
+          "Libra"
+        ]
+      }
+    }
   },
   {
     "id": "item_genji_shield",
@@ -916,7 +1409,28 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Elemental Absorb",
+        "Status Immunity",
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "absorbElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ],
+        "immuneStatuses": [
+          "All"
+        ],
+        "autoBuffs": [
+          "Barrier",
+          "MBarrier"
+        ]
+      }
+    }
   },
   {
     "id": "item_gold_armlet",
@@ -942,7 +1456,19 @@
       "M6-3-5",
       "M6-5-2",
       "M8-5-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 60,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_gold_hairpin",
@@ -959,7 +1485,15 @@
     "treasureMissions": [
       "M9-2-5",
       "M9-6-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Break MP Limit"
+      ],
+      "statMods": {
+        "breakMp": true
+      }
+    }
   },
   {
     "id": "item_good_luck_charm",
@@ -974,7 +1508,15 @@
     ],
     "treasureMissions": [
       "M9-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "lck": 100
+      }
+    }
   },
   {
     "id": "item_gris_gris_bag",
@@ -1003,7 +1545,19 @@
     "treasureMissions": [
       "M7-2-2",
       "M7-4-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "immuneStatuses": [
+          "Curse"
+        ]
+      }
+    }
   },
   {
     "id": "item_headband",
@@ -1038,7 +1592,19 @@
     "treasureMissions": [
       "M7-5-4",
       "M9-4-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "immuneStatuses": [
+          "Stun"
+        ]
+      }
+    }
   },
   {
     "id": "item_heike_soul",
@@ -1049,7 +1615,37 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Break HP Limit",
+        "Break MP Limit",
+        "Break AP Limit",
+        "Break Damage Limit",
+        "Elemental Absorb",
+        "Drop/Steal Boost",
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "breakHp": true,
+        "breakMp": true,
+        "breakAp": true,
+        "breakDmg": true,
+        "absorbElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ],
+        "autoBuffs": [
+          "Dualcast",
+          "Libra",
+          "Auto-Potion",
+          "Smart Consumer",
+          "SP Master",
+          "Curse"
+        ]
+      }
+    }
   },
   {
     "id": "item_hyper_wrist",
@@ -1079,7 +1675,15 @@
       "M6-5-6",
       "M8-5-1",
       "M8-6-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 20
+      }
+    }
   },
   {
     "id": "item_hypno_crown",
@@ -1108,7 +1712,15 @@
       "M7-3-5",
       "M9-1-1",
       "M9-2-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 20
+      }
+    }
   },
   {
     "id": "item_ice_armlet",
@@ -1137,7 +1749,21 @@
     "treasureMissions": [
       "M7-1-4",
       "M8-5-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Halve",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "vit": 5,
+        "spr": 5,
+        "halveElems": [
+          "Ice"
+        ]
+      }
+    }
   },
   {
     "id": "item_ice_ring",
@@ -1165,7 +1791,17 @@
     ],
     "treasureMissions": [
       "M7-2-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "atk": 5,
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_impervious",
@@ -1176,7 +1812,21 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 10,
+        "mpPct": 10,
+        "apPct": 10,
+        "mag": 120,
+        "spr": 120,
+        "atk": -50,
+        "vit": -50
+      }
+    }
   },
   {
     "id": "item_iron_bangle",
@@ -1200,7 +1850,15 @@
       "M2-2-5",
       "M7-3-3",
       "M8-3-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 20
+      }
+    }
   },
   {
     "id": "item_jeweled_ring",
@@ -1219,7 +1877,16 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-5-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Drop/Steal Boost",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "lck": 20
+      }
+    }
   },
   {
     "id": "item_kaiser_knuckles",
@@ -1245,7 +1912,15 @@
       "M9-4-3",
       "M9-4-4",
       "M9-6-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 30
+      }
+    }
   },
   {
     "id": "item_laurel_crown",
@@ -1260,7 +1935,15 @@
     ],
     "treasureMissions": [
       "M9-6-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Zero MP/AP"
+      ],
+      "statMods": {
+        "zeroAp": true
+      }
+    }
   },
   {
     "id": "item_lightning_armlet",
@@ -1287,7 +1970,21 @@
       "M3-2-1",
       "M4-2-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Elemental Halve",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "vit": 5,
+        "spr": 5,
+        "halveElems": [
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_lightning_ring",
@@ -1315,7 +2012,17 @@
     ],
     "treasureMissions": [
       "M9-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 10,
+        "atk": 5,
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_magic_master",
@@ -1328,7 +2035,23 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-4-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Zero MP/AP",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "zeroMp": true,
+        "mpPct": 50,
+        "mag": 100,
+        "spr": 100,
+        "hpPct": -50,
+        "apPct": -50,
+        "atk": -100,
+        "vit": -100
+      }
+    }
   },
   {
     "id": "item_mogs_amulet",
@@ -1347,7 +2070,16 @@
     "clearRewardMissions": [
       "M7-6-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Drop/Steal Boost",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "lck": 5
+      }
+    }
   },
   {
     "id": "item_moon_bracer",
@@ -1370,7 +2102,19 @@
       "M1-5-4",
       "M7-6-3",
       "M9-4-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 10,
+        "autoBuffs": [
+          "Barrier"
+        ]
+      }
+    }
   },
   {
     "id": "item_mortal_shock",
@@ -1396,7 +2140,16 @@
     "clearRewardMissions": [
       "M5-2-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5,
+        "mag": 10
+      }
+    }
   },
   {
     "id": "item_mountain_chocobo_armlet",
@@ -1424,7 +2177,19 @@
       "M8-6-5",
       "M9-1-3",
       "M9-5-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "apPct": 40,
+        "immuneStatuses": [
+          "Stun"
+        ]
+      }
+    }
   },
   {
     "id": "item_muscle_belt",
@@ -1448,7 +2213,16 @@
     "treasureMissions": [
       "M4-2-1",
       "M4-2-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5,
+        "vit": 5
+      }
+    }
   },
   {
     "id": "item_mute_shock",
@@ -1474,7 +2248,16 @@
     "clearRewardMissions": [
       "M4-1-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 3,
+        "mag": 8
+      }
+    }
   },
   {
     "id": "item_mystile",
@@ -1499,7 +2282,20 @@
       "M7-1-6",
       "M7-4-1",
       "M10-2-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 10,
+        "spr": 10,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_mythril_armlet",
@@ -1519,7 +2315,19 @@
       "M7-6-5",
       "M9-4-2",
       "M9-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 100,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_mythril_gloves",
@@ -1544,7 +2352,16 @@
       "M7-1-5",
       "M7-2-2",
       "M7-2-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5,
+        "mag": 5
+      }
+    }
   },
   {
     "id": "item_paralyzing_shock",
@@ -1570,7 +2387,16 @@
     "clearRewardMissions": [
       "M7-2-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5,
+        "mag": 10
+      }
+    }
   },
   {
     "id": "item_pearl_necklace",
@@ -1598,7 +2424,19 @@
     ],
     "treasureMissions": [
       "M3-2-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_platinum_bangle",
@@ -1625,7 +2463,15 @@
       "M9-4-1",
       "M9-5-4",
       "M9-6-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 50
+      }
+    }
   },
   {
     "id": "item_power_suit",
@@ -1641,7 +2487,21 @@
     "treasureMissions": [
       "M6-6-6",
       "M7-6-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 100,
+        "atk": 100,
+        "vit": 100,
+        "mpPct": -50,
+        "apPct": -50,
+        "mag": -50,
+        "spr": -50
+      }
+    }
   },
   {
     "id": "item_power_wrist",
@@ -1664,7 +2524,15 @@
     "treasureMissions": [
       "M6-2-6",
       "M7-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 10
+      }
+    }
   },
   {
     "id": "item_precious_watch",
@@ -1683,7 +2551,16 @@
     "clearRewardMissions": [
       "M9-4-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Drop/Steal Boost",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "lck": 10
+      }
+    }
   },
   {
     "id": "item_protect_ring",
@@ -1706,7 +2583,20 @@
     ],
     "treasureMissions": [
       "M7-5-2"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "autoBuffs": [
+          "Barrier",
+          "MBarrier"
+        ]
+      }
+    }
   },
   {
     "id": "item_ribbon",
@@ -1719,7 +2609,21 @@
     "clearRewardMissions": [
       "M5-4-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity"
+      ],
+      "statMods": {
+        "immuneStatuses": [
+          "Poison",
+          "Silence",
+          "Stun",
+          "Stop",
+          "Curse"
+        ]
+      }
+    }
   },
   {
     "id": "item_river_chocobo_armlet",
@@ -1747,7 +2651,19 @@
       "M9-1-5",
       "M9-2-2",
       "M9-2-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "apPct": 60,
+        "immuneStatuses": [
+          "Stun"
+        ]
+      }
+    }
   },
   {
     "id": "item_royal_crown",
@@ -1773,7 +2689,15 @@
       "M6-5-4",
       "M9-4-4",
       "M9-5-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mag": 30
+      }
+    }
   },
   {
     "id": "item_rune_armlet",
@@ -1805,7 +2729,19 @@
       "M9-4-2",
       "M9-5-3",
       "M9-6-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 80,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_safety_bit",
@@ -1831,7 +2767,19 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M10-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 30,
+        "immuneStatuses": [
+          "Death"
+        ]
+      }
+    }
   },
   {
     "id": "item_sea_chocobo_armlet",
@@ -1862,7 +2810,19 @@
       "M7-4-4",
       "M8-6-2",
       "M9-4-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "apPct": 80,
+        "immuneStatuses": [
+          "Stun"
+        ]
+      }
+    }
   },
   {
     "id": "item_shining_bracer",
@@ -1886,7 +2846,19 @@
       "M7-6-5",
       "M9-3-5",
       "M9-4-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 10,
+        "autoBuffs": [
+          "MBarrier"
+        ]
+      }
+    }
   },
   {
     "id": "item_shinra_alpha",
@@ -1906,7 +2878,15 @@
     "clearRewardMissions": [
       "M1-2-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 40
+      }
+    }
   },
   {
     "id": "item_shinra_beta",
@@ -1935,7 +2915,15 @@
       "M7-3-5",
       "M8-3-4",
       "M9-1-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 60
+      }
+    }
   },
   {
     "id": "item_shinra_beta_plus",
@@ -1959,7 +2947,15 @@
       "M2-3-6",
       "M3-5-3",
       "M7-6-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "vit": 80
+      }
+    }
   },
   {
     "id": "item_silver_armlet",
@@ -1991,7 +2987,19 @@
       "M9-3-6",
       "M9-5-2",
       "M9-6-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 40,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_sky_chocobo_armlet",
@@ -2011,7 +3019,19 @@
       "M8-6-4",
       "M9-4-2",
       "M9-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "apPct": 100,
+        "immuneStatuses": [
+          "Stun"
+        ]
+      }
+    }
   },
   {
     "id": "item_sniper_eye",
@@ -2032,7 +3052,17 @@
     ],
     "treasureMissions": [
       "M2-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff"
+      ],
+      "statMods": {
+        "autoBuffs": [
+          "Critical"
+        ]
+      }
+    }
   },
   {
     "id": "item_snow_armlet",
@@ -2055,7 +3085,19 @@
     "treasureMissions": [
       "M9-2-3",
       "M9-2-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Absorb",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 30,
+        "absorbElems": [
+          "Ice"
+        ]
+      }
+    }
   },
   {
     "id": "item_soul_of_thamasa",
@@ -2069,7 +3111,15 @@
     "treasureMissions": [
       "M9-4-4",
       "M9-6-5"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Zero MP/AP"
+      ],
+      "statMods": {
+        "zeroMp": true
+      }
+    }
   },
   {
     "id": "item_sprint_shoes",
@@ -2100,7 +3150,19 @@
       "M6-4-1",
       "M7-1-3",
       "M7-5-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "immuneStatuses": [
+          "Stop"
+        ]
+      }
+    }
   },
   {
     "id": "item_star_pendant",
@@ -2133,7 +3195,19 @@
     ],
     "treasureMissions": [
       "M2-2-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 30,
+        "immuneStatuses": [
+          "Poison"
+        ]
+      }
+    }
   },
   {
     "id": "item_super_ribbon",
@@ -2146,7 +3220,17 @@
     "clearRewardMissions": [
       "M9-6-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity"
+      ],
+      "statMods": {
+        "immuneStatuses": [
+          "All"
+        ]
+      }
+    }
   },
   {
     "id": "item_system_shock",
@@ -2172,7 +3256,16 @@
     "clearRewardMissions": [
       "M4-3-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5,
+        "mag": 10
+      }
+    }
   },
   {
     "id": "item_talisman",
@@ -2190,7 +3283,15 @@
     },
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 40
+      }
+    }
   },
   {
     "id": "item_tarot_cards",
@@ -2219,7 +3320,15 @@
       "M7-3-5",
       "M8-6-4",
       "M9-4-1"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 60
+      }
+    }
   },
   {
     "id": "item_thunder_armlet",
@@ -2241,7 +3350,19 @@
     ],
     "treasureMissions": [
       "M7-4-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 20,
+        "immuneElems": [
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_titanium_bangle",
@@ -2263,7 +3384,15 @@
       "M3-3-1",
       "M4-2-1",
       "M6-2-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 30
+      }
+    }
   },
   {
     "id": "item_twisted_headband",
@@ -2285,7 +3414,19 @@
     ],
     "treasureMissions": [
       "M8-3-4"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Auto-Buff",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "hpPct": 10,
+        "autoBuffs": [
+          "Endure"
+        ]
+      }
+    }
   },
   {
     "id": "item_venom_shock",
@@ -2312,7 +3453,16 @@
       "M2-2-2",
       "M5-1-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 3,
+        "mag": 8
+      }
+    }
   },
   {
     "id": "item_white_cape",
@@ -2344,7 +3494,19 @@
     "treasureMissions": [
       "M6-2-1",
       "M10-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Status Immunity",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "spr": 20,
+        "immuneStatuses": [
+          "Silence"
+        ]
+      }
+    }
   },
   {
     "id": "item_wizard_bracelet",
@@ -2369,7 +3531,21 @@
       "M2-5-3",
       "M7-5-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "accessory": {
+      "effectTags": [
+        "Elemental Absorb",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "mpPct": 60,
+        "absorbElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_wrist_band",
@@ -2395,7 +3571,15 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M3-1-3"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 5
+      }
+    }
   },
   {
     "id": "item_ziedrich",
@@ -2408,7 +3592,24 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-5-6"
-    ]
+    ],
+    "accessory": {
+      "effectTags": [
+        "Elemental Halve",
+        "Stat Boost"
+      ],
+      "statMods": {
+        "atk": 100,
+        "vit": 100,
+        "mag": 100,
+        "spr": 100,
+        "halveElems": [
+          "Fire",
+          "Ice",
+          "Lightning"
+        ]
+      }
+    }
   },
   {
     "id": "item_ether",
@@ -3705,7 +4906,18 @@
     "clearRewardMissions": [
       "M9-4-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_aerial_drain",
@@ -3722,7 +4934,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 64,
+      "costType": "AP",
+      "grade": 8,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_air_strike",
@@ -3739,7 +4962,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_ap_up",
@@ -3760,7 +4994,18 @@
     ],
     "treasureMissions": [
       "M10-1-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_ap_up_plus",
@@ -3775,7 +5020,18 @@
     ],
     "treasureMissions": [
       "M4-2-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_ap_up_plus_plus",
@@ -3791,7 +5047,18 @@
     "treasureMissions": [
       "M4-5-2",
       "M8-3-5"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_apocalypse",
@@ -3808,7 +5075,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_assault_twister",
@@ -3826,7 +5104,18 @@
     "treasureMissions": [
       "M3-2-2",
       "M9-1-3"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_assault_twister_plus",
@@ -3844,7 +5133,18 @@
       "M7-6-6",
       "M9-4-1",
       "M9-4-3"
-    ]
+    ],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 7,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_atk_up",
@@ -3863,7 +5163,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M6-1-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_atk_up_plus",
@@ -3876,7 +5187,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M2-2-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_atk_up_plus_plus",
@@ -3890,7 +5212,18 @@
     "treasureMissions": [
       "M3-3-1",
       "M8-5-5"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_barrier",
@@ -3913,7 +5246,18 @@
       "M4-1-5",
       "M9-1-3",
       "M9-1-5"
-    ]
+    ],
+    "materia": {
+      "cost": 16,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Buff / Utility",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_blast_wave",
@@ -3929,7 +5273,18 @@
     "treasureMissions": [
       "M7-5-5",
       "M7-6-4"
-    ]
+    ],
+    "materia": {
+      "cost": 12,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_blizzaga",
@@ -3949,7 +5304,18 @@
     "treasureMissions": [
       "M1-3-3",
       "M8-5-2"
-    ]
+    ],
+    "materia": {
+      "cost": 32,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_blizzaga_blade",
@@ -3970,7 +5336,18 @@
       "M2-5-6",
       "M4-4-2",
       "M6-3-4"
-    ]
+    ],
+    "materia": {
+      "cost": 32,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_blizzara",
@@ -3991,7 +5368,18 @@
       "M7-1-5",
       "M7-1-6",
       "M9-3-4"
-    ]
+    ],
+    "materia": {
+      "cost": 14,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_blizzara_blade",
@@ -4002,7 +5390,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_blizzard",
@@ -4022,7 +5421,18 @@
     "treasureMissions": [
       "M7-2-1",
       "M10-2-1"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_blizzard_blade",
@@ -4033,7 +5443,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_chocobo_stomp",
@@ -4050,7 +5471,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_costly_punch",
@@ -4063,7 +5495,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-5-4"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "AP",
+      "grade": 8,
+      "damageType": "Piercing",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_courage_boost",
@@ -4080,7 +5523,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_cura",
@@ -4099,7 +5553,18 @@
     "clearRewardMissions": [
       "M1-3-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 10,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_curaga",
@@ -4119,7 +5584,18 @@
       "M9-4-5",
       "M9-5-6",
       "M9-6-1"
-    ]
+    ],
+    "materia": {
+      "cost": 26,
+      "costType": "MP",
+      "grade": 4,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_cure",
@@ -4136,7 +5612,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 4,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_dark_blizzaga",
@@ -4147,7 +5634,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 38,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_dark_blizzara",
@@ -4158,7 +5656,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 20,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_dark_blizzard",
@@ -4169,7 +5678,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_dark_fira",
@@ -4180,7 +5700,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 20,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_dark_firaga",
@@ -4191,7 +5722,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 38,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_dark_fire",
@@ -4202,7 +5744,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_dark_thundaga",
@@ -4213,7 +5766,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 38,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_dark_thundara",
@@ -4224,7 +5788,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 20,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_dark_thunder",
@@ -4235,7 +5810,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_darkness",
@@ -4249,7 +5835,18 @@
       "M4-4-2",
       "M8-4-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Piercing",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_dash",
@@ -4270,7 +5867,18 @@
       "M6-1-3",
       "M8-3-5",
       "M8-6-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_death",
@@ -4285,7 +5893,18 @@
     ],
     "treasureMissions": [
       "M7-4-1"
-    ]
+    ],
+    "materia": {
+      "cost": 18,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_death_blade",
@@ -4299,7 +5918,18 @@
     "treasureMissions": [
       "M4-4-5",
       "M8-5-2"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_death_jump",
@@ -4315,7 +5945,18 @@
     ],
     "treasureMissions": [
       "M9-2-5"
-    ]
+    ],
+    "materia": {
+      "cost": 48,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_death_twister",
@@ -4331,7 +5972,18 @@
     "treasureMissions": [
       "M7-6-1",
       "M9-2-5"
-    ]
+    ],
+    "materia": {
+      "cost": 20,
+      "costType": "AP",
+      "grade": 7,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_dispel",
@@ -4350,7 +6002,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M8-3-1"
-    ]
+    ],
+    "materia": {
+      "cost": 10,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Buff / Utility",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_dispel_blade",
@@ -4366,7 +6029,18 @@
     "treasureMissions": [
       "M6-5-4",
       "M8-6-6"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 7,
+      "damageType": "Buff / Utility",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_drain",
@@ -4387,7 +6061,18 @@
     ],
     "treasureMissions": [
       "M2-1-6"
-    ]
+    ],
+    "materia": {
+      "cost": 16,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_drain_blade",
@@ -4408,7 +6093,18 @@
     ],
     "treasureMissions": [
       "M4-2-6"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 2,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_drainga",
@@ -4435,7 +6131,18 @@
       "M9-1-3",
       "M9-1-5",
       "M9-4-6"
-    ]
+    ],
+    "materia": {
+      "cost": 55,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_drainra",
@@ -4450,7 +6157,18 @@
     ],
     "treasureMissions": [
       "M8-4-4"
-    ]
+    ],
+    "materia": {
+      "cost": 30,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_dualcast",
@@ -4469,7 +6187,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M9-4-1"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_electrocute",
@@ -4490,7 +6219,18 @@
       "M7-6-3",
       "M9-4-6",
       "M9-5-6"
-    ]
+    ],
+    "materia": {
+      "cost": 72,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_elemental_strike",
@@ -4512,7 +6252,18 @@
     "treasureMissions": [
       "M3-4-3",
       "M9-5-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 7,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_elemental_ward",
@@ -4533,7 +6284,18 @@
     ],
     "treasureMissions": [
       "M9-5-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_energy",
@@ -4555,7 +6317,18 @@
       "M9-3-3",
       "M9-6-2",
       "M9-6-3"
-    ]
+    ],
+    "materia": {
+      "cost": 33,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_esuna",
@@ -4577,7 +6350,18 @@
     "treasureMissions": [
       "M3-1-6",
       "M8-2-6"
-    ]
+    ],
+    "materia": {
+      "cost": 12,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_exaflare",
@@ -4596,7 +6380,18 @@
     "clearRewardMissions": [
       "M9-6-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_exploder_blade",
@@ -4613,7 +6408,18 @@
     "treasureMissions": [
       "M2-4-3",
       "M3-5-4"
-    ]
+    ],
+    "materia": {
+      "cost": 12,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_fira",
@@ -4634,7 +6440,18 @@
       "M6-1-5",
       "M6-2-4",
       "M8-2-6"
-    ]
+    ],
+    "materia": {
+      "cost": 14,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_fira_blade",
@@ -4645,7 +6462,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_firaga",
@@ -4666,7 +6494,18 @@
     ],
     "treasureMissions": [
       "M8-4-5"
-    ]
+    ],
+    "materia": {
+      "cost": 32,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_firaga_blade",
@@ -4688,7 +6527,18 @@
     "treasureMissions": [
       "M6-6-5",
       "M8-5-6"
-    ]
+    ],
+    "materia": {
+      "cost": 32,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_fire",
@@ -4709,7 +6559,18 @@
     ],
     "treasureMissions": [
       "M9-3-4"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_fire_blade",
@@ -4722,7 +6583,18 @@
     "clearRewardMissions": [
       "M3-2-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_flare",
@@ -4748,7 +6620,18 @@
       "M9-5-2",
       "M9-6-1",
       "M9-6-4"
-    ]
+    ],
+    "materia": {
+      "cost": 77,
+      "costType": "MP",
+      "grade": 6,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_full_cure",
@@ -4759,7 +6642,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 64,
+      "costType": "MP",
+      "grade": 6,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_gil_toss",
@@ -4776,7 +6670,18 @@
       "M7-4-6",
       "M8-6-3",
       "M9-5-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "AP",
+      "grade": 8,
+      "damageType": "Piercing",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_goblin_punch",
@@ -4789,7 +6694,18 @@
     "clearRewardMissions": [
       "M4-5-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 10,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Piercing",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_graviga",
@@ -4815,7 +6731,18 @@
       "M8-5-6",
       "M9-1-1",
       "M9-2-1"
-    ]
+    ],
+    "materia": {
+      "cost": 40,
+      "costType": "MP",
+      "grade": 4,
+      "damageType": "Gravity (%)",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_gravity",
@@ -4834,7 +6761,18 @@
       "M8-3-2",
       "M8-3-4",
       "M9-4-2"
-    ]
+    ],
+    "materia": {
+      "cost": 22,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Gravity (%)",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_hammer_punch",
@@ -4849,7 +6787,18 @@
     ],
     "treasureMissions": [
       "M3-5-1"
-    ]
+    ],
+    "materia": {
+      "cost": 99,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_healing_wave",
@@ -4866,7 +6815,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_hell_blizzaga",
@@ -4887,7 +6847,18 @@
       "M2-3-1",
       "M4-4-2",
       "M6-4-2"
-    ]
+    ],
+    "materia": {
+      "cost": 52,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_hell_firaga",
@@ -4909,7 +6880,18 @@
     "treasureMissions": [
       "M8-5-6",
       "M9-2-1"
-    ]
+    ],
+    "materia": {
+      "cost": 52,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_hell_thundaga",
@@ -4932,7 +6914,18 @@
     "treasureMissions": [
       "M3-3-6",
       "M7-4-4"
-    ]
+    ],
+    "materia": {
+      "cost": 52,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_hellfire",
@@ -4951,7 +6944,18 @@
     "clearRewardMissions": [
       "M9-5-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_high_jump",
@@ -4970,7 +6974,18 @@
       "M2-5-5",
       "M6-6-5",
       "M9-4-1"
-    ]
+    ],
+    "materia": {
+      "cost": 38,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_hp_up",
@@ -4991,7 +7006,18 @@
     ],
     "treasureMissions": [
       "M8-4-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_hp_up_plus",
@@ -5006,7 +7032,18 @@
     ],
     "treasureMissions": [
       "M6-2-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_hp_up_plus_plus",
@@ -5021,7 +7058,18 @@
     ],
     "treasureMissions": [
       "M2-3-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_iron_fist",
@@ -5038,7 +7086,18 @@
     "treasureMissions": [
       "M3-5-2",
       "M7-5-1"
-    ]
+    ],
+    "materia": {
+      "cost": 10,
+      "costType": "AP",
+      "grade": 2,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_item_mugger",
@@ -5055,7 +7114,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_jump",
@@ -5071,7 +7141,18 @@
     "treasureMissions": [
       "M3-2-2",
       "M8-4-2"
-    ]
+    ],
+    "materia": {
+      "cost": 24,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_libra",
@@ -5090,7 +7171,18 @@
     "clearRewardMissions": [
       "M4-1-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_lucky_stars",
@@ -5107,7 +7199,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_mag_up",
@@ -5128,7 +7231,18 @@
       "M2-2-4",
       "M7-2-2",
       "M8-2-4"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_mag_up_plus",
@@ -5143,7 +7257,18 @@
     ],
     "treasureMissions": [
       "M6-3-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_mag_up_plus_plus",
@@ -5159,7 +7284,18 @@
     ],
     "treasureMissions": [
       "M9-2-1"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_magical_punch",
@@ -5178,7 +7314,18 @@
       "M1-5-4",
       "M6-5-5",
       "M7-5-5"
-    ]
+    ],
+    "materia": {
+      "cost": 99,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_mbarrier",
@@ -5201,7 +7348,18 @@
       "M3-3-3",
       "M9-1-2",
       "M9-1-5"
-    ]
+    ],
+    "materia": {
+      "cost": 16,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Buff / Utility",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_megaflare",
@@ -5220,7 +7378,18 @@
     "clearRewardMissions": [
       "M9-5-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_meteor_shots",
@@ -5237,7 +7406,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_moogle_power",
@@ -5254,7 +7434,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_mp_up",
@@ -5271,7 +7462,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_mp_up_plus",
@@ -5284,7 +7486,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M6-2-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_mp_up_plus_plus",
@@ -5300,7 +7513,18 @@
     "treasureMissions": [
       "M1-4-3",
       "M7-4-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_mug",
@@ -5313,7 +7537,18 @@
     "clearRewardMissions": [
       "M1-1-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_murderous_thrust",
@@ -5332,7 +7567,18 @@
     "clearRewardMissions": [
       "M9-4-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_octaslash",
@@ -5349,7 +7595,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_osmoga",
@@ -5366,7 +7623,18 @@
       "M9-1-5",
       "M9-5-4",
       "M9-6-1"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "MP",
+      "grade": 6,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_osmose",
@@ -5385,7 +7653,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M8-4-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_osmose_blade",
@@ -5398,7 +7677,18 @@
     "clearRewardMissions": [
       "M5-2-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 2,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_poison",
@@ -5418,7 +7708,18 @@
       "M2-1-1",
       "M8-2-2"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 2,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_poison_aerial",
@@ -5431,7 +7732,18 @@
     "clearRewardMissions": [
       "M5-3-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 32,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_poison_blade",
@@ -5448,7 +7760,18 @@
       "M7-4-5",
       "M8-6-6",
       "M9-3-2"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_poison_twister",
@@ -5462,7 +7785,18 @@
       "M4-3-1",
       "M9-2-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 2,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_power_attack",
@@ -5476,7 +7810,18 @@
     "treasureMissions": [
       "M6-4-3",
       "M8-6-1"
-    ]
+    ],
+    "materia": {
+      "cost": 4,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_power_drain",
@@ -5493,7 +7838,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_power_osmose",
@@ -5504,7 +7860,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 6,
+      "costType": "AP",
+      "grade": 6,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_quake",
@@ -5527,7 +7894,18 @@
     "treasureMissions": [
       "M8-6-4",
       "M9-1-5"
-    ]
+    ],
+    "materia": {
+      "cost": 58,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_rebirth_flame",
@@ -5546,7 +7924,18 @@
     "clearRewardMissions": [
       "M9-6-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_regen",
@@ -5568,7 +7957,18 @@
     ],
     "treasureMissions": [
       "M4-5-2"
-    ]
+    ],
+    "materia": {
+      "cost": 7,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Healing",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_rush_assault",
@@ -5585,7 +7985,18 @@
       }
     ],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_silence",
@@ -5607,7 +8018,18 @@
     ],
     "treasureMissions": [
       "M6-2-2"
-    ]
+    ],
+    "materia": {
+      "cost": 2,
+      "costType": "MP",
+      "grade": 2,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_silence_aerial",
@@ -5620,7 +8042,18 @@
     "clearRewardMissions": [
       "M2-3-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 32,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_silence_blade",
@@ -5636,7 +8069,18 @@
     "treasureMissions": [
       "M1-5-2",
       "M8-6-2"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "AP",
+      "grade": 2,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_smart_consumer",
@@ -5651,7 +8095,18 @@
     ],
     "treasureMissions": [
       "M6-5-2"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 4,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_sp_barrier",
@@ -5666,7 +8121,18 @@
     ],
     "treasureMissions": [
       "M9-4-3"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 7,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_sp_master",
@@ -5679,7 +8145,18 @@
     "clearRewardMissions": [
       "M9-6-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_sp_turbo",
@@ -5692,7 +8169,18 @@
     "clearRewardMissions": [
       "M9-2-6"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 6,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 8500,
+        "mastered": 34000
+      },
+      "sellPrice": 7500
+    }
   },
   {
     "id": "item_sp_turbo_attack",
@@ -5708,7 +8196,18 @@
     ],
     "treasureMissions": [
       "M9-4-5"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_sp_turbo_magic",
@@ -5723,7 +8222,18 @@
     ],
     "treasureMissions": [
       "M6-5-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 4,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_spr_up",
@@ -5742,7 +8252,18 @@
     "clearRewardMissions": [
       "M2-1-5"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_spr_up_plus",
@@ -5757,7 +8278,18 @@
     ],
     "treasureMissions": [
       "M4-2-4"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_spr_up_plus_plus",
@@ -5774,7 +8306,18 @@
       "M1-4-3",
       "M2-3-4",
       "M4-4-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_status_strike",
@@ -5796,7 +8339,18 @@
     "treasureMissions": [
       "M8-6-1",
       "M9-6-1"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_status_ward",
@@ -5818,7 +8372,18 @@
     "treasureMissions": [
       "M6-6-2",
       "M9-3-5"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 4,
+      "damageType": "Support",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_steal",
@@ -5832,7 +8397,18 @@
     "treasureMissions": [
       "M7-4-1",
       "M8-3-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "AP",
+      "grade": 2,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 900,
+        "mastered": 3600
+      },
+      "sellPrice": 2500
+    }
   },
   {
     "id": "item_stop",
@@ -5846,7 +8422,18 @@
     "treasureMissions": [
       "M3-2-6",
       "M8-4-3"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "MP",
+      "grade": 4,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_stop_blade",
@@ -5863,7 +8450,18 @@
     "treasureMissions": [
       "M4-4-3",
       "M9-1-6"
-    ]
+    ],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 4,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_stop_twister",
@@ -5879,7 +8477,18 @@
     "treasureMissions": [
       "M4-5-4",
       "M4-5-6"
-    ]
+    ],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 4,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_thundaga",
@@ -5898,7 +8507,18 @@
     "clearRewardMissions": [
       "M1-3-3"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 32,
+      "costType": "MP",
+      "grade": 5,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_thundaga_blade",
@@ -5920,7 +8540,18 @@
     "treasureMissions": [
       "M2-3-3",
       "M2-5-5"
-    ]
+    ],
+    "materia": {
+      "cost": 32,
+      "costType": "AP",
+      "grade": 5,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_thundara",
@@ -5940,7 +8571,18 @@
     "treasureMissions": [
       "M3-2-3",
       "M7-2-3"
-    ]
+    ],
+    "materia": {
+      "cost": 14,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_thundara_blade",
@@ -5953,7 +8595,18 @@
     "clearRewardMissions": [
       "M3-2-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 16,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_thunder",
@@ -5976,7 +8629,18 @@
       "M3-1-6",
       "M4-1-4",
       "M4-3-3"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "MP",
+      "grade": 1,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_thunder_blade",
@@ -5987,7 +8651,18 @@
     "fusion": null,
     "shops": [],
     "clearRewardMissions": [],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": 8,
+      "costType": "AP",
+      "grade": 1,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_tri_fire",
@@ -6005,7 +8680,18 @@
       "M6-4-3",
       "M7-4-6",
       "M9-5-5"
-    ]
+    ],
+    "materia": {
+      "cost": 68,
+      "costType": "MP",
+      "grade": 4,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 3200,
+        "mastered": 12800
+      },
+      "sellPrice": 5000
+    }
   },
   {
     "id": "item_tri_thundaga",
@@ -6022,7 +8708,18 @@
       "M2-3-6",
       "M4-4-4",
       "M9-5-3"
-    ]
+    ],
+    "materia": {
+      "cost": 64,
+      "costType": "MP",
+      "grade": 3,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_ultima",
@@ -6041,7 +8738,18 @@
       "M6-6-5",
       "M9-6-2",
       "M9-6-5"
-    ]
+    ],
+    "materia": {
+      "cost": 99,
+      "costType": "MP",
+      "grade": 8,
+      "damageType": "Magical",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_vit_up",
@@ -6060,7 +8768,18 @@
     "clearRewardMissions": [
       "M3-1-4"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 1,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 400,
+        "mastered": 1600
+      },
+      "sellPrice": 1250
+    }
   },
   {
     "id": "item_vit_up_plus",
@@ -6073,7 +8792,18 @@
     "clearRewardMissions": [],
     "treasureMissions": [
       "M8-4-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 3,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_vit_up_plus_plus",
@@ -6089,7 +8819,18 @@
     "treasureMissions": [
       "M1-4-1",
       "M8-3-6"
-    ]
+    ],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 5,
+      "damageType": "Passive",
+      "spConvert": {
+        "lv1": 5500,
+        "mastered": 22000
+      },
+      "sellPrice": 6250
+    }
   },
   {
     "id": "item_vital_slash",
@@ -6106,7 +8847,18 @@
       "M3-4-4",
       "M6-6-1",
       "M7-4-5"
-    ]
+    ],
+    "materia": {
+      "cost": 6,
+      "costType": "AP",
+      "grade": 3,
+      "damageType": "Physical",
+      "spConvert": {
+        "lv1": 1800,
+        "mastered": 7200
+      },
+      "sellPrice": 3750
+    }
   },
   {
     "id": "item_wall",
@@ -6130,7 +8882,18 @@
       "M9-4-4",
       "M9-5-1",
       "M9-6-1"
-    ]
+    ],
+    "materia": {
+      "cost": 42,
+      "costType": "MP",
+      "grade": 7,
+      "damageType": "Buff / Utility",
+      "spConvert": {
+        "lv1": 12000,
+        "mastered": 48000
+      },
+      "sellPrice": 8750
+    }
   },
   {
     "id": "item_zantetsuken",
@@ -6149,7 +8912,18 @@
     "clearRewardMissions": [
       "M9-6-1"
     ],
-    "treasureMissions": []
+    "treasureMissions": [],
+    "materia": {
+      "cost": null,
+      "costType": "None",
+      "grade": 8,
+      "damageType": "DMW",
+      "spConvert": {
+        "lv1": 16500,
+        "mastered": 66000
+      },
+      "sellPrice": 10000
+    }
   },
   {
     "id": "item_adamantite",

@@ -10,11 +10,3255 @@
     "LCK"
   ],
   "rulesNotes": [
+    "Resulting Materia depends on both Fusion Classes AND the highest Grade (1–8) between the two Materia (Mastered Materia each add +1 Grade, up to +2!).",
     "Consumables (Potion, Hi-Potion, X-Potion, Ether, Soma, Elixir) ONLY amplify an existing matching stat bonus on one of the fused Materia. On two +0 Materia they add +0.",
     "Mako Stones add +1 per 5 stones (max +40) or +10% per 5 stones (max +400%).",
     "Stat Stones add +1 per 3 stones (max +66) or +10% per 3 stones (max +660%).",
     "Max-tier fusion items (Hero Drink, Adamantite, Dark Matter, Mythril, Gysahl Greens, Fat Chocobo Feather, Lunar Harp, Zeio Nut) add +1 (max +100) or +10% (max +999%) per item.",
     "When building a Libra transfer Materia, stop at +98 (or +980% HP) so it remains open to item conversion during final fusion."
+  ],
+  "classOrder": [
+    "Fire",
+    "Ice",
+    "Lightning",
+    "Restore",
+    "Defense",
+    "Status Defense",
+    "Absorb Mag",
+    "Status Mag",
+    "Fire & St",
+    "Ice & St",
+    "Lightning & St",
+    "Gravity",
+    "Ultimate",
+    "Quick Atk",
+    "Quick Atk & St",
+    "Sword Arts",
+    "Blade Arts & St",
+    "Fire Blade",
+    "Ice Blade",
+    "Lightning Blade",
+    "Absorb Sword",
+    "Item",
+    "Punch",
+    "SP Turbo",
+    "HP Up",
+    "MP Up",
+    "AP Up",
+    "ATK Up",
+    "VIT Up",
+    "MAG Up",
+    "SPR Up",
+    "LCK Up",
+    "Libra",
+    "DMW"
+  ],
+  "classDefinitions": {
+    "Fire": [
+      {
+        "grade": 1,
+        "name": "Fire",
+        "itemId": "item_fire"
+      },
+      {
+        "grade": 2,
+        "name": "Fire",
+        "itemId": "item_fire"
+      },
+      {
+        "grade": 3,
+        "name": "Fira",
+        "itemId": "item_fira"
+      },
+      {
+        "grade": 4,
+        "name": "Fira",
+        "itemId": "item_fira"
+      },
+      {
+        "grade": 5,
+        "name": "Firaga",
+        "itemId": "item_firaga"
+      },
+      {
+        "grade": 6,
+        "name": "Firaga",
+        "itemId": "item_firaga"
+      },
+      {
+        "grade": 7,
+        "name": "Firaga",
+        "itemId": "item_firaga"
+      },
+      {
+        "grade": 8,
+        "name": "Firaga",
+        "itemId": "item_firaga"
+      }
+    ],
+    "Ice": [
+      {
+        "grade": 1,
+        "name": "Blizzard",
+        "itemId": "item_blizzard"
+      },
+      {
+        "grade": 2,
+        "name": "Blizzard",
+        "itemId": "item_blizzard"
+      },
+      {
+        "grade": 3,
+        "name": "Blizzara",
+        "itemId": "item_blizzara"
+      },
+      {
+        "grade": 4,
+        "name": "Blizzara",
+        "itemId": "item_blizzara"
+      },
+      {
+        "grade": 5,
+        "name": "Blizzaga",
+        "itemId": "item_blizzaga"
+      },
+      {
+        "grade": 6,
+        "name": "Blizzaga",
+        "itemId": "item_blizzaga"
+      },
+      {
+        "grade": 7,
+        "name": "Blizzaga",
+        "itemId": "item_blizzaga"
+      },
+      {
+        "grade": 8,
+        "name": "Blizzaga",
+        "itemId": "item_blizzaga"
+      }
+    ],
+    "Lightning": [
+      {
+        "grade": 1,
+        "name": "Thunder",
+        "itemId": "item_thunder"
+      },
+      {
+        "grade": 2,
+        "name": "Thunder",
+        "itemId": "item_thunder"
+      },
+      {
+        "grade": 3,
+        "name": "Thundara",
+        "itemId": "item_thundara"
+      },
+      {
+        "grade": 4,
+        "name": "Thundara",
+        "itemId": "item_thundara"
+      },
+      {
+        "grade": 5,
+        "name": "Thundaga",
+        "itemId": "item_thundaga"
+      },
+      {
+        "grade": 6,
+        "name": "Thundaga",
+        "itemId": "item_thundaga"
+      },
+      {
+        "grade": 7,
+        "name": "Thundaga",
+        "itemId": "item_thundaga"
+      },
+      {
+        "grade": 8,
+        "name": "Thundaga",
+        "itemId": "item_thundaga"
+      }
+    ],
+    "Restore": [
+      {
+        "grade": 1,
+        "name": "Cure",
+        "itemId": "item_cure"
+      },
+      {
+        "grade": 2,
+        "name": "Cura",
+        "itemId": "item_cura"
+      },
+      {
+        "grade": 3,
+        "name": "Regen",
+        "itemId": "item_regen"
+      },
+      {
+        "grade": 4,
+        "name": "Curaga",
+        "itemId": "item_curaga"
+      },
+      {
+        "grade": 5,
+        "name": "Curaga",
+        "itemId": "item_curaga"
+      },
+      {
+        "grade": 6,
+        "name": "Curaga",
+        "itemId": "item_curaga"
+      },
+      {
+        "grade": 7,
+        "name": "Curaga",
+        "itemId": "item_curaga"
+      },
+      {
+        "grade": 8,
+        "name": "Full Cure",
+        "itemId": "item_full_cure"
+      }
+    ],
+    "Defense": [
+      {
+        "grade": 1,
+        "name": "Barrier",
+        "itemId": "item_barrier"
+      },
+      {
+        "grade": 2,
+        "name": "Barrier",
+        "itemId": "item_barrier"
+      },
+      {
+        "grade": 3,
+        "name": "MBarrier",
+        "itemId": "item_mbarrier"
+      },
+      {
+        "grade": 4,
+        "name": "Elemental Ward",
+        "itemId": "item_elemental_ward"
+      },
+      {
+        "grade": 5,
+        "name": "Elemental Ward",
+        "itemId": "item_elemental_ward"
+      },
+      {
+        "grade": 6,
+        "name": "Elemental Ward",
+        "itemId": "item_elemental_ward"
+      },
+      {
+        "grade": 7,
+        "name": "Wall",
+        "itemId": "item_wall"
+      },
+      {
+        "grade": 8,
+        "name": "Wall",
+        "itemId": "item_wall"
+      }
+    ],
+    "Status Defense": [
+      {
+        "grade": 1,
+        "name": "Esuna",
+        "itemId": "item_esuna"
+      },
+      {
+        "grade": 2,
+        "name": "Dispel",
+        "itemId": "item_dispel"
+      },
+      {
+        "grade": 3,
+        "name": "Esuna",
+        "itemId": "item_esuna"
+      },
+      {
+        "grade": 4,
+        "name": "Status Ward",
+        "itemId": "item_status_ward"
+      },
+      {
+        "grade": 5,
+        "name": "Dispel",
+        "itemId": "item_dispel"
+      },
+      {
+        "grade": 6,
+        "name": "Status Ward",
+        "itemId": "item_status_ward"
+      },
+      {
+        "grade": 7,
+        "name": "Status Ward",
+        "itemId": "item_status_ward"
+      },
+      {
+        "grade": 8,
+        "name": "Status Ward",
+        "itemId": "item_status_ward"
+      }
+    ],
+    "Absorb Mag": [
+      {
+        "grade": 1,
+        "name": "Drain",
+        "itemId": "item_drain"
+      },
+      {
+        "grade": 2,
+        "name": "Drain",
+        "itemId": "item_drain"
+      },
+      {
+        "grade": 3,
+        "name": "Osmose",
+        "itemId": "item_osmose"
+      },
+      {
+        "grade": 4,
+        "name": "Drain",
+        "itemId": "item_drain"
+      },
+      {
+        "grade": 5,
+        "name": "Drainra",
+        "itemId": "item_drainra"
+      },
+      {
+        "grade": 6,
+        "name": "Osmoga",
+        "itemId": "item_osmoga"
+      },
+      {
+        "grade": 7,
+        "name": "Drainga",
+        "itemId": "item_drainga"
+      },
+      {
+        "grade": 8,
+        "name": "Drainga",
+        "itemId": "item_drainga"
+      }
+    ],
+    "Status Mag": [
+      {
+        "grade": 1,
+        "name": "Poison",
+        "itemId": "item_poison"
+      },
+      {
+        "grade": 2,
+        "name": "Silence",
+        "itemId": "item_silence"
+      },
+      {
+        "grade": 3,
+        "name": "Silence",
+        "itemId": "item_silence"
+      },
+      {
+        "grade": 4,
+        "name": "Stop",
+        "itemId": "item_stop"
+      },
+      {
+        "grade": 5,
+        "name": "Death",
+        "itemId": "item_death"
+      },
+      {
+        "grade": 6,
+        "name": "Death",
+        "itemId": "item_death"
+      },
+      {
+        "grade": 7,
+        "name": "Death",
+        "itemId": "item_death"
+      },
+      {
+        "grade": 8,
+        "name": "Death",
+        "itemId": "item_death"
+      }
+    ],
+    "Fire & St": [
+      {
+        "grade": 1,
+        "name": "Dark Fire",
+        "itemId": "item_dark_fire"
+      },
+      {
+        "grade": 2,
+        "name": "Dark Fire",
+        "itemId": "item_dark_fire"
+      },
+      {
+        "grade": 3,
+        "name": "Dark Fira",
+        "itemId": "item_dark_fira"
+      },
+      {
+        "grade": 4,
+        "name": "Dark Fira",
+        "itemId": "item_dark_fira"
+      },
+      {
+        "grade": 5,
+        "name": "Dark Firaga",
+        "itemId": "item_dark_firaga"
+      },
+      {
+        "grade": 6,
+        "name": "Dark Firaga",
+        "itemId": "item_dark_firaga"
+      },
+      {
+        "grade": 7,
+        "name": "Hell Firaga",
+        "itemId": "item_hell_firaga"
+      },
+      {
+        "grade": 8,
+        "name": "Dark Firaga",
+        "itemId": "item_dark_firaga"
+      }
+    ],
+    "Ice & St": [
+      {
+        "grade": 1,
+        "name": "Dark Blizzard",
+        "itemId": "item_dark_blizzard"
+      },
+      {
+        "grade": 2,
+        "name": "Dark Blizzard",
+        "itemId": "item_dark_blizzard"
+      },
+      {
+        "grade": 3,
+        "name": "Dark Blizzara",
+        "itemId": "item_dark_blizzara"
+      },
+      {
+        "grade": 4,
+        "name": "Dark Blizzara",
+        "itemId": "item_dark_blizzara"
+      },
+      {
+        "grade": 5,
+        "name": "Dark Blizzaga",
+        "itemId": "item_dark_blizzaga"
+      },
+      {
+        "grade": 6,
+        "name": "Dark Blizzaga",
+        "itemId": "item_dark_blizzaga"
+      },
+      {
+        "grade": 7,
+        "name": "Hell Blizzaga",
+        "itemId": "item_hell_blizzaga"
+      },
+      {
+        "grade": 8,
+        "name": "Dark Blizzaga",
+        "itemId": "item_dark_blizzaga"
+      }
+    ],
+    "Lightning & St": [
+      {
+        "grade": 1,
+        "name": "Dark Thunder",
+        "itemId": "item_dark_thunder"
+      },
+      {
+        "grade": 2,
+        "name": "Dark Thunder",
+        "itemId": "item_dark_thunder"
+      },
+      {
+        "grade": 3,
+        "name": "Dark Thundara",
+        "itemId": "item_dark_thundara"
+      },
+      {
+        "grade": 4,
+        "name": "Dark Thundara",
+        "itemId": "item_dark_thundara"
+      },
+      {
+        "grade": 5,
+        "name": "Dark Thundaga",
+        "itemId": "item_dark_thundaga"
+      },
+      {
+        "grade": 6,
+        "name": "Dark Thundaga",
+        "itemId": "item_dark_thundaga"
+      },
+      {
+        "grade": 7,
+        "name": "Hell Thundaga",
+        "itemId": "item_hell_thundaga"
+      },
+      {
+        "grade": 8,
+        "name": "Dark Thundaga",
+        "itemId": "item_dark_thundaga"
+      }
+    ],
+    "Gravity": [
+      {
+        "grade": 1,
+        "name": "Gravity",
+        "itemId": "item_gravity"
+      },
+      {
+        "grade": 2,
+        "name": "Gravity",
+        "itemId": "item_gravity"
+      },
+      {
+        "grade": 3,
+        "name": "Graviga",
+        "itemId": "item_graviga"
+      },
+      {
+        "grade": 4,
+        "name": "Graviga",
+        "itemId": "item_graviga"
+      },
+      {
+        "grade": 5,
+        "name": "Darkness",
+        "itemId": "item_darkness"
+      },
+      {
+        "grade": 6,
+        "name": "Darkness",
+        "itemId": "item_darkness"
+      },
+      {
+        "grade": 7,
+        "name": "Quake",
+        "itemId": "item_quake"
+      },
+      {
+        "grade": 8,
+        "name": "Quake",
+        "itemId": "item_quake"
+      }
+    ],
+    "Ultimate": [
+      {
+        "grade": 1,
+        "name": "Tri-Thundaga",
+        "itemId": "item_tri_thundaga"
+      },
+      {
+        "grade": 2,
+        "name": "Tri-Thundaga",
+        "itemId": "item_tri_thundaga"
+      },
+      {
+        "grade": 3,
+        "name": "Tri-Thundaga",
+        "itemId": "item_tri_thundaga"
+      },
+      {
+        "grade": 4,
+        "name": "Tri-Fire",
+        "itemId": "item_tri_fire"
+      },
+      {
+        "grade": 5,
+        "name": "Electrocute",
+        "itemId": "item_electrocute"
+      },
+      {
+        "grade": 6,
+        "name": "Flare",
+        "itemId": "item_flare"
+      },
+      {
+        "grade": 7,
+        "name": "Energy",
+        "itemId": "item_energy"
+      },
+      {
+        "grade": 8,
+        "name": "Ultima",
+        "itemId": "item_ultima"
+      }
+    ],
+    "Quick Atk": [
+      {
+        "grade": 1,
+        "name": "Jump",
+        "itemId": "item_jump"
+      },
+      {
+        "grade": 2,
+        "name": "Jump",
+        "itemId": "item_jump"
+      },
+      {
+        "grade": 3,
+        "name": "Assault Twister",
+        "itemId": "item_assault_twister"
+      },
+      {
+        "grade": 4,
+        "name": "Assault Twister",
+        "itemId": "item_assault_twister"
+      },
+      {
+        "grade": 5,
+        "name": "High Jump",
+        "itemId": "item_high_jump"
+      },
+      {
+        "grade": 6,
+        "name": "High Jump",
+        "itemId": "item_high_jump"
+      },
+      {
+        "grade": 7,
+        "name": "Assault Twister+",
+        "itemId": "item_assault_twister_plus"
+      },
+      {
+        "grade": 8,
+        "name": "Assault Twister+",
+        "itemId": "item_assault_twister_plus"
+      }
+    ],
+    "Quick Atk & St": [
+      {
+        "grade": 1,
+        "name": "Poison Twister",
+        "itemId": "item_poison_twister"
+      },
+      {
+        "grade": 2,
+        "name": "Poison Twister",
+        "itemId": "item_poison_twister"
+      },
+      {
+        "grade": 3,
+        "name": "Poison Aerial",
+        "itemId": "item_poison_aerial"
+      },
+      {
+        "grade": 4,
+        "name": "Stop Twister",
+        "itemId": "item_stop_twister"
+      },
+      {
+        "grade": 5,
+        "name": "Silence Aerial",
+        "itemId": "item_silence_aerial"
+      },
+      {
+        "grade": 6,
+        "name": "Death Jump",
+        "itemId": "item_death_jump"
+      },
+      {
+        "grade": 7,
+        "name": "Death Twister",
+        "itemId": "item_death_twister"
+      },
+      {
+        "grade": 8,
+        "name": "Status Strike",
+        "itemId": "item_status_strike"
+      }
+    ],
+    "Sword Arts": [
+      {
+        "grade": 1,
+        "name": "Power Attack",
+        "itemId": "item_power_attack"
+      },
+      {
+        "grade": 2,
+        "name": "Power Attack",
+        "itemId": "item_power_attack"
+      },
+      {
+        "grade": 3,
+        "name": "Vital Slash",
+        "itemId": "item_vital_slash"
+      },
+      {
+        "grade": 4,
+        "name": "Vital Slash",
+        "itemId": "item_vital_slash"
+      },
+      {
+        "grade": 5,
+        "name": "Blast Wave",
+        "itemId": "item_blast_wave"
+      },
+      {
+        "grade": 6,
+        "name": "Exploder Blade",
+        "itemId": "item_exploder_blade"
+      },
+      {
+        "grade": 7,
+        "name": "Exploder Blade",
+        "itemId": "item_exploder_blade"
+      },
+      {
+        "grade": 8,
+        "name": "Exploder Blade",
+        "itemId": "item_exploder_blade"
+      }
+    ],
+    "Blade Arts & St": [
+      {
+        "grade": 1,
+        "name": "Poison Blade",
+        "itemId": "item_poison_blade"
+      },
+      {
+        "grade": 2,
+        "name": "Silence Blade",
+        "itemId": "item_silence_blade"
+      },
+      {
+        "grade": 3,
+        "name": "Silence Blade",
+        "itemId": "item_silence_blade"
+      },
+      {
+        "grade": 4,
+        "name": "Stop Blade",
+        "itemId": "item_stop_blade"
+      },
+      {
+        "grade": 5,
+        "name": "Death Blade",
+        "itemId": "item_death_blade"
+      },
+      {
+        "grade": 6,
+        "name": "Death Blade",
+        "itemId": "item_death_blade"
+      },
+      {
+        "grade": 7,
+        "name": "Dispel Blade",
+        "itemId": "item_dispel_blade"
+      },
+      {
+        "grade": 8,
+        "name": "Dispel Blade",
+        "itemId": "item_dispel_blade"
+      }
+    ],
+    "Fire Blade": [
+      {
+        "grade": 1,
+        "name": "Fire Blade",
+        "itemId": "item_fire_blade"
+      },
+      {
+        "grade": 2,
+        "name": "Fire Blade",
+        "itemId": "item_fire_blade"
+      },
+      {
+        "grade": 3,
+        "name": "Fira Blade",
+        "itemId": "item_fira_blade"
+      },
+      {
+        "grade": 4,
+        "name": "Fire Blade",
+        "itemId": "item_fire_blade"
+      },
+      {
+        "grade": 5,
+        "name": "Firaga Blade",
+        "itemId": "item_firaga_blade"
+      },
+      {
+        "grade": 6,
+        "name": "Firaga Blade",
+        "itemId": "item_firaga_blade"
+      },
+      {
+        "grade": 7,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      },
+      {
+        "grade": 8,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      }
+    ],
+    "Ice Blade": [
+      {
+        "grade": 1,
+        "name": "Blizzard Blade",
+        "itemId": "item_blizzard_blade"
+      },
+      {
+        "grade": 2,
+        "name": "Blizzard Blade",
+        "itemId": "item_blizzard_blade"
+      },
+      {
+        "grade": 3,
+        "name": "Blizzara Blade",
+        "itemId": "item_blizzara_blade"
+      },
+      {
+        "grade": 4,
+        "name": "Blizzara Blade",
+        "itemId": "item_blizzara_blade"
+      },
+      {
+        "grade": 5,
+        "name": "Blizzaga Blade",
+        "itemId": "item_blizzaga_blade"
+      },
+      {
+        "grade": 6,
+        "name": "Blizzaga Blade",
+        "itemId": "item_blizzaga_blade"
+      },
+      {
+        "grade": 7,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      },
+      {
+        "grade": 8,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      }
+    ],
+    "Lightning Blade": [
+      {
+        "grade": 1,
+        "name": "Thunder Blade",
+        "itemId": "item_thunder_blade"
+      },
+      {
+        "grade": 2,
+        "name": "Thunder Blade",
+        "itemId": "item_thunder_blade"
+      },
+      {
+        "grade": 3,
+        "name": "Thundara Blade",
+        "itemId": "item_thundara_blade"
+      },
+      {
+        "grade": 4,
+        "name": "Thundara Blade",
+        "itemId": "item_thundara_blade"
+      },
+      {
+        "grade": 5,
+        "name": "Thundaga Blade",
+        "itemId": "item_thundaga_blade"
+      },
+      {
+        "grade": 6,
+        "name": "Thundaga Blade",
+        "itemId": "item_thundaga_blade"
+      },
+      {
+        "grade": 7,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      },
+      {
+        "grade": 8,
+        "name": "Elemental Strike",
+        "itemId": "item_elemental_strike"
+      }
+    ],
+    "Absorb Sword": [
+      {
+        "grade": 1,
+        "name": "Osmose Blade",
+        "itemId": "item_osmose_blade"
+      },
+      {
+        "grade": 2,
+        "name": "Osmose Blade",
+        "itemId": "item_osmose_blade"
+      },
+      {
+        "grade": 3,
+        "name": "Drain Blade",
+        "itemId": "item_drain_blade"
+      },
+      {
+        "grade": 4,
+        "name": "Power Drain",
+        "itemId": "item_power_drain"
+      },
+      {
+        "grade": 5,
+        "name": "Power Osmose",
+        "itemId": "item_power_osmose"
+      },
+      {
+        "grade": 6,
+        "name": "Power Drain",
+        "itemId": "item_power_drain"
+      },
+      {
+        "grade": 7,
+        "name": "Aerial Drain",
+        "itemId": "item_aerial_drain"
+      },
+      {
+        "grade": 8,
+        "name": "Aerial Drain",
+        "itemId": "item_aerial_drain"
+      }
+    ],
+    "Item": [
+      {
+        "grade": 1,
+        "name": "Steal",
+        "itemId": "item_steal"
+      },
+      {
+        "grade": 2,
+        "name": "Steal",
+        "itemId": "item_steal"
+      },
+      {
+        "grade": 3,
+        "name": "Smart Consumer",
+        "itemId": "item_smart_consumer"
+      },
+      {
+        "grade": 4,
+        "name": "Smart Consumer",
+        "itemId": "item_smart_consumer"
+      },
+      {
+        "grade": 5,
+        "name": "Mug",
+        "itemId": "item_mug"
+      },
+      {
+        "grade": 6,
+        "name": "Mug",
+        "itemId": "item_mug"
+      },
+      {
+        "grade": 7,
+        "name": "Gil Toss",
+        "itemId": "item_gil_toss"
+      },
+      {
+        "grade": 8,
+        "name": "Gil Toss",
+        "itemId": "item_gil_toss"
+      }
+    ],
+    "Punch": [
+      {
+        "grade": 1,
+        "name": "Goblin Punch",
+        "itemId": "item_goblin_punch"
+      },
+      {
+        "grade": 2,
+        "name": "Iron Fist",
+        "itemId": "item_iron_fist"
+      },
+      {
+        "grade": 3,
+        "name": "Iron Fist",
+        "itemId": "item_iron_fist"
+      },
+      {
+        "grade": 4,
+        "name": "Magical Punch",
+        "itemId": "item_magical_punch"
+      },
+      {
+        "grade": 5,
+        "name": "Magical Punch",
+        "itemId": "item_magical_punch"
+      },
+      {
+        "grade": 6,
+        "name": "Hammer Punch",
+        "itemId": "item_hammer_punch"
+      },
+      {
+        "grade": 7,
+        "name": "Hammer Punch",
+        "itemId": "item_hammer_punch"
+      },
+      {
+        "grade": 8,
+        "name": "Costly Punch",
+        "itemId": "item_costly_punch"
+      }
+    ],
+    "SP Turbo": [
+      {
+        "grade": 1,
+        "name": "SP Turbo Magic",
+        "itemId": "item_sp_turbo_magic"
+      },
+      {
+        "grade": 2,
+        "name": "SP Turbo Magic",
+        "itemId": "item_sp_turbo_magic"
+      },
+      {
+        "grade": 3,
+        "name": "SP Turbo Magic",
+        "itemId": "item_sp_turbo_magic"
+      },
+      {
+        "grade": 4,
+        "name": "SP Turbo Magic",
+        "itemId": "item_sp_turbo_magic"
+      },
+      {
+        "grade": 5,
+        "name": "SP Turbo Attack",
+        "itemId": "item_sp_turbo_attack"
+      },
+      {
+        "grade": 6,
+        "name": "SP Turbo",
+        "itemId": "item_sp_turbo"
+      },
+      {
+        "grade": 7,
+        "name": "SP Barrier",
+        "itemId": "item_sp_barrier"
+      },
+      {
+        "grade": 8,
+        "name": "SP Master",
+        "itemId": "item_sp_master"
+      }
+    ],
+    "HP Up": [
+      {
+        "grade": 1,
+        "name": "HP Up",
+        "itemId": "item_hp_up"
+      },
+      {
+        "grade": 2,
+        "name": "HP Up",
+        "itemId": "item_hp_up"
+      },
+      {
+        "grade": 3,
+        "name": "HP Up+",
+        "itemId": "item_hp_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "HP Up+",
+        "itemId": "item_hp_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "HP Up++",
+        "itemId": "item_hp_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "HP Up++",
+        "itemId": "item_hp_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "HP Up++",
+        "itemId": "item_hp_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "HP Up++",
+        "itemId": "item_hp_up_plus_plus"
+      }
+    ],
+    "MP Up": [
+      {
+        "grade": 1,
+        "name": "MP Up",
+        "itemId": "item_mp_up"
+      },
+      {
+        "grade": 2,
+        "name": "MP Up",
+        "itemId": "item_mp_up"
+      },
+      {
+        "grade": 3,
+        "name": "MP Up+",
+        "itemId": "item_mp_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "MP Up+",
+        "itemId": "item_mp_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "MP Up++",
+        "itemId": "item_mp_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "MP Up++",
+        "itemId": "item_mp_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "MP Up++",
+        "itemId": "item_mp_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "MP Up++",
+        "itemId": "item_mp_up_plus_plus"
+      }
+    ],
+    "AP Up": [
+      {
+        "grade": 1,
+        "name": "AP Up",
+        "itemId": "item_ap_up"
+      },
+      {
+        "grade": 2,
+        "name": "AP Up",
+        "itemId": "item_ap_up"
+      },
+      {
+        "grade": 3,
+        "name": "AP Up+",
+        "itemId": "item_ap_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "AP Up+",
+        "itemId": "item_ap_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "AP Up++",
+        "itemId": "item_ap_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "AP Up++",
+        "itemId": "item_ap_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "AP Up++",
+        "itemId": "item_ap_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "AP Up++",
+        "itemId": "item_ap_up_plus_plus"
+      }
+    ],
+    "ATK Up": [
+      {
+        "grade": 1,
+        "name": "ATK UP",
+        "itemId": "item_atk_up"
+      },
+      {
+        "grade": 2,
+        "name": "ATK UP",
+        "itemId": "item_atk_up"
+      },
+      {
+        "grade": 3,
+        "name": "ATK Up+",
+        "itemId": "item_atk_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "ATK Up+",
+        "itemId": "item_atk_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "ATK Up++",
+        "itemId": "item_atk_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "ATK Up++",
+        "itemId": "item_atk_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "ATK Up++",
+        "itemId": "item_atk_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "ATK Up++",
+        "itemId": "item_atk_up_plus_plus"
+      }
+    ],
+    "VIT Up": [
+      {
+        "grade": 1,
+        "name": "VIT UP",
+        "itemId": "item_vit_up"
+      },
+      {
+        "grade": 2,
+        "name": "VIT UP",
+        "itemId": "item_vit_up"
+      },
+      {
+        "grade": 3,
+        "name": "VIT Up+",
+        "itemId": "item_vit_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "VIT Up+",
+        "itemId": "item_vit_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "VIT Up++",
+        "itemId": "item_vit_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "VIT Up++",
+        "itemId": "item_vit_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "VIT Up++",
+        "itemId": "item_vit_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "VIT Up++",
+        "itemId": "item_vit_up_plus_plus"
+      }
+    ],
+    "MAG Up": [
+      {
+        "grade": 1,
+        "name": "MAG UP",
+        "itemId": "item_mag_up"
+      },
+      {
+        "grade": 2,
+        "name": "MAG UP",
+        "itemId": "item_mag_up"
+      },
+      {
+        "grade": 3,
+        "name": "MAG Up+",
+        "itemId": "item_mag_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "MAG Up+",
+        "itemId": "item_mag_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "MAG Up++",
+        "itemId": "item_mag_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "MAG Up++",
+        "itemId": "item_mag_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "MAG Up++",
+        "itemId": "item_mag_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "MAG Up++",
+        "itemId": "item_mag_up_plus_plus"
+      }
+    ],
+    "SPR Up": [
+      {
+        "grade": 1,
+        "name": "SPR UP",
+        "itemId": "item_spr_up"
+      },
+      {
+        "grade": 2,
+        "name": "SPR UP",
+        "itemId": "item_spr_up"
+      },
+      {
+        "grade": 3,
+        "name": "SPR Up+",
+        "itemId": "item_spr_up_plus"
+      },
+      {
+        "grade": 4,
+        "name": "SPR Up+",
+        "itemId": "item_spr_up_plus"
+      },
+      {
+        "grade": 5,
+        "name": "SPR Up++",
+        "itemId": "item_spr_up_plus_plus"
+      },
+      {
+        "grade": 6,
+        "name": "SPR Up++",
+        "itemId": "item_spr_up_plus_plus"
+      },
+      {
+        "grade": 7,
+        "name": "SPR Up++",
+        "itemId": "item_spr_up_plus_plus"
+      },
+      {
+        "grade": 8,
+        "name": "SPR Up++",
+        "itemId": "item_spr_up_plus_plus"
+      }
+    ],
+    "LCK Up": [
+      {
+        "grade": 1,
+        "name": "Dash",
+        "itemId": "item_dash"
+      },
+      {
+        "grade": 2,
+        "name": "Dash",
+        "itemId": "item_dash"
+      },
+      {
+        "grade": 3,
+        "name": "Dash",
+        "itemId": "item_dash"
+      },
+      {
+        "grade": 4,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 5,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 6,
+        "name": "Dualcast",
+        "itemId": "item_dualcast"
+      },
+      {
+        "grade": 7,
+        "name": "Dualcast",
+        "itemId": "item_dualcast"
+      },
+      {
+        "grade": 8,
+        "name": "Dualcast",
+        "itemId": "item_dualcast"
+      }
+    ],
+    "Libra": [
+      {
+        "grade": 1,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 2,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 3,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 4,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 5,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 6,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 7,
+        "name": "Libra",
+        "itemId": "item_libra"
+      },
+      {
+        "grade": 8,
+        "name": "Libra",
+        "itemId": "item_libra"
+      }
+    ],
+    "DMW": [
+      {
+        "grade": 1,
+        "name": "Octaslash",
+        "itemId": "item_octaslash"
+      },
+      {
+        "grade": 2,
+        "name": "Rush Assault",
+        "itemId": "item_rush_assault"
+      },
+      {
+        "grade": 3,
+        "name": "Air Strike",
+        "itemId": "item_air_strike"
+      },
+      {
+        "grade": 4,
+        "name": "Meteor Shots",
+        "itemId": "item_meteor_shots"
+      },
+      {
+        "grade": 5,
+        "name": "Healing Wave",
+        "itemId": "item_healing_wave"
+      },
+      {
+        "grade": 6,
+        "name": "Lucky Stars",
+        "itemId": "item_lucky_stars"
+      },
+      {
+        "grade": 7,
+        "name": "Apocalypse",
+        "itemId": "item_apocalypse"
+      },
+      {
+        "grade": 8,
+        "name": "Ultima",
+        "itemId": "item_ultima"
+      }
+    ]
+  },
+  "materiaCatalog": {
+    "item_fire": {
+      "itemId": "item_fire",
+      "name": "Fire",
+      "fusionClass": "Fire",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_fira": {
+      "itemId": "item_fira",
+      "name": "Fira",
+      "fusionClass": "Fire",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_firaga": {
+      "itemId": "item_firaga",
+      "name": "Firaga",
+      "fusionClass": "Fire",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_blizzard": {
+      "itemId": "item_blizzard",
+      "name": "Blizzard",
+      "fusionClass": "Ice",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_blizzara": {
+      "itemId": "item_blizzara",
+      "name": "Blizzara",
+      "fusionClass": "Ice",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_blizzaga": {
+      "itemId": "item_blizzaga",
+      "name": "Blizzaga",
+      "fusionClass": "Ice",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_thunder": {
+      "itemId": "item_thunder",
+      "name": "Thunder",
+      "fusionClass": "Lightning",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_thundara": {
+      "itemId": "item_thundara",
+      "name": "Thundara",
+      "fusionClass": "Lightning",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_thundaga": {
+      "itemId": "item_thundaga",
+      "name": "Thundaga",
+      "fusionClass": "Lightning",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_cure": {
+      "itemId": "item_cure",
+      "name": "Cure",
+      "fusionClass": "Restore",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_cura": {
+      "itemId": "item_cura",
+      "name": "Cura",
+      "fusionClass": "Restore",
+      "grade": 2,
+      "dmwOnly": false
+    },
+    "item_regen": {
+      "itemId": "item_regen",
+      "name": "Regen",
+      "fusionClass": "Restore",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_curaga": {
+      "itemId": "item_curaga",
+      "name": "Curaga",
+      "fusionClass": "Restore",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_full_cure": {
+      "itemId": "item_full_cure",
+      "name": "Full Cure",
+      "fusionClass": "Restore",
+      "grade": 8,
+      "dmwOnly": false
+    },
+    "item_barrier": {
+      "itemId": "item_barrier",
+      "name": "Barrier",
+      "fusionClass": "Defense",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_mbarrier": {
+      "itemId": "item_mbarrier",
+      "name": "MBarrier",
+      "fusionClass": "Defense",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_elemental_ward": {
+      "itemId": "item_elemental_ward",
+      "name": "Elemental Ward",
+      "fusionClass": "Defense",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_wall": {
+      "itemId": "item_wall",
+      "name": "Wall",
+      "fusionClass": "Defense",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_esuna": {
+      "itemId": "item_esuna",
+      "name": "Esuna",
+      "fusionClass": "Status Defense",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_dispel": {
+      "itemId": "item_dispel",
+      "name": "Dispel",
+      "fusionClass": "Status Defense",
+      "grade": 2,
+      "dmwOnly": false
+    },
+    "item_status_ward": {
+      "itemId": "item_status_ward",
+      "name": "Status Ward",
+      "fusionClass": "Status Defense",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_drain": {
+      "itemId": "item_drain",
+      "name": "Drain",
+      "fusionClass": "Absorb Mag",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_osmose": {
+      "itemId": "item_osmose",
+      "name": "Osmose",
+      "fusionClass": "Absorb Mag",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_drainra": {
+      "itemId": "item_drainra",
+      "name": "Drainra",
+      "fusionClass": "Absorb Mag",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_osmoga": {
+      "itemId": "item_osmoga",
+      "name": "Osmoga",
+      "fusionClass": "Absorb Mag",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_drainga": {
+      "itemId": "item_drainga",
+      "name": "Drainga",
+      "fusionClass": "Absorb Mag",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_poison": {
+      "itemId": "item_poison",
+      "name": "Poison",
+      "fusionClass": "Status Mag",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_silence": {
+      "itemId": "item_silence",
+      "name": "Silence",
+      "fusionClass": "Status Mag",
+      "grade": 2,
+      "dmwOnly": false
+    },
+    "item_stop": {
+      "itemId": "item_stop",
+      "name": "Stop",
+      "fusionClass": "Status Mag",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_death": {
+      "itemId": "item_death",
+      "name": "Death",
+      "fusionClass": "Status Mag",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_dark_fire": {
+      "itemId": "item_dark_fire",
+      "name": "Dark Fire",
+      "fusionClass": "Fire & St",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_dark_fira": {
+      "itemId": "item_dark_fira",
+      "name": "Dark Fira",
+      "fusionClass": "Fire & St",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_dark_firaga": {
+      "itemId": "item_dark_firaga",
+      "name": "Dark Firaga",
+      "fusionClass": "Fire & St",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_hell_firaga": {
+      "itemId": "item_hell_firaga",
+      "name": "Hell Firaga",
+      "fusionClass": "Fire & St",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_dark_blizzard": {
+      "itemId": "item_dark_blizzard",
+      "name": "Dark Blizzard",
+      "fusionClass": "Ice & St",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_dark_blizzara": {
+      "itemId": "item_dark_blizzara",
+      "name": "Dark Blizzara",
+      "fusionClass": "Ice & St",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_dark_blizzaga": {
+      "itemId": "item_dark_blizzaga",
+      "name": "Dark Blizzaga",
+      "fusionClass": "Ice & St",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_hell_blizzaga": {
+      "itemId": "item_hell_blizzaga",
+      "name": "Hell Blizzaga",
+      "fusionClass": "Ice & St",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_dark_thunder": {
+      "itemId": "item_dark_thunder",
+      "name": "Dark Thunder",
+      "fusionClass": "Lightning & St",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_dark_thundara": {
+      "itemId": "item_dark_thundara",
+      "name": "Dark Thundara",
+      "fusionClass": "Lightning & St",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_dark_thundaga": {
+      "itemId": "item_dark_thundaga",
+      "name": "Dark Thundaga",
+      "fusionClass": "Lightning & St",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_hell_thundaga": {
+      "itemId": "item_hell_thundaga",
+      "name": "Hell Thundaga",
+      "fusionClass": "Lightning & St",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_gravity": {
+      "itemId": "item_gravity",
+      "name": "Gravity",
+      "fusionClass": "Gravity",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_graviga": {
+      "itemId": "item_graviga",
+      "name": "Graviga",
+      "fusionClass": "Gravity",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_darkness": {
+      "itemId": "item_darkness",
+      "name": "Darkness",
+      "fusionClass": "Gravity",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_quake": {
+      "itemId": "item_quake",
+      "name": "Quake",
+      "fusionClass": "Gravity",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_tri_thundaga": {
+      "itemId": "item_tri_thundaga",
+      "name": "Tri-Thundaga",
+      "fusionClass": "Ultimate",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_tri_fire": {
+      "itemId": "item_tri_fire",
+      "name": "Tri-Fire",
+      "fusionClass": "Ultimate",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_electrocute": {
+      "itemId": "item_electrocute",
+      "name": "Electrocute",
+      "fusionClass": "Ultimate",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_flare": {
+      "itemId": "item_flare",
+      "name": "Flare",
+      "fusionClass": "Ultimate",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_energy": {
+      "itemId": "item_energy",
+      "name": "Energy",
+      "fusionClass": "Ultimate",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_ultima": {
+      "itemId": "item_ultima",
+      "name": "Ultima",
+      "fusionClass": "Ultimate",
+      "grade": 8,
+      "dmwOnly": false
+    },
+    "item_jump": {
+      "itemId": "item_jump",
+      "name": "Jump",
+      "fusionClass": "Quick Atk",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_assault_twister": {
+      "itemId": "item_assault_twister",
+      "name": "Assault Twister",
+      "fusionClass": "Quick Atk",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_high_jump": {
+      "itemId": "item_high_jump",
+      "name": "High Jump",
+      "fusionClass": "Quick Atk",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_assault_twister_plus": {
+      "itemId": "item_assault_twister_plus",
+      "name": "Assault Twister+",
+      "fusionClass": "Quick Atk",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_poison_twister": {
+      "itemId": "item_poison_twister",
+      "name": "Poison Twister",
+      "fusionClass": "Quick Atk & St",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_poison_aerial": {
+      "itemId": "item_poison_aerial",
+      "name": "Poison Aerial",
+      "fusionClass": "Quick Atk & St",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_stop_twister": {
+      "itemId": "item_stop_twister",
+      "name": "Stop Twister",
+      "fusionClass": "Quick Atk & St",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_silence_aerial": {
+      "itemId": "item_silence_aerial",
+      "name": "Silence Aerial",
+      "fusionClass": "Quick Atk & St",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_death_jump": {
+      "itemId": "item_death_jump",
+      "name": "Death Jump",
+      "fusionClass": "Quick Atk & St",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_death_twister": {
+      "itemId": "item_death_twister",
+      "name": "Death Twister",
+      "fusionClass": "Quick Atk & St",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_status_strike": {
+      "itemId": "item_status_strike",
+      "name": "Status Strike",
+      "fusionClass": "Quick Atk & St",
+      "grade": 8,
+      "dmwOnly": false
+    },
+    "item_power_attack": {
+      "itemId": "item_power_attack",
+      "name": "Power Attack",
+      "fusionClass": "Sword Arts",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_vital_slash": {
+      "itemId": "item_vital_slash",
+      "name": "Vital Slash",
+      "fusionClass": "Sword Arts",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_blast_wave": {
+      "itemId": "item_blast_wave",
+      "name": "Blast Wave",
+      "fusionClass": "Sword Arts",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_exploder_blade": {
+      "itemId": "item_exploder_blade",
+      "name": "Exploder Blade",
+      "fusionClass": "Sword Arts",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_poison_blade": {
+      "itemId": "item_poison_blade",
+      "name": "Poison Blade",
+      "fusionClass": "Blade Arts & St",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_silence_blade": {
+      "itemId": "item_silence_blade",
+      "name": "Silence Blade",
+      "fusionClass": "Blade Arts & St",
+      "grade": 2,
+      "dmwOnly": false
+    },
+    "item_stop_blade": {
+      "itemId": "item_stop_blade",
+      "name": "Stop Blade",
+      "fusionClass": "Blade Arts & St",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_death_blade": {
+      "itemId": "item_death_blade",
+      "name": "Death Blade",
+      "fusionClass": "Blade Arts & St",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_dispel_blade": {
+      "itemId": "item_dispel_blade",
+      "name": "Dispel Blade",
+      "fusionClass": "Blade Arts & St",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_fire_blade": {
+      "itemId": "item_fire_blade",
+      "name": "Fire Blade",
+      "fusionClass": "Fire Blade",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_fira_blade": {
+      "itemId": "item_fira_blade",
+      "name": "Fira Blade",
+      "fusionClass": "Fire Blade",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_firaga_blade": {
+      "itemId": "item_firaga_blade",
+      "name": "Firaga Blade",
+      "fusionClass": "Fire Blade",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_elemental_strike": {
+      "itemId": "item_elemental_strike",
+      "name": "Elemental Strike",
+      "fusionClass": "Fire Blade",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_blizzard_blade": {
+      "itemId": "item_blizzard_blade",
+      "name": "Blizzard Blade",
+      "fusionClass": "Ice Blade",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_blizzara_blade": {
+      "itemId": "item_blizzara_blade",
+      "name": "Blizzara Blade",
+      "fusionClass": "Ice Blade",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_blizzaga_blade": {
+      "itemId": "item_blizzaga_blade",
+      "name": "Blizzaga Blade",
+      "fusionClass": "Ice Blade",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_thunder_blade": {
+      "itemId": "item_thunder_blade",
+      "name": "Thunder Blade",
+      "fusionClass": "Lightning Blade",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_thundara_blade": {
+      "itemId": "item_thundara_blade",
+      "name": "Thundara Blade",
+      "fusionClass": "Lightning Blade",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_thundaga_blade": {
+      "itemId": "item_thundaga_blade",
+      "name": "Thundaga Blade",
+      "fusionClass": "Lightning Blade",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_osmose_blade": {
+      "itemId": "item_osmose_blade",
+      "name": "Osmose Blade",
+      "fusionClass": "Absorb Sword",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_drain_blade": {
+      "itemId": "item_drain_blade",
+      "name": "Drain Blade",
+      "fusionClass": "Absorb Sword",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_power_drain": {
+      "itemId": "item_power_drain",
+      "name": "Power Drain",
+      "fusionClass": "Absorb Sword",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_power_osmose": {
+      "itemId": "item_power_osmose",
+      "name": "Power Osmose",
+      "fusionClass": "Absorb Sword",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_aerial_drain": {
+      "itemId": "item_aerial_drain",
+      "name": "Aerial Drain",
+      "fusionClass": "Absorb Sword",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_steal": {
+      "itemId": "item_steal",
+      "name": "Steal",
+      "fusionClass": "Item",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_smart_consumer": {
+      "itemId": "item_smart_consumer",
+      "name": "Smart Consumer",
+      "fusionClass": "Item",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_mug": {
+      "itemId": "item_mug",
+      "name": "Mug",
+      "fusionClass": "Item",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_gil_toss": {
+      "itemId": "item_gil_toss",
+      "name": "Gil Toss",
+      "fusionClass": "Item",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_goblin_punch": {
+      "itemId": "item_goblin_punch",
+      "name": "Goblin Punch",
+      "fusionClass": "Punch",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_iron_fist": {
+      "itemId": "item_iron_fist",
+      "name": "Iron Fist",
+      "fusionClass": "Punch",
+      "grade": 2,
+      "dmwOnly": false
+    },
+    "item_magical_punch": {
+      "itemId": "item_magical_punch",
+      "name": "Magical Punch",
+      "fusionClass": "Punch",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_hammer_punch": {
+      "itemId": "item_hammer_punch",
+      "name": "Hammer Punch",
+      "fusionClass": "Punch",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_costly_punch": {
+      "itemId": "item_costly_punch",
+      "name": "Costly Punch",
+      "fusionClass": "Punch",
+      "grade": 8,
+      "dmwOnly": false
+    },
+    "item_sp_turbo_magic": {
+      "itemId": "item_sp_turbo_magic",
+      "name": "SP Turbo Magic",
+      "fusionClass": "SP Turbo",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_sp_turbo_attack": {
+      "itemId": "item_sp_turbo_attack",
+      "name": "SP Turbo Attack",
+      "fusionClass": "SP Turbo",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_sp_turbo": {
+      "itemId": "item_sp_turbo",
+      "name": "SP Turbo",
+      "fusionClass": "SP Turbo",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_sp_barrier": {
+      "itemId": "item_sp_barrier",
+      "name": "SP Barrier",
+      "fusionClass": "SP Turbo",
+      "grade": 7,
+      "dmwOnly": false
+    },
+    "item_sp_master": {
+      "itemId": "item_sp_master",
+      "name": "SP Master",
+      "fusionClass": "SP Turbo",
+      "grade": 8,
+      "dmwOnly": false
+    },
+    "item_hp_up": {
+      "itemId": "item_hp_up",
+      "name": "HP Up",
+      "fusionClass": "HP Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_hp_up_plus": {
+      "itemId": "item_hp_up_plus",
+      "name": "HP Up+",
+      "fusionClass": "HP Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_hp_up_plus_plus": {
+      "itemId": "item_hp_up_plus_plus",
+      "name": "HP Up++",
+      "fusionClass": "HP Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_mp_up": {
+      "itemId": "item_mp_up",
+      "name": "MP Up",
+      "fusionClass": "MP Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_mp_up_plus": {
+      "itemId": "item_mp_up_plus",
+      "name": "MP Up+",
+      "fusionClass": "MP Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_mp_up_plus_plus": {
+      "itemId": "item_mp_up_plus_plus",
+      "name": "MP Up++",
+      "fusionClass": "MP Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_ap_up": {
+      "itemId": "item_ap_up",
+      "name": "AP Up",
+      "fusionClass": "AP Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_ap_up_plus": {
+      "itemId": "item_ap_up_plus",
+      "name": "AP Up+",
+      "fusionClass": "AP Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_ap_up_plus_plus": {
+      "itemId": "item_ap_up_plus_plus",
+      "name": "AP Up++",
+      "fusionClass": "AP Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_atk_up": {
+      "itemId": "item_atk_up",
+      "name": "ATK UP",
+      "fusionClass": "ATK Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_atk_up_plus": {
+      "itemId": "item_atk_up_plus",
+      "name": "ATK Up+",
+      "fusionClass": "ATK Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_atk_up_plus_plus": {
+      "itemId": "item_atk_up_plus_plus",
+      "name": "ATK Up++",
+      "fusionClass": "ATK Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_vit_up": {
+      "itemId": "item_vit_up",
+      "name": "VIT UP",
+      "fusionClass": "VIT Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_vit_up_plus": {
+      "itemId": "item_vit_up_plus",
+      "name": "VIT Up+",
+      "fusionClass": "VIT Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_vit_up_plus_plus": {
+      "itemId": "item_vit_up_plus_plus",
+      "name": "VIT Up++",
+      "fusionClass": "VIT Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_mag_up": {
+      "itemId": "item_mag_up",
+      "name": "MAG UP",
+      "fusionClass": "MAG Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_mag_up_plus": {
+      "itemId": "item_mag_up_plus",
+      "name": "MAG Up+",
+      "fusionClass": "MAG Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_mag_up_plus_plus": {
+      "itemId": "item_mag_up_plus_plus",
+      "name": "MAG Up++",
+      "fusionClass": "MAG Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_spr_up": {
+      "itemId": "item_spr_up",
+      "name": "SPR UP",
+      "fusionClass": "SPR Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_spr_up_plus": {
+      "itemId": "item_spr_up_plus",
+      "name": "SPR Up+",
+      "fusionClass": "SPR Up",
+      "grade": 3,
+      "dmwOnly": false
+    },
+    "item_spr_up_plus_plus": {
+      "itemId": "item_spr_up_plus_plus",
+      "name": "SPR Up++",
+      "fusionClass": "SPR Up",
+      "grade": 5,
+      "dmwOnly": false
+    },
+    "item_dash": {
+      "itemId": "item_dash",
+      "name": "Dash",
+      "fusionClass": "LCK Up",
+      "grade": 1,
+      "dmwOnly": false
+    },
+    "item_libra": {
+      "itemId": "item_libra",
+      "name": "Libra",
+      "fusionClass": "LCK Up",
+      "grade": 4,
+      "dmwOnly": false
+    },
+    "item_dualcast": {
+      "itemId": "item_dualcast",
+      "name": "Dualcast",
+      "fusionClass": "LCK Up",
+      "grade": 6,
+      "dmwOnly": false
+    },
+    "item_octaslash": {
+      "itemId": "item_octaslash",
+      "name": "Octaslash",
+      "fusionClass": "DMW",
+      "grade": 1,
+      "dmwOnly": true
+    },
+    "item_rush_assault": {
+      "itemId": "item_rush_assault",
+      "name": "Rush Assault",
+      "fusionClass": "DMW",
+      "grade": 2,
+      "dmwOnly": true
+    },
+    "item_air_strike": {
+      "itemId": "item_air_strike",
+      "name": "Air Strike",
+      "fusionClass": "DMW",
+      "grade": 3,
+      "dmwOnly": true
+    },
+    "item_meteor_shots": {
+      "itemId": "item_meteor_shots",
+      "name": "Meteor Shots",
+      "fusionClass": "DMW",
+      "grade": 4,
+      "dmwOnly": true
+    },
+    "item_healing_wave": {
+      "itemId": "item_healing_wave",
+      "name": "Healing Wave",
+      "fusionClass": "DMW",
+      "grade": 5,
+      "dmwOnly": true
+    },
+    "item_lucky_stars": {
+      "itemId": "item_lucky_stars",
+      "name": "Lucky Stars",
+      "fusionClass": "DMW",
+      "grade": 6,
+      "dmwOnly": true
+    },
+    "item_apocalypse": {
+      "itemId": "item_apocalypse",
+      "name": "Apocalypse",
+      "fusionClass": "DMW",
+      "grade": 7,
+      "dmwOnly": true
+    },
+    "item_hellfire": {
+      "itemId": "item_hellfire",
+      "name": "Hellfire",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_megaflare": {
+      "itemId": "item_megaflare",
+      "name": "Megaflare",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_zantetsuken": {
+      "itemId": "item_zantetsuken",
+      "name": "Zantetsuken",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_rebirth_flame": {
+      "itemId": "item_rebirth_flame",
+      "name": "Rebirth Flame",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_exaflare": {
+      "itemId": "item_exaflare",
+      "name": "Exaflare",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_chocobo_stomp": {
+      "itemId": "item_chocobo_stomp",
+      "name": "Chocobo Stomp",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_1000_needles": {
+      "itemId": "item_1000_needles",
+      "name": "1000 Needles",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_murderous_thrust": {
+      "itemId": "item_murderous_thrust",
+      "name": "Murderous Thrust",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_courage_boost": {
+      "itemId": "item_courage_boost",
+      "name": "Courage Boost!",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_moogle_power": {
+      "itemId": "item_moogle_power",
+      "name": "Moogle Power",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    },
+    "item_item_mugger": {
+      "itemId": "item_item_mugger",
+      "name": "Item Mugger",
+      "fusionClass": "DMW",
+      "grade": 8,
+      "dmwOnly": true
+    }
+  },
+  "classMatrix": {
+    "Fire": {
+      "Ice": "Lightning",
+      "Lightning": "Ice",
+      "Status Mag": "Fire & St",
+      "Status Defense": "Fire & St",
+      "Absorb Mag": "Fire & St",
+      "Gravity": "Ultimate",
+      "Sword Arts": "Fire Blade",
+      "Quick Atk": "Fire Blade",
+      "Punch": "Punch",
+      "Restore": "Fire",
+      "Defense": "Defense",
+      "Ultimate": "Ultimate",
+      "DMW": "Ultimate",
+      "Fire": "Fire",
+      "Libra": "Fire",
+      "HP Up": "Fire",
+      "MP Up": "Fire",
+      "AP Up": "Fire",
+      "ATK Up": "Fire",
+      "VIT Up": "Fire",
+      "MAG Up": "Fire",
+      "SPR Up": "Fire",
+      "LCK Up": "Fire"
+    },
+    "Ice": {
+      "Fire": "Lightning",
+      "Lightning": "Fire",
+      "Status Mag": "Ice & St",
+      "Status Defense": "Ice & St",
+      "Absorb Mag": "Ice & St",
+      "Gravity": "Ultimate",
+      "Sword Arts": "Ice Blade",
+      "Quick Atk": "Ice Blade",
+      "Punch": "Punch",
+      "Restore": "Ice",
+      "Defense": "Defense",
+      "Ultimate": "Ultimate",
+      "DMW": "Ultimate",
+      "Ice": "Ice",
+      "Libra": "Ice",
+      "HP Up": "Ice",
+      "MP Up": "Ice",
+      "AP Up": "Ice",
+      "ATK Up": "Ice",
+      "VIT Up": "Ice",
+      "MAG Up": "Ice",
+      "SPR Up": "Ice",
+      "LCK Up": "Ice"
+    },
+    "Lightning": {
+      "Ice": "Fire",
+      "Fire": "Ice",
+      "Status Mag": "Lightning & St",
+      "Status Defense": "Lightning & St",
+      "Absorb Mag": "Lightning & St",
+      "Gravity": "Ultimate",
+      "Sword Arts": "Lightning Blade",
+      "Quick Atk": "Lightning Blade",
+      "Punch": "Punch",
+      "Restore": "Lightning",
+      "Defense": "Defense",
+      "Ultimate": "Ultimate",
+      "DMW": "Ultimate",
+      "Lightning": "Lightning",
+      "Libra": "Lightning",
+      "HP Up": "Lightning",
+      "MP Up": "Lightning",
+      "AP Up": "Lightning",
+      "ATK Up": "Lightning",
+      "VIT Up": "Lightning",
+      "MAG Up": "Lightning",
+      "SPR Up": "Lightning",
+      "LCK Up": "Lightning"
+    },
+    "Status Mag": {
+      "Fire": "Fire & St",
+      "Ice": "Ice & St",
+      "Lightning": "Lightning & St",
+      "Sword Arts": "Blade Arts & St",
+      "Quick Atk": "Quick Atk & St",
+      "Gravity": "Gravity",
+      "Punch": "Punch",
+      "Status Mag": "Status Mag",
+      "Libra": "Status Mag",
+      "HP Up": "Status Mag",
+      "MP Up": "Status Mag",
+      "AP Up": "Status Mag",
+      "ATK Up": "Status Mag",
+      "VIT Up": "Status Mag",
+      "MAG Up": "Status Mag",
+      "SPR Up": "Status Mag",
+      "LCK Up": "Status Mag"
+    },
+    "Status Defense": {
+      "Fire": "Fire & St",
+      "Ice": "Ice & St",
+      "Lightning": "Lightning & St",
+      "Restore": "Status Defense",
+      "Defense": "Status Defense",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Status Defense": "Status Defense",
+      "Libra": "Status Defense",
+      "HP Up": "Status Defense",
+      "MP Up": "Status Defense",
+      "AP Up": "Status Defense",
+      "ATK Up": "Status Defense",
+      "VIT Up": "Status Defense",
+      "MAG Up": "Status Defense",
+      "SPR Up": "Status Defense",
+      "LCK Up": "Status Defense"
+    },
+    "Absorb Mag": {
+      "Fire": "Fire & St",
+      "Ice": "Ice & St",
+      "Lightning": "Lightning & St",
+      "Sword Arts": "Absorb Sword",
+      "Quick Atk": "Absorb Sword",
+      "Gravity": "Gravity",
+      "Punch": "Punch",
+      "Absorb Mag": "Absorb Mag",
+      "Libra": "Absorb Mag",
+      "HP Up": "Absorb Mag",
+      "MP Up": "Absorb Mag",
+      "AP Up": "Absorb Mag",
+      "ATK Up": "Absorb Mag",
+      "VIT Up": "Absorb Mag",
+      "MAG Up": "Absorb Mag",
+      "SPR Up": "Absorb Mag",
+      "LCK Up": "Absorb Mag"
+    },
+    "Gravity": {
+      "Fire": "Ultimate",
+      "Ice": "Ultimate",
+      "Lightning": "Ultimate",
+      "Quick Atk": "Gravity",
+      "Sword Arts": "Gravity",
+      "Absorb Mag": "Gravity",
+      "Status Mag": "Gravity",
+      "DMW": "Ultimate",
+      "Punch": "Punch",
+      "Gravity": "Gravity",
+      "Libra": "Gravity",
+      "HP Up": "Gravity",
+      "MP Up": "Gravity",
+      "AP Up": "Gravity",
+      "ATK Up": "Gravity",
+      "VIT Up": "Gravity",
+      "MAG Up": "Gravity",
+      "SPR Up": "Gravity",
+      "LCK Up": "Gravity"
+    },
+    "Sword Arts": {
+      "Fire": "Fire Blade",
+      "Ice": "Ice Blade",
+      "Lightning": "Lightning Blade",
+      "Status Mag": "Blade Arts & St",
+      "Absorb Mag": "Absorb Sword",
+      "Gravity": "Gravity",
+      "Quick Atk": "Quick Atk",
+      "Item": "Item",
+      "Punch": "Punch",
+      "Sword Arts": "Sword Arts",
+      "Libra": "Sword Arts",
+      "HP Up": "Sword Arts",
+      "MP Up": "Sword Arts",
+      "AP Up": "Sword Arts",
+      "ATK Up": "Sword Arts",
+      "VIT Up": "Sword Arts",
+      "MAG Up": "Sword Arts",
+      "SPR Up": "Sword Arts",
+      "LCK Up": "Sword Arts"
+    },
+    "Quick Atk": {
+      "Fire": "Fire Blade",
+      "Ice": "Ice Blade",
+      "Lightning": "Lightning Blade",
+      "Status Mag": "Quick Atk & St",
+      "Absorb Mag": "Absorb Sword",
+      "Gravity": "Gravity",
+      "Sword Arts": "Quick Atk",
+      "Item": "Item",
+      "Punch": "Punch",
+      "Quick Atk": "Quick Atk",
+      "Libra": "Quick Atk",
+      "HP Up": "Quick Atk",
+      "MP Up": "Quick Atk",
+      "AP Up": "Quick Atk",
+      "ATK Up": "Quick Atk",
+      "VIT Up": "Quick Atk",
+      "MAG Up": "Quick Atk",
+      "SPR Up": "Quick Atk",
+      "LCK Up": "Quick Atk"
+    },
+    "Punch": {
+      "Fire": "Punch",
+      "Ice": "Punch",
+      "Lightning": "Punch",
+      "DMW": "Punch",
+      "Gravity": "Punch",
+      "Sword Arts": "Punch",
+      "Quick Atk": "Punch",
+      "Absorb Mag": "Punch",
+      "Status Mag": "Punch",
+      "Punch": "Punch",
+      "Libra": "Punch",
+      "HP Up": "Punch",
+      "MP Up": "Punch",
+      "AP Up": "Punch",
+      "ATK Up": "Punch",
+      "VIT Up": "Punch",
+      "MAG Up": "Punch",
+      "SPR Up": "Punch",
+      "LCK Up": "Punch"
+    },
+    "Restore": {
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Defense": "Restore",
+      "Status Defense": "Status Defense",
+      "Restore": "Restore",
+      "Libra": "Restore",
+      "HP Up": "Restore",
+      "MP Up": "Restore",
+      "AP Up": "Restore",
+      "ATK Up": "Restore",
+      "VIT Up": "Restore",
+      "MAG Up": "Restore",
+      "SPR Up": "Restore",
+      "LCK Up": "Restore"
+    },
+    "Defense": {
+      "Fire": "Defense",
+      "Ice": "Defense",
+      "Lightning": "Defense",
+      "Restore": "Restore",
+      "Status Defense": "Status Defense",
+      "SP Turbo": "SP Turbo",
+      "Defense": "Defense",
+      "Libra": "Defense",
+      "HP Up": "Defense",
+      "MP Up": "Defense",
+      "AP Up": "Defense",
+      "ATK Up": "Defense",
+      "VIT Up": "Defense",
+      "MAG Up": "Defense",
+      "SPR Up": "Defense",
+      "LCK Up": "Defense"
+    },
+    "Ultimate": {
+      "Fire": "Ultimate",
+      "Ice": "Ultimate",
+      "Lightning": "Ultimate",
+      "SP Turbo": "SP Turbo",
+      "Ultimate": "Ultimate",
+      "Libra": "Ultimate",
+      "HP Up": "Ultimate",
+      "MP Up": "Ultimate",
+      "AP Up": "Ultimate",
+      "ATK Up": "Ultimate",
+      "VIT Up": "Ultimate",
+      "MAG Up": "Ultimate",
+      "SPR Up": "Ultimate",
+      "LCK Up": "Ultimate"
+    },
+    "DMW": {
+      "Fire": "Ultimate",
+      "Ice": "Ultimate",
+      "Lightning": "Ultimate",
+      "Gravity": "Ultimate",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo",
+      "Item": "Item",
+      "DMW": "DMW",
+      "Libra": "Libra"
+    },
+    "Item": {
+      "Quick Atk": "Item",
+      "Sword Arts": "Item",
+      "DMW": "Item",
+      "Item": "Item",
+      "Libra": "Item",
+      "HP Up": "Item",
+      "MP Up": "Item",
+      "AP Up": "Item",
+      "ATK Up": "Item",
+      "VIT Up": "Item",
+      "MAG Up": "Item",
+      "SPR Up": "Item",
+      "LCK Up": "Item"
+    },
+    "SP Turbo": {
+      "DMW": "SP Turbo",
+      "Ultimate": "SP Turbo",
+      "Defense": "SP Turbo",
+      "SP Turbo": "SP Turbo",
+      "Libra": "SP Turbo",
+      "HP Up": "SP Turbo",
+      "MP Up": "SP Turbo",
+      "AP Up": "SP Turbo",
+      "ATK Up": "SP Turbo",
+      "VIT Up": "SP Turbo",
+      "MAG Up": "SP Turbo",
+      "SPR Up": "SP Turbo",
+      "LCK Up": "SP Turbo"
+    },
+    "Fire & St": {
+      "Status Defense": "Fire & St",
+      "Fire & St": "Fire & St",
+      "Libra": "Fire & St",
+      "HP Up": "Fire & St",
+      "MP Up": "Fire & St",
+      "AP Up": "Fire & St",
+      "ATK Up": "Fire & St",
+      "VIT Up": "Fire & St",
+      "MAG Up": "Fire & St",
+      "SPR Up": "Fire & St",
+      "LCK Up": "Fire & St"
+    },
+    "Ice & St": {
+      "Status Defense": "Ice & St",
+      "Ice & St": "Ice & St",
+      "Libra": "Ice & St",
+      "HP Up": "Ice & St",
+      "MP Up": "Ice & St",
+      "AP Up": "Ice & St",
+      "ATK Up": "Ice & St",
+      "VIT Up": "Ice & St",
+      "MAG Up": "Ice & St",
+      "SPR Up": "Ice & St",
+      "LCK Up": "Ice & St"
+    },
+    "Lightning & St": {
+      "Status Defense": "Lightning & St",
+      "Lightning & St": "Lightning & St",
+      "Libra": "Lightning & St",
+      "HP Up": "Lightning & St",
+      "MP Up": "Lightning & St",
+      "AP Up": "Lightning & St",
+      "ATK Up": "Lightning & St",
+      "VIT Up": "Lightning & St",
+      "MAG Up": "Lightning & St",
+      "SPR Up": "Lightning & St",
+      "LCK Up": "Lightning & St"
+    },
+    "Libra": {
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo",
+      "HP Up": "HP Up",
+      "MP Up": "MP Up",
+      "AP Up": "AP Up",
+      "ATK Up": "ATK Up",
+      "VIT Up": "VIT Up",
+      "MAG Up": "MAG Up",
+      "SPR Up": "SPR Up",
+      "LCK Up": "LCK Up",
+      "Libra": "Libra",
+      "DMW": "Libra"
+    },
+    "Quick Atk & St": {
+      "Quick Atk & St": "Quick Atk & St",
+      "Libra": "Quick Atk & St",
+      "HP Up": "Quick Atk & St",
+      "MP Up": "Quick Atk & St",
+      "AP Up": "Quick Atk & St",
+      "ATK Up": "Quick Atk & St",
+      "VIT Up": "Quick Atk & St",
+      "MAG Up": "Quick Atk & St",
+      "SPR Up": "Quick Atk & St",
+      "LCK Up": "Quick Atk & St"
+    },
+    "Blade Arts & St": {
+      "Blade Arts & St": "Blade Arts & St",
+      "Libra": "Blade Arts & St",
+      "HP Up": "Blade Arts & St",
+      "MP Up": "Blade Arts & St",
+      "AP Up": "Blade Arts & St",
+      "ATK Up": "Blade Arts & St",
+      "VIT Up": "Blade Arts & St",
+      "MAG Up": "Blade Arts & St",
+      "SPR Up": "Blade Arts & St",
+      "LCK Up": "Blade Arts & St"
+    },
+    "Fire Blade": {
+      "Fire Blade": "Fire Blade",
+      "Libra": "Fire Blade",
+      "HP Up": "Fire Blade",
+      "MP Up": "Fire Blade",
+      "AP Up": "Fire Blade",
+      "ATK Up": "Fire Blade",
+      "VIT Up": "Fire Blade",
+      "MAG Up": "Fire Blade",
+      "SPR Up": "Fire Blade",
+      "LCK Up": "Fire Blade"
+    },
+    "Ice Blade": {
+      "Ice Blade": "Ice Blade",
+      "Libra": "Ice Blade",
+      "HP Up": "Ice Blade",
+      "MP Up": "Ice Blade",
+      "AP Up": "Ice Blade",
+      "ATK Up": "Ice Blade",
+      "VIT Up": "Ice Blade",
+      "MAG Up": "Ice Blade",
+      "SPR Up": "Ice Blade",
+      "LCK Up": "Ice Blade"
+    },
+    "Lightning Blade": {
+      "Lightning Blade": "Lightning Blade",
+      "Libra": "Lightning Blade",
+      "HP Up": "Lightning Blade",
+      "MP Up": "Lightning Blade",
+      "AP Up": "Lightning Blade",
+      "ATK Up": "Lightning Blade",
+      "VIT Up": "Lightning Blade",
+      "MAG Up": "Lightning Blade",
+      "SPR Up": "Lightning Blade",
+      "LCK Up": "Lightning Blade"
+    },
+    "Absorb Sword": {
+      "Absorb Sword": "Absorb Sword",
+      "Libra": "Absorb Sword",
+      "HP Up": "Absorb Sword",
+      "MP Up": "Absorb Sword",
+      "AP Up": "Absorb Sword",
+      "ATK Up": "Absorb Sword",
+      "VIT Up": "Absorb Sword",
+      "MAG Up": "Absorb Sword",
+      "SPR Up": "Absorb Sword",
+      "LCK Up": "Absorb Sword"
+    },
+    "HP Up": {
+      "HP Up": "HP Up",
+      "Libra": "HP Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "MP Up": {
+      "MP Up": "MP Up",
+      "Libra": "MP Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "AP Up": {
+      "AP Up": "AP Up",
+      "Libra": "AP Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "ATK Up": {
+      "ATK Up": "ATK Up",
+      "Libra": "ATK Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "VIT Up": {
+      "VIT Up": "VIT Up",
+      "Libra": "VIT Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "MAG Up": {
+      "MAG Up": "MAG Up",
+      "Libra": "MAG Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "SPR Up": {
+      "SPR Up": "SPR Up",
+      "Libra": "SPR Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    },
+    "LCK Up": {
+      "LCK Up": "LCK Up",
+      "Libra": "LCK Up",
+      "Fire": "Fire",
+      "Ice": "Ice",
+      "Lightning": "Lightning",
+      "Restore": "Restore",
+      "Defense": "Defense",
+      "Status Defense": "Status Defense",
+      "Absorb Mag": "Absorb Mag",
+      "Status Mag": "Status Mag",
+      "Fire & St": "Fire & St",
+      "Ice & St": "Ice & St",
+      "Lightning & St": "Lightning & St",
+      "Gravity": "Gravity",
+      "Ultimate": "Ultimate",
+      "Quick Atk": "Quick Atk",
+      "Quick Atk & St": "Quick Atk & St",
+      "Sword Arts": "Sword Arts",
+      "Blade Arts & St": "Blade Arts & St",
+      "Fire Blade": "Fire Blade",
+      "Ice Blade": "Ice Blade",
+      "Lightning Blade": "Lightning Blade",
+      "Absorb Sword": "Absorb Sword",
+      "Item": "Item",
+      "Punch": "Punch",
+      "SP Turbo": "SP Turbo"
+    }
+  },
+  "specialOverrides": [
+    {
+      "id": "ov_costly_punch",
+      "matchClasses": [
+        "Punch",
+        "DMW"
+      ],
+      "resultId": "item_costly_punch",
+      "note": "Any Punch Materia (Goblin Punch / Iron Fist / Magical Punch / Hammer Punch) + ANY DMW Materia = Costly Punch!"
+    },
+    {
+      "id": "ov_aerial_drain",
+      "matchNames": [
+        "High Jump",
+        "Drain"
+      ],
+      "resultId": "item_aerial_drain",
+      "note": "High Jump + Drain / Osmose / Assault Twister = Aerial Drain (i-frames + full heal)."
+    },
+    {
+      "id": "ov_wall",
+      "matchNames": [
+        "Barrier",
+        "MBarrier"
+      ],
+      "resultId": "item_wall",
+      "note": "Barrier + MBarrier = Wall (applies both buffs in one cast)."
+    },
+    {
+      "id": "ov_quake",
+      "matchNames": [
+        "Graviga",
+        "Darkness"
+      ],
+      "resultId": "item_quake",
+      "note": "Graviga + Darkness / Assault Twister+ = Quake (wide screen AoE)."
+    },
+    {
+      "id": "ov_hell_firaga",
+      "matchNames": [
+        "Firaga",
+        "Status Strike"
+      ],
+      "resultId": "item_hell_firaga",
+      "note": "Firaga + Status Strike (or Poison/Silence/Stop) = Hell Firaga."
+    },
+    {
+      "id": "ov_hell_blizzaga",
+      "matchNames": [
+        "Blizzaga",
+        "Status Strike"
+      ],
+      "resultId": "item_hell_blizzaga",
+      "note": "Blizzaga + Status Strike (or Poison/Silence/Stop) = Hell Blizzaga."
+    },
+    {
+      "id": "ov_hell_thundaga",
+      "matchNames": [
+        "Thundaga",
+        "Status Strike"
+      ],
+      "resultId": "item_hell_thundaga",
+      "note": "Thundaga + Status Strike (or Poison/Silence/Stop) = Hell Thundaga."
+    },
+    {
+      "id": "ov_ultima",
+      "matchNames": [
+        "Flare",
+        "Octaslash"
+      ],
+      "resultId": "item_ultima",
+      "note": "High-grade Ultimate Magic (Flare / Energy / Tri-Thundaga) + DMW Materia = Ultima."
+    },
+    {
+      "id": "ov_dualcast",
+      "matchNames": [
+        "Ultima",
+        "Libra"
+      ],
+      "resultId": "item_dualcast",
+      "note": "Dualcast can be bought directly from Online Shop Shade (M9-5-4, 30,000 Gil) or fused from high-grade Magic + LCK/Dash chains."
+    },
+    {
+      "id": "ov_mug",
+      "matchNames": [
+        "Steal",
+        "Assault Twister"
+      ],
+      "resultId": "item_mug",
+      "note": "Steal + Mastered Assault Twister / Vital Slash = Mug."
+    }
   ],
   "keyRecipes": [
     {
@@ -56,7 +3300,7 @@
       "result": "Assault Twister+",
       "resultId": "item_assault_twister_plus",
       "ingredientA": "Assault Twister (M)",
-      "ingredientB": "Vitality Up / Status Strike",
+      "ingredientB": "VIT UP / Status Strike",
       "note": "Multi-hit spin attack; strong early Command Materia."
     },
     {

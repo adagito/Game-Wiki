@@ -1,4 +1,4 @@
-const CACHE_NAME = 'game-wiki-hub-v3-2-1';
+const CACHE_NAME = 'game-wiki-hub-v4-1-1';
 const STATIC_ASSETS = [
   './',
   './index.html',

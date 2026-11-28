@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#070b10"/>
-      <stop offset="55%" stop-color="#0d1b28"/>
-      <stop offset="100%" stop-color="#062925"/>
+      <stop offset="0%" stop-color="#0c0e12"/>
+      <stop offset="55%" stop-color="#141922"/>
+      <stop offset="100%" stop-color="#121d20"/>
     </linearGradient>
-    <radialGradient id="glow" cx="72%" cy="48%" r="45%">
-      <stop offset="0%" stop-color="#00e5a3" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#00e5a3" stop-opacity="0"/>
+    <radialGradient id="glow" cx="74%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#4ea89b" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4ea89b" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="640" height="320" fill="url(#bg)"/>
   <rect width="640" height="320" fill="url(#glow)"/>
-  <g stroke="#38bdf8" stroke-opacity="0.16" stroke-width="1">
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
     <path d="M0 64 H640 M0 128 H640 M0 192 H640 M0 256 H640"/>
     <path d="M80 0 V320 M160 0 V320 M240 0 V320 M320 0 V320 M400 0 V320 M480 0 V320 M560 0 V320"/>
   </g>
-  <circle cx="470" cy="160" r="88" fill="none" stroke="#00e5a3" stroke-width="3" stroke-opacity="0.8"/>
-  <circle cx="470" cy="160" r="64" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10 6"/>
-  <polygon points="470,96 528,160 470,224 412,160" fill="#00e5a3" fill-opacity="0.18" stroke="#00e5a3" stroke-width="2.5"/>
-  <text x="42" y="108" fill="#00e5a3" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" letter-spacing="4">SHINRA SOLDIER TERMINAL</text>
-  <text x="42" y="156" fill="#e6f1f8" font-family="Segoe UI, sans-serif" font-size="34" font-weight="800">CRISIS CORE</text>
-  <text x="42" y="192" fill="#38bdf8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700">FFVII REUNION</text>
-  <rect x="42" y="218" width="150" height="30" rx="15" fill="#00e5a3" fill-opacity="0.18" stroke="#00e5a3"/>
-  <text x="117" y="238" text-anchor="middle" fill="#00e5a3" font-family="Consolas, monospace" font-size="13" font-weight="700">HARD MODE WIKI</text>
+  <circle cx="478" cy="160" r="86" fill="none" stroke="#4ea89b" stroke-width="2" stroke-opacity="0.55"/>
+  <circle cx="478" cy="160" r="62" fill="none" stroke="#7b9cc4" stroke-width="1.5" stroke-dasharray="9 6" stroke-opacity="0.55"/>
+  <polygon points="478,98 534,160 478,222 422,160" fill="#4ea89b" fill-opacity="0.1" stroke="#4ea89b" stroke-width="2" stroke-opacity="0.75"/>
+  <text x="42" y="108" fill="#4ea89b" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" letter-spacing="3.5">SHINRA SOLDIER TERMINAL</text>
+  <text x="42" y="156" fill="#eceff4" font-family="Segoe UI, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">CRISIS CORE</text>
+  <text x="42" y="191" fill="#7b9cc4" font-family="Segoe UI, sans-serif" font-size="21" font-weight="700">FFVII REUNION</text>
+  <rect x="42" y="218" width="154" height="30" rx="15" fill="#4ea89b" fill-opacity="0.14" stroke="#4ea89b" stroke-opacity="0.45"/>
+  <text x="119" y="238" text-anchor="middle" fill="#b8d8d3" font-family="Consolas, monospace" font-size="12.5" font-weight="700">HARD MODE WIKI</text>
 </svg>

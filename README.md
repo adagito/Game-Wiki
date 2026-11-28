@@ -22,14 +22,16 @@ A modular, offline-ready, client-side **Personal Game Wiki Hub** built for deskt
 
 ---
 
-## 🎮 Included Module: Crisis Core: FFVII Reunion (Hard Mode)
+## 🎮 Included Module: Crisis Core: FFVII Reunion (100% Compendium)
 
-- **All 300 Missions** (`M1-1-1` through `M10-4-3`) with branch/star/chapter/readiness filters, Hard Mode benchmarks, clear rewards, treasure chests, and Boss/Random Encounter links.
-- **337+ Enemies Bestiary** with Hard Mode HP, stats, weaknesses/immunities, Dossier + Portrait Gallery (zoom lightbox), and all 4 loot slots.
-- **Relational Item Database** enforcing the **Strict Relational Rule**: `items.json` contains **zero** hardcoded enemy drop/steal lists; the 4-Quadrant Enemy Drop & Steal Matrix is computed dynamically from `enemies.json`.
-- **Hard Mode Level & Chapter Route Suggester** (Lv. 1–99, Ch. 1–10).
-- **Hard Mode Farming & Meta Guides** (DMW AFK mastering, Potion/Libra 98–980% pipelines, M6-6-3 / M8-6-4 / M9-5-3 farms, Costly Punch & Genji meta).
-- **Interactive Materia Fusion Calculator & Personal Tracker** (`localStorage` namespaced under `wiki:crisis-core-reunion:*`).
+- **100% Compendium Dashboard**: Live progress meters across Missions (`x/300`), Trophies (`x/51`), Story Chapters (`x/10`), Mail Senders (`x/20`), DMW (`x/18`), Shops (`x/16`), Missables, Magic Pots (`x/6`), Genji Set (`x/4`), and Buster Sword Proficiency, plus active chapter missable alerts.
+- **Story Walkthroughs, Mini-Games & Magic Pots**: Full Chapters 1–10 scenario & story boss guide, interactive **Shinra Manor Safe Code Calculator**, all 10 mini-games (Seven Wonders, 3 Flower Wagons, Sector 5, Squats, Modeoheim, Gongaga Waterfall, Depths of Judgment), and all 6 Magic Pot encounters.
+- **All 300 Missions** (`M1-1-1` through `M10-4-3`) with **Unlockable Now** filter, upstream/downstream unlock chains, route/chest notes, Hard Mode benchmarks, clear rewards, treasure chests, and Boss Kill Guides.
+- **365 Enemies Bestiary** with offline-bundled local portraits, Hard Mode HP/stats, full elemental/status affinities (`Weak`, `Resist`, `Null`, `Absorb`, `Immune`), combat flags (`Null Physical`/`Magic`), story locations, and all 4 loot slots.
+- **Relational Item Database** enforcing the **Strict Relational Rule**: `items.json` contains **zero** hardcoded enemy drop/steal lists; the 4-Quadrant Enemy Drop & Steal Matrix is computed dynamically from `enemies.json`, alongside Materia Cost/Grade/Reverse Fusion Recipes and Accessory effect filters.
+- **51 Trophies, 20 Mail Senders (5 Fan Clubs), 16 Shops, 18 DMW & Chapter Missables Trackers**.
+- **Guides, Lv. 1–99 Formulas & NG+ Matrix**: Farming playbooks, all 8 stat-leveling Materia guides, Zack Lv. 1–99 base stat table, DMW/Skill Power/Battle Stance mechanics, Status Glossary, Reunion vs. PSP table, and NG+ Carryover Checklist.
+- **True Materia Fusion Engine & Live Build Stat Calculator** (`localStorage` namespaced under `wiki:crisis-core-reunion:*`).
 
 ---
 

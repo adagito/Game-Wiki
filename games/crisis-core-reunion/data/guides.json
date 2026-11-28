@@ -576,11 +576,19 @@
       "missionId": null
     },
     {
+      "id": "miss_ch1_wutai_prison",
+      "chapter": "Chapter 1",
+      "title": "Wutai Fortress Chests (Fire Armlet & Elixir)",
+      "category": "Story Chests",
+      "detail": "Loot every chest along the mountain path and Tamblin interior before defeating Vajradhara Tai & Wu.",
+      "missionId": null
+    },
+    {
       "id": "miss_ch2_mako_miner",
       "chapter": "Chapter 2",
       "title": "Master Mako Stone Miner / Materia Room",
       "category": "Trophy",
-      "detail": "Complete all Materia Room mini-requests in Shinra Building before progressing to Banora.",
+      "detail": "Complete all Materia Room mini-requests (check chests and extract the 5 Mako Stones) in Shinra Building before progressing to Banora.",
       "missionId": null
     },
     {
@@ -592,20 +600,68 @@
       "missionId": null
     },
     {
+      "id": "miss_ch2_banora_lifestream",
+      "chapter": "Chapter 2",
+      "title": "Banora 5 Glowing Lifestream Spots & Shell Slicing",
+      "category": "Trophy",
+      "detail": "Collect all 5 glowing items around Banora Village before entering Angeal's house, then slice all 10 shells outside the factory for Banora Treasures.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch3_squats",
+      "chapter": "Chapter 3–5",
+      "title": "Training Room Squats (All 4 Challengers)",
+      "category": "Trophy / Items",
+      "detail": "Win all 4 Squat tiers in the SOLDIER Training Room before Chapter 7 ends (unlocks Flower Wagon parts & Shinra Trooper/Captain mail).",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch3_genesis_study",
+      "chapter": "Chapter 3",
+      "title": "Prevent Red Leather / Study Group Disband",
+      "category": "Mail Senders",
+      "detail": "In Ch. 3 Sector 8 Fountain, encourage the Genesis Red Leather fan ('Someone wealthy...') and don't discourage Angeal/Study Group members.",
+      "missionId": null
+    },
+    {
       "id": "miss_ch4_minigames",
       "chapter": "Chapter 4",
       "title": "Aerith Affection & Sector 5/8 Mini-Games",
       "category": "Trophies",
-      "detail": "Win Perfume Blending 3x perfectly, Number Guessing, Wallet Catch, and Spy Catching before leaving Midgar.",
+      "detail": "Win Perfume Blending (exact drops), Number Guessing, Materia Pick-Up, Wallet Catch, and Spy Catching before leaving Midgar.",
       "missionId": null
+    },
+    {
+      "id": "miss_ch4_spies",
+      "chapter": "Chapter 4",
+      "title": "Catch All 6 Wutai Spies (M4-3-x Chain)",
+      "category": "Missions",
+      "detail": "Speak to the SOLDIER in Loveless Avenue and expose all 6 Wutai spies in Midgar (unlocks M4-3-1 through M4-3-6 and Happy Turtle shop).",
+      "missionId": "M4-3-6"
     },
     {
       "id": "miss_ch5_reporter_silver",
       "chapter": "Chapter 5",
       "title": "Reporter Mail & Silver Elite Mission NPC",
       "category": "Missions & Mail",
-      "detail": "Do NOT report the Sector 8 Reporter; answer his quiz. Talk to the Shinra Entrance employee for Silver Elite missions & mail.",
+      "detail": "Do NOT report the Sector 8 Reporter; answer his quiz. Talk to the Shinra Entrance employee ('Sephiroth never misses...') for Silver Elite & M2-2-x/M5-x triggers.",
       "missionId": null
+    },
+    {
+      "id": "miss_ch5_modeoheim_sniper",
+      "chapter": "Chapter 5",
+      "title": "Modeoheim Sniper & Stealth Infiltration (5 Chests)",
+      "category": "Trophies",
+      "detail": "Hit every enemy/barrel with the Sniper Rifle without missing/overheating, then sneak past guards in the Mako Excavation Facility to loot all 5 chests.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch5_mako_fan",
+      "chapter": "Chapter 5",
+      "title": "City Planning Director (Sector 8 Shop M6-2-1)",
+      "category": "Missions & Shop",
+      "detail": "Speak to the City Planning Director in Shinra Entrance Hall to unlock M6-2-1 (Sector 8 Materia Shop).",
+      "missionId": "M6-2-1"
     },
     {
       "id": "miss_ch6_cissnei_mail",
@@ -613,6 +669,22 @@
       "title": "Zack Fan Club (Talk to Cissnei in Junon)",
       "category": "Mail Senders",
       "detail": "After Junon Defense, speak to Cissnei before leaving Junon; then finish with the Shinra receptionist in Ch. 7.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch6_junon_gates",
+      "chapter": "Chapter 6",
+      "title": "Junon Defense — Zero Enemies Past the Line",
+      "category": "Trophy / Reward",
+      "detail": "Defeat all invading machines at the Junon Upper Path so none breach the barrier for the bonus trophy & reward.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch7_flower_wagons",
+      "chapter": "Chapter 7",
+      "title": "Build All 3 Flower Wagons for Aerith",
+      "category": "Trophy",
+      "detail": "Complete all 3 Flower Wagon builds in Sector 5 Church before departing Midgar (requires Squatting, Spy/Mission & Shinra Bldg pickups).",
       "missionId": null
     },
     {
@@ -632,11 +704,35 @@
       "missionId": null
     },
     {
+      "id": "miss_ch8_seven_wonders",
+      "chapter": "Chapter 8",
+      "title": "Seven Wonders of Nibelheim (All 7 Steps + Safe Code)",
+      "category": "Trophy",
+      "detail": "Solve Wonders 1–6 in Ch. 8 (Water Tower, Portrait, Bomb, Manor Safe, Cave, Burning Village) and Wonder 7 in Nibelheim Outskirts before Ch. 9.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch9_waterfall",
+      "chapter": "Chapter 9",
+      "title": "Gongaga Waterfall 7 Chests Mini-Game",
+      "category": "Trophy",
+      "detail": "In Gongaga Hills, dodge monsters and open all 7 treasure chests falling down the waterfall before fighting Zack's ambush.",
+      "missionId": null
+    },
+    {
       "id": "miss_ch9_qmc_plus",
       "chapter": "Chapter 9",
       "title": "Research Dept. QMC+ Shop (Gongaga Chest)",
       "category": "MISSABLE SHOP",
       "detail": "Open the hidden chest in Gongaga Village outskirts in Ch. 9/10 to unlock Research Dept. QMC+ before the final dungeon.",
+      "missionId": null
+    },
+    {
+      "id": "miss_ch10_caged_goddess",
+      "chapter": "Chapter 10",
+      "title": "7 Goddess Materia & Depths of Judgment Caged Doors",
+      "category": "Story Bosses / Gear",
+      "detail": "Collect all 7 Goddess Materia in Banora Underground to open the Depths of Judgment gate and unlock Behemoth King's optional corridor.",
       "missionId": null
     }
   ],
@@ -788,21 +884,24 @@
     },
     {
       "id": "guide_magic_pot",
-      "title": "5. Magic Pot Complete Encounters Guide",
+      "title": "5. Magic Pot Complete Encounters Guide (All 6 Missions)",
       "badge": "Genji Shield",
-      "summary": "Exact locations and attack sequences for every Magic Pot encounter, including M10-2-3 (DMW) and M7-6-6 (Genji Shield).",
+      "summary": "Exact locations and attack sequences for all 6 Magic Pot encounters: M10-2-3 (DMW), M7-6-6 (Genji Shield), M2-2-6, M2-5-4, M2-5-5, and M2-5-6.",
       "refs": {
         "missions": [
           "M10-2-3",
           "M7-6-6",
           "M2-2-6",
-          "M2-5-4"
+          "M2-5-4",
+          "M2-5-5",
+          "M2-5-6"
         ],
         "items": [
           "item_genji_shield",
           "item_costly_punch",
           "item_gil_toss",
-          "item_octaslash"
+          "item_octaslash",
+          "item_ultima"
         ]
       },
       "blocks": [
@@ -812,7 +911,11 @@
         },
         {
           "heading": "M7-6-6: Obtain Genji Shield",
-          "body": "Equip Gil Toss, Costly Punch, Break Damage Limit (Brutal/Genji Glove/Buster Sword 23%+), and Octaslash Materia (Research Dept. QMC+). In M7-6-6, perform: Gil Toss -> Costly Punch -> 99,999 Damage -> Octaslash DMW. (Note: M2-2-6 & M2-5-4 also host early Magic Pots requesting Blizzard/Fire/Thunder/Gravity or Ultima.)"
+          "body": "Equip Gil Toss, Costly Punch, Break Damage Limit (Brutal/Genji Glove/Buster Sword 23%+), and Octaslash Materia (Research Dept. QMC+). In M7-6-6, perform: Gil Toss -> Costly Punch -> 99,999 Damage -> Octaslash DMW."
+        },
+        {
+          "heading": "M2-2-6, M2-5-4, M2-5-5 & M2-5-6 Bonus Encounters",
+          "body": "M2-2-6 requests Blizzard -> Fire -> Thunder -> Gravity. M2-5-4 requests Ultima -> Tri-Fire -> Iron Fist -> Electrocute. M2-5-5 requests Ultima -> Tri-Thundaga -> Electrocute -> Flare. M2-5-6 requests Flare -> Energy -> Ultima -> Costly Punch. See the Story & Side-Quests tab for interactive checklists!"
         }
       ]
     },
